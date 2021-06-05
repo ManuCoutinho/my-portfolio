@@ -4,17 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">   
+    <!--[if lt IE 9]>
+	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
+    <!--fonts-->
+    <script src="https://kit.fontawesome.com/9ffb8b279f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700;900&display=swap" rel="stylesheet">
+     <!--bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <title>Manu Coutinho - Portfólio</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="90">
     <header>
-        <div class="nav">
-
+        <!-- ------------------------------Menu de navegação----------------------------------------- -->                
+        <nav id="navbar" class="navbar navbar-expand-md fixed-top navbar-transparent">
+            <div class="container">
+                <a href="index.html" class="navbar-brand brand">Manu Coutinho</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fas fa-bars text-black"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="" id="home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="" id="sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="" id="servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="" id="resumo">Resumo</a>
+                        </li>                      
+                        <li class="nav-item">
+                            <a href="#" class="" id="portfolio">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="" id="contato">Contato</a>
+                        </li>
+                    </ul>
+                    <ul  class="navbar-nav ml-auto">
+                        <li class="nav-item mr-2"><a href="www.twitter.com/"><i class="fab fa-twitter fa-lg"></i></a></i></li>
+                        <li class="nav-item mr-2"><a href="www.linkedin.com"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="www.github.com"><i class="fab fa-github fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<!-- ----------------------------Fim menu navegação------------------------------------------- -->
         </div>
     </header>
+
+    <section>
+        <div class="container-fluid bloco-principal mt-5" id="home">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-6">
+                        <div class="conteudo">
+                            <h1 class="mb-5">Oi, eu sou </h1>
+                            <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                            <h6 class="mt-5">Curitiba, Brasil.</h6>
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./img/perfil.jpg" alt="imagem de perfil de Manu Coutinho" class="imagem">
+                        </div>
+                        
+                    </div>
+                </div> 
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="./javascript/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     
 </body>
 </html>
