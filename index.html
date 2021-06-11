@@ -422,23 +422,22 @@
                     </div>
                     <div class="col-md-6">
                         <h2 class="fs-1 fw-b px-5 mb-5">Solicite seu projeto:</h2>
-                        <form>
+                        <form action="./php/processa_envio.php" method="post">
                             <div class="mb-3 divisoria">
-                                <label for="#" class="form-label fw-bold mt-4">Me diga o seu nome:</label>
-                                <input type="nome" class="form-control-plaintext divisoria" aria-describedby="nome"
+                                <label for="remetente" class="form-label fw-bold mt-4">Me diga o seu nome:</label>
+                                <input type="text" id="remetente" name="remetente" class="form-control-plaintext divisoria" aria-describedby="nome"
                                     required>
                             </div>
                             <div class="mb-3 divisoria">
-                                <label for="#" class="form-label fw-bold mt-4">Email address</label>
-                                <input type="email" class="form-control-plaintext" aria-describedby="email" required>
+                                <label for="email" class="form-label fw-bold mt-4">Email:</label>
+                                <input type="text" id="email" name="email" class="form-control-plaintext" aria-describedby="email" required>
                             </div>
                             <div class="mb-3 divisoria">
-                                <label for="#" class="form-label fw-bold mt-4">Como posso te ajudar?</label>
-                                <textarea type="text" class="form-control-plaintext" rows="5" required></textarea>
+                                <label for="mensagem" class="form-label fw-bold mt-4">Como posso te ajudar?</label>
+                                <textarea type="text" id="mensagem" name="mensagem" class="form-control-plaintext" rows="5" required></textarea>
                             </div>
-                            <button type="submit"
-                                class="btn btn-lg btn-dark rounded-0 smooth-scroll mt-3 shadow-lg fw-bold">Enviar <span><i
-                                        class="bi bi-arrow-right-short"></i></span></button>
+                            <button type="submit" name="" class="btn btn-lg btn-dark rounded-0 smooth-scroll mt-3 shadow-lg fw-bold">Enviar 
+                                <span><i class="bi bi-arrow-right-short"></i></span></button>
                         </form>
                     </div>
                 </div>

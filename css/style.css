@@ -20,7 +20,12 @@ body {
 }
 
 .navegacao a:hover,
-#contato a:hover {
+#contato a:hover,
+#sobre a:hover,
+#servicos a:hover,
+#portfolio a:hover,
+#home a:hover,
+#resumo a:hover {
   color: var(--color-pink);  
 }
 
