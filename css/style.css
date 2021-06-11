@@ -1,4 +1,4 @@
-/*------- @sasha -----*/
+/* -******************************** @sasha**************** */
 html, body {
   scroll-behavior: smooth;
 }
@@ -9,35 +9,32 @@ body {
     font-size:16px;
 }
 
-
 :root {
     --color-bordo: #8C3B42;
     --color-pink: #F21D56;
     --color-lilas: #7168A6;
     --color-amarelo-claro: #F2D649;
     --color-amarelo: #F2B544;
-    --color-branco: #fff;
+    --color-branco: #fff;    
     --spacing: 6.25rem;   
 }
 
-
-nav a {
-    text-transform: uppercase;
-    color: var(--color-bordo);
-    font-weight: 700;
-    text-decoration: none;
-    padding: 1rem 0;
-    margin-right: 1rem;    
+.navegacao a:hover,
+#contato a:hover {
+  color: var(--color-pink);  
 }
 
-nav a:hover{
-  color: var(--color-pink);
-  opacity: .4;
+.navegacao a {
+  color: var(--color-bordo);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 0;
+  margin-right: 1rem;   
 }
 
 .brand {
-     letter-spacing: -0.2rem;
-     font-size:3rem; 
+     letter-spacing: -0.2rem;     
 }
 
 .menu-principal {
@@ -47,25 +44,31 @@ nav a:hover{
 }
 
 .bloco-principal {
-    background-color: var(--color-amarelo);
-    padding-top: var(--spacing);
-    padding-bottom: var(--spacing);
+    background-color: var(--color-amarelo);     
     height:100vh;
 }
 
 .imagem {
-    border: 10px solid #f1f1f1;
+    border: 1.5rem solid #f2f2f2;
     border-radius: 100%;
+    opacity: .7;
+    margin-top: var(--spacing);
 }
 
-
-.nome {
-  border-bottom: 2px solid var(--color-amarelo-claro);
-  font-weight: 900;
+.underline {
+  border-bottom: 2px solid var(--color-amarelo-claro);  
 }
 
 .espaco-bottom {
   padding-bottom:var(--spacing);
+}
+
+.espaco-top {
+  padding-top: var(--spacing);
+}
+
+.espaco-y {
+padding: var(--spacing);
 }
 
 .espaco {
@@ -74,12 +77,10 @@ nav a:hover{
 }
 
 .subtitulos {  
-  background-color:var(--color-pink);
-  font-weight: 400;  
+  background-color:var(--color-pink); 
 }
 
-.texto {
-  font-weight: 400;  
+.texto {  
   line-height:2.8rem;
   font-size:1.5rem;
   padding-right: 2rem;  
@@ -105,7 +106,6 @@ textarea:focus, input:focus, select:focus {
   padding-right: 4.5rem;
 }
 
-
 .icones {
   font-size:2.5rem;
   color: var(--color-bordo);
@@ -122,12 +122,6 @@ textarea:focus, input:focus, select:focus {
   padding-right: var(--spacing);
   font-size:1.25rem;
   text-align: right;  
-}
-
-
-.shadow {
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 5px 5px rgba(0,0,0,0.14); 
-  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 5px 5px rgba(0,0,0,0.14);  
 }
 
 .ultimo-bloco {
@@ -182,6 +176,47 @@ footer a:hover {
 }
 /*fim texto animado*/
 
+/*---animação elementos*/
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animatade {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+/* fim animação*/
 
 /*navegação*/
 @keyframes sdb03 {
@@ -213,11 +248,13 @@ footer a:hover {
   color: var(--color-lilas);
   margin: 2rem 0;
 }
-.texto-contato {
+.texto-contato,
+.texto {
   line-height:2rem;
   font-size:1rem; 
   text-align: justify;  
 }
+
 
 .imagem {
   display: none;
@@ -225,8 +262,8 @@ footer a:hover {
 
 #home button,
  #home a {
-  font-size:1.2rem;
-  padding: 0;
+  font-size:1rem;
+  padding: 1rem;
 }
   
 }
@@ -243,7 +280,8 @@ footer a:hover {
   margin: 2rem 0;
 }
 
-.texto-contato {
+.texto-contato,
+.texto {
   line-height:2rem;
   font-size:1rem; 
   text-align: justify;  
@@ -255,7 +293,15 @@ footer a:hover {
 
 #home button,
 #home a {
-  font-size:1.2rem;
-  padding: 0;
+  font-size:1rem;
+  padding: 1rem;
+  
 }
+
 }
+
+@media (min-width: 1200px) { 
+  .espaco-y {
+    padding: 0;
+  }
+ }

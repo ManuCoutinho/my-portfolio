@@ -15,71 +15,73 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700;900&display=swap" rel="stylesheet">
     <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <title>Manu Coutinho - Portfólio</title>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="100">
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
     <header>
-        <!-- ------------------------------Menu de navegação----------------------------------------- -->
-        <nav id="navbar" class="navbar navbar-expand-md fixed-top bg-white">
-            <div class="container">
-                <a href="index.html" class="navbar-brand brand">Manu Coutinho</a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-                    <i class="fas fa-bars text-black"></i>
-                </button>
+        <!-----------Menu principal------->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-line-under-text fixed-top bg-white navegacao" role="navigation">
+            <div class="container position-relative">
+                <div class="col-auto col-lg-2 d-inline-flex">
+                    <a href="index.html" class="navbar-brand brand mx-5" title="Manu Coutinho">
+                    <img src="./img/code-slash.svg" alt="Logo da página Manu Coutinho" width="40">Manu Coutinho</a>       
+                </div>                         
+                
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-principal" type="button">
+                    <i class="bi bi-three-dots-vertical"></i>
+                    </button>
 
-                <div class="collapse navbar-collapse menu-principal" id="nav-principal">
-                    <ul class="nav justify-content-center">
+                <div class="collapse navbar-collapse menu-principal justify-content-center" id="nav-principal">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#home" ">Home</a>
-                        </li>
-                        <li class=" nav-item">
-                                <a href="#sobre" class="active smooth-scroll">Sobre</a>
+                            <a href="#home" class="nav-link smooth-scroll">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#servicos" class="active smooth-scroll">Serviços</a>
+                                <a href="#sobre" class=" nav-link smooth-scroll">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#resumo" class="active smooth-scroll">Resumo</a>
+                            <a href="#servicos" class="nav-link smooth-scroll">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#portfolio" class="active smooth-scroll">Portfólio</a>
+                            <a href="#resumo" class=" nav-link smooth-scroll">Resumo</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contato" class="active smooth-scroll">Contato</a>
+                            <a href="#portfolio" class="nav-link smooth-scroll">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link smooth-scroll">Contato</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ml-5">
-                        <li class="nav-item mr-2"><a href="https://www.twitter.com/manucout"><i
-                                    class="fab fa-twitter fa-lg"></i></a></i></li>
-                        <li class="nav-item mr-2"><a href="https://www.linkedin.com/in/emanuela-coutinho/"><i
-                                    class="fab fa-linkedin-in fa-lg"></i></a></li>
-                        <li class="nav-item"><a href="https://github.com/Sasha-first"><i
-                                    class="fab fa-github fa-lg"></i></a>
+                    <div class="d-none d-lg-block">
+                    <ul class="navbar-nav mx-5">
+                        <li class="nav-item mr-2"><a href="https://www.twitter.com/manucout" class="nav-link"><i class="fab fa-twitter fa-lg"></i></a></i></li>
+                        <li class="nav-item mr-2"><a href="https://www.linkedin.com/in/emanuela-coutinho/" class="nav-link"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="https://github.com/Sasha-first" class="nav-link"><i class="fab fa-github fa-lg"></i></a>
                         </li>
                     </ul>
                 </div>
+                </div>
             </div>
         </nav>
-        <!-- ----------------------------Fim menu navegação------------------------------------->
+        <!------------Fim menu principal----------->
         </div>
     </header>
-    <!-----------------------------------------bloco inicial ----------------------------------->
+    <!-----------------bloco inicial ---------->
     <section id="home" class="d-flex fullscreen-width-header position-relative">
         <div class="container-fluid bloco-principal mt-5"">
-            <div class= " container">
-            <div class="row py-5 px-5">
-                <div class="col-md-6">
-                    <div class="conteudo">
+            <div class= "container">
+            <div class="row espaco-y">
+                <div class="col-lg-6">
+                    <div class="conteudo espaco">
                         <h1 class="mb-5">Oi, eu sou </h1>
                         <span class="typed-text"></span><span class="cursor">&nbsp;</span>
-                        <h6 class="mt-5">Curitiba, Brasil.</h6>
+                        <h6 class="mt-5">em Curitiba, Brasil.</h6>
                     </div>
                     <div class="mt-5">
-                        <button class="btn btn-lg btn-dark rounded-0 smooth-scroll mt-3 shadow mx-3"><a
+                        <button class="btn btn-lg btn-dark rounded-0 smooth-scroll mt-3 shadow-lg mx-3"><a
                                 class="text-decoration-none text-white" href="#portfolio">Veja meus
                                 trabalhos</a></button>
                         <a class="btn btn-lg btn-link text-dark mt-3 text-decoration-none mx-3 smoth-scroll"
@@ -88,29 +90,28 @@
                             <span class=" ml-3 fs-3"><i class="bi bi-arrow-down-circle"></i></span></a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 espaco-top">
                     <div class="d-flex justify-content-center align-items-center">
                         <img src="./img/perfil.jpg" alt="imagem de perfil de Manu Coutinho" class="imagem img-fluid">
                     </div>
                 </div>
             </div>
-            <a href="#sobre"><span class="d-flex justify-content-center espaco"><i
-                        class="bi bi-chevron-double-down fs-2"></i></span></a>
+            <a href="#sobre"><span class="d-flex justify-content-center"><i class="bi bi-chevron-double-down fs-2 d-none d-lg-block"></i></span></a>
         </div>
         </div>
     </section>
-    <!-- ---------------------------------------fim bloco inicial-------------------------------------->
-    <!-----------------------------------------inicio bloco sobre ----------------------------------- -->
+    <!-- ------------fim bloco inicial----------->
+    <!-------------inicio bloco sobre --------- -->
     <section id="sobre">
         <div class="container">
-            <div class="espaco">
+            <div class="espaco-top">
                 <p class="text-center mt-5">
                     <span class="text-dark px-2 subtitulos">Sobre</span>
                 </p>
                 <h2 class="fs-1 fw-bold text-center espaco-bottom">Me Conheça Mais</h2>
                 <div class="row">
                     <div class="col-md-6 ">
-                        <h2 class="mb-5">Olá, sou <span class="nome">Manu Coutinho</span></h2>
+                        <h2 class="mb-5">Olá, sou <span class="underline fw-bold">Manu Coutinho</span></h2>
                         <p class="texto text-break">Eu sou uma desenvolvedora iniciante, com maior interação em web
                             designer. Gosto
                             de desenvolver sites com design cleans, que forneçam uma ótima experiência e acessibilidade
@@ -127,18 +128,36 @@
                                 alt="imagem de um balão expressando pensamento, contendo uma lâmpada, expressando uma ideia">
                         </div>
                     </div>
+                    <div class="row fs-4 my-5 pt-5">
+                        <div class="col-lg-3">
+                            <p class="text-muted mb-0">Nome:</p>
+                            <p class="text-dark">Manu Coutinho</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="text-muted mb-0">E-mail:</p>
+                            <p class="text-dark" ">gdn.sasha@gmail.com</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="text-muted mb-0">Nascimento:</p>
+                            <p class="text-dark">24 Janeiro, 1987</p>
+                        </div>
+                        <div class="col-lg-3">
+                        <p class="text-muted mb-0">De:</p>
+                        <p class="text-dark">Rio de Janeiro, BR</p>
+                    </div>
+                    </div>
                 </div>
             </div>
-            <a href="#servicos"><span class="d-flex justify-content-center espaco"><i
-                        class="bi bi-chevron-double-down fs-2"></i></span></a>
+            <a href="#servicos"><span class="d-flex justify-content-center "><i
+                        class="bi bi-chevron-double-down fs-2 d-none d-lg-block"></i></span></a>
         </div>
     </section>
-    <!-----------------------------------------fim bloco sobre---------------------------------------->
-    <!----------------------------------------- início bloco serviços--------------------------------------- -->
+    <!----------------fim bloco sobre--------------->
+    <!---------------- início bloco serviços-------------- -->
     <section id="servicos">
         <div class="container-fluid bg-light">
             <div class="container">
-                <div class="espaco">
+                <div class="espaco-top">
                     <p class="text-center font-weight-400 mt-5">
                         <span class="text-dark px-2 subtitulos">O que eu faço?</span>
                     </p>
@@ -180,14 +199,14 @@
                     </div>
                 </div>
                 <a href="#resumo"><span class="d-flex justify-content-center espaco"><i
-                            class="bi bi-chevron-double-down fs-2"></i></span></a>
+                            class="bi bi-chevron-double-down fs-2 d-none d-lg-block"></i></span></a>
             </div>
         </div>
     </section>
-    <!-- ---------------------------------------fim bloco servicos----------------------------------------->
+    <!--------------fim bloco servicos--------------->
     <section id="resumo">
         <div class="container">
-            <div class="espaco">
+            <div class="espaco-top">
                 <p class="text-center mt-5">
                     <span class="text-dark px-2 subtitulos">Resumo</span>
                 </p>
@@ -293,20 +312,19 @@
                 </div>
                 <div class="row mt-5">
                     <div class="col-md-12 d-flex justify-content-center">
-                        <a class="btn btn-lg btn-outline-light btn-link rounded-0 text-decoration-none fw-bold text-dark shadow"
-                            href="./pdf/curriculo.pdf">Download CV</a>
+                        <a class="btn btn-lg btn-outline-light btn-link rounded-0 text-decoration-none fw-bold text-dark shadow-lg" href="./pdf/curriculo.pdf">Download CV</a>
                     </div>
                 </div>
             </div>
-            <a href="#portfolio"><span class="d-flex justify-content-center espaco-bottom"><i
-                        class="bi bi-chevron-double-down fs-2"></i></span></a>
+            <a href="#portfolio"><span class="d-flex justify-content-center mt-5 espaco-bottom"><i
+                        class="bi bi-chevron-double-down fs-2 d-none d-lg-block"></i></span></a>
         </div>
     </section>
-    <!-- --------------------------------inicio portfolio---------------------------------------->
+    <!-- -------------inicio portfolio------------------------>
     <section id="portfolio" class="bg-light">
         <div class="container-fluid">
             <div class="container">
-                <div class="espaco">
+                <div class="espaco-top">
                     <p class="text-center mt-5">
                         <span class="text-dark px-2 subtitulos">Portfólio</span>
                     </p>
@@ -324,9 +342,8 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <a href="https://github.com/Sasha-first/landing_page_Tecnogueto"><img
-                                        src="./img/tecnogueto.jpg" class="d-block w-100"
-                                        alt="imagem da home page criada para Tecnogueto"></a>
+                                <a href="https://github.com/Sasha-first/landing_page_Tecnogueto">
+                                    <img class="img-thumbnail" src="./img/tecnogueto.jpg" class="d-block w-100" alt="imagem da home page criada para Tecnogueto"></a>
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5 class="text-dark">Landing Page Tecnogueto</h5>
                                     <p class="text-dark">Projeto criado no curso de html e css da Tecnogueto</p>
@@ -334,7 +351,7 @@
                             </div>
                             <div class="carousel-item">
                                 <a href="https://github.com/Sasha-first/layout_spotify">
-                                    <img src="./img/Soptfy.jpg" class="d-block w-100" alt="imagem da home page criada para o Spotify">
+                                    <img class="img-thumbnail" src="./img/Soptfy.jpg" class="d-block w-100" alt="imagem da home page criada para o Spotify">
                                 </a>                                
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Clone Spotify</h5>
@@ -343,7 +360,7 @@
                             </div>
                             <div class="carousel-item">
                                 <a href="https://github.com/Sasha-first/layout_parallax">
-                                    <img src="./img/parallax.jpg" class="d-block w-100"alt="imagem de home page criada com imagem de balão">
+                                    <img class="img-thumbnail" src="./img/parallax.jpg" class="d-block w-100"alt="imagem de home page criada com imagem de balão">
                                 </a>                                
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Parallax</h5>
@@ -351,7 +368,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <a href="https://github.com/Sasha-first/layout_site_financas">
+                                <a class="img-thumbnail" href="https://github.com/Sasha-first/layout_site_financas">
                                     <img src="./img/finans.jpg" class="d-block w-100" alt="imagem de home page criada para o site fictício 'finans">
                                 </a>                                
                                 <div class="carousel-caption d-none d-md-block">
@@ -375,12 +392,12 @@
 
                 </div>
                 <a href="#contato"><span class="d-flex justify-content-center espaco"><i
-                            class="bi bi-chevron-double-down fs-2"></i></span></a>
+                            class="bi bi-chevron-double-down fs-2 d-none d-lg-block"></i></span></a>
             </div>
         </div>
     </section>
-    <!-- --------------------------------fim portfolio ------------------------------------>
-    <!-- --------------------------------inicio contatos ---------------------------------->
+    <!------------------fim portfolio ------------------->
+    <!----------------inicio contatos -------------------->
     <section id="contato">
         <div class="container-fluid ultimo-bloco">
             <div class="container">
@@ -398,11 +415,9 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <a href="https://github.com/Sasha-first"><i
-                                    class="fab fa-github icones-rodape mx-2"></i></a>
-                            <a href="https://www.linkedin.com/in/emanuela-coutinho" /><i
-                                class="fab fa-linkedin-in icones-rodape mx-2"></i></a>
-                            <a href="https://twitter.com/manucout"><i class="fab fa-twitter icones-rodape mx-2"></i></a>
+                            <a href="https://github.com/Sasha-first" class="icones-rodape"><i class="fab fa-github mx-2"></i></a>
+                            <a href="https://www.linkedin.com/in/emanuela-coutinho" class="icones-rodape"><i class="fab fa-linkedin-in mx-2"></i></a>
+                            <a href="https://twitter.com/manucout" class="icones-rodape"><i class="fab fa-twitter mx-2"></i></a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -422,41 +437,40 @@
                                 <textarea type="text" class="form-control-plaintext" rows="5" required></textarea>
                             </div>
                             <button type="submit"
-                                class="btn btn-lg btn-dark rounded-0 smooth-scroll mt-3 shadow fw-bold">Enviar <span><i
+                                class="btn btn-lg btn-dark rounded-0 smooth-scroll mt-3 shadow-lg fw-bold">Enviar <span><i
                                         class="bi bi-arrow-right-short"></i></span></button>
                         </form>
                     </div>
                 </div>
                 <a href="#home"><span class="d-flex justify-content-center mt-5"><i
-                            class="bi bi-chevron-double-up fs-2"></i></span></a>
+                            class="bi bi-chevron-double-up fs-2 d-none d-lg-block"></i></span></a>
             </div>
         </div>
     </section>
-    <!-- --------------------------------fim contato -------------------------------------->
+    <!----------------fim contato --------------------->
 
-    <!-- --------------------------------inicio rodape -------------------------------------->
+    <!--------------------inicio rodape ---------------->
     <footer>
         <div class="container-fluid bg-dark">
             <div class="container">
                 <div class="row text-light espaco fw-bold">
-                    <div class="col-lg-6">
+                    <div class="col-md-6">
                         <p>Copyright &copy; 2021 <a href="#home" class="text-decoration-none">Manu Coutinho.</a>
                             Todos os direitos reservados.</p>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
                         <p>Designed by <a href="#home" class="text-decoration-none">Manu Coutinho</a></p>
                     </div>
-
                 </div>
             </div>
         </div>
     </footer>
-    <!-- --------------------------------fim rodape --------------------------------------- -->
+    <!-------------------fim rodape ----------------- -->
 
 
     <script src="./javascript/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
 
 </body>
