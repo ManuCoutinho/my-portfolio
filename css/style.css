@@ -15,8 +15,9 @@ body {
     --color-lilas: #7168A6;
     --color-amarelo-claro: #F2D649;
     --color-amarelo: #F2B544;
-    --color-branco: #fff;    
-    --spacing: 6.25rem;   
+    --color-branco: #fff; 
+    --color-preta: #000;   
+    --spacing: 5rem;   
 }
 
 .navegacao a:hover,
@@ -54,7 +55,7 @@ body {
 }
 
 .imagem {
-    border: 1.5rem solid #f2f2f2;
+    border: 1.5rem solid var(--color-branco);
     border-radius: 100%;
     opacity: .7;
     margin-top: var(--spacing);
@@ -100,7 +101,7 @@ textarea:focus, input:focus, select:focus {
 } 
 
 .divisoria {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--color-preta);
 }
 
 .texto-contato {
@@ -131,8 +132,7 @@ textarea:focus, input:focus, select:focus {
 
 .ultimo-bloco {
   background-color: var(--color-amarelo);
-  padding-top: var(--spacing);
-  padding-bottom: var(--spacing);
+  padding-top: var(--spacing);  
 }
 
 footer a {
@@ -148,6 +148,7 @@ footer a:hover {
 .conteudo{
   margin-top:var(--spacing);
 }
+
 .conteudo h1 {
     text-transform: uppercase;
     font-size:5rem;
@@ -157,9 +158,9 @@ footer a:hover {
 .conteudo span.typed-text {
   font-weight: 700;
   text-transform: uppercase;
-  line-height:3.5rem;
+  line-height:5rem;
   font-size:5rem;
-  color: var(--color-lilas);
+  color: var(--color-bordo);
 }
 .conteudo span.cursor {
   display: inline-block;  
@@ -181,47 +182,6 @@ footer a:hover {
 }
 /*fim texto animado*/
 
-/*---animação elementos*/
-@keyframes fadeInUp {
-  from {
-      transform: translate3d(0,40px,0)
-  }
-
-  to {
-      transform: translate3d(0,0,0);
-      opacity: 1
-  }
-}
-
-@-webkit-keyframes fadeInUp {
-  from {
-      transform: translate3d(0,40px,0)
-  }
-
-  to {
-      transform: translate3d(0,0,0);
-      opacity: 1
-  }
-}
-
-.animatade {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: both
-}
-
-.animatedFadeInUp {
-  opacity: 0
-}
-
-.fadeInUp {
-  opacity: 0;
-  animation-name: fadeInUp;
-  -webkit-animation-name: fadeInUp;
-}
-
-/* fim animação*/
 
 /*navegação*/
 @keyframes sdb03 {
@@ -243,6 +203,7 @@ footer a:hover {
 /*---media queries ----*/
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
+
 .bloco-principal {
   background-color: var(--color-amarelo);   
   height:100vh;
@@ -253,13 +214,13 @@ footer a:hover {
   color: var(--color-lilas);
   margin: 2rem 0;
 }
+
 .texto-contato,
 .texto {
   line-height:2rem;
   font-size:1rem; 
   text-align: justify;  
 }
-
 
 .imagem {
   display: none;
@@ -269,6 +230,28 @@ footer a:hover {
  #home a {
   font-size:1rem;
   padding: 1rem;
+}
+
+.bloco-principal {
+  background-color: var(--color-amarelo);    
+}
+
+.conteudo{
+margin-top:0;
+}
+
+.conteudo h1 {
+  text-transform: uppercase;
+  font-size:2.125rem;
+  line-height: 2rem;
+      
+}
+.conteudo span.typed-text {
+font-weight: 700;
+text-transform: uppercase;
+line-height:2rem;
+font-size:2.125rem;
+color: var(--color-bordo);
 }
   
 }
@@ -305,8 +288,40 @@ footer a:hover {
 
 }
 
-@media (min-width: 1200px) { 
+@media (max-width: 1399px) { 
   .espaco-y {
     padding: 0;
   }
- }
+
+  .bloco-principal {
+    background-color: var(--color-amarelo);    
+}
+
+.conteudo{
+  margin-top:0;
+}
+.conteudo h1 {
+    text-transform: uppercase;
+    font-size:3.5rem;
+    line-height: 2.5rem;
+        
+}
+.conteudo span.typed-text {
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height:2.5rem;
+  font-size:3.5rem;
+  color: var(--color-bordo);
+}
+
+.espaco-y {
+  padding-top:0;
+}
+
+.imagem {
+  border: 1.5rem solid var(--color-branco);
+  border-radius: 100%;
+  opacity: .7;
+  margin-top: var(--spacing);
+}
+}

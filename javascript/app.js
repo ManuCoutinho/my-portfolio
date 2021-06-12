@@ -36,7 +36,7 @@ function erase() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+document.addEventListener("DOMContentLoaded", function() { 
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
