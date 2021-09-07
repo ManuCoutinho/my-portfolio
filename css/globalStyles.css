@@ -1,0 +1,22 @@
+:root {
+    
+   --pink: #F21D56;
+   --color-lilas: #7168A6;
+   --yellow: #F2E205;
+   --orange: rgba(242, 159, 5, 0.7);
+   --white: #FFFFFF; 
+   --title: #343a40;
+   --black: #262626;   
+   --spacing: 5rem;   
+}
+
+html, body {
+   scroll-behavior: smooth;
+ }
+ 
+ body {
+     background: #ffffff;
+     position: relative;
+     font-family: 'Raleway', sans-serif;
+     font-size:16px;
+ }

@@ -1,0 +1,127 @@
+/*---media queries ----*/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+   .bloco-principal {
+     background-color: var(--color-amarelo);   
+     height:100vh;
+   }
+   
+   .icones-rodape {
+     font-size:1.5rem;
+     color: var(--color-lilas);
+     margin: 2rem 0;
+   }
+   
+   .texto-contato,
+   .texto {
+     line-height:2rem;
+     font-size:1rem; 
+     text-align: justify;  
+   }
+   
+   .imagem {
+     display: none;
+   }
+   
+   #home button,
+    #home a {
+     font-size:1rem;
+     padding: 1rem;
+   }
+   
+   .bloco-principal {
+     background-color: var(--color-amarelo);    
+   }
+   
+   .conteudo{
+   margin-top:0;
+   }
+   
+   .conteudo h1 {
+     text-transform: uppercase;
+     font-size:2.125rem;
+     line-height: 2rem;
+         
+   }
+   .conteudo span.typed-text {
+   font-weight: 700;
+   text-transform: uppercase;
+   line-height:2rem;
+   font-size:2.125rem;
+   color: var(--color-bordo);
+   }
+     
+   }
+   
+   /* Small devices (landscape phones, 576px and up)*/
+   @media (min-width: 576px) and (max-width: 767.98px) { 
+   
+   .bloco-principal {
+     background-color: var(--color-amarelo);   
+     height:100vh;
+   }
+   .icones-rodape {
+     font-size:1.5rem;
+     color: var(--color-lilas);
+     margin: 2rem 0;
+   }
+   
+   .texto-contato,
+   .texto {
+     line-height:2rem;
+     font-size:1rem; 
+     text-align: justify;  
+   }
+   
+   .imagem {
+       display: none;
+   }
+   
+   #home button,
+   #home a {
+     font-size:1rem;
+     padding: 1rem;
+     
+   }
+   
+   }
+   
+   @media (max-width: 1399px) { 
+     .espaco-y {
+       padding: 0;
+     }
+   
+     .bloco-principal {
+       background-color: var(--color-amarelo);    
+   }
+   
+   .conteudo{
+     margin-top:0;
+   }
+   .conteudo h1 {
+       text-transform: uppercase;
+       font-size:3.5rem;
+       line-height: 2.5rem;
+           
+   }
+   .conteudo span.typed-text {
+     font-weight: 700;
+     text-transform: uppercase;
+     line-height:2.5rem;
+     font-size:3.5rem;
+     color: var(--color-bordo);
+   }
+   
+   .espaco-y {
+     padding-top:0;
+   }
+   
+   .imagem {
+     border: 1.5rem solid var(--color-branco);
+     border-radius: 100%;
+     opacity: .7;
+     margin-top: var(--spacing);
+   }
+   }
+   
