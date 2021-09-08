@@ -1,22 +1,47 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
 :root {
     
-   --pink: #F21D56;
-   --color-lilas: #7168A6;
+   --pink: #F21D56;   
    --yellow: #F2E205;
    --orange: rgba(242, 159, 5, 0.7);
    --white: #FFFFFF; 
    --title: #343a40;
-   --black: #262626;   
-   --spacing: 5rem;   
+   --black: #262626;
+   --deep-orange: #f29f05;   
 }
 
 html, body {
    scroll-behavior: smooth;
  }
  
- body {
-     background: #ffffff;
-     position: relative;
-     font-family: 'Raleway', sans-serif;
-     font-size:16px;
+body {
+   background: #ffffff;
+   position: relative;
+   font-family: 'Montserrat', sans-serif;    
+   font-size:16px;
+   -webkit-font-smoothing: subpixel-antialiased;     
  }
+
+body, input, textarea, button {   
+   font-weight: 400;
+   color: var(--title);
+}
+
+h1, h2, h3, h4, h5, h6, strong, nav {
+   font-family: 'Raleway', sans-serif;   
+}
+
+.container-full {
+   height: 100vh;
+   width: 100%;
+}
+
+.container-center {
+   width: 70%;
+   margin: 0 auto;
+}

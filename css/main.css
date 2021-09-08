@@ -1,0 +1,27 @@
+.main-section {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 0;
+   justify-items: center;
+   align-items: center;
+   justify-content: center;
+}
+
+main {
+   background-color: var(--orange);      
+}
+
+.bloco-principal {
+  margin-top: 12rem; 
+}
+
+.imagem {
+   border: 1.25rem solid var(--white);
+   border-radius: 50%;
+   filter:sepia(0.5);
+   margin-top: var(--spacing);
+}
+
+.btn-dark:hover {
+   filter:brightness(0.7);
+}
