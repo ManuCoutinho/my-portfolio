@@ -1,0 +1,33 @@
+.nav-header a {
+   color: var(--title);
+   text-transform: uppercase;
+   font-weight: 700;
+   text-decoration: none;
+   padding: 1rem 0;
+   margin-right: 1rem;   
+   transition: 1s;
+ }
+ 
+.nav-header a:hover,
+.nav-header a[title]:hover {
+    color:var(--pink);
+    transform: scale(1.2);
+ }
+ 
+.nav-header {
+    background: var(--white);
+ }
+ 
+.nav-header a[title] {
+   font-weight: 900;
+   font-size: 2rem;
+   color: var(--title);     
+ }
+ 
+.nav-header > ul > li {
+   justify-content: space-between;
+   margin-left: 1rem;
+   padding-left: 12.5rem;
+ }
+ 
+ 

@@ -52,15 +52,71 @@
    animation: is-boucing 1s ease-in-out alternate infinite;
 }
 
+@keyframes is-boucing {
+   to {
+      transform: translateY(1rem);
+   }
+ }
+
+
 /*navegação*/
 .arrow {
   color: var(--black);
-  animation: is-boucing 1s ease-in-out alternate infinite;  
+  animation: fadeInDown 2.5s ease 1s infinite normal;
+  
 }
 
-@keyframes is-boucing {
-  to {
-     transform: translateY(1rem);
-  }
-}
+@keyframes fadeInDown {
+   0% {
+   opacity: 0;
+   -webkit-transform: translate3d(0, -100%, 0);
+   transform: translate3d(0, -100%, 0);
+   }
+   100% {
+   opacity: 1;
+   -webkit-transform: none;
+   transform: none;
+   }
+   } 
 
+
+   .outra {
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.600, 0.040, 0.980, 0.335) 0.2s both;
+      animation: scale-up-center 0.4s cubic-bezier(0.600, 0.040, 0.980, 0.335) 0.2s both;
+   }
+   
+   @-webkit-keyframes scale-up-center {
+      0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+    }
+    @keyframes scale-up-center {
+      0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+    }
+
+    /**/
+
+     
+@keyframes slideInDown {
+   0% {
+   -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      visibility: visible;
+   }
+   100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+   }
+} 
