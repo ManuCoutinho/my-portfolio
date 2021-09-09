@@ -36,12 +36,22 @@ h1, h2, h3, h4, h5, h6, strong, nav {
    font-family: 'Raleway', sans-serif;   
 }
 
+p {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;   
+   color: var(--black);
+}
+
 .container-full {
-   height: 100vh;
+   height: 90vh;
    width: 100%;
 }
 
 .container-center {
    width: 70%;
-   margin: 0 auto;
+   margin: 0 auto;   
 }
+
+.subtitles {  
+   background-color:var(--pink);  
+ }

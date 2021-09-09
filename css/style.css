@@ -1,18 +1,36 @@
+.about {
+   margin-top:8rem;
+}
+
+.subtitle-about {
+   font-weight: 700;
+   font-size: 2.5rem;
+   text-align: center;
+}
 
 .underline {
-  border-bottom: 2px solid var(--yellow);  
+  
+  border-bottom: 2px solid var(--yellow);
+  font-weight: 700;  
 }
-
-.subtitulos {  
-  background-color:var(--pink); 
-}
-
-.texto {  
-  line-height:2.8rem;
-  font-size:1.5rem;
-  padding-right: 2rem;  
-  margin: var(--spacing) 0;
+.content-about {  
+  line-height:2rem;
+  font-size: 1.25rem;  
   text-align: justify;
+  padding-right: 2.5rem;
+}
+
+#sobre img {
+   padding-top: 3rem !important;
+}
+
+.grid-about {
+   display: grid;
+   grid-template-columns: repeat(4,1fr);  
+   justify-items: center;
+   align-items: center;
+   justify-content: center;
+   margin-top: 3.5rem;   
 }
 
 textarea:focus, input:focus, select:focus {
@@ -35,25 +53,29 @@ textarea:focus, input:focus, select:focus {
 
 .icones {
   font-size:2.5rem;
-  color: var(--orange);
-  margin: 2rem 0;
-}
-
-.icones-rodape {
-  font-size:2.5rem;
   color: var(--deep-orange);
   margin: 2rem 0;
 }
 
+.icones-rodape {
+  font-size:2rem;
+  color: var(--deep-orange);
+  margin: 2rem 0;
+}
+
+.icones-rodape:hover {
+   color:var(--pink);
+}
+
 .progresso {
-  padding-right: var(--spacing);
+  
   font-size:1.25rem;
   text-align: right;  
 }
 
 .ultimo-bloco {
   background-color: var(--orange);
-  padding-top: var(--spacing);  
+  
 }
 
 footer a {
@@ -61,11 +83,15 @@ footer a {
 }
 
 footer a:hover {
-  color:var(--pink);
-}
+  color:var(--yellow);
+  filter:brightness(0.8);
+ }
+
+
 
 .btn-white,
-.btn-black {   
+.btn-black,
+.btn-form {   
    box-shadow: 5px 4px 14px 0px rgba(0,0,0,0.75);
    -webkit-box-shadow: 5px 4px 14px 0px rgba(0,0,0,0.75);
    -moz-box-shadow: 5px 4px 14px 0px rgba(0,0,0,0.75);
