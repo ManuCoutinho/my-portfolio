@@ -41,6 +41,8 @@ textarea:focus, input:focus, select:focus {
 
 .ultimo-bloco {
   background-color: var(--orange);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   
 }
 
@@ -67,8 +69,6 @@ footer p {
    -moz-box-shadow: 5px 4px 14px 0px rgba(0,0,0,0.75);
  }
 
- .arrow-reverse {
-   color: var(--white);
-   margin-bottom: 1rem;   
-   
+ .arrow-square {
+   color: var(--black);   
  }

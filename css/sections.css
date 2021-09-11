@@ -46,8 +46,7 @@
 .container-services {
    background: var(--off-white);
    height: 100vh;
-   padding-top:2rem;
-   margin-bottom: 3.5rem;
+   padding-top:2rem;   
 }
 
 .grid-services {
@@ -86,4 +85,65 @@
    font-size: 1.05rem;
    line-height:2rem;
    margin-top: 1rem;
+}
+
+/**form**/
+.content-contact {
+  line-height:1.85rem;
+  font-size: 1.15rem;  
+  text-align: justify;
+  padding-right: 3.5rem;  
+  
+}
+
+.title-contact {
+   font-weight: 700;
+   font-size: 2.5rem;   
+}
+
+/**parallax**/
+
+.box-hiring {
+   padding:2rem;
+   position: relative;
+   height: 100%;
+   filter:brightness(0.75);
+   background: url(../img/img1.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;   
+}
+
+.box-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 5rem;
+   margin-bottom: 5rem;
+}
+
+.box-hiring h2 {   
+   font-size: 2rem;
+   font-weight: 700;
+   line-height: 2rem;
+   color: var(--white);
+   text-align: center;
+   margin-bottom: 3rem;
+   padding-top:2rem;
+}
+
+.btn-hiring {
+   background: var(--white);   
+   border: 1px solid transparent;   
+   padding: 0.85rem 1rem;
+   border-radius:0;
+   color: var(--black);
+   text-decoration:none;
+   text-align-last: center;
+}
+
+.btn-hiring:hover {
+   color: var(--white);
+   background: var(--black);
 }
