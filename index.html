@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Manu Coutinho" />
+    <meta name="author" content="Emanuela Coutinho" />
     <meta name="description" content="Desenvolvedora Front-End em transição de carreira." />
-    <meta name="keywords" content="sites, web, desenvolvimento, programador, manucoutinho, front-end, freelancer, freela, website, portfolio" />
+    <meta name="keywords" content="sites, web, desenvolvimento, programador, manu coutinho, front-end, freelancer, freela, website, portfolio, ManuCoutinho, Emanuela Coutinho" />
     <meta name="copyright" content="ManuCoutinho 2021" />
     <meta http-equiv="content-language" content="pt-br" />
     <meta property="og:title" content="Portfólio - Manu Coutinho | Desenvolvedora Front-End"/>
@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/sections.css">
         
     <!--fonts & icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -30,6 +31,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./img/favicon.png">
+    <link rel="canonical" href="https://manucoutinho.github.io/">
    
     <title>Portfólio - Manu Coutinho | Desenvolvedora Front-End</title>
 </head>
@@ -44,7 +46,7 @@
                 </div>                         
                 
                     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav" type="button">
-                    <i class="bi bi-three-dots-vertical"></i>
+                    <i class="bi bi-list"></i>
                     </button>
 
                 <div class="collapse navbar-collapse justify-content-center" id="main-nav">
@@ -84,7 +86,7 @@
     </header>
     <!--bloco principal-->
     <main id="home" class="d-flex">
-        <div class="container-full bloco-principal">
+        <div class="container-fluid bloco-principal">
             <div class= "container-center main-section">
                <div class=" mr-5">
                   <div class="text-animated">
@@ -97,7 +99,7 @@
                       <button class="btn btn-lg btn-dark rounded-0 mt-3 mx-3 btn-black"><a
                               class="text-decoration-none text-white" href="#portfolio">Veja meus
                               trabalhos</a></button>
-                      <a class="btn btn-lg btn-link text-dark mt-3 text-decoration-none mx-3 btn-transparent"
+                      <a class="btn btn-lg btn-link  mt-3 text-decoration-none mx-3 btn-transparent"
                           href="#contato">
                           Contate-me
                           <span class=" ml-3 fs-3"><i class="bi bi-arrow-down-circle"></i></span></a>
@@ -115,12 +117,12 @@
     <!--fim bloco principal-->
     <!--inicio bloco sobre -->
     <section id="sobre">
-        <div class="container">
+        <div class="container-fluid about">
 
-            <div class="about">
+            <div class="container">
 
-                  <p class="text-center my-5">
-                     <span class="p-2 subtitles">Sobre</span>
+                  <p class="text-center mt-5">
+                     <span class="subtitles">Sobre</span>
                   </p>
                   <h2 class="subtitle-about">Me Conheça Mais</h2>
 
@@ -148,7 +150,6 @@
                            </div>
                      </div>
 
-
                      <div class="grid-about">
                            <div class="slideInDown">
                               <p class="text-muted mb-0">Nome:</p>
@@ -174,63 +175,58 @@
                <i class="bi bi-arrow-down-short fs-1 d-none d-lg-block arrow"></i></span></a>
         </div>
     </section>
-    <!----------------fim bloco sobre--------------->
-    <!---------------- início bloco serviços-------------- -->
-    <section id="servicos">
-        <div class="container-full bg-light">
-            <div class="container">
-                <div class="mt-5">
-                    <p class="text-center mt-5">
-                        <span class="text-dark px-2 subtitles">O que eu faço?</span>
+    <!--fim bloco sobre -->
+    <!--inicio bloco serviços -->
+    <section id="servicos" class="container-services">
+        <div class="container-fluid ">
+            <div class="container ">
+               <div class="mt-5">
+                    <p class="text-center">
+                        <span class="subtitles">O que eu faço?</span>
                     </p>
-                    <h2 class="text-center mb-5">Como Posso Te Ajudar no Seu Próximo Projeto?
+                    <h2 class="text-center my-5">Como Posso Te Ajudar no Seu Próximo Projeto?
                     </h2>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="text-center font-weight-400 mt-5">
-                                <i class="bi bi-palette icones"></i>
-                                <h3>Web Design</h3>
-                                <p>Realizamos a análise, criação e desenvolvimento de brand, layout e designs gráfico para web. Além de arquitetar o design da sua interface web.</p>
-                            </div>
+
+                    <div class="grid-services">
+                        <div class="card-services">
+                           <i class="bi bi-palette icones"></i>
+                           <h3>Web Design</h3>
+                           <p>Realizamos a análise, criação e desenvolvimento de brand, layout e designs gráfico para web. Além de arquitetar o design da sua interface web.</p>
                         </div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-5">
-                            <div class="text-center font-weight-400 mt-5">
-                                <i class="fas fa-laptop-code icones"></i>
-                                <h3>Desenvolvimento Web</h3>
-                                <p>Arquitetamos e criamos aplicações web personalizadas, aliando a tecnologia às necessidades de nossos clientes.</p>
-                            </div>
+                     
+                        <div class="card-services">
+                           <i class="fas fa-laptop-code icones"></i>
+                           <h3>Desenvolvimento Web</h3>
+                           <p>Arquitetamos e criamos aplicações web personalizadas, aliando a tecnologia às necessidades de nossos clientes.</p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="text-center font-weight-400 mt-5">
-                                <i class="fas fa-chart-line icones"></i>
-                                <h3>Análise de Negócio</h3>
-                                <p>Analisamos o impacto da implementação do produto desenvolvido no seu negócio. Além de arquitar soluções capazes de ampliar sua produtividade.</p>
-                            </div>
+
+                        <div class="card-services">
+                           <i class="fas fa-chart-line icones"></i>
+                           <h3>Análise de Negócio</h3>
+                           <p>Analisamos o impacto da implementação do produto desenvolvido no seu negócio. Além de arquitar soluções capazes de ampliar sua produtividade.</p>
                         </div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-5">
-                            <div class="text-center font-weight-400 mt-5">
-                                <i class="bi bi-chat-dots icones"></i>
-                                <h3>Marketing Digital</h3>
-                                <p>Ajudamos o seu empreendimento a alcançar um maior número de indíviduos, apliando assim a eficiência do seu negócio.</p>
-                            </div>
+                     
+                        <div class="card-services">
+                           <i class="bi bi-chat-dots icones"></i>
+                           <h3>Marketing Digital</h3>
+                           <p>Ajudamos o seu empreendimento a alcançar um maior número de indíviduos, apliando assim a eficiência do seu negócio.</p>
                         </div>
-                    </div>
-                </div>
-                <a href="#resumo"><span class="d-flex justify-content-center mt-5">
-                   <i class="bi bi-arrow-down-short fs-1 d-none d-lg-block arrow"></i></span></a>
-            </div>
+                     </div>
+
+               </div> 
+                
+            </div><!--fim container -->
+            
         </div>
+        <a href="#resumo"><span class="d-flex justify-content-center mt-5">
+         <i class="bi bi-arrow-down-short fs-1 d-none d-lg-block arrow"></i></span></a>
     </section>
     <!--------------fim bloco servicos--------------->
     <section id="resumo">
         <div class="container">
             <div class="espaco-top">
                 <p class="text-center mt-5">
-                    <span class="text-dark px-2 subtitles">Resumo</span>
+                    <span class=" px-2 subtitles">Resumo</span>
                 </p>
                 <h2 class="fs-1 fw-bold text-center mb-5">Resumo das Minhas Habilidades</h2>
                 <div class="mt-5 mb-5">
@@ -334,7 +330,7 @@
                 </div>
                 <div class="row mt-5 effect">
                     <div class="col-md-12 d-flex justify-content-center">
-                        <a class="btn btn-lg btn-outline-light btn-link rounded-0 text-decoration-none fw-bold text-dark btn-white" 
+                        <a class="btn btn-lg btn-outline-light btn-link rounded-0 text-decoration-none fw-bold  btn-white" 
                         href="./pdf/emanuela-cv.pdf">Download PDF</a>
                     </div>
                 </div>
@@ -349,7 +345,7 @@
             <div class="container">
                 <div class="espaco-top">
                     <p class="text-center mt-5">
-                        <span class="text-dark px-2 subtitles">Portfólio</span>
+                        <span class=" px-2 subtitles">Portfólio</span>
                     </p>
                     <h2 class="fs-1 fw-bold text-center mb-5 espaco-bottom">Alguns dos meus projetos</h2>
                     <div id="carrosel" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -368,8 +364,8 @@
                                 <a href="https://github.com/Sasha-first/landing_page_Tecnogueto">
                                     <img class="img-thumbnail" src="./img/tecnogueto.jpg" class="d-block w-100" alt="imagem da home page criada para Tecnogueto"></a>
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="text-dark">Landing Page Tecnogueto</h5>
-                                    <p class="text-dark">Projeto criado no curso de html e css da Tecnogueto</p>
+                                    <h5 class="">Landing Page Tecnogueto</h5>
+                                    <p class="">Projeto criado no curso de html e css da Tecnogueto</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
@@ -395,8 +391,8 @@
                                     <img src="./img/finans.jpg" class="d-block w-100" alt="imagem de home page criada para o site fictício 'finans">
                                 </a>                                
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="text-dark">Finans</h5>
-                                    <p class="text-dark">Criação de home page para um site fictício de finanças
+                                    <h5 class="">Finans</h5>
+                                    <p class="">Criação de home page para um site fictício de finanças
                                         utilizando bootstrap.</p>
                                 </div>
                             </div>
@@ -466,7 +462,7 @@
                 </div>
                 
             </div>
-            <a href="#home"><span class="d-flex mx-5 arrow-reverse"><i class="bi bi-arrow-up-square fs-2 d-none d-lg-block"></i></span></a>
+            
         </div>
     </section>
     <!----------------fim contato --------------------->
@@ -486,6 +482,7 @@
                     </div>
                 </div>
             </div>
+            <a href="#home"><span class="d-flex mx-5 arrow-reverse"><i class="bi bi-arrow-up-square fs-2 d-none d-lg-block"></i></span></a>
         </div>
     </footer>
     <!-------------------fim rodape ----------------- -->

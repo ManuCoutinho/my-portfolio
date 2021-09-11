@@ -1,37 +1,7 @@
-.about {
-   margin-top:8rem;
-}
 
-.subtitle-about {
-   font-weight: 700;
-   font-size: 2.5rem;
-   text-align: center;
-}
 
-.underline {
-  
-  border-bottom: 2px solid var(--yellow);
-  font-weight: 700;  
-}
-.content-about {  
-  line-height:2rem;
-  font-size: 1.25rem;  
-  text-align: justify;
-  padding-right: 2.5rem;
-}
+/***/
 
-#sobre img {
-   padding-top: 3rem !important;
-}
-
-.grid-about {
-   display: grid;
-   grid-template-columns: repeat(4,1fr);  
-   justify-items: center;
-   align-items: center;
-   justify-content: center;
-   margin-top: 3.5rem;   
-}
 
 textarea:focus, input:focus, select:focus {
   box-shadow: 0 0 0 0;
@@ -51,11 +21,7 @@ textarea:focus, input:focus, select:focus {
   padding-right: 4.5rem;
 }
 
-.icones {
-  font-size:2.5rem;
-  color: var(--deep-orange);
-  margin: 2rem 0;
-}
+
 
 .icones-rodape {
   font-size:2rem;
@@ -87,6 +53,10 @@ footer a:hover {
   filter:brightness(0.8);
  }
 
+footer p {
+   color:var(--white);
+}
+
 
 
 .btn-white,
@@ -95,4 +65,10 @@ footer a:hover {
    box-shadow: 5px 4px 14px 0px rgba(0,0,0,0.75);
    -webkit-box-shadow: 5px 4px 14px 0px rgba(0,0,0,0.75);
    -moz-box-shadow: 5px 4px 14px 0px rgba(0,0,0,0.75);
+ }
+
+ .arrow-reverse {
+   color: var(--white);
+   margin-bottom: 1rem;   
+   
  }

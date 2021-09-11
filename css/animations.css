@@ -41,6 +41,7 @@
 
 .btn-transparent,
 .btn-white {
+   color: var(--black);
    transition: 0.3s ease-out;
 }
 
@@ -65,25 +66,6 @@
   animation: fadeInDown 2.5s ease 1s infinite normal;
   
 }
-
-.arrow-reverse {
-   color: var(--black);
-   animation: fadeInDown 2.5s ease 1s infinite reverse;
-   
- }
-
-@keyframes fadeInDown {
-   0% {
-   opacity: 0;
-   -webkit-transform: translate3d(0, -100%, 0);
-   transform: translate3d(0, -100%, 0);
-   }
-   100% {
-   opacity: 1;
-   -webkit-transform: none;
-   transform: none;
-   }
-   } 
 
 
 
@@ -130,3 +112,19 @@
       transform: translateY(0);
    }
 } 
+
+
+/***verificar**/
+
+@keyframes fadeInDown {
+   0% {
+   opacity: 0;
+   -webkit-transform: translate3d(0, -100%, 0);
+   transform: translate3d(0, -100%, 0);
+   }
+   100% {
+   opacity: 1;
+   -webkit-transform: none;
+   transform: none;
+   }
+   } 

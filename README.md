@@ -1,0 +1,1 @@
+## [Em breve uma documentação muito clara por aqui... enquanto isso pegue seu café ☕]

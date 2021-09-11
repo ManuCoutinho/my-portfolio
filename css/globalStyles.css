@@ -9,7 +9,8 @@
    --pink: #F21D56;   
    --yellow: #F2E205;
    --orange: rgba(242, 159, 5, 0.7);
-   --white: #FFFFFF; 
+   --white: #FFFFFF;
+   --off-white: #F2F2F2; 
    --title: #343a40;
    --black: #262626;
    --deep-orange: #f29f05;   
@@ -52,6 +53,3 @@ p {
    margin: 0 auto;   
 }
 
-.subtitles {  
-   background-color:var(--pink);  
- }

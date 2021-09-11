@@ -1,6 +1,6 @@
 .main-section {
    display: grid;
-   grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: 60% 40%;
    grid-column-gap: 2rem;
    justify-items: center;
    align-items: center;
@@ -14,7 +14,8 @@ main {
 }
 
 .bloco-principal {
-  margin-top: 12rem; 
+  margin-top: 12rem;
+  height: 100vh; 
 }
 
 .btn-dark:hover {
