@@ -46,11 +46,13 @@
 }
 
 .btn-white:hover {
+  color: var(--black); 
   transform: scale(1.05);
 }
 
 .btn-transparent:hover {
    animation: is-boucing 1s ease-in-out alternate infinite;
+   color: var(--black); 
 }
 
 @keyframes is-boucing {
@@ -68,12 +70,11 @@
 }
 
 
-
 /**imagem**/
 
 .slide-in-bck-right {
 	
-	animation: slide-in-bck-right 0.8s cubic-bezier(0.470, 0.000, 0.745, 0.715) 1s both;
+	animation: slide-in-bck-right 0.8s cubic-bezier(0.470, 0.000, 0.745, 0.715) .5s both;
 }
 
  @keyframes slide-in-bck-right {
@@ -86,7 +87,6 @@
      opacity: 1;
    }
  }
- 
 
 .slideInDown {      
       animation: slideInDown 0.8s cubic-bezier(0.600, 0.040, 0.980, 0.335) 0.2s both;
