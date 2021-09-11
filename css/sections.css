@@ -103,12 +103,23 @@
 
 /**parallax**/
 
-.box-hiring {
+.box-hiring-1 {
    padding:2rem;
    position: relative;
    height: 100%;
    filter:brightness(0.75);
    background: url(../img/img1.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;   
+}
+
+.box-hiring-2 {
+   padding:2rem;
+   position: relative;
+   height: 100%;
+   filter:brightness(0.75);
+   background: url(../img/img3.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    background-attachment: fixed;   
@@ -123,7 +134,7 @@
    margin-bottom: 5rem;
 }
 
-.box-hiring h2 {   
+.box-content h2 {   
    font-size: 2rem;
    font-weight: 700;
    line-height: 2rem;
