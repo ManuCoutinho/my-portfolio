@@ -14,9 +14,11 @@
     <meta property="og:description" content="Desenvolvedora Front-End em transição de carreira." />
     <link rel="preconnect" href="https://fonts.gstatic.com">
      <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">   
+  
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--css-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/globalStyles.css">
@@ -34,11 +36,18 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./img/favicon.png">
     <link rel="canonical" href="https://manucoutinho.github.io/">
+
+    <!--jQuery -->   
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+   <!-- jQuery Modal -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
    
     <title>Portfólio - Manu Coutinho | Desenvolvedora Front-End</title>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="70">
+<body data-spy="scroll" data-target=".navbar" data-offset="90">
     <header>
         <!-- nav-->
         <nav id="navbar" class="navbar navbar-expand-lg navbar-line-under-text fixed-top nav-header" role="menu">
@@ -107,9 +116,9 @@
                           <span class=" ml-3 fs-3"><i class="bi bi-arrow-down-circle"></i></span></a>
                   </div>                    
               </div>
-              <div class=" espaco-top ml-5">
+              <div class="ml-5">
                   <div class="d-flex justify-content-center align-items-center">
-                      <img src="./img/undraw2.svg" alt="imagem de perfil de Manu Coutinho" class="img-fluid slide-in-bck-right" loading="lazy">
+                      <img src="./img/undraw2.svg" alt="imagem de perfil de Manu Coutinho" class="img-fluid anima" loading="lazy">
                   </div>
               </div>            
         </div>
@@ -153,19 +162,19 @@
                      </div>
 
                      <div class="grid-about">
-                           <div class="animate__animated animate__fadeInDown">
+                           <div class="animating-3" id="grid-about-1">
                               <p class="text-muted mb-0">Nome:</p>
                               <p class="content-about ">Emanuela Coutinho</p>
                            </div>
-                           <div class="animate__animated animate__fadeInDown animate__delay-1s">
+                           <div class="animating-3" id="grid-about-2">
                               <p class="text-muted mb-0">E-mail:</p>
                               <p class="content-about ">devmanucoutinho@gmail.com</p>
                            </div>
-                           <div class="animate__animated animate__fadeInDown animate__delay-1.5s">
+                           <div class="animating-3" id="grid-about-3">
                               <p class="text-muted mb-0">Nascimento:</p>
                               <p class="content-about ">Janeiro, 1987</p>
                            </div>
-                           <div class="animate__animated animate__fadeInDown animate__delay-2s">
+                           <div class="animating-3" id="grid-about-4">
                               <p class="text-muted mb-0">De:</p>
                               <p class="content-about ">Rio de Janeiro, BR</p>
                            </div>
@@ -186,29 +195,29 @@
                     <p class="text-center">
                         <span class="subtitles">O que eu faço?</span>
                     </p>
-                    <h2 class="text-center my-5">Como Posso Te Ajudar no Seu Próximo Projeto?
+                    <h2 class="subtitle-about my-5">Como Posso Te Ajudar no Seu Próximo Projeto?
                     </h2>
 
-                    <div class="grid-services">
+                    <div class="grid-services animating-2">
                         <div class="card-services">
                            <i class="bi bi-palette icones"></i>
                            <h3>Web Design</h3>
                            <p>Realizamos a análise, criação e desenvolvimento de brand, layout e designs gráfico para web. Além de arquitetar o design da sua interface web.</p>
                         </div>
                      
-                        <div class="card-services">
+                        <div class="card-services animating-2">
                            <i class="fas fa-laptop-code icones"></i>
                            <h3>Desenvolvimento Web</h3>
                            <p>Arquitetamos e criamos aplicações web personalizadas, aliando a tecnologia às necessidades de nossos clientes.</p>
                         </div>
 
-                        <div class="card-services">
+                        <div class="card-services animating-2">
                            <i class="fas fa-chart-line icones"></i>
                            <h3>Análise de Negócio</h3>
                            <p>Analisamos o impacto da implementação do produto desenvolvido no seu negócio. Além de arquitar soluções capazes de ampliar sua produtividade.</p>
                         </div>
                      
-                        <div class="card-services">
+                        <div class="card-services animating-2">
                            <i class="bi bi-chat-dots icones"></i>
                            <h3>Marketing Digital</h3>
                            <p>Ajudamos o seu empreendimento a alcançar um maior número de indíviduos, apliando assim a eficiência do seu negócio.</p>
@@ -229,7 +238,7 @@
          <div class="container box-content">
             <h2>Conheça os meus projetos mais recentes</h2>
             <a class="btn btn-hiring" href="#contato" role="button">
-               Aqui!
+               Clique Aqui!
           </a>
            
          </div>
@@ -363,80 +372,226 @@
         </div>
       </div>
    </section>
-    <!-- -------------inicio portfolio------------------------>
-    <section id="portfolio" class="bg-light">
+    <!--inicio portfolio-->
+    <section id="portfolio" class="">
         <div class="container-fluid">
             <div class="container">
-                <div class="espaco-top">
-                    <p class="text-center mt-5">
-                        <span class=" px-2 subtitles">Portfólio</span>
-                    </p>
-                    <h2 class="fs-1 fw-bold text-center mb-5 espaco-bottom">Alguns dos meus projetos</h2>
-                    <div id="carrosel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carrosel" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carrosel" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carrosel" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carrosel" data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="https://github.com/Sasha-first/landing_page_Tecnogueto">
-                                    <img class="img-thumbnail" src="./img/tecnogueto.jpg" class="d-block w-100" alt="imagem da home page criada para Tecnogueto"></a>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="">Landing Page Tecnogueto</h5>
-                                    <p class="">Projeto criado no curso de html e css da Tecnogueto</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="https://github.com/Sasha-first/layout_spotify">
-                                    <img class="img-thumbnail" src="./img/Soptfy.jpg" class="d-block w-100" alt="imagem da home page criada para o Spotify">
-                                </a>                                
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Clone Spotify</h5>
-                                    <p>Clone responsivo da home page do Spotify Brasil.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="https://github.com/Sasha-first/layout_parallax">
-                                    <img class="img-thumbnail" src="./img/parallax.jpg" class="d-block w-100"alt="imagem de home page criada com imagem de balão">
-                                </a>                                
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Parallax</h5>
-                                    <p>Criação de um layout no estilo Parallax usando somente CSS3.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <a class="img-thumbnail" href="https://github.com/Sasha-first/layout_site_financas">
-                                    <img src="./img/finans.jpg" class="d-block w-100" alt="imagem de home page criada para o site fictício 'finans">
-                                </a>                                
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="">Finans</h5>
-                                    <p class="">Criação de home page para um site fictício de finanças
-                                        utilizando bootstrap.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev " type="button" data-bs-target="#carrosel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carrosel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+               <p class="text-center mt-5">
+                  <span class=" px-2 subtitles">Portfólio</span>
+              </p>
+              <h2 class="subtitle-about mb-5">Alguns dos meus projetos</h2>
+              
+              <div class="grid-gallery" >
 
+               <div class="card-gallery animating">
+                  <a href="#modal" rel="modal:open">
+                     <img src="./img/img-preview.png" alt="" >
+                   </a>
                 </div>
-                <a href="#contato"><span class="d-flex justify-content-center mt-5">
-                   <i class="bi bi-arrow-down-short fs-1 d-none d-lg-block arrow"></i></span></a>
+
+                <div id="modal" class="close-modal" role="modal">                  
+                     
+                  <div class="container-fluid">
+                     <a href="#" rel="close:modal"></a>
+                     <h2>Projeto 1</h2>
+                     <div class="row">
+                        <div class="col-md-8">
+                           <img src="./img/tecnogueto.jpg" alt="" class="img-modal">
+                        </div>
+
+                        <div class="col-md-4">
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Tempora incidunt ea magnam soluta sapiente vero fugiat cum, 
+                              quia adipisci accusantium repudiandae neque, 
+                              dignissimos ut expedita sed mollitia architecto, quis magni.
+                           </p>
+                           <h3>Detalhes do Projeto:</h3>
+                           <p>Tecnologias:</p>
+                           <p>Data:</p>
+                           <p>URL:</p>
+                        </div>
+
+                     </div>
+                  </div>
+                  
+                </div> <!--fim modal -->
+
+                <div class="card-gallery animating">
+                  <a href="#modal" rel="modal:open">
+                     <img src="./img/img-preview.png" alt="" >
+                   </a>
+                </div>
+
+                <div id="modal" class="close-modal" role="modal">                  
+                     
+                  <div class="container-fluid">
+                     <a href="#" rel="close:modal"></a>
+                     <h2>Projeto 1</h2>
+                     <div class="row">
+                        <div class="col-md-8">
+                           <img src="./img/tecnogueto.jpg" alt="" class="img-modal">
+                        </div>
+
+                        <div class="col-md-4">
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Tempora incidunt ea magnam soluta sapiente vero fugiat cum, 
+                              quia adipisci accusantium repudiandae neque, 
+                              dignissimos ut expedita sed mollitia architecto, quis magni.
+                           </p>
+                           <h3>Detalhes do Projeto:</h3>
+                           <p>Tecnologias:</p>
+                           <p>Data:</p>
+                           <p>URL:</p>
+                        </div>
+
+                     </div>
+                  </div>
+                  
+                </div> <!--fim modal -->
+
+                <div class="card-gallery animating">
+                  <a href="#modal" rel="modal:open">
+                     <img src="./img/img-preview.png" alt="" >
+                   </a>
+                </div>
+
+                <div id="modal" class="close-modal" role="modal">                  
+                     
+                  <div class="container-fluid">
+                     <a href="#" rel="close:modal"></a>
+                     <h2>Projeto 1</h2>
+                     <div class="row">
+                        <div class="col-md-8">
+                           <img src="./img/tecnogueto.jpg" alt="" class="img-modal">
+                        </div>
+
+                        <div class="col-md-4">
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Tempora incidunt ea magnam soluta sapiente vero fugiat cum, 
+                              quia adipisci accusantium repudiandae neque, 
+                              dignissimos ut expedita sed mollitia architecto, quis magni.
+                           </p>
+                           <h3>Detalhes do Projeto:</h3>
+                           <p>Tecnologias:</p>
+                           <p>Data:</p>
+                           <p>URL:</p>
+                        </div>
+
+                     </div>
+                  </div>
+                  
+                </div> <!--fim modal -->
+
+                <div class="card-gallery animating">
+                  <a href="#modal" rel="modal:open">
+                     <img src="./img/img-preview.png" alt="" >
+                   </a>
+                </div>
+
+                <div id="modal" class="close-modal" role="modal">                  
+                     
+                  <div class="container-fluid">
+                     <a href="#" rel="close:modal"></a>
+                     <h2>Projeto 1</h2>
+                     <div class="row">
+                        <div class="col-md-8">
+                           <img src="./img/tecnogueto.jpg" alt="" class="img-modal">
+                        </div>
+
+                        <div class="col-md-4">
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Tempora incidunt ea magnam soluta sapiente vero fugiat cum, 
+                              quia adipisci accusantium repudiandae neque, 
+                              dignissimos ut expedita sed mollitia architecto, quis magni.
+                           </p>
+                           <h3>Detalhes do Projeto:</h3>
+                           <p>Tecnologias:</p>
+                           <p>Data:</p>
+                           <p>URL:</p>
+                        </div>
+
+                     </div>
+                  </div>
+                  
+                </div> <!--fim modal -->
+
+                <div class="card-gallery animating">
+                  <a href="#modal" rel="modal:open">
+                     <img src="./img/img-preview.png" alt="" >
+                   </a>
+                </div>
+
+                <div id="modal" class="close-modal" role="modal">                  
+                     
+                  <div class="container-fluid">
+                     <a href="#" rel="close:modal"></a>
+                     <h2>Projeto 1</h2>
+                     <div class="row">
+                        <div class="col-md-8">
+                           <img src="./img/tecnogueto.jpg" alt="" class="img-modal">
+                        </div>
+
+                        <div class="col-md-4">
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Tempora incidunt ea magnam soluta sapiente vero fugiat cum, 
+                              quia adipisci accusantium repudiandae neque, 
+                              dignissimos ut expedita sed mollitia architecto, quis magni.
+                           </p>
+                           <h3>Detalhes do Projeto:</h3>
+                           <p>Tecnologias:</p>
+                           <p>Data:</p>
+                           <p>URL:</p>
+                        </div>
+
+                     </div>
+                  </div>
+                  
+                </div> <!--fim modal -->
+
+                <div class="card-gallery animating">
+                  <a href="#modal" rel="modal:open">
+                     <img src="./img/img-preview.png" alt="" >
+                   </a>
+                </div>
+
+                <div id="modal" class="close-modal" role="modal">                  
+                     
+                  <div class="container-fluid">
+                     <a href="#" rel="close:modal"></a>
+                     <h2>Projeto 1</h2>
+                     <div class="row">
+                        <div class="col-md-8">
+                           <img src="./img/tecnogueto.jpg" alt="" class="img-modal">
+                        </div>
+
+                        <div class="col-md-4">
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Tempora incidunt ea magnam soluta sapiente vero fugiat cum, 
+                              quia adipisci accusantium repudiandae neque, 
+                              dignissimos ut expedita sed mollitia architecto, quis magni.
+                           </p>
+                           <h3>Detalhes do Projeto:</h3>
+                           <p>Tecnologias:</p>
+                           <p>Data:</p>
+                           <p>URL:</p>
+                        </div>
+
+                     </div>
+                  </div>
+                  
+                </div> <!--fim modal -->
+                
             </div>
+            <a href="#contato"><span class="d-flex justify-content-center mt-5">
+               <i class="bi bi-arrow-down-short fs-1 d-none d-lg-block arrow"></i></span></a>
+
+             
         </div>
     </section>
     <!--fim portfolio -->
@@ -490,9 +645,9 @@
             <a href="#home"><span class="d-flex mx-5 arrow-square"><i class="bi bi-arrow-up-square fs-2 d-none d-lg-block"></i></span></a>
         </div>
     </section>
-    <!----------------fim contato --------------------->
+    <!--fim contato-->
 
-    <!--------------------inicio rodape ---------------->
+    <!--inicio rodape -->
     <footer>
         <div class="container-fluid bg-dark">
             <div class="container">
@@ -510,13 +665,8 @@
             
         </div>
     </footer>
-    <!-------------------fim rodape ----------------- -->
-
-
-    <script src="./javascript/animation.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-
+    <!--fim rodape-->
+    
+    <script src="./javascript/script.js"></script>
 </body>
-
 </html>

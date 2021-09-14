@@ -63,10 +63,12 @@ footer p {
 
 .btn-white,
 .btn-black,
-.btn-form {   
-   box-shadow: 5px 4px 14px 0px rgba(0,0,0,0.75);
-   -webkit-box-shadow: 5px 4px 14px 0px rgba(0,0,0,0.75);
-   -moz-box-shadow: 5px 4px 14px 0px rgba(0,0,0,0.75);
+.btn-form,
+.btn-hiring,
+.nav-header {   
+   box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
  }
 
  .arrow-square {
