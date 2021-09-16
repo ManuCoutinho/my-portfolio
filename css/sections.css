@@ -175,7 +175,39 @@
    max-height: 700px;
 }
 
+.content-modal p {
+   line-height:1.5rem;
+   font-size: 1rem;   
+   margin-bottom: 1.5rem;
+}
 
+.content-modal h3 {
+   padding-bottom: 1.5rem;
+   font-weight: 700;
+   line-height:2rem;
+   margin-top: 1rem;
+   color: var(--title);
+}
+
+.content-modal span {
+   font-weight: 700;
+}
+
+#modal h2 {
+   border-bottom: 1px solid var(--yellow);
+   padding-bottom: 1rem;
+   margin-bottom: 1rem;
+}
+
+#modal a {
+   color: var(--black);
+   font-size: 1.75rem;
+   transition: 0.8s;
+}
+
+#modal a:hover {
+   color: var(--pink);   
+}
 
 /***resumo**/
 .row-data {

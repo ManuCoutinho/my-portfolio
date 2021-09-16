@@ -26,8 +26,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/9ffb8b279f.js" crossorigin="anonymous"></script>    
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">  
     
     <!--css-->
     <link rel="stylesheet" href="./css/style.css">
@@ -36,14 +35,13 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/sections.css">
-    
-    <!-- jQuery Modal -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-
+    <link rel="stylesheet" href="./css/sections.css">    
+    <!-- libs -->
     <script src="./javascript/progressbar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <!-- jQuery Modal -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./img/favicon.png">
@@ -134,7 +132,7 @@
               </div>
               <div class="ml-5">
                   <div class="d-flex justify-content-center align-items-center">
-                      <img src="./img/imgPerfil.svg" alt="imagem de perfil de Manu Coutinho" class="img-fluid anima" loading="lazy">
+                      <img src="./img/imgPerfil.svg" alt="imagem de perfil de Manu Coutinho" class="img-fluid slide-in-bck-right" loading="lazy">
                   </div>
               </div>            
         </div>
@@ -327,7 +325,7 @@
     </section>
     
     <!--inicio portfolio-->
-    <section id="portfolio" class="">
+    <section id="portfolio">
         <div class="container-fluid">
             <div class="container">
                <p class="text-center mt-2">
@@ -335,7 +333,7 @@
               </p>
               <h2 class="subtitle-about mb-5">Alguns dos meus projetos</h2>
               
-              <div class="grid-gallery" >
+              <div class="grid-gallery" id="grid-modal">
 
                <div class="card-gallery animating">
                   <a href="#modal" rel="modal:open">
@@ -347,13 +345,13 @@
                      
                   <div class="container-fluid">
                      <a href="#" rel="close:modal"></a>
-                     <h2>Projeto 1</h2>
-                     <div class="row">
+                     <h2 class="subtitle-about">Projeto 1</h2>
+                     <div class="row mt-2">
                         <div class="col-md-8">
-                           <img src="./img/tecnogueto.jpg" alt="" class="img-modal">
+                           <img src="./img/img-preview.png" alt="" class="img-modal">
                         </div>
 
-                        <div class="col-md-4">
+                        <div class=" content-modal col-md-4">                           
                            <p>
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                               Tempora incidunt ea magnam soluta sapiente vero fugiat cum, 
@@ -361,9 +359,9 @@
                               dignissimos ut expedita sed mollitia architecto, quis magni.
                            </p>
                            <h3>Detalhes do Projeto:</h3>
-                           <p>Tecnologias:</p>
-                           <p>Data:</p>
-                           <p>URL:</p>
+                           <p><span>Tecnologias:</span></p>
+                           <p><span>Data:</span></p>
+                           <span><a href="https://github.com/ManuCoutinho" target="_blank"><i class="fab fa-github heartbeat"></i></a></span>
                         </div>
 
                      </div>
@@ -381,13 +379,13 @@
                      
                   <div class="container-fluid">
                      <a href="#" rel="close:modal"></a>
-                     <h2>Projeto 1</h2>
-                     <div class="row">
+                     <h2 class="subtitle-about">Projeto 2</h2>
+                     <div class="row mt-2">
                         <div class="col-md-8">
-                           <img src="./img/tecnogueto.jpg" alt="" class="img-modal">
+                           <img src="./img/img-preview.png" alt="" class="img-modal">
                         </div>
 
-                        <div class="col-md-4">
+                        <div class=" content-modal col-md-4">                           
                            <p>
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                               Tempora incidunt ea magnam soluta sapiente vero fugiat cum, 
@@ -395,9 +393,9 @@
                               dignissimos ut expedita sed mollitia architecto, quis magni.
                            </p>
                            <h3>Detalhes do Projeto:</h3>
-                           <p>Tecnologias:</p>
-                           <p>Data:</p>
-                           <p>URL:</p>
+                           <p><span>Tecnologias:</span></p>
+                           <p><span>Data:</span></p>
+                           <span><a href="https://github.com/ManuCoutinho" target="_blank"><i class="fab fa-github heartbeat"></i></a></span>
                         </div>
 
                      </div>
@@ -415,13 +413,13 @@
                      
                   <div class="container-fluid">
                      <a href="#" rel="close:modal"></a>
-                     <h2>Projeto 1</h2>
-                     <div class="row">
+                     <h2 class="subtitle-about">Projeto 3</h2>
+                     <div class="row mt-2">
                         <div class="col-md-8">
-                           <img src="./img/tecnogueto.jpg" alt="" class="img-modal">
+                           <img src="./img/img-preview.png" alt="" class="img-modal">
                         </div>
 
-                        <div class="col-md-4">
+                        <div class=" content-modal col-md-4">                           
                            <p>
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                               Tempora incidunt ea magnam soluta sapiente vero fugiat cum, 
@@ -429,9 +427,9 @@
                               dignissimos ut expedita sed mollitia architecto, quis magni.
                            </p>
                            <h3>Detalhes do Projeto:</h3>
-                           <p>Tecnologias:</p>
-                           <p>Data:</p>
-                           <p>URL:</p>
+                           <p><span>Tecnologias:</span></p>
+                           <p><span>Data:</span></p>
+                           <span><a href="https://github.com/ManuCoutinho" target="_blank"><i class="fab fa-github heartbeat"></i></a></span>
                         </div>
 
                      </div>
@@ -449,13 +447,13 @@
                      
                   <div class="container-fluid">
                      <a href="#" rel="close:modal"></a>
-                     <h2>Projeto 1</h2>
-                     <div class="row">
+                     <h2 class="subtitle-about">Projeto 4</h2>
+                     <div class="row mt-2">
                         <div class="col-md-8">
-                           <img src="./img/tecnogueto.jpg" alt="" class="img-modal">
+                           <img src="./img/img-preview.png" alt="" class="img-modal">
                         </div>
 
-                        <div class="col-md-4">
+                        <div class=" content-modal col-md-4">                           
                            <p>
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                               Tempora incidunt ea magnam soluta sapiente vero fugiat cum, 
@@ -463,9 +461,9 @@
                               dignissimos ut expedita sed mollitia architecto, quis magni.
                            </p>
                            <h3>Detalhes do Projeto:</h3>
-                           <p>Tecnologias:</p>
-                           <p>Data:</p>
-                           <p>URL:</p>
+                           <p><span>Tecnologias:</span></p>
+                           <p><span>Data:</span></p>
+                           <span><a href="https://github.com/ManuCoutinho" target="_blank"><i class="fab fa-github heartbeat"></i></a></span>
                         </div>
 
                      </div>
@@ -483,13 +481,13 @@
                      
                   <div class="container-fluid">
                      <a href="#" rel="close:modal"></a>
-                     <h2>Projeto 1</h2>
-                     <div class="row">
+                     <h2 class="subtitle-about">Projeto 5</h2>
+                     <div class="row mt-2">
                         <div class="col-md-8">
-                           <img src="./img/tecnogueto.jpg" alt="" class="img-modal">
+                           <img src="./img/img-preview.png" alt="" class="img-modal">
                         </div>
 
-                        <div class="col-md-4">
+                        <div class=" content-modal col-md-4">                           
                            <p>
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                               Tempora incidunt ea magnam soluta sapiente vero fugiat cum, 
@@ -497,9 +495,9 @@
                               dignissimos ut expedita sed mollitia architecto, quis magni.
                            </p>
                            <h3>Detalhes do Projeto:</h3>
-                           <p>Tecnologias:</p>
-                           <p>Data:</p>
-                           <p>URL:</p>
+                           <p><span>Tecnologias:</span></p>
+                           <p><span>Data:</span></p>
+                           <span><a href="https://github.com/ManuCoutinho" target="_blank"><i class="fab fa-github heartbeat"></i></a></span>
                         </div>
 
                      </div>
@@ -517,13 +515,13 @@
                      
                   <div class="container-fluid">
                      <a href="#" rel="close:modal"></a>
-                     <h2>Projeto 1</h2>
-                     <div class="row">
+                     <h2 class="subtitle-about">Projeto 6</h2>
+                     <div class="row mt-2">
                         <div class="col-md-8">
-                           <img src="./img/tecnogueto.jpg" alt="" class="img-modal">
+                           <img src="./img/img-preview.png" alt="" class="img-modal">
                         </div>
 
-                        <div class="col-md-4">
+                        <div class=" content-modal col-md-4">                           
                            <p>
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                               Tempora incidunt ea magnam soluta sapiente vero fugiat cum, 
@@ -531,9 +529,9 @@
                               dignissimos ut expedita sed mollitia architecto, quis magni.
                            </p>
                            <h3>Detalhes do Projeto:</h3>
-                           <p>Tecnologias:</p>
-                           <p>Data:</p>
-                           <p>URL:</p>
+                           <p><span>Tecnologias:</span></p>
+                           <p><span>Data:</span></p>
+                           <span><a href="https://github.com/ManuCoutinho" target="_blank"><i class="fab fa-github heartbeat"></i></a></span>
                         </div>
 
                      </div>
