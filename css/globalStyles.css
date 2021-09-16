@@ -13,7 +13,7 @@
    --off-white: #F2F2F2; 
    --title: #343a40;
    --black: #262626;
-   --deep-orange: #f29f05;   
+   --deep-orange: #F29F05;   
 }
 
 html, body {
@@ -48,8 +48,11 @@ p {
    width: 100%;
 }
 
-.container-center {
-   width: 70%;
-   margin: 0 auto;   
+.row {
+   margin: 0;
 }
 
+.container,
+.box-data {
+   padding: 4rem 0;
+}

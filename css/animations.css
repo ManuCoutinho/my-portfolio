@@ -51,24 +51,72 @@
 }
 
 .btn-transparent:hover {
-   animation: is-boucing 1s ease-in-out alternate infinite;
+   animation: jello 1s ease-in-out alternate infinite;
    color: var(--black); 
 }
 
-@keyframes is-boucing {
-   to {
-      transform: translateY(1rem);
-   }
+@keyframes jello {
+   0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+       transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
  }
 
 
 /*navegação*/
 .arrow {
   color: var(--black);
-  animation: fadeInDown 2.5s ease 1s infinite normal;
-  
+  animation: fade-in-down 2.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s infinite;  
 }
 
+@keyframes fade-in-down {
+   0% {
+      -webkit-transform: translateY(-50px);
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+       transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 /**imagem**/
 
@@ -113,8 +161,8 @@
 
 
 .scale-in-center {
-	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @keyframes scale-in-center {

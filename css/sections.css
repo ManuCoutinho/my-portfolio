@@ -1,8 +1,4 @@
 /*** sobre***/
-.about {
-   padding-top:2rem;
-}
-
 .subtitle-about {
    font-weight: 700;
    font-size: 2.5rem;
@@ -43,19 +39,15 @@
  }
 
 /*** serviços***/
-.container-services {
-   background: var(--off-white);
-   height: 100vh;
-   padding-top:2rem;   
-}
+
 
 .grid-services {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));   
-   gap: 2rem 3rem; 
+   gap: 0 3rem; 
    justify-items: center;   
    justify-content: center;
-   padding-top: 5rem;      
+   padding-top: 3rem;      
 }
 
 .card-services {
@@ -101,48 +93,28 @@
    font-size: 2.5rem;   
 }
 
-/**parallax**/
+/**box - parallax**/
 
-.box-hiring-1 {
-   padding:2rem;
-   position: relative;
-   height: 100%;   
-   background: url(../img/img1.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;   
-}
-
-.box-hiring-2 {
-   padding:2rem;
-   position: relative;
-   height: 100%;   
-   background: url(../img/img3.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;   
-}
 
 .box-content {
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin-top: 5rem;
-   margin-bottom: 5rem;
+   padding: 5rem 0;
+   text-align: center;   
 }
 
 .box-content h2 {   
    font-size: 2rem;
    font-weight: 700;
    line-height: 2rem;
-   color: var(--white);
-   text-align: center;
+   color: var(--white);   
    margin-bottom: 3rem;
    padding-top:2rem;
 }
 
-.btn-hiring {
+.btn-hiring {   
    background: var(--white);   
    border: 1px solid transparent;   
    padding: 0.85rem 1rem;
@@ -165,7 +137,7 @@
    gap: 2rem; 
    justify-items: center;   
    justify-content: center;
-   padding-top: 5rem;  
+   padding-top: 3rem;  
 }
 
 .grid-gallery img {
@@ -201,5 +173,32 @@
 .img-modal {
    max-width: 500px;
    max-height: 700px;
+}
+
+
+
+/***resumo**/
+.row-data {
+   padding:3rem 0;
+}
+.circle-box div {
+   padding: 0 2.5rem;
+}
+
+.circle-box p {
+   padding: 1.5rem 0;
+   font-weight: 700;
+}
+
+.progressbar-text {
+   font-weight: 900;
+   font-size: 2rem;
+}
+
+.circle-box p {
+text-align: center;
+color: var(--black);
+font-size: 1.35rem;
+margin-top:1.5rem;
 }
 

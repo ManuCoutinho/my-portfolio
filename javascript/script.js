@@ -1,3 +1,4 @@
+//animating js
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
@@ -42,43 +43,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 $(function() {
-  $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-});
-
-
-
-
-//modal
-
-$(modal).css({
-      "display": "none",
-      "vertical-align": "middle",
-      "position": "relative",
-      "z-index": "2",
-      "max-width": "1000px",
-      "box-sizing": "border-box",
-      "width": "90%",
-      "background": "#fff",
-      "padding": "15px 30px",
-      "-webkit-border-radius": "8px",
-      "-moz-border-radius": "8px",
-      "-o-border-radius": "8px",
-      "-ms-border-radius": "8px",
-      "border-radius": "8px",
-      "-webkit-box-shadow": '0 0 10px #000',
-      "-moz-box-shadow": '0 0 10px #000',
-      "-ms-box-shadow": "0 0 10px #000",
-      "box-shadow": "0 0 10px #000",
-      "text-align": "left"
+   $('a[href*=#]').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+   });
 });
 
 
 //animations css
 
 //Debounce do Lodash
+$(document).ready(function () {
 debounce = function(func, wait, immediate) {
    let timeout;
    return function() {
@@ -176,3 +151,132 @@ debounce = function(func, wait, immediate) {
       animeScroll();
    }, 200));
 }());
+
+
+//Progress Bar
+const startColor = "#F21D56";
+const finalColor = "#F29F05";
+const textColor = "#F29F05";
+
+let conteinerA = document.getElementById("circle-1");
+let circle1 = new ProgressBar.Circle(conteinerA, {
+   color: textColor,
+   strokeWidth: 8,
+   duration: 1400,
+   from: { color: startColor},
+   to: { color: finalColor },
+
+   step: function(state, circle) {
+      circle.path.setAttribute("stroke", state.color);
+
+      let value = Math.round(circle.value() *98);
+      circle.setText(value);
+   }
+});
+
+let conteinerB = document.getElementById("circle-2");
+let circle2 = new ProgressBar.Circle(conteinerB, {
+   color: textColor,
+   strokeWidth: 8,
+   duration: 1800,
+   from: { color: startColor},
+   to: { color: finalColor},
+
+   step: function(state, circle) {
+      circle.path.setAttribute("stroke", state.color);
+
+      let value = Math.round(circle.value() *70);
+      circle.setText(value);
+   }
+});
+
+let conteinerC = document.getElementById("circle-3");
+let circle3 = new ProgressBar.Circle(conteinerC, {
+   color: textColor,
+   strokeWidth: 8,
+   duration: 2200,
+   from: { color: startColor},
+   to: { color: finalColor},
+
+   step: function(state, circle) {
+      circle.path.setAttribute("stroke", state.color);
+
+      let value = Math.round(circle.value() *70);
+      circle.setText(value);
+   }
+});
+
+let conteinerD = document.getElementById("circle-4");
+let circle4 = new ProgressBar.Circle(conteinerD, {
+   color: textColor,
+   strokeWidth: 8,
+   duration: 2400,
+   from: { color: startColor},
+   to: { color: finalColor},
+
+   step: function(state, circle) {
+      circle.path.setAttribute("stroke", state.color);
+
+      let value = Math.round(circle.value() *90);
+      circle.setText(value);
+   }
+});
+
+let conteinerE = document.getElementById("circle-5");
+let circle5 = new ProgressBar.Circle(conteinerE, {
+   color: textColor,
+   strokeWidth: 8,
+   duration: 2400,
+   from: { color: startColor},
+   to: { color: finalColor},
+
+   step: function(state, circle) {
+      circle.path.setAttribute("stroke", state.color);
+
+      let value = Math.round(circle.value() *50);
+      circle.setText(value);
+   }
+});
+
+let conteinerF = document.getElementById("circle-6");
+let circle6 = new ProgressBar.Circle(conteinerF, {
+   color: textColor,
+   strokeWidth: 8,
+   duration: 2400,
+   from: { color: startColor},
+   to: { color: finalColor},
+
+   step: function(state, circle) {
+      circle.path.setAttribute("stroke", state.color);
+
+      let value = Math.round(circle.value() *90);
+      circle.setText(value);
+   }
+});
+
+let dataAreaOffset = $('#data-area').offset();
+let stop = 0;
+
+$(window).scroll(function(e){
+   let scroll = $(window).scrollTop();
+
+   if(scroll > (dataAreaOffset.top -500) && stop == 0) {
+      circle1.animate(1.0);
+      circle2.animate(1.0);
+      circle3.animate(1.0);
+      circle4.animate(1.0);
+      circle5.animate(1.0);
+      circle6.animate(1.0);
+
+      stop = 1;
+   }
+});
+
+setTimeout(function(){
+   $('#box-parallax').parallax({imageSrc:'./img/imgParallax1.jpg'});
+   $('#data-area').parallax({imageSrc:'./img/imgParallax2.jpg'});   
+
+}, 250);
+
+
+});

@@ -10,7 +10,8 @@
 }
 
 main {
-   background-color: var(--orange);      
+   background-color: var(--orange);
+   height:100vh;      
 }
 
 .bloco-principal {
