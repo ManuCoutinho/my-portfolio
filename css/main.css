@@ -4,9 +4,7 @@
    grid-column-gap: 2rem;
    justify-items: center;
    align-items: center;
-   justify-content: center;
-   margin-top: 5rem;
-   margin-bottom: 5rem;
+   justify-content: center;   
 }
 
 main {
@@ -17,6 +15,14 @@ main {
 .bloco-principal {
   margin-top: 12rem;
   height: 100vh; 
+}
+
+.text-animated h1 {
+   text-transform: uppercase;
+   font-size:min(5rem, 12vw);;
+   line-height: 3.5rem;
+   color: var(--title);
+       
 }
 
 .btn-dark:hover {

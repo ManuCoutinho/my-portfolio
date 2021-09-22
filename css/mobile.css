@@ -1,18 +1,36 @@
 /*---media queries ----*/
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-
+    
+body {
+   background: #ffffff;
+   position: absolute;
+   font-family: 'Montserrat', sans-serif;    
+   font-size:16px;
+   -webkit-font-smoothing: subpixel-antialiased;     
+ }
+   .navbar-expand-lg .navbar-nav .nav-lik {
+      padding: 1rem 8rem;
+   }
+   .main-section {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-gap: 2rem;
+      justify-items: center;
+      align-items: center;
+      justify-content: center;  
+   }
+   
    .bloco-principal {
-     background-color: var(--color-amarelo);   
-     height:100vh;
+      margin-top: 5rem;
+      height: auto; 
+    }
+   
+   .img-fluid{
+     display: none;
    }
    
-   .icones-rodape {
-     font-size:1.5rem;
-     color: var(--color-lilas);
-     margin: 2rem 0;
-   }
-   
+
    .texto-contato,
    .texto {
      line-height:2rem;
@@ -20,38 +38,12 @@
      text-align: justify;  
    }
    
-   .imagem {
-     display: none;
-   }
-   
-   #home button,
-    #home a {
-     font-size:1rem;
-     padding: 1rem;
-   }
-   
-   .bloco-principal {
-     background-color: var(--color-amarelo);    
-   }
-   
-   .conteudo{
-   margin-top:0;
-   }
-   
-   .conteudo h1 {
-     text-transform: uppercase;
-     font-size:2.125rem;
-     line-height: 2rem;
-         
-   }
-   .conteudo span.typed-text {
-   font-weight: 700;
-   text-transform: uppercase;
-   line-height:2rem;
-   font-size:2.125rem;
-   color: var(--color-bordo);
-   }
-     
+   .icones-rodape {
+      font-size:1.5rem;
+      color: var(--color-lilas);
+      margin: 2rem 0;
+    }
+    
    }
    
    /* Small devices (landscape phones, 576px and up)*/
@@ -127,9 +119,7 @@
    
    /***outros
 
-   .navbar-expand-lg .navbar-nav .nav-lik {
-      padding: 1rem 8rem;
-   }
+
 
    cor no header e navbar
    ***/

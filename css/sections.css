@@ -43,15 +43,15 @@
 
 .grid-services {
    display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));   
-   gap: 0 3rem; 
+   grid-template-columns: repeat(4,1fr);   
+   gap: 0 2rem; 
    justify-items: center;   
    justify-content: center;
    padding-top: 3rem;      
 }
 
 .card-services {
-   padding: 2rem;
+   padding: 1rem;
    text-align: center;
    border-radius: 0.5rem;
    background-color: var(--white);
@@ -162,51 +162,59 @@
 
 }
 
-.modal {
-   width: 650px;
-   height: 680px;
-   border-radius:0.5rem;
-   display:flex;
-   justify-content: space-between;
+.modal-header,
+.modal-footer {
+   background: var(--orange);
 }
 
-.img-modal {
-   max-width: 500px;
-   max-height: 700px;
+.btn-modal:hover{
+   background: var(--deep-orange);
+   filter:brightness(0.8);
 }
-
-.content-modal p {
+.modal p {
    line-height:1.5rem;
    font-size: 1rem;   
    margin-bottom: 1.5rem;
 }
 
-.content-modal h3 {
-   padding-bottom: 1.5rem;
+.modal h4 {   
    font-weight: 700;
    line-height:2rem;
    margin-top: 1rem;
    color: var(--title);
+   border-bottom: 1px solid var(--yellow);
 }
 
-.content-modal span {
+.modal span,
+#contato span {
    font-weight: 700;
 }
 
-#modal h2 {
-   border-bottom: 1px solid var(--yellow);
-   padding-bottom: 1rem;
-   margin-bottom: 1rem;
+.modal h2 {   
+   font-weight: 700;
 }
 
-#modal a {
+.modal a {
    color: var(--black);
    font-size: 1.75rem;
    transition: 0.8s;
 }
 
-#modal a:hover {
+.modal a:hover {
    color: var(--pink);   
+}
+
+.vimeo {
+   padding:50.94% 0 0 0; 
+   position:relative;
+}
+
+.vimeo iframe {
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
 }
 
 /***resumo**/
@@ -229,8 +237,11 @@
 
 .circle-box p {
 text-align: center;
-color: var(--black);
+color: var(--white);
 font-size: 1.35rem;
 margin-top:1.5rem;
 }
 
+.bi-arrow-up-square::before {
+   font-size: 2rem;
+}

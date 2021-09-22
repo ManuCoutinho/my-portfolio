@@ -127,6 +127,87 @@ debounce = function(func, wait, immediate) {
 
 (function(){
    
+   let $target = $('.animating-4'),
+       animationClass = 'scale-in-center-4',
+       offset = $(window).height() * 3/4;
+   
+       function animeScroll() {
+          let documentTop = $(document).scrollTop();
+   
+          $target.each(function() {
+             let topHeight = $(this).offset().top;
+   
+             if(documentTop > topHeight - offset) {
+                $(this).addClass(animationClass);
+             } else {
+                $(this).removeClass(animationClass);
+             }
+          });
+   };
+   
+   animeScroll();
+   
+   $(document).scroll(debounce (function () {
+      animeScroll();
+   }, 200));
+}());
+
+(function(){
+   
+   let $target = $('.animating-5'),
+       animationClass = 'scale-in-center-5',
+       offset = $(window).height() * 3/4;
+   
+       function animeScroll() {
+          let documentTop = $(document).scrollTop();
+   
+          $target.each(function() {
+             let topHeight = $(this).offset().top;
+   
+             if(documentTop > topHeight - offset) {
+                $(this).addClass(animationClass);
+             } else {
+                $(this).removeClass(animationClass);
+             }
+          });
+   };
+   
+   animeScroll();
+   
+   $(document).scroll(debounce (function () {
+      animeScroll();
+   }, 200));
+}());
+
+(function(){
+   
+   let $target = $('.animating-6'),
+       animationClass = 'scale-in-center-6',
+       offset = $(window).height() * 3/4;
+   
+       function animeScroll() {
+          let documentTop = $(document).scrollTop();
+   
+          $target.each(function() {
+             let topHeight = $(this).offset().top;
+   
+             if(documentTop > topHeight - offset) {
+                $(this).addClass(animationClass);
+             } else {
+                $(this).removeClass(animationClass);
+             }
+          });
+   };
+   
+   animeScroll();
+   
+   $(document).scroll(debounce (function () {
+      animeScroll();
+   }, 200));
+}());
+
+(function(){
+   
    let $target = $('.animating-3'),
        animationClass = 'bounce-in-fwd',
        offset = $(window).height() * 3/4;
@@ -277,36 +358,4 @@ setTimeout(function(){
    $('#data-area').parallax({imageSrc:'./img/imgParallax2.jpg'});   
 
 }, 250);
-
-
-});
-
-//modal
-
-$(modal).css({
-   "display": "none",
-   "vertical-align": "middle",
-   "position": "relative",
-   "z-index": "2",
-   "max-width": "1000px",
-   "box-sizing": "border-box",
-   "width": "90%",
-   "background": "#fff",
-   "padding": "15px 30px",
-   "-webkit-border-radius": "8px",
-   "-moz-border-radius": "8px",
-   "-o-border-radius": "8px",
-   "-ms-border-radius": "8px",
-   "border-radius": "8px",
-   "-webkit-box-shadow": '0 0 10px #000',
-   "-moz-box-shadow": '0 0 10px #000',
-   "-ms-box-shadow": "0 0 10px #000",
-   "box-shadow": "0 0 10px #000",
-   "text-align": "left"
-});
-
-
-$(modal).on('modal a.close-modal').css({
-   "top": "1-",
-   "right": "1-"
 });

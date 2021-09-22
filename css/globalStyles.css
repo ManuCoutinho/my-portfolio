@@ -43,10 +43,6 @@ p {
    color: var(--black);
 }
 
-.container-full {
-   height: 90vh;
-   width: 100%;
-}
 
 .row {
    margin: 0;
@@ -56,3 +52,4 @@ p {
 .box-data {
    padding: 4rem 0;
 }
+
