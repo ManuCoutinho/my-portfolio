@@ -19,10 +19,6 @@ html, body {
    scroll-behavior: smooth;   
 }
 
-html {
-   font-size:62.5% !important;
-}
- 
 body {
    background: #ffffff;
    position: relative;

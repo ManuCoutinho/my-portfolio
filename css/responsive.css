@@ -4,12 +4,13 @@
    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px){
    html {
-      font-size:50%;
+      font-size:50% !important;
    }
 
-   .arrow {
+   .arrow, 
+   #grid-about-1, #grid-about-2, #grid-about-3, #grid-about-4 {
       display: none;
    }
 
@@ -25,7 +26,9 @@
       display: none;
    }
 
-   .arrow, .grid-about, #sumary {
+   .arrow, 
+   #grid-about-1, #grid-about-2, #grid-about-3, #grid-about-4,
+   #parallax, #sumary {
       display: none;
    }
 
@@ -37,7 +40,7 @@
 
 @media (max-width: 425px) {   
    html {
-   font-size:40%;
+   font-size:40% !important;
    }
 
    #home img,
@@ -46,7 +49,7 @@
    }
 
    .arrow ,
-   .grid-about,
+   #grid-about-1, #grid-about-2, #grid-about-3, #grid-about-4,
    #parallax,
    #sumary,
    #box-parallax {
