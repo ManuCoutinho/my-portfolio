@@ -1,7 +1,7 @@
 .main-section {
    display: grid;
    grid-template-columns: 60% 40%;
-   grid-column-gap: 2rem;
+   grid-column-gap: 1.6rem;
    justify-items: center;
    align-items: center;
    justify-content: center;   
@@ -9,22 +9,22 @@
 
 main {
    background-color: var(--orange);
-   height:100vh;      
+   height:100vh;        
 }
 
-.bloco-principal {
-  margin-top: 12rem;
-  height: 100vh; 
+main > .container-fluid {
+  margin-top: 19.2rem;
+  
+}
+
+main h6 {
+   font-size: 1.6rem;
 }
 
 .text-animated h1 {
    text-transform: uppercase;
-   font-size:min(5rem, 12vw);;
-   line-height: 3.5rem;
+   font-size: min(8rem, 12vw);
+   line-height: 5.4rem;
    color: var(--title);
        
-}
-
-.btn-dark:hover {
-   filter:brightness(0.7);
 }

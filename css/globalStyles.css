@@ -4,8 +4,7 @@
    box-sizing: border-box;
 }
 
-:root {
-    
+:root {    
    --pink: #F21D56;   
    --yellow: #F2E205;
    --orange: rgba(242, 159, 5, 0.7);
@@ -17,14 +16,18 @@
 }
 
 html, body {
-   scroll-behavior: smooth;
- }
+   scroll-behavior: smooth;   
+}
+
+html {
+   font-size:62.5%;
+}
  
 body {
    background: #ffffff;
    position: relative;
-   font-family: 'Montserrat', sans-serif;    
-   font-size:16px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.6rem;   
    -webkit-font-smoothing: subpixel-antialiased;     
  }
 
@@ -50,6 +53,6 @@ p {
 
 .container,
 .box-data {
-   padding: 4rem 0;
+   padding: 6.8rem 0;
 }
 

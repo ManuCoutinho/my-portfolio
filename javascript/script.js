@@ -69,6 +69,7 @@ debounce = function(func, wait, immediate) {
    };
 };
 
+//animação modal
 (function(){
    
    let $target = $('.animating'),
@@ -97,11 +98,11 @@ debounce = function(func, wait, immediate) {
 }());
 
 
-
+//animação cards
 (function(){
    
    let $target = $('.animating-2'),
-       animationClass = 'scale-in-center',
+       animationClass = 'slide-left',
        offset = $(window).height() * 3/4;
    
        function animeScroll() {
@@ -128,7 +129,7 @@ debounce = function(func, wait, immediate) {
 (function(){
    
    let $target = $('.animating-4'),
-       animationClass = 'scale-in-center-4',
+       animationClass = 'slide-left-4',
        offset = $(window).height() * 3/4;
    
        function animeScroll() {
@@ -155,7 +156,7 @@ debounce = function(func, wait, immediate) {
 (function(){
    
    let $target = $('.animating-5'),
-       animationClass = 'scale-in-center-5',
+       animationClass = 'slide-left-5',
        offset = $(window).height() * 3/4;
    
        function animeScroll() {
@@ -182,7 +183,7 @@ debounce = function(func, wait, immediate) {
 (function(){
    
    let $target = $('.animating-6'),
-       animationClass = 'scale-in-center-6',
+       animationClass = 'slide-left-6',
        offset = $(window).height() * 3/4;
    
        function animeScroll() {
@@ -359,3 +360,4 @@ setTimeout(function(){
 
 }, 250);
 });
+

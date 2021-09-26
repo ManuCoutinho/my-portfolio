@@ -1,0 +1,76 @@
+
+/**form**/
+#contact > .container-fluid {
+   background-color: var(--orange); 
+   
+ }
+
+ textarea:focus, input:focus, select:focus {
+   box-shadow: 0 0 0 0;
+   border: 0 none;
+   outline: 0;
+ } 
+
+.content-contact {
+   line-height:2.5rem;
+   font-size: 1.8rem;  
+   text-align: justify;
+   padding-right: 5.6rem;  
+   
+ }
+ 
+ .title-contact {
+    font-weight: 700;
+    font-size: 3.2rem;   
+ }
+
+ .divider {
+   border-bottom: 1px solid var(--black);
+ }
+ 
+ #contact a {
+   font-size:2rem;
+   color: var(--deep-orange);
+   padding: 2rem 1rem;   
+ }
+
+ #contact a:hover{
+    color: var(--pink);
+ }
+ 
+ 
+button[name]{
+   font-size:1.6rem;
+   padding: 0.8rem 1.6rem;
+}
+ 
+/**footer**/
+ 
+ footer {
+    background: var(--black);
+ }
+
+.container-footer {
+    width: 100%;
+    max-width: 1250px; 
+    margin: 0 auto;
+    padding-top: 2.8rem;
+ }
+ 
+ footer a {
+   color:var(--yellow);
+   padding: 1.6rem 0;
+ }
+ 
+ footer a:hover {
+   color:var(--yellow);
+   filter:brightness(0.8);
+  }
+ 
+ footer p {
+    color:var(--white);
+    padding: 1.6rem;
+    text-align: center
+ }
+ 
+ 

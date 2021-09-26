@@ -1,0 +1,83 @@
+/**modal**/
+
+.grid-gallery {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));   
+   grid-gap: 3.2rem; 
+   justify-items: center;   
+   justify-content: center;
+   padding-top: 3rem;  
+}
+
+.grid-gallery img {
+   position: relative;
+   display: block;
+   width: 100%;
+   min-height: 300px;
+   border-radius:0.8px;
+
+}
+
+.card-gallery{   
+   text-align: center;
+   border-radius: 0.8px;   
+   width: 100%;
+   max-width:300px;
+   max-height: 300px;   
+   box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.modal-header,
+.modal-footer {   
+   background: var(--white);
+}
+
+.btn-modal {
+   background: var(--orange);
+   font-size: 1.6rem !important;
+   font-weight: 500;
+   padding: 1rem 1.6rem;
+   margin-right: 1.6rem;
+}
+
+.btn-modal:hover{
+   background: var(--deep-orange);
+   filter:brightness(0.8);
+}
+
+.modal p {
+   line-height:2rem;
+   font-size: 1.6rem;   
+   margin-bottom: 2rem;
+}
+
+.modal h4 {  
+   font-size:2rem; 
+   font-weight: 700;
+   line-height:3.2rem;
+   margin-top: 1.6rem;
+   color: var(--title);
+   border-bottom: 1px solid var(--yellow);
+}
+
+.modal span,
+#contact span {
+   font-weight: 700;
+}
+
+.modal h2 {   
+   font-weight: 700;
+   font-size:3.2rem;
+}
+
+.modal a {
+   color: var(--black);
+   font-size: 2.8rem;
+   transition: 0.8s;
+}
+
+.modal a:hover {
+   color: var(--pink);   
+}

@@ -1,0 +1,58 @@
+.row-data {
+   padding:2.4rem 0;
+}
+
+.circle-box div {
+   padding: 0 2.4rem;
+}
+
+.circle-box p {
+   padding: 1.6rem 0;
+   font-weight: 700;
+   font-size: 1.6rem;
+   text-align: center;
+   color: var(--white);   
+   margin-top:1.5rem;
+}
+
+.progressbar-text {
+   font-weight: 900;
+   font-size: 2rem;
+}
+
+
+/**box - parallax**/
+
+.box-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 8.0rem 0;
+   text-align: center;   
+}
+
+.box-content h2 {   
+   font-size: 3.2rem;
+   font-weight: 700;
+   line-height: 3.2rem;
+   color: var(--white);   
+   margin-bottom: 4.8rem;
+   padding-top:3.2rem;
+}
+
+.btn-hiring {   
+   background: var(--white);   
+   border: 1px solid transparent;   
+   padding: 1rem 1.6rem;
+   border-radius:0;
+   color: var(--black);
+   text-decoration:none;
+   text-align-last: center;
+   font-size:1.6rem;   
+}
+
+.btn-hiring:hover {
+   color: var(--white);
+   background: var(--black);
+}

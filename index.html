@@ -22,14 +22,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">  
     
-    <!--css-->
-    <link rel="stylesheet" href="./css/style.css">
+    <!--css-->    
     <link rel="stylesheet" href="./css/globalStyles.css">
-    <link rel="stylesheet" href="./css/mobile.css">
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/commons.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/sections.css">    
+    <link rel="stylesheet" href="./css/main.css">    
+    <link rel="stylesheet" href="./css/aboutSection.css">
+    <link rel="stylesheet" href="./css/servicesSection.css">
+    <link rel="stylesheet" href="./css/sumarySection.css">   
+    <link rel="stylesheet" href="./css/portfolioSection.css"> 
+    <link rel="stylesheet" href="./css/finalSection.css">       
     <!-- libs -->
     <script src="./javascript/progressbar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
@@ -44,9 +48,9 @@
     <header>
         <!-- nav-->
         <nav id="navbar" class="navbar navbar-expand-lg fixed-top nav-header" role="navigation">
-            <div class="container-fluid position-relative">
+            <div class="container position-relative">
                 <div class="col-auto">
-                    <a href="index.html" title="Manu Coutinho" class="navbar-brand mx-5">Manu Coutinho</a>
+                    <a href="index.html" title="Manu Coutinho" class="navbar-brand">Manu Coutinho</a>
                            
                 </div>                         
                 
@@ -61,35 +65,35 @@
                             <a href="#home" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                                <a href="#sobre" class=" nav-link">Sobre</a>
+                                <a href="#about" class=" nav-link">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#servicos" class="nav-link">Serviços</a>
+                            <a href="#services" class="nav-link">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#resumo" class=" nav-link">Resumo</a>
+                            <a href="#sumary" class=" nav-link">Resumo</a>
                         </li>
                         <li class="nav-item">
                             <a href="#portfolio" class="nav-link">Portfólio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contato" class="nav-link">Contato</a>
+                            <a href="#contact" class="nav-link">Contato</a>
                         </li>
                     </ul>
                      <div class="d-none d-lg-block mx-5">
                         <ul class="navbar-nav">
                               <li class="nav-item mr-2">
                                  <a href="https://www.twitter.com/manucout" target="_blank" class="nav-link">
-                                    <i class="bi bi-twitter fs-5"></i>
+                                    <i class="bi bi-twitter"></i>
                                  </a>
                               </li>
                               <li class="nav-item mr-2">
                                  <a href="https://www.linkedin.com/in/emanuela-coutinho/" target="_blank" class="nav-link">
-                                    <i class="bi bi-linkedin fs-5"></i>
+                                    <i class="bi bi-linkedin"></i>
                                  </a>
                               </li>
                               <li class="nav-item"><a href="https://github.com/ManuCoutinho" target="_blank" class="nav-link">
-                                 <i class="bi bi-github fs-5"></i>
+                                 <i class="bi bi-github"></i>
                               </a>
                               </li>
                         </ul>
@@ -102,24 +106,24 @@
     </header>
     <!--bloco principal-->
     <main id="home" class="d-flex">
-        <div class="container-fluid bloco-principal">
+        <div class="container-fluid">
             <div class= "container">
                <div class="row">
                   <div class="col-md-6 mr-5 col-sm-12">
                      <div class="text-animated">
                          <h1 class="mb-5">Oi, eu sou </h1>
-                         <span class="typed-text"></span><span class="cursor">&nbsp;</span>
-                         <h6 class="mt-5 fs-3">em Curitiba, Brasil.</h6>
+                         <span class="typed-text" role="presentation"></span><span class="cursor">&nbsp;</span>
+                         <h6 class="mt-5">em Curitiba, Brasil.</h6>
                      </div>
    
                      <div class="mt-5">
-                         <button class="btn btn-lg btn-dark rounded-0 mt-3 mx-3 btn-black"><a
+                         <button class="btn btn-lg btn-dark rounded-0 mt-3"><a
                                  class="text-decoration-none text-white" href="#portfolio">Veja meus
                                  trabalhos</a></button>
                          <a class="btn btn-lg btn-link  mt-3 text-decoration-none mx-3 btn-transparent"
-                             href="#contato">
+                             href="#contact">
                              Contate-me
-                             <span class=" ml-3 fs-3"><i class="bi bi-arrow-down-circle"></i></span></a>
+                             <span class="ml-3"><i class="bi bi-arrow-down-circle"></i></span></a>
                      </div>                    
                  </div>
                  <div class="col-md-6 ml-5">
@@ -130,23 +134,22 @@
                </div>
                       
             </div>
-            <a href="#sobre"><span class="d-flex justify-content-center mt-5"><i class="bi bi-arrow-down-short fs-1 d-none d-lg-block arrow"></i></span></a>
+            <a href="#about"><span class="d-flex justify-content-center"><i class="bi bi-arrow-down-short d-lg-block arrow"></i></span></a>
         </div>
     </main>
     <!--fim bloco principal-->
     <!--inicio bloco sobre -->
-    <section id="sobre">
-        <div class="container-fluid about">
+    <section id="about">
+        <div class="container-fluid">
 
             <div class="container">
-
                   <p class="text-center">
                      <span class="subtitles">Sobre</span>
                   </p>
-                  <h2 class="subtitle-about">Me Conheça Mais</h2>
+                  <h2 class="title-section">Me Conheça Mais</h2>
 
-                  <div class="row mt-5">
-                     <div class="col-md-6">
+                  <div class="row my-5">
+                     <div class="col-md-6 gx-5">
                            <h2 class="mb-5">Olá, sou <span class="underline">Manu Coutinho!</span></h2>
                            <p class="content-about">
                               Eu sou uma desenvolvedora em formação, movida por uma paixão em construir coisas capazes de integrar 
@@ -162,9 +165,9 @@
                               ser humano. Aqui irei compartilhar alguns dos meus mais recentes projetos! 
                            </p>
                      </div>
-                     <div class="col-md-6">
+                     <div class="col-md-6 gx-5">
                            <div>
-                              <img class="img-fluid" src="./img/sidepic.svg"
+                              <img class="img-fluid" src="./img/imgAbout.svg"
                               alt="imagem lateral" caption="imagem de uma mulher vestida de amarelo, sentada sobre o símbolo do React">
                            </div>
                      </div>
@@ -190,8 +193,9 @@
                 </div>
             </div>
 
-            <a href="#servicos"><span class="d-flex justify-content-center mt-5">
-               <i class="bi bi-arrow-down-short fs-1 d-none d-lg-block arrow"></i></span></a>
+            <a href="#services"><span class="d-flex justify-content-center">
+               <i class="bi bi-arrow-down-short d-lg-block arrow"></i></span>
+            </a>
         </div>
     </section>
     <!--fim bloco sobre -->
@@ -199,7 +203,7 @@
       <div class="container-fluid box-content" id="box-parallax">
         <div class="container">
            <h2>Gostaria de trabalhar comigo?</h2>
-           <a class="btn btn-hiring" href="#contato" role="button">
+           <a class="btn btn-hiring" href="#contact" role="button">
               Me Contrate!
            </a>
           
@@ -207,16 +211,15 @@
       </div>
    </section>
     <!--inicio bloco serviços -->
-    <section id="servicos">
+    <section id="services">
         <div class="container-fluid ">
-            <div class="container ">
+            <div class="container">
                <div>
                     <p class="text-center">
                         <span class="subtitles">O que eu faço?</span>
                     </p>
-                    <h2 class="subtitle-about my-5">Como Posso Te Ajudar no Seu Próximo Projeto?
+                    <h2 class="title-section my-5">Como Posso Te Ajudar no Seu Próximo Projeto?
                     </h2>
-
                     <div class="grid-services animating-2">
                         <div class="card-services">
                            <i class="bi bi-columns icones"></i>
@@ -244,23 +247,23 @@
                         </div>
                      </div>
                      
-               </div> 
-                
-            </div><!--fim container -->
-            
+               </div>                
+            </div>  
+               <a href="#sumary"><span class="d-flex justify-content-center">
+                  <i class="bi bi-arrow-down-short d-none d-lg-block arrow"></i></span>
+               </a>          
         </div>
-        <a href="#resumo"><span class="d-flex justify-content-center mt-5">
-         <i class="bi bi-arrow-down-short fs-1 d-none d-lg-block arrow"></i></span></a>
+       
     </section>
     <!--fim bloco servicos-->
   
-    <section id="resumo">
+    <section id="sumary">
         <div class="container-fluid" id="data-area">
            <div class="box-data">
             <p class="text-center">
                <span class="subtitles">Resumo</span>
        </p>
-       <h2 class="subtitle-about text-white">Minhas Skills</h2>
+       <h2 class="title-section text-white">Minhas Skills</h2>
           
        <div class="row row-data">
 
@@ -310,8 +313,8 @@
           </div>
        </div>
       
-       <a href="#portfolio"><span class="d-flex justify-content-center mt-5">
-          <i class="bi bi-arrow-down-short fs-1 d-none d-lg-block arrow text-white"></i>
+       <a href="#portfolio"><span class="d-flex justify-content-center">
+          <i class="bi bi-arrow-down-short d-lg-block arrow text-white mt-5"></i>
        </span>
        </a>
            </div>
@@ -326,18 +329,30 @@
                <p class="text-center mt-2">
                   <span class=" px-2 subtitles">Portfólio</span>
               </p>
-              <h2 class="subtitle-about mb-5">Alguns dos meus projetos</h2>
+              <h2 class="title-section mb-5">Alguns dos meus projetos</h2>
               <div class="grid-gallery">              
                   <!-- trigger modal -->
-                  <a href="#" class="card-gallery animating"><img src="./img/img-preview.png" alt="" data-bs-toggle="modal" data-bs-target="#modalOne" /></a>
-                  <a href="#" class="card-gallery animating"><img src="./img/img-preview.png" alt="" data-bs-toggle="modal" data-bs-target="#modalTwo" /></a>
-                  <a href="#" class="card-gallery animating"><img src="./img/img-preview.png" alt="" data-bs-toggle="modal" data-bs-target="#modalThree" /></a>
-                  <a href="#" class="card-gallery animating"><img src="./img/img-preview.png" alt="" data-bs-toggle="modal" data-bs-target="#modalFour" /></a>
-                  <a href="#" class="card-gallery animating"><img src="./img/img-preview.png" alt="" data-bs-toggle="modal" data-bs-target="#modalFive" /></a>
-                  <a href="#" class="card-gallery animating"><img src="./img/img-preview.png" alt="" data-bs-toggle="modal" data-bs-target="#modalSix" /></a>
+                  <a href="#" class="card-gallery animating">
+                     <img src="./img/img-preview.png" class="img-thumbnail img-fluid" alt="" data-bs-toggle="modal" data-bs-target="#modalOne"/>
+                  </a>
+                  <a href="#" class="card-gallery animating">
+                     <img src="./img/img-preview.png" class="img-thumbnail img-fluid" alt="" data-bs-toggle="modal" data-bs-target="#modalTwo"/>
+                  </a>
+                  <a href="#" class="card-gallery animating">
+                     <img src="./img/chirp.jpg" class="img-thumbnail img-fluid" alt="" data-bs-toggle="modal" data-bs-target="#modalThree"/>
+                  </a>
+                  <a href="#" class="card-gallery animating">
+                     <img src="./img/img-preview.png" class="img-thumbnail img-fluid" alt="" data-bs-toggle="modal" data-bs-target="#modalFour"/>
+                  </a>
+                  <a href="#" class="card-gallery animating">
+                     <img src="./img/img-preview.png" class="img-thumbnail img-fluid" alt="" data-bs-toggle="modal" data-bs-target="#modalFive"/>
+                  </a>
+                  <a href="#" class="card-gallery animating">
+                     <img src="./img/img-preview.png" class="img-thumbnail img-fluid" alt="" data-bs-toggle="modal" data-bs-target="#modalSix"/>
+                  </a>
                   <!-- Modal -->
                   <div class="modal fade" id="modalOne" tabindex="-1" aria-labelledby="modalOneLabel" aria-hidden="true">
-                     <div class="modal-dialog modal-lg modal-dialog-centered">
+                     <div class="modal-dialog modal-xl modal-dialog-centered">
                      <div class="modal-content">
                         <div class="modal-header">
                            <h2 class="modal-title" id="modalOneLabel">MC Money</h2>
@@ -347,8 +362,7 @@
                            <div class="container-fluid">
                               <div class="row">
                                  <div class="col-md-7">
-                                    <img src="./img/img-preview.png" alt="" class="img-fluid"/>
-               
+                                    <img src="./img/img-preview.png" alt="" class="img-fluid"/>               
                                  </div>
                                  <div class="col-md-5">
                                     <h4>Informações:</h4>
@@ -409,7 +423,7 @@
                 
                   <!-- Modal -->
                   <div class="modal fade" id="modalThree" tabindex="-1" aria-labelledby="modalThreeLabel" aria-hidden="true">
-                     <div class="modal-dialog modal-lg modal-dialog-centered">
+                     <div class="modal-dialog modal-xl modal-dialog-centered">
                      <div class="modal-content">
                         <div class="modal-header">
                            <h2 class="modal-title" id="modalThreeLabel">Chirp</h2>
@@ -419,7 +433,7 @@
                            <div class="container-fluid">
                               <div class="row">
                                  <div class="col-md-7">
-                                    <img src="./img/img-preview.png" alt="" class="img-fluid"/>
+                                    <img src="./img/chirp.jpg" alt="" class="img-fluid"/>
                
                                  </div>
                                  <div class="col-md-5">
@@ -445,7 +459,7 @@
 
                     <!-- Modal -->
                     <div class="modal fade" id="modalFour" tabindex="-1" aria-labelledby="modalFourLabel" aria-hidden="true">
-                     <div class="modal-dialog modal-lg modal-dialog-centered">
+                     <div class="modal-dialog modal-xl modal-dialog-centered">
                      <div class="modal-content">
                         <div class="modal-header">
                            <h2 class="modal-title" id="modalFourLabel">Task List</h2>
@@ -481,7 +495,7 @@
 
                    <!-- Modal -->
                    <div class="modal fade" id="modalFive" tabindex="-1" aria-labelledby="modalFiveLabel" aria-hidden="true">
-                     <div class="modal-dialog modal-lg modal-dialog-centered">
+                     <div class="modal-dialog modal-xl modal-dialog-centered">
                      <div class="modal-content">
                         <div class="modal-header">
                            <h2 class="modal-title" id="modalFiveLabel">Countdown Timer</h2>
@@ -491,7 +505,7 @@
                            <div class="container-fluid">
                               <div class="row">
                                  <div class="col-md-7">
-                                    <div class="vimeo ratio ratio-21x9">
+                                    <div class="ratio ratio-21x9">
                                        <iframe src="https://player.vimeo.com/video/610352804?h=a5c3889a8a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
                                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="countdown-wavws-promo.mp4">
                                        </iframe>
@@ -556,8 +570,8 @@
                      </div>
                   </div> <!--fim modal-->
             </div>
-            <a href="#contato"><span class="d-flex justify-content-center mt-5">
-               <i class="bi bi-arrow-down-short fs-1 d-none d-lg-block arrow"></i></span></a>
+            <a href="#contact"><span class="d-flex justify-content-center">
+               <i class="bi bi-arrow-down-short d-lg-block arrow"></i></span></a>
 
              
         </div>
@@ -565,11 +579,11 @@
     <!--fim portfolio -->
     
     <!--inicio contatos -->
-    <section id="contato">
-        <div class="container-fluid ultimo-bloco">
+    <section id="contact">
+        <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 gx-5">
                         <div class="col-md-12">
                             <h2 class="title-contact my-5">Tem uma ideia?</h2>
                             <p class="content-contact mb-5" role="text"> Eu adoraria conhecer suas ideias, discutir novos projetos e, claro, encarar novos desafios. Por favor,
@@ -582,57 +596,54 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <a href="https://github.com/ManuCoutinho" target="_blank" class="icones-rodape"><i class="bi bi-github mx-2"></i></a>
-                            <a href="https://www.linkedin.com/in/emanuela-coutinho" target="_blank" class="icones-rodape"><i class="bi bi-linkedin mx-2"></i></a>
-                            <a href="https://twitter.com/manucout" target="_blank" class="icones-rodape"><i class="bi bi-twitter mx-2"></i></a>
+                            <a href="https://github.com/ManuCoutinho" target="_blank" ><i class="bi bi-github mx-2"></i></a>
+                            <a href="https://www.linkedin.com/in/emanuela-coutinho" target="_blank"><i class="bi bi-linkedin mx-2"></i></a>
+                            <a href="https://twitter.com/manucout" target="_blank" ><i class="bi bi-twitter mx-2"></i></a>
                         </div>                        
                     </div>
                     
                     <div class="col-md-6 mt-5 content-contact">
                         <span><h2 class="title-contact mb-5">Aguardo seu contato:</h2></span>
                         <form action="#" method="#">
-                            <div class="mb-3 divisoria">
+                            <div class="mb-3 divider">
                                 <label for="remetente" class="form-label mt-4"><span>Me diga o seu nome:</span></label>
                                 <input type="text" id="remetente" name="remetente" class="form-control-plaintext" aria-describedby="nome"
                                     required>
                             </div>
-                            <div class="mb-3 divisoria">
+                            <div class="mb-3 divider">
                                 <label for="email" class="form-label mt-4"><span>Email:</span></label>
                                 <input type="text" id="email" name="email" class="form-control-plaintext" aria-describedby="email" required>
                             </div>
-                            <div class="mb-3 divisoria">
+                            <div class="mb-3 divider">
                                 <label for="mensagem" class="form-label mt-4"><span>Como posso te ajudar?</span></label>
                                 <textarea type="text" id="mensagem" name="mensagem" class="form-control-plaintext" rows="5" required></textarea>
                             </div>
-                            <button type="submit" name="" class="btn btn-lg btn-dark rounded-0 mt-3 fw-bold btn-form">Enviar 
+                            <button type="submit" name="enviar" class="btn btn-lg btn-dark rounded-0 mt-3 fw-bold">Enviar 
                                 <span><i class="bi bi-arrow-right-short"></i></span></button>
                         </form>
                     </div>
-                </div>
-                
+                </div>                
             </div>
-            <a href="#home"><span class="d-flex mx-5 arrow-square"><i class="bi bi-arrow-up-square fs-2 d-none d-lg-block"></i></span></a>
+            <a href="#home"><span class="d-flex mx-5"><i class="bi bi-arrow-up-square d-none d-lg-block"></i></span></a>
         </div>
     </section>
     <!--fim contato-->
 
     <!--inicio rodape -->
     <footer>
-        <div class="container-fluid bg-dark">
-            <div class="container">
-                <div class="row fw-bold">
-                    <div class="col-md-6">
-                        <p>Copyright &copy; 2021 <a href="#home" class="text-decoration-none">Manu Coutinho.</a>
-                            Todos os direitos reservados.</p>
-                    </div>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3">
-                        <p>Designed by <a href="#home" class="text-decoration-none">Manu Coutinho</a></p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+      <div class="container-fluid">
+         <div class="container-footer">
+            <div class="row fw-bold">
+               <div class="col-md-6 pr-5">
+                   <p>Copyright &copy; 2021 <a href="#home" class="text-decoration-none">Manu Coutinho.</a>
+                       Todos os direitos reservados.</p>
+               </div>                    
+               <div class="col-md-6 pl-5">
+                   <p>Designed by <a href="#home" class="text-decoration-none">Manu Coutinho</a></p>
+               </div>
+           </div>   
+         </div>         
+      </div>
     </footer>
     <!--fim rodape-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

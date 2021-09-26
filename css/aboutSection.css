@@ -1,0 +1,22 @@
+/*** sobre***/
+.underline {
+  
+  border-bottom: 2px solid var(--yellow);
+  font-weight: 700;  
+}
+
+.content-about {  
+  line-height:3.2rem;
+  font-size: 1.8rem;  
+  text-align: justify;  
+}
+
+.grid-about {
+   display: grid;
+   grid-template-columns: repeat(4,1fr);  
+   justify-items: center;
+   align-items: center;
+   justify-content: center;
+   margin-top: 3.5rem;   
+}
+

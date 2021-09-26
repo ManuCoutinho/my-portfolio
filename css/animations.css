@@ -1,38 +1,35 @@
-
+/*texto animado*/
 .text-animated span.typed-text {
- font-family:'Raleway', sans-serif;
- font-weight: 900;
- text-transform: uppercase;
- line-height:2rem;
- font-size: min(5rem, 12vw);
- color: var(--title);
-}
-
+   font-family:'Raleway', sans-serif;
+   font-weight: 900;
+   text-transform: uppercase;   
+   font-size: min(8rem, 12vw);
+   line-height: 5.4rem;
+   color: var(--title);
+  }
+  
 .text-animated span.cursor {
- display: inline-block;  
- margin-left: 0.1rem;
- color: var(--title);
- width: 0.5rem;  
- animation: blink 1s infinite;  
+   display: inline-block;  
+   margin-left: 0.1rem;
+   color: var(--title);
+   width: 0.5rem;  
+   animation: blink 1s infinite;  
 }
-
+  
 .text-animated span.cursor.typing {
- animation: none;
+   animation: none;
 }
-
+  
 @keyframes blink {
- 0%  { background-color: #262626; }
- 49% { background-color: #262626; }
- 50% { background-color: transparent; }
- 99% { background-color: transparent; }
- 100%  { background-color: #262626; }
+   0%  { background-color: #262626; }
+   49% { background-color: #262626; }
+   50% { background-color: transparent; }
+   99% { background-color: transparent; }
+   100%  { background-color: #262626; }
 }
-/*fim texto animado*/
-
+  /*fim texto animado*/
 
 /*button*/
-
-
 .btn-transparent,
 .btn-white {
    color: var(--black);
@@ -80,11 +77,10 @@
     }
  }
 
-
 /*navegação*/
 .arrow {
   color: var(--black);
-  font-size: 2rem;
+  font-size: 3.2rem !important;
   animation: fade-in-down 2.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s infinite;  
 }
 
@@ -100,6 +96,7 @@
       opacity: 1;
     }
   }
+  
   @keyframes fade-in-top {
     0% {
       -webkit-transform: translateY(-50px);
@@ -113,8 +110,8 @@
     }
   }
 
-/**imagem**/
 
+/**imagem**/
 .slide-in-bck-right {
 	
 	animation: slide-in-bck-right 0.8s cubic-bezier(0.470, 0.000, 0.745, 0.715) .5s both;
@@ -133,56 +130,55 @@
 
 
 .slide-in-vertical {  
-    animation: slide-in-vertical 0.8s ease-out both;
+    animation: slide-in-vertical 0.6s ease-in-out backwards;
 }
 
 
 @keyframes slide-in-vertical {
    0% {
-      -webkit-transform: translateZ(-800px) rotateY(90deg);
-      transform: translateZ(-800px) rotateY(90deg);
-      opacity: 0;
-    }
-    54% {
-      -webkit-transform: translateZ(-160px) rotateY(87deg);
-      transform: translateZ(-160px) rotateY(87deg);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: translateZ(0) rotateY(0);
-      transform: translateZ(0) rotateY(0);
-    }
-} 
-
-
-.scale-in-center {
-	-webkit-animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      -webkit-transform: scale(0.8) rotateX(0);
+      transform: scale(0.8) rotateX(0);
+  }
+  50% {
+    -webkit-transform: scale(1.5) rotateX(-90deg);
+    transform: scale(1.5) rotateX(-90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateX(-180deg);
+    transform: scale(1) rotateX(-180deg);
+  }
 }
 
-.scale-in-center-4 {
-	-webkit-animation: scale-in-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: scale-in-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+.slide-left {
+	-webkit-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
+	animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
 }
 
-.scale-in-center-5{
-	-webkit-animation: scale-in-center 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.slide-left-4 {
+	-webkit-animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
+	animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
 }
 
-.scale-in-center-6 {
-	-webkit-animation: scale-in-center 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: scale-in-center 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.slide-left-5{
+	-webkit-animation: slide-left 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
+	animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
 }
-@keyframes scale-in-center {
+
+.slide-left-6 {
+	-webkit-animation: slide-left 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
+	animation: slide-left 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
+}
+
+@keyframes slide-left {
    0% {
-     -webkit-transform: scale(0);
-     transform: scale(0);
+     -webkit-transform: translateX(-100%);
+     transform:translateX(-100%);
      opacity: 0;
    }
    100% {
-     -webkit-transform: scale(1);
-     transform: scale(1);
+      -webkit-transform: translateX(0);
+      transform:translateX(0);
      opacity: 1;
    }
  }
