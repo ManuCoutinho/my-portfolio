@@ -355,8 +355,8 @@ $(window).scroll(function(e){
 });
 
 setTimeout(function(){
-   $('#box-parallax').parallax({imageSrc:'./img/imgParallax1.jpg'});
-   $('#data-area').parallax({imageSrc:'./img/imgParallax2.jpg'});   
+   $('#box-parallax').parallax({imageSrc:'./assets/imgParallax1.jpg'});
+   $('#data-area').parallax({imageSrc:'./assets/imgParallax2.jpg'});   
 
 }, 250);
 });
