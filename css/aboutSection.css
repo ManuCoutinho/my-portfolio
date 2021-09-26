@@ -1,6 +1,5 @@
 /*** sobre***/
-.underline {
-  
+.underline {  
   border-bottom: 2px solid var(--yellow);
   font-weight: 700;  
 }
@@ -13,10 +12,9 @@
 
 .grid-about {
    display: grid;
-   grid-template-columns: repeat(4,1fr);  
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
    justify-items: center;
    align-items: center;
    justify-content: center;
    margin-top: 3.5rem;   
 }
-
