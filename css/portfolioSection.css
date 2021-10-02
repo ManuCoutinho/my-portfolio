@@ -1,12 +1,10 @@
-/**modal**/
-
 .grid-gallery {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));   
    grid-gap: 3.2rem; 
    justify-items: center;   
    justify-content: center;
-   padding-top: 3rem;  
+   padding-top: 3rem;
 }
 
 .grid-gallery img {
@@ -14,13 +12,13 @@
    display: block;
    width: 100%;
    min-height: 300px;
-   border-radius:0.8px;
+   border-radius:8px;
 
 }
 
-.card-gallery{   
+.card-gallery {   
    text-align: center;
-   border-radius: 0.8px;   
+   border-radius: 8px;   
    width: 100%;
    max-width:300px;
    max-height: 300px;   
@@ -48,7 +46,8 @@
 }
 
 .modal p {
-   line-height:2rem;
+   padding-top: 1.5rem;
+   line-height:2.5rem;
    font-size: 1.6rem;   
    margin-bottom: 2rem;
 }
@@ -72,6 +71,7 @@
    font-size:3.2rem;
 }
 
+
 .modal a {
    color: var(--black);
    font-size: 2.8rem;
@@ -81,3 +81,4 @@
 .modal a:hover {
    color: var(--pink);   
 }
+
