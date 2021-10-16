@@ -7,17 +7,17 @@
    justify-content: center;   
 }
 
-main {
+.main {
    background-color: var(--orange);
    height:100vh;        
 }
 
-main > .container-fluid {
+.main > .container-fluid {
   margin-top: 19.2rem;
   
 }
 
-main h6 {
+.main h6 {
    font-size: 1.6rem;
 }
 

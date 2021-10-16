@@ -5,11 +5,20 @@
    
  }
 
- textarea:focus, input:focus, select:focus {
-   box-shadow: 0 0 0 0;
-   border: 0 none;
-   outline: 0;
- } 
+ .box-img {
+   display: flex;   
+   justify-content: flex-end;
+   align-items: center;
+   padding-top: 8rem;
+   margin-right: 3rem;
+ }
+
+.img-contact {
+   width: 22rem;
+   height: 22rem;
+   border-radius: 100%;
+   border: 8px solid var(--white);   
+}
 
 .content-contact {
    line-height:2.5rem;
@@ -24,9 +33,6 @@
     font-size: 3.2rem;   
  }
 
- .divider {
-   border-bottom: 1px solid var(--black);
- }
  
  #contact a {
    font-size:2rem;
