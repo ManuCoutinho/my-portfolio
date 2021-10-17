@@ -12,9 +12,8 @@
    text-align: center;
    border-radius: 8px;
    background-color: var(--white);
-   box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
-   -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
-   -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+   -webkit-box-shadow:0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .card-services h3 {

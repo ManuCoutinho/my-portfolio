@@ -69,35 +69,6 @@ debounce = function(func, wait, immediate) {
    };
 };
 
-//animação modal
-(function(){
-   
-   let $target = $('.animating'),
-       animationClass = 'slide-in-vertical',
-       offset = $(window).height() *3/4;
-   
-       function animeScroll() {
-          let documentTop = $(document).scrollTop();
-   
-          $target.each(function() {
-             let topHeight = $(this).offset().top;
-   
-             if(documentTop > topHeight - offset) {
-                $(this).addClass(animationClass);
-             } else {
-                $(this).removeClass(animationClass);
-             }
-          });
-   };
-   
-   animeScroll();
-   
-   $(document).scroll(debounce (function () {
-      animeScroll();
-   }, 200));
-}());
-
-
 //animação cards
 (function(){
    
