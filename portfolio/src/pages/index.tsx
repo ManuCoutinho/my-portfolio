@@ -1,9 +1,10 @@
 import { Banner } from '../components/Banner'
-import Container from '../components/Foundation/base'
+import { Header } from '../components/Header'
 
 export default function Home() {
   return (
     <>
+      <Header />
       <Banner />
     </>
   )
