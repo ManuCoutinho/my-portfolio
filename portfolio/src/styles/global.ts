@@ -29,13 +29,13 @@ body, html {
 }
 
 body {
- background: ${({ theme }) => theme.colors.white};
- color: ${({ theme }) => theme.colors.black};
+ background: ${({ theme }) => theme.colors.body};
+ color: ${({ theme }) => theme.colors.text};
  transition: ${({ theme }) => theme.transition};
 }
 
 body, input, textarea, button {
- font-family: ${({ theme }) => theme.font}; 
+ font-family: ${({ theme }) => theme.font.text}; 
  font-weight: ${({ theme }) => theme.fontWeight.normal};
  font-size: 16px;
 }
