@@ -6,22 +6,20 @@ declare module 'styled-components' {
 
     colors: {
       black: string
-      gray: {
-        50: string
-        100: string
-        200: string
-        300: string
-      }
-      green: {
-        200: string
-      }
-      orange: {
-        400: string
-      }
-      red: string
       white: string
+      background: string
+      body: string
+      primary: string
+      secondary: string
+      text: string
+      title: string
+      info: string
+      highlight: string
     }
-    font: string
+    font: {
+      text: string
+      title: string
+    }
     fontSize: {
       xs: string
       sm: string

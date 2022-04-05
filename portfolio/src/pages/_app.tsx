@@ -2,11 +2,12 @@ import { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 
 import GlobalStyle from '../styles/global'
-import { themeBase } from '../styles/theme/themeBase'
+import { light } from '../styles/theme/light'
+import { dark } from '../styles/theme/dark'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={themeBase}>
+    <ThemeProvider theme={light}>
       <Component {...pageProps} />
       <GlobalStyle />
     </ThemeProvider>

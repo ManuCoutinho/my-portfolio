@@ -1,0 +1,34 @@
+export const light = {
+  title: 'light',
+  colors: {
+    black: '#090B09',
+    white: '#FAFAFF',
+    background: '#E38F77',
+    body: '#F7F6F3',
+    primary: '#817b92',
+    secondary: '#6e758d',
+    text: '#242b31',
+    title: '#0A0A0A',
+    info: '#56667c',
+    highlight: '#26F7F0',
+  },
+  font: {
+    text: "'Montserrat Alternate', sans-serif",
+    title: "'Josefin Sans', sans-serif",
+  },
+  fontSize: {
+    xsm: '0.75em',
+    sm: '0.875em',
+    md: '1em',
+    lg: '1.5em',
+    xl: '2.5em',
+  },
+  fontWeight: {
+    light: 100,
+    normal: 400,
+    semibold: 600,
+    bold: 700,
+  },
+  transition: 'all 0.2s',
+  radius: '8px',
+}
