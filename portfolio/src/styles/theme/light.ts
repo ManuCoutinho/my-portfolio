@@ -22,6 +22,7 @@ export const light = {
     md: '1em',
     lg: '1.5em',
     xl: '2.5em',
+    xlg: '3.5em',
   },
   fontWeight: {
     light: 100,
