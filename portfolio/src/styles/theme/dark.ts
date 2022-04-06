@@ -30,6 +30,6 @@ export const dark = {
     semibold: 600,
     bold: 700,
   },
-  transition: 'all 0.2s',
+  transition: 'all 0.2s ease-in-out',
   radius: '8px',
 }
