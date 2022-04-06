@@ -16,8 +16,8 @@ export function Banner(): JSX.Element {
         <AnimationBanner />
       </ContainerWrapper>
       <Box>
-        <MyWorks>
-          <Link href='#portfolio'>Meus trabalhos!</Link>
+        <MyWorks role='navigation'>
+          <Link href='#portfolio'>Meus projetos!</Link>
         </MyWorks>
       </Box>
     </Container>
