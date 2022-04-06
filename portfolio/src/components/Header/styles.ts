@@ -10,7 +10,11 @@ export const Container = styled.header`
   margin-bottom: 1rem;
   padding: 0.5rem;
   width: 100vw;
-  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1024;
 `
 
 export const Nav = styled.nav`
@@ -55,8 +59,9 @@ export const MenuList = styled.ul<MenuProps>`
     }
   }
   @media (max-width: 48em) {
-    flex-direction: column;
+    background-color: ${({ theme }) => theme.colors.background};
     align-items: center;
+    flex-direction: column;
     max-height: ${({ active }) => (active ? '28rem' : '0')};
     overflow: hidden;
     transition: ${({ theme }) => theme.transition};

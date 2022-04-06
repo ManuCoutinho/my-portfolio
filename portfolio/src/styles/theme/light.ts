@@ -31,5 +31,5 @@ export const light = {
     bold: 700,
   },
   transition: 'all 0.2s ease-in-out',
-  radius: '8px',
+  radius: '16px',
 }

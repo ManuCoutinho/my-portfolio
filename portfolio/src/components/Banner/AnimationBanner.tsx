@@ -21,8 +21,8 @@ export function AnimationBanner(): JSX.Element {
     <DivWrapper>
       <Lottie
         options={defaultOptions}
-        height={400}
-        width={400}
+        height={500}
+        width={600}
         isStopped={animationState.isStopped}
         isPaused={animationState.isPaused}
       />
