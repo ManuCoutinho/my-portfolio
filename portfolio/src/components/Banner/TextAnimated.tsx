@@ -3,7 +3,7 @@ import Typed from 'react-typed'
 import { BoxAnimation } from './styles'
 
 export function TextAnimated(): JSX.Element {
-  const texts = ['woman', 'developer', 'front-end', 'Manu!']
+  const texts = ['woman ', 'developer', 'frontend', 'Manu! ']
 
   return (
     <BoxAnimation>
