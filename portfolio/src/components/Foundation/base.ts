@@ -16,4 +16,14 @@ const Box = styled.div`
     align-items: center;
   }
 `
-export { Container, Box }
+const Title = styled.h2`
+color: ${({ theme }) => theme.colors.title}
+  font-size: ${({ theme }) => theme.fontSize.lg};
+  font-weight: ${({ theme }) => theme.fontWeight.bold};
+  line-height: 1.5rem;
+  margin-bottom: 1rem 0;
+  padding: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+`
+export { Container, Box, Title }

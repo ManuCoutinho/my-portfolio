@@ -10,7 +10,7 @@ export const light = {
     text: '#242b31',
     title: '#0A0A0A',
     info: '#56667c',
-    highlight: '#26F7F0',
+    highlight: 'rgba(38, 247, 240, 0.25)',
   },
   font: {
     text: "'Montserrat Alternate', sans-serif",
@@ -30,6 +30,6 @@ export const light = {
     semibold: 600,
     bold: 700,
   },
-  transition: 'all 0.2s',
+  transition: 'all 0.2s ease-in-out',
   radius: '8px',
 }

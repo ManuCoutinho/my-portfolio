@@ -1,7 +1,9 @@
 import Link from 'next/link'
-import { MenuList, MenuItem } from './styles'
+import { useState } from 'react'
+import { MenuList, MenuItem, ToggleMenu, Hamburger } from './styles'
 
 export const Menu: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false)
   const items = [
     { section: 'Home', url: '#home' },
     { section: 'Sobre', url: '#about' },
@@ -9,14 +11,19 @@ export const Menu: React.FC = () => {
     { section: 'Contato', url: '#contact' },
   ]
   return (
-    <MenuList role='menu' aria-label='options'>
-      {items.map((item) => (
-        <Link href={item.url} key={item.url} passHref>
-          <a role='menuItem'>
-            <MenuItem>{item.section}</MenuItem>
-          </a>
-        </Link>
-      ))}
-    </MenuList>
+    <>
+      <ToggleMenu>
+        <Hamburger onClick={() => setIsOpen(!isOpen)} />
+      </ToggleMenu>
+      <MenuList role='menu' aria-label='options' active={isOpen}>
+        {items.map((item) => (
+          <Link href={item.url} key={item.url} passHref>
+            <a role='menuItem'>
+              <MenuItem>{item.section}</MenuItem>
+            </a>
+          </Link>
+        ))}
+      </MenuList>
+    </>
   )
 }
