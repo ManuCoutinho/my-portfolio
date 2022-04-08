@@ -13,7 +13,7 @@ export const light = {
     highlight: 'rgba(38, 247, 240, 0.25)',
   },
   font: {
-    text: "'Montserrat Alternate', sans-serif",
+    text: "'Montserrat Alternates', sans-serif",
     title: "'Josefin Sans', sans-serif",
   },
   fontSize: {
@@ -31,5 +31,9 @@ export const light = {
     bold: 700,
   },
   transition: 'all 0.2s ease-in-out',
-  radius: '16px',
+  radius: {
+    default: '16px',
+    medium: '25px',
+    full: '50%',
+  },
 }

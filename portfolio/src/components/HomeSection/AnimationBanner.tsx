@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Lottie from 'react-lottie'
 import * as animationData from './animation.json'
+
 import { DivWrapper } from './styles'
 
 export function AnimationBanner(): JSX.Element {
@@ -21,8 +22,7 @@ export function AnimationBanner(): JSX.Element {
     <DivWrapper>
       <Lottie
         options={defaultOptions}
-        height={500}
-        width={600}
+        height={'auto'}
         isStopped={animationState.isStopped}
         isPaused={animationState.isPaused}
       />

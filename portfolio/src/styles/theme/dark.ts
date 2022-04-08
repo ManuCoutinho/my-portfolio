@@ -13,7 +13,7 @@ export const dark = {
     highlight: '#5AFF15',
   },
   font: {
-    text: "'Montserrat Alternate', sans-serif",
+    text: "'Montserrat Alternates', sans-serif",
     title: "'Josefin Sans', sans-serif",
   },
   fontSize: {
@@ -31,5 +31,9 @@ export const dark = {
     bold: 700,
   },
   transition: 'all 0.2s ease-in-out',
-  radius: '8px',
+  radius: {
+    default: '16px',
+    medium: '25px',
+    full: '50%',
+  },
 }

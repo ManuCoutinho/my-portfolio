@@ -35,6 +35,10 @@ declare module 'styled-components' {
       bold: number
     }
     transition: string
-    radius: string
+    radius: {
+      default: string
+      medium: string
+      full: string
+    }
   }
 }

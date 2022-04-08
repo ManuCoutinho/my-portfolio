@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 import { Box, Container as ContainerBase } from '../Foundation/Base'
 
-export const Container = styled.main`
+const Container = styled.main`
   background: ${({ theme }) => theme.colors.background};
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `
-export const ContainerWrapper = styled(ContainerBase)`
+const ContainerWrapper = styled(ContainerBase)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@ export const ContainerWrapper = styled(ContainerBase)`
     flex-direction: column;
   }
 `
-export const DivWrapper = styled(Box)`
+const DivWrapper = styled(Box)`
   @media (max-width: 45em) {
     font-size: ${({ theme }) => theme.fontSize.xl};
     gap: 1rem;
@@ -38,7 +38,7 @@ export const DivWrapper = styled(Box)`
   width: 100%;
   margin-bottom: 1rem;
 `
-export const BoxAnimation = styled.div`
+const BoxAnimation = styled.div`
   text-align: center;
   align-self: center;
 
@@ -51,3 +51,4 @@ export const BoxAnimation = styled.div`
     text-transform: uppercase;
   }
 `
+export { BoxAnimation, ContainerWrapper, Container, DivWrapper }

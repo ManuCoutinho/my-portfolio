@@ -1,6 +1,6 @@
-import Link from 'next/link'
 import { useState } from 'react'
-import { MenuList, MenuItem, ToggleMenu, Hamburger } from './styles'
+import { LinkInternal } from '../Foundation/Base'
+import { MenuList, MenuItem, ToggleMenu, Hamburger, NavLink } from './styles'
 
 export const Menu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,11 +17,11 @@ export const Menu: React.FC = () => {
       </ToggleMenu>
       <MenuList role='menu' aria-label='options' active={isOpen}>
         {items.map((item) => (
-          <Link href={item.url} key={item.url} passHref>
-            <a role='menuItem'>
-              <MenuItem>{item.section}</MenuItem>
-            </a>
-          </Link>
+          <MenuItem key={item.url} role='menuItem'>
+            <NavLink href={item.url} rel='nofollow'>
+              {item.section}
+            </NavLink>
+          </MenuItem>
         ))}
       </MenuList>
     </>

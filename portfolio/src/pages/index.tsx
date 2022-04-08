@@ -1,13 +1,20 @@
-import { About } from '../components/About'
-import { Banner } from '../components/Banner'
+import { About } from '../components/AboutSection'
+import { Banner } from '../components/HomeSection'
+import { Container } from '../components/Foundation/Base'
 import { Header } from '../components/Header'
+import { Portfolio } from '../components/PortfolioSection'
+import { Contact } from '../components/ContactSection'
 
 export default function Home() {
   return (
     <>
       <Header />
       <Banner />
-      <About />
+      <Container>
+        <About />
+        <Portfolio />
+        <Contact />
+      </Container>
     </>
   )
 }
