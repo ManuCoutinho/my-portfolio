@@ -4,6 +4,7 @@ import { Container } from '../components/Foundation/Base'
 import { Header } from '../components/Header'
 import { Portfolio } from '../components/PortfolioSection'
 import { Contact } from '../components/ContactSection'
+import { Footer } from '../components/Footer'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <About />
         <Portfolio />
         <Contact />
+        <Footer />
       </Container>
     </>
   )
