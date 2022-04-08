@@ -1,5 +1,4 @@
-import Link from 'next/link'
-import { Box } from '../Foundation/Base'
+import { Box, LinkInternal } from '../Foundation/Base'
 import { MyWorks } from '../Foundation/Buttons'
 import { AnimationBanner } from './AnimationBanner'
 
@@ -8,7 +7,7 @@ import { TextAnimated } from './TextAnimated'
 
 export function Banner(): JSX.Element {
   return (
-    <Container>
+    <Container id='home'>
       <ContainerWrapper>
         <DivWrapper>
           <TextAnimated />
@@ -16,9 +15,9 @@ export function Banner(): JSX.Element {
         <AnimationBanner />
       </ContainerWrapper>
       <Box>
-        <MyWorks role='navigation'>
-          <Link href='#portfolio'>Meus projetos!</Link>
-        </MyWorks>
+        <LinkInternal href='#portfolio' role='navigation' rel='nofollow'>
+          <MyWorks type='button'>Conheça meus projetos!</MyWorks>
+        </LinkInternal>
       </Box>
     </Container>
   )

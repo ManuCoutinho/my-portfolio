@@ -1,0 +1,82 @@
+import Slider from 'react-slick'
+import { SiTypescript, SiNextdotjs } from 'react-icons/si'
+import {
+  DiBootstrap,
+  DiCss3,
+  DiGit,
+  DiGithubBadge,
+  DiHtml5,
+  DiJqueryLogo,
+  DiJsBadge,
+  DiReact,
+  DiSass,
+} from 'react-icons/di'
+import { CarouselItem } from './CarouselItem'
+
+import { ContainerCarousel } from './styles'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
+export const Carousel = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 2000,
+    cssEase: 'linear',
+    pauseOnHover: true,
+    arrows: false,
+  }
+  return (
+    <ContainerCarousel>
+      <Slider {...settings}>
+        <CarouselItem>
+          <DiCss3 />
+        </CarouselItem>
+
+        <CarouselItem>
+          <DiBootstrap />
+        </CarouselItem>
+
+        <CarouselItem>
+          <DiGit />
+        </CarouselItem>
+
+        <CarouselItem>
+          <DiHtml5 />
+        </CarouselItem>
+
+        <CarouselItem>
+          <DiJsBadge />
+        </CarouselItem>
+
+        <CarouselItem>
+          <DiGithubBadge />
+        </CarouselItem>
+
+        <CarouselItem>
+          <DiJqueryLogo />
+        </CarouselItem>
+
+        <CarouselItem>
+          <DiReact />
+        </CarouselItem>
+
+        <CarouselItem>
+          <DiSass />
+        </CarouselItem>
+
+        <CarouselItem>
+          <SiTypescript />
+        </CarouselItem>
+
+        <CarouselItem>
+          <SiNextdotjs />
+        </CarouselItem>
+      </Slider>
+    </ContainerCarousel>
+  )
+}
