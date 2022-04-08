@@ -10,9 +10,10 @@ export const Menu: React.FC = () => {
     { section: 'Portfólio', url: '#portfolio' },
     { section: 'Contato', url: '#contact' },
   ]
+  //todo verificar arias
   return (
     <>
-      <ToggleMenu>
+      <ToggleMenu aria-haspopup>
         <Hamburger onClick={() => setIsOpen(!isOpen)} />
       </ToggleMenu>
       <MenuList role='menu' aria-label='options' active={isOpen}>
