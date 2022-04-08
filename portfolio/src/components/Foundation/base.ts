@@ -51,7 +51,7 @@ const Subtitle = styled.h3`
   letter-spacing: -1px;
   line-height: 1.5rem;
   padding: 0.5rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 
   span {
     font-weight: ${({ theme }) => theme.fontWeight.normal};
