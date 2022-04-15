@@ -1,14 +1,19 @@
 import { useState } from 'react'
-import { LinkInternal } from '../Foundation/Base'
+import { ToggleTheme } from './ToggleTheme'
+
 import { MenuList, MenuItem, ToggleMenu, Hamburger, NavLink } from './styles'
 
-export const Menu: React.FC = () => {
+type Props = {
+  toggleTheme(): void
+}
+
+export const Menu: React.FC<Props> = ({ toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false)
   const items = [
     { section: 'Home', url: '#home' },
     { section: 'Sobre', url: '#about' },
     { section: 'Portfólio', url: '#portfolio' },
-    { section: 'Contato', url: '#contact' },
+    { section: 'Contato', url: '#contact' }
   ]
   //todo verificar arias
   return (
@@ -22,6 +27,7 @@ export const Menu: React.FC = () => {
             <MenuItem role='menu-item'>{item.section}</MenuItem>
           </NavLink>
         ))}
+        <ToggleTheme toggleTheme={toggleTheme} />
       </MenuList>
     </>
   )

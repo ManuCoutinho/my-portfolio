@@ -1,4 +1,4 @@
-import { Title } from '../Foundation/Base'
+import { Title } from '../Layout/Base'
 import { GridPortfolio } from './GridPortfolio'
 
 import { PortfolioSection } from './styles'

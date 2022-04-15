@@ -18,6 +18,7 @@ declare module 'styled-components' {
       carousel_2: string
       carousel_3: string
       carousel_4: string
+      bg_card: string
     }
     font: {
       text: string
@@ -62,6 +63,7 @@ declare module 'styled-components' {
       carousel_2: string
       carousel_3: string
       carousel_4: string
+      bg_card: string
     }
   }
 }

@@ -33,13 +33,5 @@ const ContainerAbout = styled.div`
     }
   }
 `
-const Text = styled.p`
-  user-select: none;
-  line-height: 1.5rem;
-  font-size: ${({ theme }) => theme.fontSize.md};
-  font-weight: ${({ theme }) => theme.fontWeight.normal};
-  color: ${({ theme }) => theme.colors.text};
-  word-wrap: break-word;
-  padding: 0.5rem;
-`
-export { AboutSection, ContainerAbout, Text }
+
+export { AboutSection, ContainerAbout }

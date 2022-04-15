@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { About } from '../components/AboutSection'
 import { Banner } from '../components/HomeSection'
-import { Container } from '../components/Foundation/Base'
+import { Container } from '../components/Layout/Base'
 
 import { Portfolio } from '../components/PortfolioSection'
 import { Contact } from '../components/ContactSection'

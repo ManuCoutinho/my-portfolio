@@ -1,22 +1,24 @@
-//'#1C221C',
 const dark = {
   title: 'dark',
   colors: {
     black: '#090B09',
     white: '#FFFCF2',
-    background: '#121713',
+    background: '#090B09',
     body: '#090B09',
     primary: '#1A7444',
     secondary: '#12BF62',
-    text: '#e8e4df',
-    title: '#434a3c',
-    info: '#AEAFAC',
-    highlight: '#5AFF15',
-    carousel_1: '#3F3F3F',
-    carousel_2: '#4B4B4B',
-    carousel_3: '#363636',
-    carousel_4: '#565656',
-  },
+    text: '#DEE2E6',
+    title: '#02C39A',
+    info: '#78a590',
+    highlight: 'rgba(251, 255, 31, 0.45)',
+    carousel_1: '#2D392D',
+    carousel_2: '#080a08',
+    carousel_3: 'rgba(10, 13, 10, 0.1)',
+    carousel_4: 'rgba(255, 255, 255, 0.02)',
+    bg_card: '#edf2f4'
+  }
 } as const
 
 export default dark
+//#40916c
+//rgba(0, 255, 0, 0.35)

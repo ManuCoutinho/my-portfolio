@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+type TextProps = {
+  align?: string
+}
+
 const Container = styled.section`
   max-width: 1100px;
   margin: 0 auto;
@@ -26,6 +30,7 @@ const StackBoxCenter = styled.div`
   justify-content: center;
   flex-direction: column;
   flex-wrap: nowrap;
+  gap: 1rem;
 `
 const StackBox = styled.div`
   width: 100%;
@@ -36,7 +41,7 @@ const StackBox = styled.div`
 `
 const Title = styled.h2`
   color: ${({ theme }) => theme.colors.title};
-  font-size: ${({ theme }) => theme.fontSize.lg};
+  font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   line-height: 1.5rem;
   margin: 1.5rem 0;
@@ -60,6 +65,17 @@ const Subtitle = styled.h3`
   }
 `
 
+const Text = styled.p<TextProps>`
+  user-select: none;
+  line-height: 1.5rem;
+  font-size: ${({ theme }) => theme.fontSize.md};
+  font-weight: ${({ theme }) => theme.fontWeight.normal};
+  color: ${({ theme }) => theme.colors.text};
+  word-wrap: break-word;
+  padding: 0.5rem;
+  text-align: ${(props) => props.align || 'left'};
+`
+
 const LinkInternal = styled.a``
 
 export {
@@ -70,4 +86,5 @@ export {
   StackBox,
   StackBoxCenter,
   Subtitle,
+  Text
 }

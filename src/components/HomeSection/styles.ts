@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Box, Container } from '../Foundation/Base'
+import { Box, Container } from '../Layout/Base'
 
 const ContainerHome = styled.main`
   background: ${({ theme }) => theme.colors.background};

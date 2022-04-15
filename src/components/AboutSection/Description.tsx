@@ -1,5 +1,5 @@
-import { StackBox, Subtitle } from '../Foundation/Base'
-import { Text } from './styles'
+import { StackBox, Subtitle } from '../Layout/Base'
+import { Text } from '../Layout/Base'
 
 export const Description = () => {
   return (

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Description } from './Description'
 import { Carousel } from './CarouselAbout'
 
-import { StackBoxCenter, Title } from '../Foundation/Base'
+import { StackBoxCenter, Title } from '../Layout/Base'
 import { AboutSection, ContainerAbout } from './styles'
 
 import aboutImg from '../../../public/assets/perfil.webp'

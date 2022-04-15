@@ -8,6 +8,7 @@ import {
   SiTailwindcss,
   SiMaterialui,
   SiChakraui,
+  SiJest
 } from 'react-icons/si'
 import {
   DiBootstrap,
@@ -18,20 +19,21 @@ import {
   DiJqueryLogo,
   DiJsBadge,
   DiReact,
-  DiSass,
+  DiSass
 } from 'react-icons/di'
 import { CarouselItem } from './CarouselItem'
 
 import { ContainerCarousel } from './styles'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-import { Subtitle } from '../../Foundation/Base'
+import { Subtitle } from '../../Layout/Base'
 
 export const Carousel = () => {
   const settings = {
     dots: true,
+    centerMode: true,
+    adaptiveHeight: true,
+    rows: 2,
     infinite: true,
-    slidesToShow: 7,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 1000,
@@ -43,22 +45,23 @@ export const Carousel = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
-        },
+          dots: false
+        }
       },
       {
         breakpoint: 550,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
+          row: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: false,
-        },
-      },
-    ],
+          dots: false
+        }
+      }
+    ]
   }
   return (
     <ContainerCarousel>
@@ -126,6 +129,9 @@ export const Carousel = () => {
         </CarouselItem>
         <CarouselItem>
           <SiStyledcomponents />
+        </CarouselItem>
+        <CarouselItem>
+          <SiJest />
         </CarouselItem>
       </Slider>
     </ContainerCarousel>

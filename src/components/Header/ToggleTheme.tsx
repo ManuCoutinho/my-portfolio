@@ -1,28 +1,29 @@
 import { useContext } from 'react'
 import Switch from 'react-switch'
 import { ThemeContext } from 'styled-components'
-import { SwitchThemeContext } from '../../contexts/SwitchThemeContext'
 
-import { WiDaySunny } from 'react-icons/wi'
-import { FiMoon } from 'react-icons/fi'
+import { BsSunFill, BsMoonStars } from 'react-icons/bs'
 
 type Props = {
   toggleTheme(): void
 }
 export const ToggleTheme: React.FC<Props> = ({ toggleTheme }) => {
-  const theme = useContext(ThemeContext)
+  const { colors, title } = useContext(ThemeContext)
 
   return (
     <Switch
       onChange={toggleTheme}
-      checked={theme.title === 'light'}
-      onColor={theme.colors.primary}
-      offColor={theme.colors.primary}
-      offHandleColor={theme.colors.text}
-      onHandleColor={theme.colors.text}
+      checked={title === 'light'}
+      onColor={colors.secondary}
+      offColor={colors.carousel_1}
+      offHandleColor={colors.info}
+      onHandleColor={colors.primary}
+      draggable
+      aria-checked
+      aria-describedby='switch theme'
       height={20}
       width={60}
-      handleDiameter={30}
+      handleDiameter={25}
       uncheckedIcon={
         <span
           style={{
@@ -31,10 +32,11 @@ export const ToggleTheme: React.FC<Props> = ({ toggleTheme }) => {
             alignItems: 'center',
             height: '100%',
             fontSize: 15,
-            paddingRight: 2
+            paddingRight: 2,
+            color: `${colors.white}`
           }}
         >
-          <WiDaySunny />
+          <BsSunFill />
         </span>
       }
       checkedIcon={
@@ -46,10 +48,11 @@ export const ToggleTheme: React.FC<Props> = ({ toggleTheme }) => {
             height: '100%',
             fontSize: 15,
             paddingRight: 2,
-            paddingBottom: 2
+            paddingBottom: 2,
+            color: `${colors.white}`
           }}
         >
-          <FiMoon />
+          <BsMoonStars />
         </span>
       }
     />

@@ -1,9 +1,8 @@
 import styled from 'styled-components'
-import { lighten, transparentize } from 'polished'
 
-const color = '#E38F77'
-
-const PortfolioSection = styled.section``
+const PortfolioSection = styled.section`
+  margin: 5rem auto;
+`
 
 const Grid = styled.div`
   max-width: clamp(80vw 1180px 100%);
@@ -16,17 +15,26 @@ const Grid = styled.div`
 `
 
 const CardComponent = styled.div`
-  background: ${transparentize(0.8, color)};
+  background: ${({ theme }) => theme.colors.bg_card};
   width: 100%;
   padding: 1rem 1rem 2rem 1rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  transition: ${({ theme }) => theme.transition};
 
   box-shadow: -2px -5px 10px ${({ theme }) => theme.colors.highlight};
+  -webkit-box-shadow: -2px -5px 10px ${({ theme }) => theme.colors.highlight};
+
   img {
     width: 100%;
     object-fit: cover;
+  }
+
+  &:hover {
+    transition: ${({ theme }) => theme.transition};
+    box-shadow: 4px 10px 10px ${({ theme }) => theme.colors.highlight};
+    -webkit-box-shadow: 4px 10px 10px ${({ theme }) => theme.colors.highlight};
   }
 `
 

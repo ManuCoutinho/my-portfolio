@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { FiMenu } from 'react-icons/fi'
-import { LinkInternal } from '../Foundation/Base'
+import { LinkInternal } from '../Layout/Base'
 
 type MenuProps = {
   active: boolean
@@ -36,14 +36,21 @@ const Nav = styled.nav`
 `
 
 const LogoComponent = styled.h1`
-  font-size: ${({ theme }) => theme.fontSize.xl};
+  font-size: ${({ theme }) => theme.fontSize.xlg};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   letter-spacing: -3px;
   text-shadow: -2px -1px 3px ${({ theme }) => theme.colors.highlight};
   padding: 2rem 0;
+  transition: ${({ theme }) => theme.transition};
   span {
+    font-size: ${({ theme }) => theme.fontSize.xl};
     font-family: ${({ theme }) => theme.font.text};
     font-weight: ${({ theme }) => theme.fontWeight.light};
+  }
+
+  &:hover {
+    transition: ${({ theme }) => theme.transition};
+    text-shadow: 4px 2px 3px ${({ theme }) => theme.colors.highlight};
   }
 `
 
@@ -52,6 +59,7 @@ const MenuList = styled.ul<MenuProps>`
   font-size: ${({ theme }) => theme.fontSize.md};
   font-weight: ${({ theme }) => theme.fontWeight.normal};
   list-style: none;
+  align-items: center;
 
   @media (max-width: 50em) {
     background-color: ${({ theme }) => theme.colors.background};
@@ -83,6 +91,7 @@ const NavLink = styled(LinkInternal)`
 `
 const Hamburger = styled(FiMenu)`
   font-size: 2em;
+  color: ${({ theme }) => theme.colors.text};
 `
 const ToggleMenu = styled.button`
   cursor: pointer;
@@ -103,5 +112,5 @@ export {
   MenuList,
   Nav,
   ToggleMenu,
-  NavLink,
+  NavLink
 }

@@ -2,16 +2,22 @@ import { FaLinkedin, FaGithub, FaTwitterSquare } from 'react-icons/fa'
 import { SocialItems } from './SocialItems'
 import { Container } from './styles'
 
-export const SocialContacts: React.FC = () => {
+type PropsContacts = {
+  display: string
+}
+export const SocialContacts: React.FC<PropsContacts> = ({ display }) => {
   return (
-    <Container>
-      <SocialItems url='https://linkedin.com/in/emanuela-coutinho'>
+    <Container display={display}>
+      <SocialItems
+        url='https://linkedin.com/in/emanuela-coutinho'
+        key='linkedin'
+      >
         <FaLinkedin />
       </SocialItems>
-      <SocialItems url='https://github.com/manucoutinho'>
+      <SocialItems url='https://github.com/manucoutinho' key='git'>
         <FaGithub />
       </SocialItems>
-      <SocialItems url='https://twitter.com/manucout'>
+      <SocialItems url='https://twitter.com/manucout' key='twitter'>
         <FaTwitterSquare />
       </SocialItems>
     </Container>

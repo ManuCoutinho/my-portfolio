@@ -1,8 +1,10 @@
 import styled from 'styled-components'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 const ContainerCarousel = styled.div`
   width: 100%;
-  height: 15rem;
+  height: 350px;
   padding: 1.5rem 2rem;
   margin: 1.5rem auto;
 `
@@ -22,7 +24,7 @@ const Item = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0.5rem;
+  margin: 1.5rem;
 
   svg {
     font-size: ${({ theme }) => theme.fontSize.xlg};

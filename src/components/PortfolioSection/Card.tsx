@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { StackBox, Subtitle } from '../Foundation/Base'
+import { StackBox, Subtitle } from '../Layout/Base'
 import { CardComponent, Description } from './styles'
 
 export const Card = () => {

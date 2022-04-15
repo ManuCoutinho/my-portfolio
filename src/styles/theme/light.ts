@@ -14,7 +14,8 @@ const light = {
     carousel_1: '#DEDDDB',
     carousel_2: '#FFFFFF',
     carousel_3: '#CBCAC7',
-    carousel_4: '#FFFFFF'
+    carousel_4: '#FFFFFF',
+    bg_card: 'rgba(227,143,119,0.2)'
   }
 } as const
 

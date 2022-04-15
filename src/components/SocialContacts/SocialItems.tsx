@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { StackBoxCenter } from '../Foundation/Base'
+import { StackBoxCenter } from '../Layout/Base'
 import { ContactItem } from './styles'
 
 interface SocialItemsProps {

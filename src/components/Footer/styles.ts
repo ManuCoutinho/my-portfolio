@@ -22,6 +22,7 @@ const FooterContainer = styled.footer`
   @media (max-width: 48em) {
     flex-direction: column;
     font-size: ${({ theme }) => theme.fontSize.sm};
+    gap: 0.5rem;
   }
 `
 

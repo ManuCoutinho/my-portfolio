@@ -1,20 +1,25 @@
 import styled from 'styled-components'
-import { LinkInternal } from '../Foundation/Base'
+import { LinkInternal } from '../Layout/Base'
 
-const Container = styled.nav`
+type Props = {
+  display: string
+}
+
+const Container = styled.nav<Props>`
   vertical-align: middle;
   color: ${({ theme }) => theme.colors.secondary};
   font-size: 2rem;
   transition: ${({ theme }) => theme.transition};
+  display: ${(props) => props.display || 'block'};
 `
 
 const ContactItem = styled(LinkInternal)`
   &:hover {
     transition: ${({ theme }) => theme.transition};
     transform: scale(1.2);
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.carousel_1};
 
-    filter: drop-shadow(5px 5px 10px ${({ theme }) => theme.colors.highlight});
+    filter: drop-shadow(-5px 2px 3px ${({ theme }) => theme.colors.highlight});
   }
 `
 

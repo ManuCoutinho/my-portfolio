@@ -1,7 +1,8 @@
-import { Box, LinkInternal } from '../Foundation/Base'
-import { MyWorks } from '../Foundation/Buttons'
+import { Box, LinkInternal } from '../Layout/Base'
+import { MyWorks } from '../Layout/Buttons'
 import { SocialContacts } from '../SocialContacts'
-import { AnimationBanner } from './AnimationBanner'
+import { LottieAnimation } from '../Animation'
+import * as animationData from '../HomeSection/animation.json'
 
 import { ContainerHome, ContainerWrapper, DivWrapper } from './styles'
 import { TextAnimated } from './TextAnimated'
@@ -18,9 +19,9 @@ export function Banner(): JSX.Element {
             </LinkInternal>
           </Box>
         </DivWrapper>
-        <AnimationBanner />
+        <LottieAnimation data={animationData} />
       </ContainerWrapper>
-      <SocialContacts />
+      <SocialContacts display='block' />
     </ContainerHome>
   )
 }
