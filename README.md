@@ -1,36 +1,85 @@
-# Portfólio de Emanuela Coutinho
-<br/>
+<!-- <div align="center" id="top">
+  <img src="./.github/manucoutinho.github.io.gif" alt="Portfolio" />-->
 
-<div>
-<img src="https://img.shields.io/github/license/ManuCoutinho/manucoutinho.github.io.svg"style="margin-right: 24px"/>
-<img src="https://img.shields.io/website-up-down-green-red/http/monip.org.svg"/>
+&#xa0;
+
+  <!-- <a href="https://portfolio.netlify.app">Demo</a> -->
 </div>
 
-<br/>
-<div style="margin: 16px 0px"> 
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" style="margin-right: 16px"/> 
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" style="margin-right: 16px"/> 
-<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" style="margin-right: 16px"/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-</div>
-<br/>
-<br/>
+<h1 align="center">My Portfolio</h1>
 
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/manucoutinho/manucoutinho.github.io?color=56BEB8">  
+  <img alt="License" src="https://img.shields.io/github/license/manucoutinho/manucoutinho.github.io?color=56BEB8">  
+  <img alt="Github stars" src="https://img.shields.io/github/stars/manucoutinho/manucoutinho.github.io?color=56BEB8" />
+</p>
 
-Portfólio criado em layout de página única, utilizando:
-* _Bootstrap_ para aplicar o estilo;
-* _jQuery_ e _Javascript_ para criar e monitorar as animações de scroll;
-* Lib que utiliza _jQuery_ para aplicar efeito _parallax_ nas seções intermediárias;
-* Fontes: Raleway e Montserrat by <a href="https://fonts.google.com/">_Google Fonts_</a>;
-* Ícones by Bootstrap Icons;
-* Animações com _CSS3_ 🎞️;
-* Interface adaptada para dispositivos mobile 📱;
-* Paleta de cores aprovada no quesito contraste ♿. 
+<h4 align="center"> 
+Status: 
+	🚧  Portfolio 🚀 Under construction...  🚧
+</h4>
 
-<br/>
-<br/>
-<div>
-<img src="http://ForTheBadge.com/images/badges/built-with-love.svg"/>
-</div>
+<hr>
 
-### @ManuCoutinho
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/manucoutinho" target="_blank">Author</a>
+</p>
+
+<br>
+
+## :dart: About
+
+Hi! Welcome to my portfolio 👋🏽.
+
+💃🏽 Coming son news!
+
+## :sparkles: Features
+
+:heavy_check_mark: Feature 1;\
+:heavy_check_mark: Feature 2;\
+:heavy_check_mark: Feature 3;
+
+## :rocket: Technologies
+
+The following tools were used in this project:
+
+- [React](https://pt-br.reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## :white_check_mark: Requirements
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+## :checkered_flag: Starting
+
+```bash
+# Clone this project
+$ git clone https://github.com/manucoutinho/manucoutinho.github.io
+
+# Access
+$ cd portfolio
+
+# Install dependencies
+$ yarn
+
+# Run the project
+$ yarn start
+
+# The server will initialize in the <http://localhost:3000>
+```
+
+## :memo: License
+
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.
+
+Made with :heart: by <a href="https://github.com/manucoutinho" target="_blank">ManuCoutinho</a>
+
+&#xa0;
+
+<a href="#top">Back to top</a>

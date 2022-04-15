@@ -1,8 +1,15 @@
-module.exports = {
-  reactStrictMode: true
-}
-const isProd = process.env.NODE_ENV === 'production'
+/** @type {import('next').NextConfig} */
 
-module.exports = {
+const nextConfig = {
+  reactStrictMode: true,
+  compiler: {
+    styledComponents: true
+  }
+}
+
+const isProd = process.env.NODE_ENV === 'production'
+const ghPage = {
   assetPrefix: isProd ? 'manucoutinho.github.io/' : ''
 }
+
+;(module.exports = nextConfig), ghPage
