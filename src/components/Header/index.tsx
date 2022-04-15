@@ -1,10 +1,13 @@
 import { Navbar } from './Navbar'
 import { Container } from './styles'
 
-export const Header: React.FC = () => {
+type Props = {
+  toggleTheme(): void
+}
+export const Header: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <Container>
-      <Navbar />
+      <Navbar toggleTheme={toggleTheme} />
     </Container>
   )
 }

@@ -1,20 +1,41 @@
+import { useState } from 'react'
 import { AppProps } from 'next/app'
-import { ThemeProvider } from 'styled-components'
+import { DefaultTheme, ThemeProvider } from 'styled-components'
+import { parseCookies, setCookie } from 'nookies'
+import { Header } from '../components/Header'
 
 import GlobalStyle from '../styles/global'
-import { light } from '../styles/theme/light'
-import { dark } from '../styles/theme/dark'
-import usePersistedState from '../components/Utils/usePesistedState'
+import { combineTheme, light, dark } from '../styles/theme'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  // const [theme, setTheme] = usePersistedState('theme', light)
+const MyApp: React.FC<AppProps> = ({ pageProps, Component }) => {
+  const cookies = parseCookies()
 
-  // const toggleTheme = () => {
-  //   setTheme(theme.title === 'dark' ? light : dark)
-  // }
+  const userTheme = cookies.theme === 'dark' ? dark : light
+
+  const [theme, setTheme] = useState<DefaultTheme>(combineTheme(userTheme))
+
+  function toggleTheme() {
+    if (theme.title === 'dark') {
+      setCookie(null, 'theme', 'light', {
+        path: '/',
+        maxAge: 30 * 24 * 60 * 60, //30days
+        sameSite: true
+      })
+      return setTheme(combineTheme(light))
+    }
+    if (theme.title === 'light') {
+      setCookie(null, 'theme', 'dark', {
+        path: '/',
+        maxAge: 30 * 24 * 60 * 60, //30days
+        sameSite: true
+      })
+      return setTheme(combineTheme(dark))
+    }
+  }
 
   return (
-    <ThemeProvider theme={light}>
+    <ThemeProvider theme={theme}>
+      <Header toggleTheme={toggleTheme} />
       <Component {...pageProps} />
       <GlobalStyle />
     </ThemeProvider>

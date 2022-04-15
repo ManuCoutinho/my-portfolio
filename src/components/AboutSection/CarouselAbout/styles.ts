@@ -9,8 +9,13 @@ const ContainerCarousel = styled.div`
 
 const Item = styled.div`
   border-radius: ${({ theme }) => theme.radius.medium};
-  background: linear-gradient(45deg, #dedddb, #ffffff);
-  box-shadow: 15px -15px 75px #cbcac7, -15px 15px 75px #ffffff;
+  background: linear-gradient(
+    145deg,
+    ${({ theme }) => theme.colors.carousel_1},
+    ${({ theme }) => theme.colors.carousel_2}
+  );
+  box-shadow: 13px 13px 54px ${({ theme }) => theme.colors.carousel_3},
+    -13px -13px 54px ${({ theme }) => theme.colors.carousel_4};
   color: ${({ theme }) => theme.colors.secondary};
   width: 6.25rem;
   height: 6.25rem;

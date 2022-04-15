@@ -1,4 +1,4 @@
-export const light = {
+const light = {
   title: 'light',
   colors: {
     black: '#090B09',
@@ -10,30 +10,12 @@ export const light = {
     text: '#242b31',
     title: '#0A0A0A',
     info: '#56667c',
-    highlight: 'rgba(38, 247, 240, 0.25)',
-  },
-  font: {
-    text: "'Montserrat Alternates', sans-serif",
-    title: "'Josefin Sans', sans-serif",
-  },
-  fontSize: {
-    xsm: '0.75rem',
-    sm: '0.875rem',
-    md: '1rem',
-    lg: '1.5rem',
-    xl: '2rem',
-    xlg: '3.5rem',
-  },
-  fontWeight: {
-    light: 100,
-    normal: 400,
-    semibold: 600,
-    bold: 700,
-  },
-  transition: 'all 0.2s ease-in-out',
-  radius: {
-    default: '16px',
-    medium: '25px',
-    full: '50%',
-  },
-}
+    highlight: 'rgba(38, 247, 240, 0.5)',
+    carousel_1: '#DEDDDB',
+    carousel_2: '#FFFFFF',
+    carousel_3: '#CBCAC7',
+    carousel_4: '#FFFFFF'
+  }
+} as const
+
+export default light

@@ -1,7 +1,8 @@
 {
-  "trailingComma": "es5",
+  "trailingComma": "none",
   "tabWidth": 2,
   "semi": false,
   "singleQuote": true,
-  "jsxSingleQuote": true
+  "jsxSingleQuote": true,
+  "endOfLine": "auto"
 }

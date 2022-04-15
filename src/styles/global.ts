@@ -29,20 +29,20 @@ body, html {
 }
 
 body {
- background: ${({ theme }) => theme.colors.body};
- color: ${({ theme }) => theme.colors.text};
- transition: ${({ theme }) => theme.transition};
+ background: ${(props) => props.theme.colors.body};
+ color: ${(props) => props.theme.colors.text};
+ transition: ${(props) => props.theme.transition};
 }
 
 body, input, textarea, button {
- font-family: ${({ theme }) => theme.font.text}; 
- font-weight: ${({ theme }) => theme.fontWeight.normal};
+ font-family: ${(props) => props.theme.font.text}; 
+ font-weight: ${(props) => props.theme.fontWeight.normal};
  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
- font-weight: ${({ theme }) => theme.fontWeight.bold};
- font-family: ${({ theme }) => theme.font.title}; 
+ font-weight: ${(props) => props.theme.fontWeight.bold};
+ font-family: ${(props) => props.theme.font.title}; 
 }
 
 a {

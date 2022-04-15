@@ -25,6 +25,7 @@ import { CarouselItem } from './CarouselItem'
 import { ContainerCarousel } from './styles'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import { Subtitle } from '../../Foundation/Base'
 
 export const Carousel = () => {
   const settings = {
@@ -61,6 +62,7 @@ export const Carousel = () => {
   }
   return (
     <ContainerCarousel>
+      <Subtitle>Minhas Skills:</Subtitle>
       <Slider {...settings}>
         <CarouselItem>
           <DiCss3 />

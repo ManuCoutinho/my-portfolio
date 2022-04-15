@@ -10,7 +10,7 @@ export function TextAnimated(): JSX.Element {
       <p>Hi, I am </p>
       <Typed
         strings={texts}
-        typeSpeed={150}
+        typeSpeed={500}
         loop
         backSpeed={100}
         backDelay={7}

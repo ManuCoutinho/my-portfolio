@@ -1,7 +1,8 @@
+import Head from 'next/head'
 import { About } from '../components/AboutSection'
 import { Banner } from '../components/HomeSection'
 import { Container } from '../components/Foundation/Base'
-import { Header } from '../components/Header'
+
 import { Portfolio } from '../components/PortfolioSection'
 import { Contact } from '../components/ContactSection'
 import { Footer } from '../components/Footer'
@@ -9,7 +10,9 @@ import { Footer } from '../components/Footer'
 export default function Home() {
   return (
     <>
-      <Header />
+      <Head>
+        <title>Manu Coutinho</title>
+      </Head>
       <Banner />
       <Container>
         <About />
