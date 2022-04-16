@@ -17,13 +17,13 @@ export const ToggleTheme: React.FC<Props> = ({ toggleTheme }) => {
       onColor={colors.secondary}
       offColor={colors.carousel_1}
       offHandleColor={colors.info}
-      onHandleColor={colors.primary}
+      onHandleColor={colors.white}
       draggable
       aria-checked
       aria-describedby='switch theme'
-      height={20}
+      height={28}
       width={60}
-      handleDiameter={25}
+      handleDiameter={30}
       uncheckedIcon={
         <span
           style={{

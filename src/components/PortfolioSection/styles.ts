@@ -47,4 +47,56 @@ const Description = styled.p`
   user-select: none;
 `
 
-export { CardComponent, Description, Grid, PortfolioSection }
+const ModalBody = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+
+  @media only screen and (max-width: 45em) {
+    flex-direction: column;
+  }
+`
+const ModalHeader = styled.header`
+  width: 100%;
+  padding: 0.5rem;
+  h3 {
+    color: ${({ theme }) => theme.colors.text};
+  }
+`
+
+const ModalFooter = styled.footer`
+  width: 100%;
+  align-content: flex-end;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+`
+
+const Content = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+
+  img {
+    width: auto;
+    margin: 0 auto;
+  }
+`
+
+export {
+  CardComponent,
+  Description,
+  Grid,
+  PortfolioSection,
+  ModalBody,
+  ModalHeader,
+  ModalFooter,
+  Content
+}

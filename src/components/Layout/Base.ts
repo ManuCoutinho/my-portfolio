@@ -37,7 +37,7 @@ const StackBox = styled.div`
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 `
 const Title = styled.h2`
   color: ${({ theme }) => theme.colors.title};

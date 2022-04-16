@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 
-export const MyWorks = styled.button`
+const MyWorks = styled.button`
   color: ${({ theme }) => theme.colors.white};
   border-radius: ${({ theme }) => theme.radius.default};
   background-color: ${({ theme }) => theme.colors.info};
   border: 0;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   font-weight: ${({ theme }) => theme.fontWeight.semibold};
   font-size: 1.3rem;
@@ -24,3 +25,23 @@ export const MyWorks = styled.button`
     padding: 1rem 1.3rem;
   }
 `
+
+const ModalButton = styled.button`
+  border: 1px solid ${({ theme }) => theme.colors.primary};
+  background: transparent;
+  border-radius: ${({ theme }) => theme.radius.default};
+  margin-top: 0.5rem;
+  outline: 0;
+  padding: 0.5rem;
+  transition: ${({ theme }) => theme.transition};
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    background: ${({ theme }) => theme.colors.primary};
+    filter: brightness(0.8);
+    transition: ${({ theme }) => theme.transition};
+  }
+`
+
+export { MyWorks, ModalButton }

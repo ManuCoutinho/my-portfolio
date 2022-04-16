@@ -57,7 +57,7 @@ const LogoComponent = styled.h1`
 const MenuList = styled.ul<MenuProps>`
   display: flex;
   font-size: ${({ theme }) => theme.fontSize.md};
-  font-weight: ${({ theme }) => theme.fontWeight.normal};
+  font-weight: ${({ theme }) => theme.fontWeight.semibold};
   list-style: none;
   align-items: center;
 

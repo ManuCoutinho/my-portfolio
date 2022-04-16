@@ -14,6 +14,7 @@ const Container = styled.nav<Props>`
 `
 
 const ContactItem = styled(LinkInternal)`
+  margin: 0.5rem;
   &:hover {
     transition: ${({ theme }) => theme.transition};
     transform: scale(1.2);
