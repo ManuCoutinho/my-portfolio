@@ -7,7 +7,6 @@ const MyWorks = styled.button`
   border: 0;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
   font-weight: ${({ theme }) => theme.fontWeight.semibold};
   font-size: 1.3rem;
   padding: 1rem;
@@ -27,19 +26,18 @@ const MyWorks = styled.button`
 `
 
 const ModalButton = styled.button`
-  border: 1px solid ${({ theme }) => theme.colors.primary};
+  border: 1px solid ${({ theme }) => theme.colors.glass};
   background: transparent;
-  border-radius: ${({ theme }) => theme.radius.default};
+  border-radius: ${({ theme }) => theme.radius.small};
   margin-top: 0.5rem;
   outline: 0;
   padding: 0.5rem;
   transition: ${({ theme }) => theme.transition};
-  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.15);
 
   &:hover {
-    background: ${({ theme }) => theme.colors.primary};
-    filter: brightness(0.8);
+    background: ${({ theme }) => theme.colors.glass};
     transition: ${({ theme }) => theme.transition};
   }
 `

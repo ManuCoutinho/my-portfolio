@@ -26,7 +26,7 @@ import { CarouselItem } from './CarouselItem'
 import { ContainerCarousel } from './styles'
 import { Subtitle } from '../../Layout/Base'
 
-export const Carousel = () => {
+export const Carousel: React.FC = () => {
   const settings = {
     dots: true,
     centerMode: true,

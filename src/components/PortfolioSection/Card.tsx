@@ -26,7 +26,6 @@ export const Card = () => {
           src='/assets/sample.webp'
         />
         <Subtitle>Nome do Projeto</Subtitle>
-        <Description>Em breve um conteúdo aqui! 💃🏽.</Description>
         <ModalButton type='button' onClick={() => setModalIsOpen(true)}>
           Detalhes
         </ModalButton>
@@ -49,16 +48,19 @@ export const Card = () => {
             },
             content: {
               position: 'absolute',
+              padding: 0,
               top: '15%',
-              border: `1px solid ${colors.highlight}`,
-              background: `${colors.info}`,
+              border: `1px solid ${colors.background}`,
+              background: `${colors.glass}`,
               overflow: 'hidden',
               WebkitOverflowScrolling: 'touch',
               borderRadius: '4px',
               outline: 0,
               width: '80vw',
-              height: '80vh',
-              margin: '0 auto'
+              height: '70vh',
+              margin: '0 auto',
+              backdropFilter: 'blur(30px) saturate(180%)',
+              boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)'
             }
           }}
         >

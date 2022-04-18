@@ -16,8 +16,8 @@ export const Contact: React.FC = () => {
         <StackBoxCenter>
           <Subtitle>Fale Comigo!</Subtitle>
           <Text align='center'>
-            Caso tenha ficado alguma dúvida ou, se quiser um orçamento fique à
-            vontade para entrar em contato.
+            Caso tenha ficado alguma dúvida ou, se quiser saber mais sobre o meu
+            trabalho, fique à vontade para entrar em contato. #openToWork
           </Text>
           <Email
             rel='noreferrer'

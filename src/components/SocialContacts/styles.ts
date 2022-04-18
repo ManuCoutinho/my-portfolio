@@ -18,7 +18,6 @@ const ContactItem = styled(LinkInternal)`
   &:hover {
     transition: ${({ theme }) => theme.transition};
     transform: scale(1.2);
-    color: ${({ theme }) => theme.colors.carousel_1};
 
     filter: drop-shadow(-5px 2px 3px ${({ theme }) => theme.colors.highlight});
   }

@@ -25,6 +25,7 @@ const defaultTheme = {
   },
   transition: 'all 0.2s ease-in-out',
   radius: {
+    small: '8px',
     default: '16px',
     medium: '25px',
     full: '50%'

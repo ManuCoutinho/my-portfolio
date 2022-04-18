@@ -15,10 +15,9 @@ const dark = {
     carousel_2: '#080a08',
     carousel_3: 'rgba(10, 13, 10, 0.1)',
     carousel_4: 'rgba(255, 255, 255, 0.02)',
-    bg_card: '#edf2f4'
+    bg_card: '#edf2f4',
+    glass: 'rgba(9, 11, 9, 0.65)'
   }
 } as const
 
 export default dark
-//#40916c
-//rgba(0, 255, 0, 0.35)

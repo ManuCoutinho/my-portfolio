@@ -15,7 +15,7 @@ const FooterContainer = styled.footer`
     font-family: ${({ theme }) => theme.font.title};
     font-weight: ${({ theme }) => theme.fontWeight.semibold};
     color: ${({ theme }) => theme.colors.secondary};
-    font-size: ${({ theme }) => theme.fontSize.lg};
+    font-size: ${({ theme }) => theme.fontSize.md};
     border-bottom: 1px solid ${({ theme }) => theme.colors.highlight};
   }
 

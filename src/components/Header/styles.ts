@@ -1,12 +1,12 @@
-import styled from 'styled-components'
+import styled, { DefaultTheme } from 'styled-components'
 import { FiMenu } from 'react-icons/fi'
 import { LinkInternal } from '../Layout/Base'
 
 type MenuProps = {
   active: boolean
 }
+
 const Container = styled.header`
-  background: ${({ theme }) => theme.colors.background};
   border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.info};
   margin-bottom: 1rem;
@@ -18,8 +18,10 @@ const Container = styled.header`
   user-select: none;
   z-index: 1024;
 
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(86, 102, 124, 0.25);
+  background: ${({ theme }) => theme.colors.glass};
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
 `
 
 const Nav = styled.nav`
