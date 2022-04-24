@@ -12,7 +12,15 @@ const DEFAULT_CONTEXT = {
       styles: '',
       api: '',
       framework: '',
-      id: ''
+      id: '',
+      img: [
+        {
+          imgPng: '',
+          imgWebp: '',
+          alt: '',
+          id: ''
+        }
+      ]
     }
   ]
 }
