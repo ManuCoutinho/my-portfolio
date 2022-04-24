@@ -1,5 +1,5 @@
 <!-- <div align="center" id="top">
-  <img src="./.github/manucoutinho.github.io.gif" alt="Portfolio" />-->
+  <img src="./.github/my-portfolio.gif" alt="Portfolio" />-->
 
 &#xa0;
 
@@ -9,9 +9,9 @@
 <h1 align="center">My Portfolio</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/manucoutinho/manucoutinho.github.io?color=56BEB8">  
-  <img alt="License" src="https://img.shields.io/github/license/manucoutinho/manucoutinho.github.io?color=56BEB8">  
-  <img alt="Github stars" src="https://img.shields.io/github/stars/manucoutinho/manucoutinho.github.io?color=56BEB8" />
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/manucoutinho/my-portfolio?color=56BEB8">  
+  <img alt="License" src="https://img.shields.io/github/license/manucoutinho/my-portfolio?color=56BEB8">  
+  <img alt="Github stars" src="https://img.shields.io/github/stars/manucoutinho/my-portfolio?color=56BEB8" />
 </p>
 
 <h4 align="center"> 
@@ -37,13 +37,20 @@ Status:
 
 Hi! Welcome to my portfolio 👋🏽.
 
+This project compiles some of my skills and shows my projects developed in the last few months.
+
+With a awesome and clean design made by me, I present the 'portfolio' section with cards in the 'polaroid photos' style. The modals of this section contain a gallery of images of the projects, made purely in CSS.
+
+The presentation of the layout on mobile devices is due to new routes.
+
 💃🏽 Coming son news!
 
 ## :sparkles: Features
 
 :heavy_check_mark: Dark theme\
 :heavy_check_mark: Lottie's animations\
-:heavy_check_mark: Carousel made with pure CSS;
+:heavy_check_mark: Carousel made with pure CSS\
+:heavy_check_mark: Mobile friendly;
 
 ## :rocket: Technologies
 
@@ -69,7 +76,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ```bash
 # Clone this project
-$ git clone https://github.com/manucoutinho/manucoutinho.github.io
+$ git clone https://github.com/manucoutinho/my-portfolio
 
 # Access
 $ cd portfolio
