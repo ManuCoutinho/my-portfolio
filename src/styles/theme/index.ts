@@ -13,7 +13,7 @@ const defaultTheme = {
     xsm: '0.75em',
     sm: '0.875em',
     md: '1em',
-    lg: '1.5rem',
+    lg: '1.5em',
     xl: '2rem',
     xlg: '3rem'
   },

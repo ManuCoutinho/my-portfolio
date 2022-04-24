@@ -1,106 +1,43 @@
 import styled from 'styled-components'
 
-const Container = styled.section`
-  display: flex;
-  flex-direction: column;
-  width: 1280px;
-`
-
-const Carousel = styled.div`
-  height: calc(calc(calc(9 / 16) * 800px));
-  contain: strict;
-`
-
-const CarouselItem = styled.div`
-  /* scroll-item */
-  width: 1100px;
-  height: auto;
-
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    &:active {
-      cursor: grabbing;
-      cursor: -webkit-grabbing;
-    }
-  }
-`
-const List = styled.ul`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-y: auto;
+const ItemWrapper = styled.div`
   width: 100%;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
-  @supports (scroll-snap-align: start) {
-    scroll-snap-type: x mandatory;
-  }
-
-  @supports not (scroll-snap-align: start) {
-    -webkit-scroll-snap-type: x mandatory;
-    scroll-snap-type: x mandatory;
-    -webkit-scroll-snap-destination: 0 80%;
-    scroll-snap-destination: 0 80%;
-    -webkit-scroll-snap-points-x: repeat(100%);
-    scroll-snap-points-x: repeat(100%);
-  }
 `
+const Items = styled.div`
+  display: flex;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  sroll-behavior: smooth;
+  overflow: hidden;
+  pointer-events: none;
+`
+const Item = styled.div`
+  flex: none;
 
-const ListItem = styled.li`
-  margin: 0 1vw;
+  width: 100%; //responsavel pela qtd de fotos
+  height: 60vh;
+  pointer-events: none;
+  scroll-snap-align: start;
 
-  &:first-of-type {
-    margin: 0;
-  }
-
-  @supports (scroll-snap-align: start) {
-    scroll-snap-align: center;
-  }
-
-  @supports not (scroll-snap-align: start) {
-    scroll-snap-coordinate: 0 0;
+  picture,
+  img {
+    width: 100%;
+    object-fit: contain;
   }
 `
 
 const CarouselNav = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 1rem;
-  margin: auto;
-  width: 100%;
-  margin-top: 1vw;
+  margin-top: 0.5rem;
 
   a {
+    padding: 0.5rem;
     background: ${({ theme }) => theme.colors.secondary};
     border-radius: ${({ theme }) => theme.radius.full};
-    z-index: 2;
-    padding: 0.8rem;
-
-    transition: ${({ theme }) => theme.transition};
-
-    &:hover {
-      box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.15);
-      transition: ${({ theme }) => theme.transition};
-    }
-
-    &:active {
-      background: ${({ theme }) => theme.colors.highlight};
-    }
+    z-index: 5;
   }
 `
 
-export { Container, Carousel, CarouselItem, CarouselNav, List, ListItem }
+export { ItemWrapper, Item, Items, CarouselNav }

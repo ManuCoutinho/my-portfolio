@@ -1,11 +1,9 @@
 import { FaLinkedin, FaGithub, FaTwitterSquare } from 'react-icons/fa'
 import { SocialItems } from './SocialItems'
 import { Container } from './styles'
+import { StylesProps } from './types'
 
-type PropsContacts = {
-  display: string
-}
-export const SocialContacts: React.FC<PropsContacts> = ({ display }) => {
+export const SocialContacts: React.FC<StylesProps> = ({ display }) => {
   return (
     <Container display={display}>
       <SocialItems

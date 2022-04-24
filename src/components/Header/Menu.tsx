@@ -1,31 +1,73 @@
-import { useState } from 'react'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { MouseEvent, useContext, useState } from 'react'
 import { ToggleTheme } from './ToggleTheme'
+import { ToggleProps } from './types'
+import { ThemeContext } from 'styled-components'
 
-import { MenuList, MenuItem, ToggleMenu, Hamburger, NavLink } from './styles'
+import {
+  MenuList,
+  MenuItem,
+  ToggleMenu,
+  Hamburger,
+  NavLink,
+  Close
+} from './styles'
 
-type Props = {
-  toggleTheme(): void
-}
-
-export const Menu: React.FC<Props> = ({ toggleTheme }) => {
+export const Menu: React.FC<ToggleProps> = ({ toggleTheme }) => {
+  const { asPath } = useRouter()
+  const { colors } = useContext(ThemeContext)
+  const [color, setColor] = useState('')
   const [isOpen, setIsOpen] = useState(false)
+  let expanded = false
+
+  const activeAria = isOpen ? 'Fechar Menu' : 'Abrir Menu'
+
+  const toggleMenu = (event: MouseEvent) => {
+    if (event.type === 'touchstart') {
+      event.preventDefault()
+    }
+    setIsOpen(!isOpen)
+    expanded = true
+  }
+
   const items = [
-    { section: 'Home', url: '#home' },
-    { section: 'Sobre', url: '#about' },
-    { section: 'Portfólio', url: '#portfolio' },
-    { section: 'Contato', url: '#contact' }
+    { section: 'Home', url: '/#home' },
+    { section: 'Sobre', url: '/#about' },
+    { section: 'Portfólio', url: '/#portfolio' },
+    { section: 'Contato', url: '/#contact' }
   ]
-  //todo verificar arias
+
   return (
     <>
-      <ToggleMenu aria-haspopup>
-        <Hamburger onClick={() => setIsOpen(!isOpen)} />
+      <ToggleMenu
+        aria-expanded={expanded}
+        aria-controls='menu'
+        aria-haspopup
+        aria-label={activeAria}
+      >
+        {!isOpen ? (
+          <Hamburger onClick={toggleMenu} />
+        ) : (
+          <Close onClick={toggleMenu} />
+        )}
       </ToggleMenu>
-      <MenuList role='menu' aria-label='options' active={isOpen}>
+      <MenuList role='menu' aria-label='options' active={isOpen} id='menu'>
         {items.map((item) => (
-          <NavLink href={item.url} rel='nofollow' key={item.url}>
-            <MenuItem role='menu-item'>{item.section}</MenuItem>
-          </NavLink>
+          <Link passHref href={item.url} key={item.url}>
+            <NavLink color={color}>
+              <MenuItem
+                role='menu-item'
+                onClick={() => {
+                  asPath === item.url
+                    ? setColor(colors.highlight)
+                    : setColor(colors.info)
+                }}
+              >
+                {item.section}
+              </MenuItem>
+            </NavLink>
+          </Link>
         ))}
         <ToggleTheme toggleTheme={toggleTheme} />
       </MenuList>

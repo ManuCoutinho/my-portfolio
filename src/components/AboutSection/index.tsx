@@ -1,13 +1,17 @@
 import Image from 'next/image'
+import { parseCookies } from 'nookies'
 import { Description } from './Description'
 import { Carousel } from './CarouselAbout'
 
 import { StackBoxCenter, Title } from '../Layout/Base'
 import { AboutSection, ContainerAbout } from './styles'
 
-import aboutImg from '../../../public/assets/perfil.webp'
+import lightImg from '../../../public/assets/perfil.webp'
+import darkImg from '../../../public/assets/perfil-green.webp'
 
-export const About: React.FC = () => {
+const About: React.FC = () => {
+  const { theme } = parseCookies()
+
   return (
     <AboutSection id='about'>
       <Title>Sobre</Title>
@@ -16,7 +20,7 @@ export const About: React.FC = () => {
           <Image
             width='300'
             height='300'
-            src={aboutImg}
+            src={theme === 'light' ? lightImg : darkImg}
             loading='lazy'
             alt='girl coding with cup of coffee'
           />
@@ -27,3 +31,5 @@ export const About: React.FC = () => {
     </AboutSection>
   )
 }
+
+export default About

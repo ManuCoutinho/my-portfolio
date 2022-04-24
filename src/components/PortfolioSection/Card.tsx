@@ -6,15 +6,24 @@ import { ThemeContext } from 'styled-components'
 
 import { StackBox, Subtitle } from '../Layout/Base'
 import { ModalButton } from '../Layout/Buttons'
-import { CardComponent, Description } from './styles'
+import { CardComponent } from './styles'
+import { Props } from './Modal/types'
+import { useRouter } from 'next/router'
 
 const Modal = dynamic(() => import('./Modal'))
 
-export const Card = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false)
-  const { colors } = useContext(ThemeContext)
+//todo criar outro botão para apresentar as iformações  por rota com outra formatação
+// todo display none no ModalButton
 
+export const Card: React.FC<Props> = ({ ...props }) => {
   ReactModal.setAppElement('#__next')
+  const router = useRouter()
+  const { colors } = useContext(ThemeContext)
+  const [modalIsOpen, setModalIsOpen] = useState(false)
+  const closeModal = () => {
+    setModalIsOpen(false)
+    router.push('/#portfolio')
+  }
   return (
     <StackBox>
       <CardComponent>
@@ -25,7 +34,7 @@ export const Card = () => {
           alt='imag temporaria'
           src='/assets/sample.webp'
         />
-        <Subtitle>Nome do Projeto</Subtitle>
+        <Subtitle>{props.title}</Subtitle>
         <ModalButton type='button' onClick={() => setModalIsOpen(true)}>
           Detalhes
         </ModalButton>
@@ -49,22 +58,33 @@ export const Card = () => {
             content: {
               position: 'absolute',
               padding: 0,
-              top: '15%',
+              top: '13%',
+              width: '70vw',
               border: `1px solid ${colors.background}`,
               background: `${colors.glass}`,
-              overflow: 'hidden',
+              overflow: 'auto',
               WebkitOverflowScrolling: 'touch',
               borderRadius: '4px',
               outline: 0,
-              width: '80vw',
-              height: '70vh',
               margin: '0 auto',
-              backdropFilter: 'blur(30px) saturate(180%)',
-              boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)'
+              backdropFilter: 'blur(80px) saturate(180%)',
+              boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+              overflowY: 'auto'
             }
           }}
         >
-          <Modal close={() => setModalIsOpen(false)} />
+          <Modal
+            close={closeModal}
+            title={props.title}
+            description={props.description}
+            framework={props.framework}
+            site={props.site}
+            repo={props.repo}
+            styles={props.styles}
+            api={props.api}
+            tools={props.tools}
+            img={props.img}
+          />
         </ReactModal>
       </CardComponent>
     </StackBox>

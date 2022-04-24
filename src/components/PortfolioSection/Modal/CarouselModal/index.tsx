@@ -1,58 +1,36 @@
-import Image from 'next/image'
+import { LinkInternal as NavLink } from '../../../Layout/Base'
+import { CarouselProps } from '../types'
+import { Item, Items, ItemWrapper, CarouselNav } from './styles'
 
-import { LinkInternal } from '../../../Layout/Base'
-import {
-  Container,
-  Carousel,
-  CarouselItem,
-  CarouselNav,
-  List,
-  ListItem
-} from './styles'
-
-const CarouselModal: React.FC = () => {
+const CarouselModal: React.FC<CarouselProps> = ({ img }) => {
   return (
-    <Container>
-      <Carousel>
-        <List>
-          <ListItem>
-            <CarouselItem id='slide-1'>
-              <img src='https://source.unsplash.com/800x800' alt='' />
-            </CarouselItem>
-          </ListItem>
-          <ListItem>
-            <CarouselItem id='slide-2'>
-              <img src='https://source.unsplash.com/random' alt='' />
-            </CarouselItem>
-          </ListItem>
-          <ListItem>
-            <CarouselItem id='slide-3'>
-              <img src='https://source.unsplash.com/random' alt='' />
-            </CarouselItem>
-          </ListItem>
-          <ListItem>
-            <CarouselItem id='slide-4'>
-              <img src='https://source.unsplash.com/800x800' alt='' />
-            </CarouselItem>
-          </ListItem>
-          <ListItem>
-            <CarouselItem id='slide-5'>
-              <img src='https://source.unsplash.com/800x800' alt='' />
-            </CarouselItem>
-          </ListItem>
-          <ListItem>
-            <CarouselItem id='slide-6'>
-              <img src='https://source.unsplash.com/random' alt='' />
-            </CarouselItem>
-          </ListItem>
-        </List>
-      </Carousel>
+    <>
+      <ItemWrapper>
+        <Items>
+          {img?.map((data) => {
+            return (
+              <Item id={data.id} key={Math.random() * 2563}>
+                <picture>
+                  <img
+                    src={data.imgPng}
+                    loading='lazy'
+                    alt={data.alt}
+                    width='500'
+                    height='200'
+                  />
+                  <source srcSet={data.imgWebp} type='image/webp' />
+                </picture>
+              </Item>
+            )
+          })}
+        </Items>
+      </ItemWrapper>
       <CarouselNav>
-        <LinkInternal href='#slide-4' />
-        <LinkInternal href='#slide-5' />
-        <LinkInternal href='#slide-6' />
+        {img?.map((img) => (
+          <NavLink href={`#${img.id}`} />
+        ))}
       </CarouselNav>
-    </Container>
+    </>
   )
 }
 

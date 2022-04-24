@@ -53,13 +53,13 @@ class MyDocument extends Document {
             href='/assets/favicon.png'
             type='image/png'
           />
-          <link rel='canonical' href='https://manucoutinho.github.io/' />
+          <link rel='canonical' href='https://manucoutinho.vercel.app/' />
           <meta
             name='keywords'
             content='webdeveloper, web, developer, programador, desenvolvedor, manu coutinho, front-end, freelancer, freela, website, portfolio, ManuCoutinho, Emanuela Coutinho, react, html, inteface, site, site pessoal'
           />
           <meta name='copyright' content='ManuCoutinho 2022' />
-          <meta http-equiv='content-language' content='pt-br' />
+          <meta httpEquiv='content-language' content='pt-br' />
           <meta name='language' content='pt-br' />
           <meta name='theme-color' content='#EAAB99' />
           <meta property='og:title' content='Portfólio' />

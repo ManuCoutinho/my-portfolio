@@ -1,11 +1,9 @@
 import { Logo } from './Logo'
 import { Menu } from './Menu'
 import { Nav } from './styles'
+import { ToggleProps } from './types'
 
-type Props = {
-  toggleTheme(): void
-}
-export const Navbar: React.FC<Props> = ({ toggleTheme }) => {
+export const Navbar: React.FC<ToggleProps> = ({ toggleTheme }) => {
   return (
     <Nav>
       <Logo />

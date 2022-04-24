@@ -1,13 +1,11 @@
 import { useContext } from 'react'
 import Switch from 'react-switch'
 import { ThemeContext } from 'styled-components'
+import { ToggleProps } from './types'
 
 import { BsSunFill, BsMoonStars } from 'react-icons/bs'
 
-type Props = {
-  toggleTheme(): void
-}
-export const ToggleTheme: React.FC<Props> = ({ toggleTheme }) => {
+export const ToggleTheme: React.FC<ToggleProps> = ({ toggleTheme }) => {
   const { colors, title } = useContext(ThemeContext)
 
   return (

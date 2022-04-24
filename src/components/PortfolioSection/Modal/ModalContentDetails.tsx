@@ -1,29 +1,71 @@
-import Image from 'next/image'
-import { StackBox, StackBoxCenter, Text } from '../../Layout/Base'
-import { Content, ModalBody } from './styles'
+import Link from 'next/link'
+import { FiGithub } from 'react-icons/fi'
+import { MdOpenInNew } from 'react-icons/md'
+import { Props } from './types'
 
-import imgTeste from '../../../../public/assets/sample.webp'
+import { StackBox, Text } from '../../Layout/Base'
+import { BoxDetails, ModalBody, Topic } from './styles'
 
-const ModalContentDetails: React.FC = () => {
+const ModalContentDetails: React.FC<Props> = ({ ...props }) => {
   return (
     <ModalBody id='details'>
-      <StackBoxCenter>
-        <Content>
-          <Image
-            width={500}
-            height={500}
-            loading='lazy'
-            alt='imag temporaria'
-            src={imgTeste}
-          />
-          <StackBox>[DETAILS] [LIBS] [FRAMEWORKS] [STYLES] [LINKS]</StackBox>
-        </Content>
-        <Text>
-          [DESCRIÇÃO]Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Possimus laboriosam ullam fugit ea! Dicta eius fuga libero dolore ex
-          velit.
-        </Text>
-      </StackBoxCenter>
+      <StackBox>
+        <BoxDetails>
+          <Text>
+            <Topic>Descrição: </Topic>
+            {props.description}
+          </Text>
+        </BoxDetails>
+        {!!props.framework && (
+          <BoxDetails>
+            <Text>
+              <Topic>Framework: </Topic>
+              {props.framework}
+            </Text>
+          </BoxDetails>
+        )}
+        <BoxDetails>
+          <Text>
+            <Topic>Linguagens e Ferramentas: </Topic>
+            {props.tools}
+          </Text>
+        </BoxDetails>
+        <BoxDetails>
+          <Text>
+            <Topic>Estilização: </Topic>
+            {props.styles}
+          </Text>
+        </BoxDetails>
+        <BoxDetails>
+          <Text>
+            <Topic>API: </Topic>
+            {props.api}
+          </Text>
+        </BoxDetails>
+        <BoxDetails>
+          <Topic>Disponível em: </Topic>
+          <Link href={''} passHref>
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              role='repositorio no github'
+            >
+              <FiGithub />
+            </a>
+          </Link>
+          {!!props.site && (
+            <Link href={''} passHref>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                role={`acessar o ${props.title}`}
+              >
+                <MdOpenInNew />
+              </a>
+            </Link>
+          )}
+        </BoxDetails>
+      </StackBox>
     </ModalBody>
   )
 }

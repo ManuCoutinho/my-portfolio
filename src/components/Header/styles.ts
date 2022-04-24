@@ -1,15 +1,18 @@
-import styled, { DefaultTheme } from 'styled-components'
-import { FiMenu } from 'react-icons/fi'
+import styled from 'styled-components'
+import { FiMenu, FiX } from 'react-icons/fi'
 import { LinkInternal } from '../Layout/Base'
 
 type MenuProps = {
   active: boolean
 }
 
+type ActiveLink = {
+  color: string
+}
+
 const Container = styled.header`
   border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.info};
-  margin-bottom: 1rem;
   width: 100vw;
   position: fixed;
   top: 0;
@@ -30,11 +33,16 @@ const Nav = styled.nav`
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
+  transition: ${({ theme }) => theme.transition};
 
   margin: 0 auto;
   max-width: 1100px;
   padding: 0 2.5rem;
   width: 100%;
+
+  @media (max-width: 52em) {
+    margin-bottom: 1rem;
+  }
 `
 
 const LogoComponent = styled.h1`
@@ -63,10 +71,10 @@ const MenuList = styled.ul<MenuProps>`
   list-style: none;
   align-items: center;
 
-  @media (max-width: 50em) {
-    background-color: ${({ theme }) => theme.colors.background};
-    align-items: center;
+  @media (max-width: 52em) {
     flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
     max-height: ${({ active }) => (active ? '28rem' : '0')};
     overflow: hidden;
     transition: ${({ theme }) => theme.transition};
@@ -76,9 +84,10 @@ const MenuList = styled.ul<MenuProps>`
 
 const MenuItem = styled.li``
 
-const NavLink = styled(LinkInternal)`
+const NavLink = styled(LinkInternal)<ActiveLink>`
   padding: 2rem;
   transition: ${({ theme }) => theme.transition};
+  color: ${({ color }) => color || ''};
   &:hover {
     color: ${({ theme }) => theme.colors.text};
     -webkit-transform: scale(1.05);
@@ -87,7 +96,7 @@ const NavLink = styled(LinkInternal)`
     transition: ${({ theme }) => theme.transition};
   }
 
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 52rem) {
     padding: 0.8rem;
   }
 `
@@ -95,14 +104,19 @@ const Hamburger = styled(FiMenu)`
   font-size: 2em;
   color: ${({ theme }) => theme.colors.text};
 `
+
+const Close = styled(FiX)`
+  font-size: 2em;
+  color: ${({ theme }) => theme.colors.text};
+`
+
 const ToggleMenu = styled.button`
-  cursor: pointer;
   background: transparent;
   outline: 0;
   border: 0;
   display: none;
 
-  @media (max-width: 50em) {
+  @media (max-width: 52em) {
     display: flex;
   }
 `
@@ -114,5 +128,6 @@ export {
   MenuList,
   Nav,
   ToggleMenu,
-  NavLink
+  NavLink,
+  Close
 }

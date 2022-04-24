@@ -7,7 +7,7 @@ const PortfolioSection = styled.section`
 const Grid = styled.div`
   max-width: clamp(80vw 1180px 100%);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
   margin: auto;
   justify-content: center;
   grid-gap: 5rem;
@@ -36,6 +36,15 @@ const CardComponent = styled.div`
     transition: ${({ theme }) => theme.transition};
     box-shadow: 4px 10px 10px ${({ theme }) => theme.colors.highlight};
     -webkit-box-shadow: 4px 10px 10px ${({ theme }) => theme.colors.highlight};
+  }
+  h3:first-letter {
+    text-transform: capitalize;
+  }
+
+  @media only screen and (max-width: 48em) {
+    button {
+      display: none;
+    }
   }
 `
 

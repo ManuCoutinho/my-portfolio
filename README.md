@@ -41,16 +41,25 @@ Hi! Welcome to my portfolio 👋🏽.
 
 ## :sparkles: Features
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Dark theme\
+:heavy_check_mark: Lottie's animations\
+:heavy_check_mark: Carousel made with pure CSS;
 
 ## :rocket: Technologies
 
 The following tools were used in this project:
 
-- [React](https://pt-br.reactjs.org/)
+- [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Nookies](https://www.npmjs.com/package/nookies)
+- [Styled Components](https://www.styled-components.com/)
+- [Polished](https://www.polished.js.org/)
+- [React Icons](https://www.react-icons.github.io/react-icons/)
+- [React Slick](http://react-slick.neostack.com/)
+- [React Switch](https://www.npmjs.com/package/react-switch)
+- [React Typed](https://www.npmjs.com/package/react-typed)
+- [React Lottie](https://www.npmjs.com/package/react-lottie)
+- [React Modal](https://reactcommunity.org/react-modal/)
 
 ## :white_check_mark: Requirements
 

@@ -1,16 +1,17 @@
 import styled from 'styled-components'
 import { LinkInternal } from '../Layout/Base'
+import { StylesProps } from './types'
 
-type Props = {
-  display: string
-}
-
-const Container = styled.nav<Props>`
+const Container = styled.nav<StylesProps>`
   vertical-align: middle;
   color: ${({ theme }) => theme.colors.secondary};
   font-size: 2rem;
   transition: ${({ theme }) => theme.transition};
   display: ${(props) => props.display || 'block'};
+
+  @media (max-width: 27em) {
+    display: flex;
+  }
 `
 
 const ContactItem = styled(LinkInternal)`

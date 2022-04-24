@@ -4,18 +4,22 @@ import { Box, Container } from '../Layout/Base'
 const ContainerHome = styled.main`
   background: ${({ theme }) => theme.colors.background};
   width: 100%;
-  height: 100vh;
+  height: calc(100vh + 7rem);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 1.5rem;
+
+  @media only screen and (max-width: 27em) {
+    height: calc(100vh + 8rem);
+    flex-direction: column;
+  }
 `
 const ContainerWrapper = styled(Container)`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-top: 10vh;
   @media only screen and (max-width: 50em) {
     margin-top: 0;
     flex-direction: column-reverse;
@@ -34,6 +38,10 @@ const DivWrapper = styled(Box)`
   }
   @media only screen and (min-width: 80em) {
     padding: 2rem 3rem;
+  }
+  @media only screen and (max-width: 27em) {
+    gap: 0;
+    padding: 0;
   }
 
   font-family: ${({ theme }) => theme.font.title};

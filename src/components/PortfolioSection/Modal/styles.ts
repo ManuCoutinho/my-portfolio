@@ -1,22 +1,19 @@
 import styled from 'styled-components'
 import { StackBoxCenter } from '../../Layout/Base'
 
-type NavLinkProps = {
+type MenuLinkProps = {
   color1: string
   color2: string
 }
 const ModalBody = styled.div`
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
 
   @media only screen and (max-width: 45em) {
     flex-direction: column;
   }
 `
-const ModalHeader = styled.header<NavLinkProps>`
+const ModalHeader = styled.header<MenuLinkProps>`
   width: 100%;
   border-bottom: 1px solid ${({ theme }) => theme.colors.info};
   margin-bottom: 0.8rem;
@@ -48,14 +45,17 @@ const ContainerHeader = styled(StackBoxCenter)`
 `
 
 const ModalFooter = styled.footer`
-  width: 100%;
-  align-content: flex-end;
-  padding: 0 2rem;
-  display: flex;
-  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 2rem;
 
   button {
     background: ${({ theme }) => theme.colors.secondary};
+  }
+
+  @media only screen and (max-width: 48em) {
+    padding: 0 2rem;
   }
 `
 
@@ -67,9 +67,12 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
+  overflow: hidden;
 
   img {
-    width: auto;
+    width: 100%;
+    height: 400px;
+    content-fit: contain;
     margin: 0 auto;
   }
 `
@@ -78,11 +81,42 @@ const BoxInfos = styled(Content)`
   padding: 0;
 `
 
+const Topic = styled.span`  
+  font-weight: ${({ theme }) => theme.fontWeight.semibold});
+  font-family: ${({ theme }) => theme.font.title};
+  color: ${({ theme }) => theme.colors.info};
+  font-size: ${({ theme }) => theme.fontSize.lg};
+`
+
+const BoxDetails = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.15);
+  transition: ${({ theme }) => theme.transition};
+
+  a {
+    font-size: ${({ theme }) => theme.fontSize.lg};
+    padding: 0.5rem;
+    filter: drop-shadow(12px -10px 5px rgba(0, 0, 0, 0.2));
+    &:hover {
+      color: ${({ theme }) => theme.colors.highlight};
+      transition: ${({ theme }) => theme.transition};
+    }
+  }
+`
+
 export {
   ModalBody,
   ModalHeader,
   ModalFooter,
   Content,
   BoxInfos,
-  ContainerHeader
+  ContainerHeader,
+  Topic,
+  BoxDetails
 }

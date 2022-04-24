@@ -1,10 +1,8 @@
 import { Navbar } from './Navbar'
 import { Container } from './styles'
+import { ToggleProps } from './types'
 
-type Props = {
-  toggleTheme(): void
-}
-export const Header: React.FC<Props> = ({ toggleTheme }) => {
+export const Header: React.FC<ToggleProps> = ({ toggleTheme }) => {
   return (
     <Container>
       <Navbar toggleTheme={toggleTheme} />

@@ -5,7 +5,11 @@ import { ThemeContext } from 'styled-components'
 import { LinkInternal, Subtitle } from '../../Layout/Base'
 import { BoxInfos, ModalHeader as Header, ContainerHeader } from './styles'
 
-export const ModalHeader: React.FC = () => {
+interface PropsHeader {
+  name: string
+}
+
+export const ModalHeader: React.FC<PropsHeader> = ({ name }) => {
   const { colors } = useContext(ThemeContext)
   const { asPath } = useRouter()
 
@@ -21,7 +25,7 @@ export const ModalHeader: React.FC = () => {
       color2={isDetails ? `${colors.primary}` : `${colors.text}`}
     >
       <ContainerHeader>
-        <Subtitle>Excursionista</Subtitle>
+        <Subtitle>{name}</Subtitle>
         <BoxInfos>
           <Link href='#overview' passHref>
             <LinkInternal>Visão geral</LinkInternal>
