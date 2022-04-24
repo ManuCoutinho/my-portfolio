@@ -28,7 +28,7 @@ export default function Home() {
           property='og:description'
           content='Portfólio - Manu Coutinho | Desenvolvedora Front-End'
         />
-        <meta property='og:image' content='https://imgur.com/a/dYFlfO4' />
+        <meta property='og:image' content='/assets/preview.png' />
         <meta name='author' content='Emanuela Coutinho' />
         <meta
           name='description'
