@@ -7,7 +7,9 @@ const Items = styled.div`
   display: flex;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  sroll-behavior: smooth;
+  overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
   overflow: hidden;
   pointer-events: none;
 `
@@ -15,14 +17,19 @@ const Item = styled.div`
   flex: none;
 
   width: 100%; //responsavel pela qtd de fotos
-  height: 60vh;
+  height: 18.75rem;
   pointer-events: none;
   scroll-snap-align: start;
+  webkit-scroll-snap-align: start;
 
   picture,
   img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+  }
+
+  @media only screen and (min-width: 90.625em) {
+    height: 60vh;
   }
 `
 

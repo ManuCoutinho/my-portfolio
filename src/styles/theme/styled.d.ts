@@ -20,6 +20,7 @@ declare module 'styled-components' {
       carousel_4: string
       bg_card: string
       glass: string
+      bg_modal: string
     }
     font: {
       text: string
@@ -67,6 +68,7 @@ declare module 'styled-components' {
       carousel_4: string
       bg_card: string
       glass: string
+      bg_modal: string
     }
   }
 }

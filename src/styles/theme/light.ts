@@ -16,7 +16,8 @@ const light = {
     carousel_3: '#CBCAC7',
     carousel_4: '#FFFFFF',
     bg_card: 'rgba(234,171,153,0.1)',
-    glass: 'rgba(234,171,153, 0.75)'
+    glass: 'rgba(234,171,153, 0.75)',
+    bg_modal: '#F5D5CC'
   }
 } as const
 

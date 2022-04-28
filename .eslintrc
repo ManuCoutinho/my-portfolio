@@ -20,11 +20,11 @@
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint"],
-  " rules": {
+  "rules": {
     "prettier/prettier": "error",
     "react/prop-types": "off",
     "space-before-function-paren": "off",
-    "react/jsc-filename-extension": [
+    "react/jsx-filename-extension": [
       "warn",
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
     ],

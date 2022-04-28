@@ -44,7 +44,7 @@ const ModalContentDetails: React.FC<Props> = ({ ...props }) => {
         </BoxDetails>
         <BoxDetails>
           <Topic>Disponível em: </Topic>
-          <Link href={''} passHref>
+          <Link href={props.repo} passHref>
             <a
               target='_blank'
               rel='noopener noreferrer'
@@ -53,8 +53,8 @@ const ModalContentDetails: React.FC<Props> = ({ ...props }) => {
               <FiGithub />
             </a>
           </Link>
-          {!!props.site && (
-            <Link href={''} passHref>
+          {props.site != 'Em breve' && (
+            <Link href={props.site} passHref>
               <a
                 target='_blank'
                 rel='noopener noreferrer'

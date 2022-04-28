@@ -40,12 +40,6 @@ const CardComponent = styled.div`
   h3:first-letter {
     text-transform: capitalize;
   }
-
-  @media only screen and (max-width: 48em) {
-    button {
-      display: none;
-    }
-  }
 `
 
 const Description = styled.p`

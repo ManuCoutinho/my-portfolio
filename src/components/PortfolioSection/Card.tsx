@@ -1,6 +1,7 @@
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
+import { useRouter } from 'next/router'
 import ReactModal from 'react-modal'
 import { ThemeContext } from 'styled-components'
 
@@ -8,22 +9,27 @@ import { StackBox, Subtitle } from '../Layout/Base'
 import { ModalButton } from '../Layout/Buttons'
 import { CardComponent } from './styles'
 import { Props } from './Modal/types'
-import { useRouter } from 'next/router'
 
-const Modal = dynamic(() => import('./Modal'))
-
-//todo criar outro botão para apresentar as iformações  por rota com outra formatação
-// todo display none no ModalButton
+const Modal = dynamic(() => import('./Modal'), { ssr: false })
 
 export const Card: React.FC<Props> = ({ ...props }) => {
   ReactModal.setAppElement('#__next')
   const router = useRouter()
   const { colors } = useContext(ThemeContext)
   const [modalIsOpen, setModalIsOpen] = useState(false)
+  const [isTouchDevice, setIsTouchDevice] = useState(false)
+
   const closeModal = () => {
     setModalIsOpen(false)
     router.push('/#portfolio')
   }
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth <= 830) {
+      setIsTouchDevice(true)
+    }
+  }, [router])
+
   return (
     <StackBox>
       <CardComponent>
@@ -35,9 +41,18 @@ export const Card: React.FC<Props> = ({ ...props }) => {
           src='/assets/sample.webp'
         />
         <Subtitle>{props.title}</Subtitle>
-        <ModalButton type='button' onClick={() => setModalIsOpen(true)}>
-          Detalhes
-        </ModalButton>
+        {!isTouchDevice ? (
+          <ModalButton type='button' onClick={() => setModalIsOpen(true)}>
+            Detalhes
+          </ModalButton>
+        ) : (
+          <ModalButton
+            type='button'
+            onClick={() => router.push('/page-temporary')}
+          >
+            Detalhes
+          </ModalButton>
+        )}
         <ReactModal
           isOpen={modalIsOpen}
           onRequestClose={() => setModalIsOpen(false)}
@@ -53,22 +68,21 @@ export const Card: React.FC<Props> = ({ ...props }) => {
               left: 0,
               right: 0,
               bottom: 0,
-              background: 'rgba(255, 255, 255, 0.1)'
+              backgroundColor: 'rgba(0, 0, 0, 0.10)'
             },
             content: {
               position: 'absolute',
               padding: 0,
-              top: '13%',
+              top: '7.1875rem',
               width: '70vw',
               border: `1px solid ${colors.background}`,
-              background: `${colors.glass}`,
               overflow: 'auto',
               WebkitOverflowScrolling: 'touch',
               borderRadius: '4px',
               outline: 0,
               margin: '0 auto',
-              backdropFilter: 'blur(80px) saturate(180%)',
               boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+              backgroundColor: `${colors.bg_modal}`,
               overflowY: 'auto'
             }
           }}

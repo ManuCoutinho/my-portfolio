@@ -17,6 +17,10 @@ const ContainerAbout = styled.div`
   padding: 1rem;
   margin: 4rem 0;
 
+  img {
+    filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15));
+  }
+
   -webkit-animation: fadeInFwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fadeInFwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 
