@@ -18,6 +18,7 @@ export const ToggleTheme: React.FC<ToggleProps> = ({ toggleTheme }) => {
       onHandleColor={colors.white}
       draggable
       aria-checked
+      aria-label='Toggle theme'
       aria-describedby='switch theme'
       height={28}
       width={60}

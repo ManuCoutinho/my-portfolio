@@ -19,7 +19,12 @@ export function Banner(): JSX.Element {
         <DivWrapper>
           <TextAnimated />
           <Box>
-            <LinkInternal href='#portfolio' role='navigation' rel='nofollow'>
+            <LinkInternal
+              href='#portfolio'
+              role='navigation'
+              rel='nofollow'
+              aria-label='Ir para portfólio'
+            >
               <MyWorks type='button'>Conheça meus projetos!</MyWorks>
             </LinkInternal>
           </Box>

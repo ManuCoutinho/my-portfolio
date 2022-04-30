@@ -4,13 +4,8 @@ import { SocialItemsProps } from './types'
 
 export const SocialItems = ({ children, url }: SocialItemsProps) => {
   return (
-    <StackBoxCenter role='navigation'>
-      <ContactItem
-        href={url}
-        rel='noopener noreferrer'
-        target='_blank'
-        role='menuitem'
-      >
+    <StackBoxCenter>
+      <ContactItem href={url} rel='noopener noreferrer' target='_blank'>
         {children}
       </ContactItem>
     </StackBoxCenter>

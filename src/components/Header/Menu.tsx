@@ -45,6 +45,7 @@ export const Menu: React.FC<ToggleProps> = ({ toggleTheme }) => {
         aria-controls='menu'
         aria-haspopup
         aria-label={activeAria}
+        aria-labelledby='menubutton'
       >
         {!isOpen ? (
           <Hamburger onClick={toggleMenu} />
@@ -54,20 +55,20 @@ export const Menu: React.FC<ToggleProps> = ({ toggleTheme }) => {
       </ToggleMenu>
       <MenuList role='menu' aria-label='options' active={isOpen} id='menu'>
         {items.map((item) => (
-          <Link passHref href={item.url} key={item.url}>
-            <NavLink color={color}>
-              <MenuItem
-                role='menu-item'
-                onClick={() => {
-                  asPath === item.url
-                    ? setColor(colors.highlight)
-                    : setColor(colors.info)
-                }}
-              >
+          <MenuItem
+            role='none'
+            onClick={() => {
+              asPath === item.url
+                ? setColor(colors.highlight)
+                : setColor(colors.info)
+            }}
+          >
+            <Link passHref href={item.url} key={item.url}>
+              <NavLink color={color} role='menuitem'>
                 {item.section}
-              </MenuItem>
-            </NavLink>
-          </Link>
+              </NavLink>
+            </Link>
+          </MenuItem>
         ))}
         <ToggleTheme toggleTheme={toggleTheme} />
       </MenuList>
