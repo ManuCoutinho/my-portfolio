@@ -20,7 +20,8 @@
     "react-switch": "^6.0.0",
     "react-typed": "^1.2.0",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@types/node": "^17.0.14",

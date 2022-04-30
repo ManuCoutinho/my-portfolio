@@ -4,11 +4,10 @@ import GlobalContext from '../components/Contexts'
 import { Banner } from '../components/HomeSection'
 import { Container } from '../components/Layout/Base'
 
-import { Portfolio } from '../components/PortfolioSection'
-import { Contact } from '../components/ContactSection'
-import { Footer } from '../components/Footer'
-
 const About = dynamic(() => import('../components/AboutSection'))
+const Portfolio = dynamic(() => import('../components/PortfolioSection'))
+const Contact = dynamic(() => import('../components/ContactSection'))
+const Footer = dynamic(() => import('../components/Footer'))
 
 export default function Home() {
   return (

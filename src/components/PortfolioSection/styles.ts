@@ -12,7 +12,8 @@ const Grid = styled.div`
   justify-content: center;
   grid-gap: 5rem;
   padding: 1.6rem;
-`
+
+  `
 
 const CardComponent = styled.div`
   background: ${({ theme }) => theme.colors.bg_card};
@@ -21,12 +22,14 @@ const CardComponent = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
   transition: ${({ theme }) => theme.transition};
-
+  
   box-shadow: -2px -5px 10px ${({ theme }) => theme.colors.highlight};
   -webkit-box-shadow: -2px -5px 10px ${({ theme }) => theme.colors.highlight};
-
+  
+  &:nth-child(n + 5) {
+    visibility: hidden;
+  }
   img {
     width: 100%;
     object-fit: cover;

@@ -17,7 +17,7 @@ const Item = styled.div`
   flex: none;
 
   width: 100%; //responsavel pela qtd de fotos
-  height: 18.75rem;
+  height: 55vh;
   pointer-events: none;
   scroll-snap-align: start;
   webkit-scroll-snap-align: start;

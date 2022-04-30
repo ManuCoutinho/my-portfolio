@@ -4,7 +4,12 @@ import { SocialContacts } from '../SocialContacts'
 import { LottieAnimation } from '../Animation'
 import * as animationData from '../HomeSection/animation.json'
 
-import { ContainerHome, ContainerWrapper, DivWrapper } from './styles'
+import {
+  ContainerHome,
+  ContainerWrapper,
+  DivWrapper,
+  BoxLottie
+} from './styles'
 import { TextAnimated } from './TextAnimated'
 
 export function Banner(): JSX.Element {
@@ -19,7 +24,9 @@ export function Banner(): JSX.Element {
             </LinkInternal>
           </Box>
         </DivWrapper>
-        <LottieAnimation data={animationData} />
+        <BoxLottie>
+          <LottieAnimation data={animationData} />
+        </BoxLottie>
       </ContainerWrapper>
       <SocialContacts display='block' />
     </ContainerHome>

@@ -12,8 +12,8 @@ html {
    font-size: 93.75%;
  }
 
- @media (max-width: 45em){
-   font-size: 87.5%;
+ @media (max-width: 50em){
+   font-size:85%;
  }
   
  @media (max-width: 27em) {

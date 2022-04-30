@@ -36,12 +36,14 @@ const ModalContentDetails: React.FC<Props> = ({ ...props }) => {
             {props.styles}
           </Text>
         </BoxDetails>
-        <BoxDetails>
-          <Text>
-            <Topic>API: </Topic>
-            {props.api}
-          </Text>
-        </BoxDetails>
+        {props.api !== '' && (
+          <BoxDetails>
+            <Text>
+              <Topic>API: </Topic>
+              {props.api}
+            </Text>
+          </BoxDetails>
+        )}
         <BoxDetails>
           <Topic>Disponível em: </Topic>
           <Link href={props.repo} passHref>

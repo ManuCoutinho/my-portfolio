@@ -10,9 +10,14 @@ const ContainerHome = styled.main`
   align-items: center;
   padding: 0 1.5rem;
 
+  @media only screen and (max-width: 50em) {
+    height: calc(100vh + 5rem);
+  }
+
   @media only screen and (max-width: 27em) {
-    height: calc(100vh + 8rem);
+    height: calc(100vh + 5rem);
     flex-direction: column;
+    gap: 0.5rem;
   }
 `
 const ContainerWrapper = styled(Container)`
@@ -20,6 +25,7 @@ const ContainerWrapper = styled(Container)`
   justify-content: center;
   align-items: center;
   gap: 2rem;
+
   @media only screen and (max-width: 50em) {
     margin-top: 0;
     flex-direction: column-reverse;
@@ -27,7 +33,11 @@ const ContainerWrapper = styled(Container)`
   }
 `
 const DivWrapper = styled(Box)`
-  @media only screen and (max-width: 45em) {
+  @media only screen and (min-width: 80em) {
+    padding: 2rem 3rem;
+  }
+
+  @media only screen and (max-width: 50em) {
     font-size: ${({ theme }) => theme.fontSize.xl};
     gap: 1rem;
     padding: 1rem 0;
@@ -36,9 +46,7 @@ const DivWrapper = styled(Box)`
       width: 300px;
     }
   }
-  @media only screen and (min-width: 80em) {
-    padding: 2rem 3rem;
-  }
+
   @media only screen and (max-width: 27em) {
     gap: 0;
     padding: 0;
@@ -66,4 +74,19 @@ const BoxAnimation = styled.div`
     margin-bottom: 1rem;
   }
 `
-export { BoxAnimation, ContainerWrapper, ContainerHome, DivWrapper }
+const BoxLottie = styled.div`
+  width: 100%;
+
+  @media only screen and (max-width: 50em) {
+    width: 27rem;
+    display: grid;
+    place-content: center;
+  }
+  @media only screen and (max-width: 27em) {
+    width: 20rem;
+    display: grid;
+    place-content: center;
+  }
+`
+
+export { BoxAnimation, BoxLottie, ContainerWrapper, ContainerHome, DivWrapper }

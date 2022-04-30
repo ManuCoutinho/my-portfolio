@@ -11,6 +11,7 @@ const Container = styled.nav<StylesProps>`
 
   @media (max-width: 27em) {
     display: flex;
+    font-size: 1.8rem;
   }
 `
 

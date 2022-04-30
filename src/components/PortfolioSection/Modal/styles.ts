@@ -45,17 +45,19 @@ const ContainerHeader = styled(StackBoxCenter)`
 `
 
 const ModalFooter = styled.footer`
+  padding-right: 2rem;
+  display: block;
   position: absolute;
-  bottom: 0;
+  bottom: 3vw;
   right: 0;
-  padding: 2rem;
+  z-index: 1;
 
   button {
     background: ${({ theme }) => theme.colors.secondary};
   }
 
-  @media only screen and (max-width: 48em) {
-    padding: 0 2rem;
+  @media only screen and (max-width: 80em) {
+    bottom: 1vw;
   }
 `
 
@@ -85,14 +87,13 @@ const Topic = styled.span`
   font-weight: ${({ theme }) => theme.fontWeight.semibold});
   font-family: ${({ theme }) => theme.font.title};
   color: ${({ theme }) => theme.colors.info};
-  font-size: ${({ theme }) => theme.fontSize.lg};
+  font-size: ${({ theme }) => theme.fontSize.lg};  
 `
 
 const BoxDetails = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
   margin-bottom: 1rem;
   padding: 0.8rem;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.15);
@@ -107,6 +108,11 @@ const BoxDetails = styled.div`
       color: ${({ theme }) => theme.colors.highlight};
       transition: ${({ theme }) => theme.transition};
     }
+  }
+
+  @media only screen and (max-width: 80em) {
+    padding: 0.5rem;
+    margin-bottom: 0.7rem;
   }
 `
 

@@ -1,15 +1,17 @@
+import { v4 as uuid } from 'uuid'
 import { LinkInternal as NavLink } from '../../../Layout/Base'
 import { CarouselProps } from '../types'
 import { Item, Items, ItemWrapper, CarouselNav } from './styles'
 
 const CarouselModal: React.FC<CarouselProps> = ({ img }) => {
+  const htmlId = uuid()
   return (
     <>
       <ItemWrapper>
         <Items>
           {img?.map((data) => {
             return (
-              <Item id={data.id} key={Math.random() * 2563}>
+              <Item id={data.id} key={htmlId}>
                 <picture>
                   <img
                     src={data.imgPng}

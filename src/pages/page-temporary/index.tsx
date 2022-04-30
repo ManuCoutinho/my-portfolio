@@ -14,7 +14,7 @@ const PageTemporary: NextPage = () => {
         <title>Manu Coutinho | Em breve...</title>
       </Head>
       <StackBoxCenter>
-        <Text>Em breve um novo conteúdo! 🤩</Text>
+        <Text align='center'>Em breve um novo conteúdo! 🤩</Text>
         <ModalButton type='button' onClick={() => router.back()}>
           Voltar
         </ModalButton>

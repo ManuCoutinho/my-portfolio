@@ -21,7 +21,6 @@ export function LottieAnimation({ data }: AnimationProps) {
   return (
     <Lottie
       options={defaultOptions}
-      height={'auto'}
       isStopped={animationState.isStopped}
       isPaused={animationState.isPaused}
     />

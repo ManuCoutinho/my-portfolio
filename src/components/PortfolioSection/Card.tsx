@@ -75,6 +75,7 @@ export const Card: React.FC<Props> = ({ ...props }) => {
               padding: 0,
               top: '7.1875rem',
               width: '70vw',
+              height: '85%',
               border: `1px solid ${colors.background}`,
               overflow: 'auto',
               WebkitOverflowScrolling: 'touch',

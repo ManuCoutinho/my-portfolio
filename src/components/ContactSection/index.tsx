@@ -5,7 +5,7 @@ import { SocialContacts } from '../SocialContacts'
 import { StackBoxCenter, Subtitle, Title, Text } from '../Layout/Base'
 import { BoxAnimation, Container, ContactSection, Email } from './styles'
 
-export const Contact: React.FC = () => {
+const Contact: React.FC = () => {
   return (
     <ContactSection id='contact'>
       <Title>Contato</Title>
@@ -32,3 +32,4 @@ export const Contact: React.FC = () => {
     </ContactSection>
   )
 }
+export default Contact

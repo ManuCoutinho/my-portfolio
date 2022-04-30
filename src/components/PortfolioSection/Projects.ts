@@ -295,7 +295,7 @@ const PROJECTS = [
   },
   {
     name: 'Tecnocrias',
-    site: 'site',
+    site: 'Em breve',
     framework: 'Vite.js',
     styles: 'Sass',
     tools: ['React'],

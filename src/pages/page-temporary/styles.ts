@@ -8,12 +8,10 @@ const Container = styled.section`
 
   font-size: ${({ theme }) => theme.fontSize.xl};
 
-  background: linear-gradient(
-    160deg,
-    ${({ theme }) => theme.colors.glass},
-    ${({ theme }) => theme.colors.highlight},
-    ${({ theme }) => theme.colors.white},
-    ${({ theme }) => theme.colors.glass}
-  );
+  background: ${({ theme }) => theme.colors.background};
+
+  button {
+    background-color: ${({ theme }) => theme.colors.secondary};
+  }
 `
 export default Container

@@ -74,6 +74,11 @@ const Text = styled.p<TextProps>`
   word-wrap: break-word;
   padding: 0.5rem;
   text-align: ${(props) => props.align || 'left'};
+
+  @media only screen and (max-width: 27em) {
+    line-height: 1.85rem;
+    font-size: ${({ theme }) => theme.fontSize.sm};
+  }
 `
 
 const LinkInternal = styled.a``
