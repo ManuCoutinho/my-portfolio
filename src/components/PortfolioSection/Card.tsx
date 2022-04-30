@@ -1,14 +1,14 @@
 import { useContext, useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
-import { useRouter } from 'next/router'
 import ReactModal from 'react-modal'
 import { ThemeContext } from 'styled-components'
+import { Props } from './Modal/types'
 
 import { StackBox, Subtitle } from '../Layout/Base'
 import { ModalButton } from '../Layout/Buttons'
 import { CardComponent } from './styles'
-import { Props } from './Modal/types'
 
 const Modal = dynamic(() => import('./Modal'), { ssr: false })
 
@@ -30,6 +30,7 @@ export const Card: React.FC<Props> = ({ ...props }) => {
     }
   }, [router])
 
+  //todo chamar novas imagens com map dentro do card
   return (
     <StackBox>
       <CardComponent>

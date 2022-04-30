@@ -12,8 +12,7 @@ const Grid = styled.div`
   justify-content: center;
   grid-gap: 5rem;
   padding: 1.6rem;
-
-  `
+`
 
 const CardComponent = styled.div`
   background: ${({ theme }) => theme.colors.bg_card};
@@ -23,10 +22,10 @@ const CardComponent = styled.div`
   display: flex;
   flex-direction: column;
   transition: ${({ theme }) => theme.transition};
-  
+
   box-shadow: -2px -5px 10px ${({ theme }) => theme.colors.highlight};
   -webkit-box-shadow: -2px -5px 10px ${({ theme }) => theme.colors.highlight};
-  
+
   &:nth-child(n + 5) {
     visibility: hidden;
   }
@@ -53,5 +52,10 @@ const Description = styled.p`
   break-word: break-word;
   user-select: none;
 `
-
-export { CardComponent, Description, Grid, PortfolioSection }
+const BoxButtons = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+`
+export { BoxButtons, CardComponent, Description, Grid, PortfolioSection }

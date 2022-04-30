@@ -1,3 +1,4 @@
+import { lighten } from 'polished'
 const light = {
   title: 'light',
   colors: {
@@ -17,7 +18,8 @@ const light = {
     carousel_4: '#FFFFFF',
     bg_card: 'rgba(234,171,153,0.1)',
     glass: 'rgba(234,171,153, 0.75)',
-    bg_modal: '#F5D5CC'
+    bg_modal: '#F5D5CC',
+    disabled: lighten(0.5, '#56667c')
   }
 } as const
 

@@ -21,6 +21,7 @@ declare module 'styled-components' {
       bg_card: string
       glass: string
       bg_modal: string
+      disabled: string
     }
     font: {
       text: string
@@ -69,6 +70,7 @@ declare module 'styled-components' {
       bg_card: string
       glass: string
       bg_modal: string
+      disabled: string
     }
   }
 }
