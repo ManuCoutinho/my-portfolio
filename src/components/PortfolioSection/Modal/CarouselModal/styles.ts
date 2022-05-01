@@ -26,6 +26,7 @@ const Item = styled.div`
   img {
     width: 100%;
     object-fit: cover;
+    height: 100%;
   }
 
   @media only screen and (min-width: 90.625em) {

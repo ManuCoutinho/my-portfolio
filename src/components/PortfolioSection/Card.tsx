@@ -1,18 +1,19 @@
 import { useContext, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import ReactModal from 'react-modal'
 import { ThemeContext } from 'styled-components'
+import { parseCookies } from 'nookies'
 import { Props } from './Modal/types'
 
 import { StackBox, Subtitle } from '../Layout/Base'
 import { ModalButton } from '../Layout/Buttons'
-import { CardComponent } from './styles'
+import { CardComponent, Image } from './styles'
 
 const Modal = dynamic(() => import('./Modal'), { ssr: false })
 
 export const Card: React.FC<Props> = ({ ...props }) => {
+  const { theme } = parseCookies()
   ReactModal.setAppElement('#__next')
   const router = useRouter()
   const { colors } = useContext(ThemeContext)
@@ -30,17 +31,29 @@ export const Card: React.FC<Props> = ({ ...props }) => {
     }
   }, [router])
 
-  //todo chamar novas imagens com map dentro do card
   return (
     <StackBox>
       <CardComponent>
-        <Image
-          loading='lazy'
-          width={300}
-          height={300}
-          alt='imag temporaria'
-          src='/assets/sample.webp'
-        />
+        <Image>
+          <picture>
+            <img
+              loading='lazy'
+              width={300}
+              height={350}
+              alt={props.alt}
+              src={theme === 'light' ? props.coverAltLight : props.coverAltDark}
+            />
+            <source
+              srcSet={
+                theme === 'light'
+                  ? props.coverDefaultLight
+                  : props.coverDefaultDark
+              }
+              type='image/webp'
+            />
+          </picture>
+        </Image>
+
         <Subtitle>{props.title}</Subtitle>
         {!isTouchDevice ? (
           <ModalButton type='button' onClick={() => setModalIsOpen(true)}>

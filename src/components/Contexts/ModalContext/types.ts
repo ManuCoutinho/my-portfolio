@@ -7,6 +7,11 @@ export type ContextProps = {
   framework: string
   name: string
   id: string
+  coverDefaultLight: string
+  coverDefaultDark: string
+  coverAltLight: string
+  coverAltDark: string
+  alt: string
   tools?: string[]
   img: ImgProps[]
 }

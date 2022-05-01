@@ -23,16 +23,8 @@ const CardComponent = styled.div`
   flex-direction: column;
   transition: ${({ theme }) => theme.transition};
 
-  box-shadow: -2px -5px 10px ${({ theme }) => theme.colors.highlight};
-  -webkit-box-shadow: -2px -5px 10px ${({ theme }) => theme.colors.highlight};
-
-  &:nth-child(n + 5) {
-    visibility: hidden;
-  }
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
+  box-shadow: -2px -3px 20px ${({ theme }) => theme.colors.highlight};
+  -webkit-box-shadow: -2px -3px 20px ${({ theme }) => theme.colors.highlight};
 
   &:hover {
     transition: ${({ theme }) => theme.transition};
@@ -58,4 +50,16 @@ const BoxButtons = styled.div`
   justify-content: center;
   gap: 2rem;
 `
-export { BoxButtons, CardComponent, Description, Grid, PortfolioSection }
+
+const Image = styled.div`
+  height: 17.5rem;
+
+  picture,
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+`
+
+export { BoxButtons, CardComponent, Description, Grid, PortfolioSection, Image }

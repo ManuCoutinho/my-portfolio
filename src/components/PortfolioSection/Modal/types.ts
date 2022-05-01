@@ -11,6 +11,11 @@ export interface Props extends CarouselProps {
   framework?: string
   title: string
   tools?: Array<string>
+  coverDefaultLight?: string
+  coverDefaultDark?: string
+  coverAltLight?: string
+  coverAltDark?: string
+  alt?: string
 }
 
 export type ImgProps = {

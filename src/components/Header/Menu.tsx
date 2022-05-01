@@ -56,6 +56,7 @@ export const Menu: React.FC<ToggleProps> = ({ toggleTheme }) => {
       <MenuList role='menu' aria-label='options' active={isOpen} id='menu'>
         {items.map((item) => (
           <MenuItem
+            key={item.url}
             role='none'
             onClick={() => {
               asPath === item.url
@@ -63,7 +64,7 @@ export const Menu: React.FC<ToggleProps> = ({ toggleTheme }) => {
                 : setColor(colors.info)
             }}
           >
-            <Link passHref href={item.url} key={item.url}>
+            <Link passHref href={item.url}>
               <NavLink color={color} role='menuitem'>
                 {item.section}
               </NavLink>

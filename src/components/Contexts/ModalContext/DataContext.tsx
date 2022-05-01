@@ -13,6 +13,11 @@ const DEFAULT_CONTEXT = {
       api: '',
       framework: '',
       id: '',
+      coverDefaultLight: '',
+      coverDefaultDark: '',
+      coverAltLight: '',
+      coverAltDark: '',
+      alt: '',
       img: [
         {
           imgPng: '',
@@ -42,6 +47,11 @@ export const ModalContextProvider: React.FC = ({ children }) => {
         framework: data.framework,
         id: data.id,
         tools: data.tools.join(' / '),
+        coverDefaultLight: data.coverDefaultLight,
+        coverDefaultDark: data.coverDefaultDark,
+        coverAltLight: data.coverAltLight,
+        coverAltDark: data.coverAltDark,
+        alt: data.alt,
         img: data.img
       }
     })

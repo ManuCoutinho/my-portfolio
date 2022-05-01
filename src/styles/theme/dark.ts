@@ -12,7 +12,7 @@ const dark = {
     text: '#DEE2E6',
     title: '#02C39A',
     info: '#78a590',
-    highlight: 'rgba(251, 255, 31, 0.45)',
+    highlight: 'rgba(15, 255, 103, 0.2)',
     carousel_1: '#2D392D',
     carousel_2: '#080a08',
     carousel_3: 'rgba(10, 13, 10, 0.1)',

@@ -32,6 +32,11 @@ export const GridPortfolio: React.FC = () => {
             api={project.api}
             tools={project.tools}
             img={project.img}
+            coverAltDark={project.coverAltDark}
+            coverAltLight={project.coverAltLight}
+            coverDefaultLight={project.coverDefaultLight}
+            coverDefaultDark={project.coverDefaultDark}
+            alt={project.alt}
           />
         ))}
       </Grid>

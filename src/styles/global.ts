@@ -73,7 +73,7 @@ video {
   max-width: 100%;
 }
 
-img[width][height],
+
 iframe[width][height],
 object[width][height],
 embed[width][height],

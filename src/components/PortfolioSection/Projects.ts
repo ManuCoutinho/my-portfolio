@@ -47,7 +47,12 @@ const PROJECTS = [
         id: 'pic-6'
       }
     ],
-    id: '453be0d3-0b38-41ae-a323-f1f30fd50935'
+    id: '453be0d3-0b38-41ae-a323-f1f30fd50935',
+    coverDefaultLight: '/assets/polaroids/world-d.svg',
+    coverDefaultDark: '/assets/polaroids/world-green.svg',
+    coverAltLight: '/assets/polaroids/world-d.webp',
+    coverAltDark: '/assets/polaroids/world-green.webp',
+    alt: 'ilustração de uma mulher marcando destinos no globo'
   },
   {
     name: 'Meu Freela',
@@ -72,7 +77,12 @@ const PROJECTS = [
         id: 'pic-2'
       }
     ],
-    id: '871b7e32-6948-418e-9e25-750a1f3df677'
+    id: '871b7e32-6948-418e-9e25-750a1f3df677',
+    coverDefaultLight: '/assets/polaroids/freela-d.svg',
+    coverDefaultDark: '/assets/polaroids/freela-green.svg',
+    coverAltLight: '/assets/polaroids/freela-d.webp',
+    coverAltDark: '/assets/polaroids/freela-green.webp',
+    alt: 'ilustração de um rapaz escolhendo qual caminho seguir'
   },
   {
     name: 'Dev Tracker',
@@ -116,7 +126,12 @@ const PROJECTS = [
         id: 'pic-5'
       }
     ],
-    id: '2b514002-4590-487b-a72c-5579ffc8c7b4'
+    id: '2b514002-4590-487b-a72c-5579ffc8c7b4',
+    coverDefaultLight: '/assets/polaroids/searching-d.svg',
+    coverDefaultDark: '/assets/polaroids/searching-green.svg',
+    coverAltLight: '/assets/polaroids/searching-d.webp',
+    coverAltDark: '/assets/polaroids/searching-green.webp',
+    alt: 'ilustraçãao de uma mulher pesquisando'
   },
   {
     name: 'MC Money',
@@ -161,7 +176,12 @@ const PROJECTS = [
         id: 'pic-4'
       }
     ],
-    id: '6820db69-4085-43ca-9eb6-ce015ba456cf'
+    id: '6820db69-4085-43ca-9eb6-ce015ba456cf',
+    coverDefaultLight: '/assets/polaroids/transfer-money-d.svg',
+    coverDefaultDark: '/assets/polaroids/transfer-money-green.svg',
+    coverAltLight: '/assets/polaroids/transfer-money-d.webp',
+    coverAltDark: '/assets/polaroids/transfer-money-green.webp',
+    alt: 'ilustração de uma mulher realizando tranferência financeira online'
   },
   {
     name: 'Dashboard',
@@ -227,7 +247,12 @@ const PROJECTS = [
         id: 'pic-7'
       }
     ],
-    id: 'edf652e5-d1d6-4fd3-ae82-cb1a16d7da23'
+    id: 'edf652e5-d1d6-4fd3-ae82-cb1a16d7da23',
+    coverDefaultLight: '/assets/polaroids/dashboard-d.svg',
+    coverDefaultDark: '/assets/polaroids/dashboard-green.svg',
+    coverAltLight: '/assets/polaroids/dashboard-d.webp',
+    coverAltDark: '/assets/polaroids/dashboard-green.webp',
+    alt: 'ilustração de um computadorm com dashboard'
   },
   {
     name: 'Todo List',
@@ -259,7 +284,12 @@ const PROJECTS = [
         id: 'pic-3'
       }
     ],
-    id: '91ada4e5-b077-4c3f-b18e-c83d011a1653'
+    id: '91ada4e5-b077-4c3f-b18e-c83d011a1653',
+    coverDefaultLight: '/assets/polaroids/list-d.svg',
+    coverDefaultDark: '/assets/polaroids/list-green.svg',
+    coverAltLight: '/assets/polaroids/list-d.webp',
+    coverAltDark: '/assets/polaroids/list-green.webp',
+    alt: 'ilustração de uma lista de tarefas'
   },
   {
     name: 'Mata Mosquitos',
@@ -291,7 +321,12 @@ const PROJECTS = [
         id: 'pic-3'
       }
     ],
-    id: 'f6428e82-04f0-484c-8914-19dbb21e24af'
+    id: 'f6428e82-04f0-484c-8914-19dbb21e24af',
+    coverDefaultLight: '/assets/polaroids/gaming-d.svg',
+    coverDefaultDark: '/assets/polaroids/gaming-green.svg',
+    coverAltLight: '/assets/polaroids/gaming-d.webp',
+    coverAltDark: '/assets/polaroids/gaming-green.webp',
+    alt: 'ilustração de um homem jogando no fliperama'
   },
   {
     name: 'Tecnocrias',
@@ -334,7 +369,12 @@ const PROJECTS = [
         id: 'pic-5'
       }
     ],
-    id: ' 44737c1d-a4fa-4db1-ba73-f2958cbba598'
+    id: ' 44737c1d-a4fa-4db1-ba73-f2958cbba598',
+    coverDefaultLight: '/assets/polaroids/starlink-d.svg',
+    coverDefaultDark: '/assets/polaroids/starlink-green.svg',
+    coverAltLight: '/assets/polaroids/starlink-d.webp',
+    coverAltDark: '/assets/polaroids/starlink-green.webp',
+    alt: 'ilustração de uma mulher roteando dados'
   },
   {
     name: 'Banco de Imagens',
@@ -383,7 +423,12 @@ const PROJECTS = [
         id: 'pic-4'
       }
     ],
-    id: '8b4404d8-7d13-489e-82d1-502c7dc8ffbe'
+    id: '8b4404d8-7d13-489e-82d1-502c7dc8ffbe',
+    coverDefaultLight: '/assets/polaroids/polaroid-d.svg',
+    coverDefaultDark: '/assets/polaroids/polaroid-green.svg',
+    coverAltLight: '/assets/polaroids/polaroid-d.webp',
+    coverAltDark: '/assets/polaroids/polaroid-green.webp',
+    alt: 'ilustração de uma foto tipo polaroid'
   },
   {
     name: 'Simulador de Investimentos',
@@ -429,7 +474,12 @@ const PROJECTS = [
         id: 'pic-4'
       }
     ],
-    id: '6fcaf126-e63b-45f5-83f8-dce5a7efdf95'
+    id: '6fcaf126-e63b-45f5-83f8-dce5a7efdf95',
+    coverDefaultLight: '/assets/polaroids/overview-d.svg',
+    coverDefaultDark: '/assets/polaroids/overview-green.svg',
+    coverAltLight: '/assets/polaroids/overview-d.webp',
+    coverAltDark: '/assets/polaroids/overview-green.webp',
+    alt: 'ilustração de um homem utilizando celular'
   },
   {
     name: 'Digipix',
@@ -460,7 +510,12 @@ const PROJECTS = [
         id: 'pic-3'
       }
     ],
-    id: '6f273215-0c68-40cf-902d-3c0383a3a59b'
+    id: '6f273215-0c68-40cf-902d-3c0383a3a59b',
+    coverDefaultLight: '/assets/polaroids/images-d.svg',
+    coverDefaultDark: '/assets/polaroids/images-green.svg',
+    coverAltLight: '/assets/polaroids/images-d.webp',
+    coverAltDark: '/assets/polaroids/images-green.webp',
+    alt: 'ilustração de uma mulher enconstada num celular'
   },
   {
     name: 'Consulta Processual',
@@ -504,7 +559,12 @@ const PROJECTS = [
         id: 'pic-5'
       }
     ],
-    id: '0c3ab6f0-f91e-4318-a0b7-3f59a01f0936'
+    id: '0c3ab6f0-f91e-4318-a0b7-3f59a01f0936',
+    coverDefaultLight: '/assets/polaroids/researching-d.svg',
+    coverDefaultDark: '/assets/polaroids/researching-green.svg',
+    coverAltLight: '/assets/polaroids/researching-d.webp',
+    coverAltDark: '/assets/polaroids/researching-green.webp',
+    alt: 'ilustração de um homem colando pesquisas'
   },
   {
     name: 'News Page',
@@ -544,7 +604,12 @@ const PROJECTS = [
         id: 'pic-3'
       }
     ],
-    id: '01822210-7884-4225-932b-9fd65dd4715b'
+    id: '01822210-7884-4225-932b-9fd65dd4715b',
+    coverDefaultLight: '/assets/polaroids/news-d.svg',
+    coverDefaultDark: '/assets/polaroids/news-green.svg',
+    coverAltLight: '/assets/polaroids/news-d.webp',
+    coverAltDark: '/assets/polaroids/news-green.webp',
+    alt: 'ilustração de um foguete decolando'
   }
 ]
 export default PROJECTS
