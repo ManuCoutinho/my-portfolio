@@ -37,6 +37,7 @@ export const GridPortfolio: React.FC = () => {
             coverDefaultLight={project.coverDefaultLight}
             coverDefaultDark={project.coverDefaultDark}
             alt={project.alt}
+            route={project.route}
           />
         ))}
       </Grid>

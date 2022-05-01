@@ -6,7 +6,7 @@ import { CarouselProps } from './types'
 
 const Carousel = dynamic(() => import('../Modal/CarouselModal'))
 
-export const ModalContent: React.FC<CarouselProps> = ({ img }) => {
+const ModalContent: React.FC<CarouselProps> = ({ img }) => {
   return (
     <ModalBody id='overview'>
       <StackBoxCenter>
@@ -15,3 +15,5 @@ export const ModalContent: React.FC<CarouselProps> = ({ img }) => {
     </ModalBody>
   )
 }
+
+export default ModalContent

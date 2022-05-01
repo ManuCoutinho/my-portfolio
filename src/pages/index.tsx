@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-import GlobalContext from '../components/Contexts'
 import { Banner } from '../components/HomeSection'
 import { Container } from '../components/Layout/Base'
 
@@ -11,7 +10,7 @@ const Footer = dynamic(() => import('../components/Footer'))
 
 export default function Home() {
   return (
-    <GlobalContext>
+    <>
       <Head>
         <link rel='canonical' href='https://manucoutinho.vercel.app/' />
         <meta
@@ -42,6 +41,6 @@ export default function Home() {
         <Contact />
         <Footer />
       </Container>
-    </GlobalContext>
+    </>
   )
 }

@@ -12,6 +12,7 @@ export type ContextProps = {
   coverAltLight: string
   coverAltDark: string
   alt: string
+  route: string
   tools?: string[]
   img: ImgProps[]
 }

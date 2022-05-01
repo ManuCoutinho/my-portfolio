@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { AppProps } from 'next/app'
+import GlobalContext from '../components/Contexts'
 import { DefaultTheme, ThemeProvider } from 'styled-components'
 import { parseCookies, setCookie } from 'nookies'
 import { Header } from '../components/Header'
@@ -34,11 +35,13 @@ const MyApp: React.FC<AppProps> = ({ pageProps, Component }) => {
   }
 
   return (
-    <ThemeProvider theme={theme}>
-      <Header toggleTheme={toggleTheme} />
-      <Component {...pageProps} />
-      <GlobalStyle />
-    </ThemeProvider>
+    <GlobalContext>
+      <ThemeProvider theme={theme}>
+        <Header toggleTheme={toggleTheme} />
+        <Component {...pageProps} />
+        <GlobalStyle />
+      </ThemeProvider>
+    </GlobalContext>
   )
 }
 

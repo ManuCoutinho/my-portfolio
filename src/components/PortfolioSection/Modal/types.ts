@@ -16,6 +16,7 @@ export interface Props extends CarouselProps {
   coverAltLight?: string
   coverAltDark?: string
   alt?: string
+  route?: string
 }
 
 export type ImgProps = {

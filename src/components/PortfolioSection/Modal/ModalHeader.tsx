@@ -9,7 +9,7 @@ interface PropsHeader {
   name: string
 }
 
-export const ModalHeader: React.FC<PropsHeader> = ({ name }) => {
+const ModalHeader: React.FC<PropsHeader> = ({ name }) => {
   const { colors } = useContext(ThemeContext)
   const { asPath } = useRouter()
 
@@ -38,3 +38,4 @@ export const ModalHeader: React.FC<PropsHeader> = ({ name }) => {
     </Header>
   )
 }
+export default ModalHeader

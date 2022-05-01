@@ -52,7 +52,8 @@ const PROJECTS = [
     coverDefaultDark: '/assets/polaroids/world-green.svg',
     coverAltLight: '/assets/polaroids/world-d.webp',
     coverAltDark: '/assets/polaroids/world-green.webp',
-    alt: 'ilustração de uma mulher marcando destinos no globo'
+    alt: 'ilustração de uma mulher marcando destinos no globo',
+    route: '/excursionista'
   },
   {
     name: 'Meu Freela',
@@ -82,7 +83,8 @@ const PROJECTS = [
     coverDefaultDark: '/assets/polaroids/freela-green.svg',
     coverAltLight: '/assets/polaroids/freela-d.webp',
     coverAltDark: '/assets/polaroids/freela-green.webp',
-    alt: 'ilustração de um rapaz escolhendo qual caminho seguir'
+    alt: 'ilustração de um rapaz escolhendo qual caminho seguir',
+    route: '/meu-freela'
   },
   {
     name: 'Dev Tracker',
@@ -131,7 +133,8 @@ const PROJECTS = [
     coverDefaultDark: '/assets/polaroids/searching-green.svg',
     coverAltLight: '/assets/polaroids/searching-d.webp',
     coverAltDark: '/assets/polaroids/searching-green.webp',
-    alt: 'ilustraçãao de uma mulher pesquisando'
+    alt: 'ilustraçãao de uma mulher pesquisando',
+    route: '/dev-tracker'
   },
   {
     name: 'MC Money',
@@ -181,7 +184,8 @@ const PROJECTS = [
     coverDefaultDark: '/assets/polaroids/transfer-money-green.svg',
     coverAltLight: '/assets/polaroids/transfer-money-d.webp',
     coverAltDark: '/assets/polaroids/transfer-money-green.webp',
-    alt: 'ilustração de uma mulher realizando tranferência financeira online'
+    alt: 'ilustração de uma mulher realizando tranferência financeira online',
+    route: '/mcmoney'
   },
   {
     name: 'Dashboard',
@@ -252,7 +256,8 @@ const PROJECTS = [
     coverDefaultDark: '/assets/polaroids/dashboard-green.svg',
     coverAltLight: '/assets/polaroids/dashboard-d.webp',
     coverAltDark: '/assets/polaroids/dashboard-green.webp',
-    alt: 'ilustração de um computadorm com dashboard'
+    alt: 'ilustração de um computadorm com dashboard',
+    route: '/dashboard'
   },
   {
     name: 'Todo List',
@@ -289,7 +294,8 @@ const PROJECTS = [
     coverDefaultDark: '/assets/polaroids/list-green.svg',
     coverAltLight: '/assets/polaroids/list-d.webp',
     coverAltDark: '/assets/polaroids/list-green.webp',
-    alt: 'ilustração de uma lista de tarefas'
+    alt: 'ilustração de uma lista de tarefas',
+    route: '/todo'
   },
   {
     name: 'Mata Mosquitos',
@@ -326,7 +332,8 @@ const PROJECTS = [
     coverDefaultDark: '/assets/polaroids/gaming-green.svg',
     coverAltLight: '/assets/polaroids/gaming-d.webp',
     coverAltDark: '/assets/polaroids/gaming-green.webp',
-    alt: 'ilustração de um homem jogando no fliperama'
+    alt: 'ilustração de um homem jogando no fliperama',
+    route: '/game'
   },
   {
     name: 'Tecnocrias',
@@ -374,7 +381,8 @@ const PROJECTS = [
     coverDefaultDark: '/assets/polaroids/starlink-green.svg',
     coverAltLight: '/assets/polaroids/starlink-d.webp',
     coverAltDark: '/assets/polaroids/starlink-green.webp',
-    alt: 'ilustração de uma mulher roteando dados'
+    alt: 'ilustração de uma mulher roteando dados',
+    route: '/tecnocrias'
   },
   {
     name: 'Banco de Imagens',
@@ -428,7 +436,8 @@ const PROJECTS = [
     coverDefaultDark: '/assets/polaroids/polaroid-green.svg',
     coverAltLight: '/assets/polaroids/polaroid-d.webp',
     coverAltDark: '/assets/polaroids/polaroid-green.webp',
-    alt: 'ilustração de uma foto tipo polaroid'
+    alt: 'ilustração de uma foto tipo polaroid',
+    route: '/bdimage'
   },
   {
     name: 'Simulador de Investimentos',
@@ -479,7 +488,8 @@ const PROJECTS = [
     coverDefaultDark: '/assets/polaroids/overview-green.svg',
     coverAltLight: '/assets/polaroids/overview-d.webp',
     coverAltDark: '/assets/polaroids/overview-green.webp',
-    alt: 'ilustração de um homem utilizando celular'
+    alt: 'ilustração de um homem utilizando celular',
+    route: '/invest'
   },
   {
     name: 'Digipix',
@@ -515,7 +525,8 @@ const PROJECTS = [
     coverDefaultDark: '/assets/polaroids/images-green.svg',
     coverAltLight: '/assets/polaroids/images-d.webp',
     coverAltDark: '/assets/polaroids/images-green.webp',
-    alt: 'ilustração de uma mulher enconstada num celular'
+    alt: 'ilustração de uma mulher enconstada num celular',
+    route: '/digipix'
   },
   {
     name: 'Consulta Processual',
@@ -564,7 +575,8 @@ const PROJECTS = [
     coverDefaultDark: '/assets/polaroids/researching-green.svg',
     coverAltLight: '/assets/polaroids/researching-d.webp',
     coverAltDark: '/assets/polaroids/researching-green.webp',
-    alt: 'ilustração de um homem colando pesquisas'
+    alt: 'ilustração de um homem colando pesquisas',
+    route: '/processos'
   },
   {
     name: 'News Page',
@@ -609,7 +621,8 @@ const PROJECTS = [
     coverDefaultDark: '/assets/polaroids/news-green.svg',
     coverAltLight: '/assets/polaroids/news-d.webp',
     coverAltDark: '/assets/polaroids/news-green.webp',
-    alt: 'ilustração de um foguete decolando'
+    alt: 'ilustração de um foguete decolando',
+    route: '/newspage'
   }
 ]
 export default PROJECTS

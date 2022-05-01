@@ -1,8 +1,8 @@
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
-import { ModalContent } from './ModalContent'
+import ModalContent from './ModalContent'
 import { PropsModal } from './types'
-import { ModalHeader } from './ModalHeader'
+import ModalHeader from './ModalHeader'
 
 import { ModalFooter } from './styles'
 import { ModalButton } from '../../Layout/Buttons'

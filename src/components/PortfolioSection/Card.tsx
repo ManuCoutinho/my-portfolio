@@ -62,7 +62,7 @@ export const Card: React.FC<Props> = ({ ...props }) => {
         ) : (
           <ModalButton
             type='button'
-            onClick={() => router.push('/page-temporary')}
+            onClick={() => router.push(`${props.route}`)}
           >
             Detalhes
           </ModalButton>

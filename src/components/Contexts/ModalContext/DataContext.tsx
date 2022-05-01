@@ -18,6 +18,7 @@ const DEFAULT_CONTEXT = {
       coverAltLight: '',
       coverAltDark: '',
       alt: '',
+      route: '',
       img: [
         {
           imgPng: '',
@@ -52,6 +53,7 @@ export const ModalContextProvider: React.FC = ({ children }) => {
         coverAltLight: data.coverAltLight,
         coverAltDark: data.coverAltDark,
         alt: data.alt,
+        route: data.route,
         img: data.img
       }
     })
