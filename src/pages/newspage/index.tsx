@@ -20,28 +20,32 @@ const NesPage: NextPage = () => {
   const { data } = useContext(ModalContext)
 
   return (
-    <Container>
-      <Head>
-        <title>`Manu Coutinho | ${data[12].name}`</title>
-      </Head>
-      <ContainerRouter>
-        <Title>{data[12].name}</Title>
-        <Body
-          title={''}
-          description={data[12].description}
-          framework={data[12].framework}
-          site={data[12].site}
-          repo={data[12].repo}
-          styles={data[12].styles}
-          api={data[12].api}
-          tools={data[12].tools}
-        />
-        <Button type='button' onClick={() => router.back()}>
-          Voltar
-        </Button>
-      </ContainerRouter>
-      <Footer />
-    </Container>
+    <>
+      {typeof window !== 'undefined' && (
+        <Container>
+          <Head>
+            <title>`Manu Coutinho | ${data[12].name}`</title>
+          </Head>
+          <ContainerRouter>
+            <Title>{data[12].name}</Title>
+            <Body
+              title={''}
+              description={data[12].description}
+              framework={data[12].framework}
+              site={data[12].site}
+              repo={data[12].repo}
+              styles={data[12].styles}
+              api={data[12].api}
+              tools={data[12].tools}
+            />
+            <Button type='button' onClick={() => router.back()}>
+              Voltar
+            </Button>
+          </ContainerRouter>
+          <Footer />
+        </Container>
+      )}
+    </>
   )
 }
 

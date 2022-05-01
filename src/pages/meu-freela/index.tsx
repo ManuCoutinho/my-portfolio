@@ -20,28 +20,32 @@ const MeuFreela: NextPage = () => {
   const { data } = useContext(ModalContext)
 
   return (
-    <Container>
-      <Head>
-        <title>`Manu Coutinho | ${data[1].name}`</title>
-      </Head>
-      <ContainerRouter>
-        <Title>{data[1].name}</Title>
-        <Body
-          title={''}
-          description={data[1].description}
-          framework={data[1].framework}
-          site={data[1].site}
-          repo={data[1].repo}
-          styles={data[1].styles}
-          api={data[1].api}
-          tools={data[1].tools}
-        />
-        <Button type='button' onClick={() => router.back()}>
-          Voltar
-        </Button>
-      </ContainerRouter>
-      <Footer />
-    </Container>
+    <>
+      {typeof window !== 'undefined' && (
+        <Container>
+          <Head>
+            <title>`Manu Coutinho | ${data[1].name}`</title>
+          </Head>
+          <ContainerRouter>
+            <Title>{data[1].name}</Title>
+            <Body
+              title={''}
+              description={data[1].description}
+              framework={data[1].framework}
+              site={data[1].site}
+              repo={data[1].repo}
+              styles={data[1].styles}
+              api={data[1].api}
+              tools={data[1].tools}
+            />
+            <Button type='button' onClick={() => router.back()}>
+              Voltar
+            </Button>
+          </ContainerRouter>
+          <Footer />
+        </Container>
+      )}{' '}
+    </>
   )
 }
 

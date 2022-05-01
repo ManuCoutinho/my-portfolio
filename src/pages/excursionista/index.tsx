@@ -20,28 +20,32 @@ const Excursionista: NextPage = () => {
   const { data } = useContext(ModalContext)
 
   return (
-    <Container>
-      <Head>
-        <title>`Manu Coutinho | ${data[0].name}`</title>
-      </Head>
-      <ContainerRouter>
-        <Title>{data[0].name}</Title>
-        <Body
-          title={''}
-          description={data[0].description}
-          framework={data[0].framework}
-          site={data[0].site}
-          repo={data[0].repo}
-          styles={data[0].styles}
-          api={data[0].api}
-          tools={data[0].tools}
-        />
-        <Button type='button' onClick={() => router.back()}>
-          Voltar
-        </Button>
-      </ContainerRouter>
-      <Footer />
-    </Container>
+    <>
+      {typeof window !== 'undefined' && (
+        <Container>
+          <Head>
+            <title>`Manu Coutinho | ${data[0].name}`</title>
+          </Head>
+          <ContainerRouter>
+            <Title>{data[0].name}</Title>
+            <Body
+              title={''}
+              description={data[0].description}
+              framework={data[0].framework}
+              site={data[0].site}
+              repo={data[0].repo}
+              styles={data[0].styles}
+              api={data[0].api}
+              tools={data[0].tools}
+            />
+            <Button type='button' onClick={() => router.back()}>
+              Voltar
+            </Button>
+          </ContainerRouter>
+          <Footer />
+        </Container>
+      )}
+    </>
   )
 }
 

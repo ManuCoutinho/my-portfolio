@@ -20,28 +20,32 @@ const InvestSimulator: NextPage = () => {
   const { data } = useContext(ModalContext)
 
   return (
-    <Container>
-      <Head>
-        <title>`Manu Coutinho | ${data[9].name}`</title>
-      </Head>
-      <ContainerRouter>
-        <Title>{data[9].name}</Title>
-        <Body
-          title={''}
-          description={data[9].description}
-          framework={data[9].framework}
-          site={data[9].site}
-          repo={data[9].repo}
-          styles={data[9].styles}
-          api={data[9].api}
-          tools={data[9].tools}
-        />
-        <Button type='button' onClick={() => router.back()}>
-          Voltar
-        </Button>
-      </ContainerRouter>
-      <Footer />
-    </Container>
+    <>
+      {typeof window !== 'undefined' && (
+        <Container>
+          <Head>
+            <title>`Manu Coutinho | ${data[9].name}`</title>
+          </Head>
+          <ContainerRouter>
+            <Title>{data[9].name}</Title>
+            <Body
+              title={''}
+              description={data[9].description}
+              framework={data[9].framework}
+              site={data[9].site}
+              repo={data[9].repo}
+              styles={data[9].styles}
+              api={data[9].api}
+              tools={data[9].tools}
+            />
+            <Button type='button' onClick={() => router.back()}>
+              Voltar
+            </Button>
+          </ContainerRouter>
+          <Footer />
+        </Container>
+      )}
+    </>
   )
 }
 

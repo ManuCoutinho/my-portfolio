@@ -20,28 +20,32 @@ const MataMosquitos: NextPage = () => {
   const { data } = useContext(ModalContext)
 
   return (
-    <Container>
-      <Head>
-        <title>`Manu Coutinho | ${data[6].name}`</title>
-      </Head>
-      <ContainerRouter>
-        <Title>{data[6].name}</Title>
-        <Body
-          title={''}
-          description={data[6].description}
-          framework={data[6].framework}
-          site={data[6].site}
-          repo={data[6].repo}
-          styles={data[6].styles}
-          api={data[6].api}
-          tools={data[6].tools}
-        />
-        <Button type='button' onClick={() => router.back()}>
-          Voltar
-        </Button>
-      </ContainerRouter>
-      <Footer />
-    </Container>
+    <>
+      {typeof window !== 'undefined' && (
+        <Container>
+          <Head>
+            <title>`Manu Coutinho | ${data[6].name}`</title>
+          </Head>
+          <ContainerRouter>
+            <Title>{data[6].name}</Title>
+            <Body
+              title={''}
+              description={data[6].description}
+              framework={data[6].framework}
+              site={data[6].site}
+              repo={data[6].repo}
+              styles={data[6].styles}
+              api={data[6].api}
+              tools={data[6].tools}
+            />
+            <Button type='button' onClick={() => router.back()}>
+              Voltar
+            </Button>
+          </ContainerRouter>
+          <Footer />
+        </Container>
+      )}{' '}
+    </>
   )
 }
 

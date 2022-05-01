@@ -20,28 +20,32 @@ const Digipix: NextPage = () => {
   const { data } = useContext(ModalContext)
 
   return (
-    <Container>
-      <Head>
-        <title>`Manu Coutinho | ${data[10].name}`</title>
-      </Head>
-      <ContainerRouter>
-        <Title>{data[10].name}</Title>
-        <Body
-          title={''}
-          description={data[10].description}
-          framework={data[10].framework}
-          site={data[10].site}
-          repo={data[10].repo}
-          styles={data[10].styles}
-          api={data[10].api}
-          tools={data[10].tools}
-        />
-        <Button type='button' onClick={() => router.back()}>
-          Voltar
-        </Button>
-      </ContainerRouter>
-      <Footer />
-    </Container>
+    <>
+      {typeof window !== 'undefined' && (
+        <Container>
+          <Head>
+            <title>`Manu Coutinho | ${data[10].name}`</title>
+          </Head>
+          <ContainerRouter>
+            <Title>{data[10].name}</Title>
+            <Body
+              title={''}
+              description={data[10].description}
+              framework={data[10].framework}
+              site={data[10].site}
+              repo={data[10].repo}
+              styles={data[10].styles}
+              api={data[10].api}
+              tools={data[10].tools}
+            />
+            <Button type='button' onClick={() => router.back()}>
+              Voltar
+            </Button>
+          </ContainerRouter>
+          <Footer />
+        </Container>
+      )}{' '}
+    </>
   )
 }
 

@@ -20,28 +20,32 @@ const BancoImagens: NextPage = () => {
   const { data } = useContext(ModalContext)
 
   return (
-    <Container>
-      <Head>
-        <title>`Manu Coutinho | ${data[8].name}`</title>
-      </Head>
-      <ContainerRouter>
-        <Title>{data[8].name}</Title>
-        <Body
-          title={''}
-          description={data[8].description}
-          framework={data[8].framework}
-          site={data[8].site}
-          repo={data[8].repo}
-          styles={data[8].styles}
-          api={data[8].api}
-          tools={data[8].tools}
-        />
-        <Button type='button' onClick={() => router.back()}>
-          Voltar
-        </Button>
-      </ContainerRouter>
-      <Footer />
-    </Container>
+    <>
+      {typeof window !== 'undefined' && (
+        <Container>
+          <Head>
+            <title>`Manu Coutinho | ${data[8].name}`</title>
+          </Head>
+          <ContainerRouter>
+            <Title>{data[8].name}</Title>
+            <Body
+              title={''}
+              description={data[8].description}
+              framework={data[8].framework}
+              site={data[8].site}
+              repo={data[8].repo}
+              styles={data[8].styles}
+              api={data[8].api}
+              tools={data[8].tools}
+            />
+            <Button type='button' onClick={() => router.back()}>
+              Voltar
+            </Button>
+          </ContainerRouter>
+          <Footer />
+        </Container>
+      )}
+    </>
   )
 }
 

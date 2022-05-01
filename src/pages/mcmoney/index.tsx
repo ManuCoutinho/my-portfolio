@@ -20,28 +20,32 @@ const McMoney: NextPage = () => {
   const { data } = useContext(ModalContext)
 
   return (
-    <Container>
-      <Head>
-        <title>`Manu Coutinho | ${data[3].name}`</title>
-      </Head>
-      <ContainerRouter>
-        <Title>{data[3].name}</Title>
-        <Body
-          title={''}
-          description={data[3].description}
-          framework={data[3].framework}
-          site={data[3].site}
-          repo={data[3].repo}
-          styles={data[3].styles}
-          api={data[3].api}
-          tools={data[3].tools}
-        />
-        <Button type='button' onClick={() => router.back()}>
-          Voltar
-        </Button>
-      </ContainerRouter>
-      <Footer />
-    </Container>
+    <>
+      {typeof window !== 'undefined' && (
+        <Container>
+          <Head>
+            <title>`Manu Coutinho | ${data[3].name}`</title>
+          </Head>
+          <ContainerRouter>
+            <Title>{data[3].name}</Title>
+            <Body
+              title={''}
+              description={data[3].description}
+              framework={data[3].framework}
+              site={data[3].site}
+              repo={data[3].repo}
+              styles={data[3].styles}
+              api={data[3].api}
+              tools={data[3].tools}
+            />
+            <Button type='button' onClick={() => router.back()}>
+              Voltar
+            </Button>
+          </ContainerRouter>
+          <Footer />
+        </Container>
+      )}
+    </>
   )
 }
 

@@ -20,28 +20,32 @@ const Tecnocrias: NextPage = () => {
   const { data } = useContext(ModalContext)
 
   return (
-    <Container>
-      <Head>
-        <title>`Manu Coutinho | ${data[7].name}`</title>
-      </Head>
-      <ContainerRouter>
-        <Title>{data[7].name}</Title>
-        <Body
-          title={''}
-          description={data[7].description}
-          framework={data[7].framework}
-          site={data[7].site}
-          repo={data[7].repo}
-          styles={data[7].styles}
-          api={data[7].api}
-          tools={data[7].tools}
-        />
-        <Button type='button' onClick={() => router.back()}>
-          Voltar
-        </Button>
-      </ContainerRouter>
-      <Footer />
-    </Container>
+    <>
+      {typeof window !== 'undefined' && (
+        <Container>
+          <Head>
+            <title>`Manu Coutinho | ${data[7].name}`</title>
+          </Head>
+          <ContainerRouter>
+            <Title>{data[7].name}</Title>
+            <Body
+              title={''}
+              description={data[7].description}
+              framework={data[7].framework}
+              site={data[7].site}
+              repo={data[7].repo}
+              styles={data[7].styles}
+              api={data[7].api}
+              tools={data[7].tools}
+            />
+            <Button type='button' onClick={() => router.back()}>
+              Voltar
+            </Button>
+          </ContainerRouter>
+          <Footer />
+        </Container>
+      )}
+    </>
   )
 }
 

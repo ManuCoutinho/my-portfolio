@@ -20,28 +20,32 @@ const ConsultaProcessual: NextPage = () => {
   const { data } = useContext(ModalContext)
 
   return (
-    <Container>
-      <Head>
-        <title>`Manu Coutinho | ${data[11].name}`</title>
-      </Head>
-      <ContainerRouter>
-        <Title>{data[11].name}</Title>
-        <Body
-          title={''}
-          description={data[11].description}
-          framework={data[11].framework}
-          site={data[11].site}
-          repo={data[11].repo}
-          styles={data[11].styles}
-          api={data[11].api}
-          tools={data[11].tools}
-        />
-        <Button type='button' onClick={() => router.back()}>
-          Voltar
-        </Button>
-      </ContainerRouter>
-      <Footer />
-    </Container>
+    <>
+      {typeof window !== 'undefined' && (
+        <Container>
+          <Head>
+            <title>`Manu Coutinho | ${data[11].name}`</title>
+          </Head>
+          <ContainerRouter>
+            <Title>{data[11].name}</Title>
+            <Body
+              title={''}
+              description={data[11].description}
+              framework={data[11].framework}
+              site={data[11].site}
+              repo={data[11].repo}
+              styles={data[11].styles}
+              api={data[11].api}
+              tools={data[11].tools}
+            />
+            <Button type='button' onClick={() => router.back()}>
+              Voltar
+            </Button>
+          </ContainerRouter>
+          <Footer />
+        </Container>
+      )}
+    </>
   )
 }
 

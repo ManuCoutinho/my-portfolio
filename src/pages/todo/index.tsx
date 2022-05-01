@@ -20,28 +20,32 @@ const TodoList: NextPage = () => {
   const { data } = useContext(ModalContext)
 
   return (
-    <Container>
-      <Head>
-        <title>`Manu Coutinho | ${data[5].name}`</title>
-      </Head>
-      <ContainerRouter>
-        <Title>{data[5].name}</Title>
-        <Body
-          title={''}
-          description={data[5].description}
-          framework={data[5].framework}
-          site={data[5].site}
-          repo={data[5].repo}
-          styles={data[5].styles}
-          api={data[5].api}
-          tools={data[5].tools}
-        />
-        <Button type='button' onClick={() => router.back()}>
-          Voltar
-        </Button>
-      </ContainerRouter>
-      <Footer />
-    </Container>
+    <>
+      {typeof window !== 'undefined' && (
+        <Container>
+          <Head>
+            <title>`Manu Coutinho | ${data[5].name}`</title>
+          </Head>
+          <ContainerRouter>
+            <Title>{data[5].name}</Title>
+            <Body
+              title={''}
+              description={data[5].description}
+              framework={data[5].framework}
+              site={data[5].site}
+              repo={data[5].repo}
+              styles={data[5].styles}
+              api={data[5].api}
+              tools={data[5].tools}
+            />
+            <Button type='button' onClick={() => router.back()}>
+              Voltar
+            </Button>
+          </ContainerRouter>
+          <Footer />
+        </Container>
+      )}
+    </>
   )
 }
 

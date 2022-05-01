@@ -20,28 +20,32 @@ const DevTracker: NextPage = () => {
   const { data } = useContext(ModalContext)
 
   return (
-    <Container>
-      <Head>
-        <title>`Manu Coutinho | ${data[2].name}`</title>
-      </Head>
-      <ContainerRouter>
-        <Title>{data[2].name}</Title>
-        <Body
-          title={''}
-          description={data[2].description}
-          framework={data[2].framework}
-          site={data[2].site}
-          repo={data[2].repo}
-          styles={data[2].styles}
-          api={data[2].api}
-          tools={data[2].tools}
-        />
-        <Button type='button' onClick={() => router.back()}>
-          Voltar
-        </Button>
-      </ContainerRouter>
-      <Footer />
-    </Container>
+    <>
+      {typeof window !== 'undefined' && (
+        <Container>
+          <Head>
+            <title>`Manu Coutinho | ${data[2].name}`</title>
+          </Head>
+          <ContainerRouter>
+            <Title>{data[2].name}</Title>
+            <Body
+              title={''}
+              description={data[2].description}
+              framework={data[2].framework}
+              site={data[2].site}
+              repo={data[2].repo}
+              styles={data[2].styles}
+              api={data[2].api}
+              tools={data[2].tools}
+            />
+            <Button type='button' onClick={() => router.back()}>
+              Voltar
+            </Button>
+          </ContainerRouter>
+          <Footer />
+        </Container>
+      )}
+    </>
   )
 }
 
