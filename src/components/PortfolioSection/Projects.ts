@@ -623,6 +623,39 @@ const PROJECTS = [
     coverAltDark: '/assets/polaroids/news-green.webp',
     alt: 'ilustração de um foguete decolando',
     route: '/newspage'
+  },
+  {
+    name: ' Feedback Widget',
+    site: 'https://sentfeedback.vercel.app/',
+    framework: 'Vite.js',
+    styles: 'Tailwind CSS',
+    tools: [
+      'React',
+      'TypeScript',
+      'Headless UI',
+      'Phosphor',
+      'Prisma ORM',
+      'PostgreSQL'
+    ],
+    repo: 'https://github.com/ManuCoutinho/app-widget',
+    api: 'Express.js',
+    description:
+      'App Widget é uma aplicação fullstack para coleta e envio de feedbacks, coletando a informação fornecida pelo usuário, juntamente com  uma print da tela e envia um e-mail ao administrador do sistema.',
+    img: [
+      {
+        imgPng: '/assets/carousel/widget.png',
+        imgWebp: '/assets/carousel/widget.webp',
+        alt: 'imagem do app widget',
+        id: 'pic-1'
+      }
+    ],
+    id: 'f45e24ac-cd7a-11ec-9d64-0242ac120002',
+    coverDefaultLight: '/assets/polaroids/feedback-d.svg',
+    coverDefaultDark: '/assets/polaroids/feedback-green.svg',
+    coverAltLight: '/assets/polaroids/feedback-d.webp',
+    coverAltDark: '/assets/polaroids/feedback-green.webp',
+    alt: 'ilustraçãao de um app',
+    route: '/feedback'
   }
 ]
 export default PROJECTS
