@@ -21,6 +21,7 @@ const CardComponent = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+ border-radius: ${({ theme }) => theme.radius.small};
   transition: ${({ theme }) => theme.transition};
 
   box-shadow: -2px -3px 20px ${({ theme }) => theme.colors.highlight};
