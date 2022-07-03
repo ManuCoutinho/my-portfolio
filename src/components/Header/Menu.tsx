@@ -13,10 +13,12 @@ import {
   NavLink,
   Close
 } from './styles'
+import { SwitchThemeContext } from '../Contexts/SwitchThemeContext'
 
-export const Menu: React.FC<ToggleProps> = ({ toggleTheme }) => {
+export const Menu: React.FC = () => {
   const { asPath } = useRouter()
   const { colors } = useContext(ThemeContext)
+  const {toggleTheme} = useContext(SwitchThemeContext)
   const [color, setColor] = useState('')
   const [isOpen, setIsOpen] = useState(false)
   let expanded = false
