@@ -2,6 +2,9 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { Banner } from '../components/HomeSection'
 import { Container } from '../components/Layout/Base'
+import { GetServerSideProps } from 'next'
+import nookies from 'nookies'
+
 
 const About = dynamic(() => import('../components/AboutSection'))
 const Portfolio = dynamic(() => import('../components/PortfolioSection'))
@@ -27,3 +30,12 @@ export default function Home() {
     </>
   )
 }
+export const getServerSideProps:GetServerSideProps = async (ctx) =>{
+  const cookies = nookies.get(ctx)
+return {
+  props:{
+    theme: cookies.theme
+  }
+}
+}
+

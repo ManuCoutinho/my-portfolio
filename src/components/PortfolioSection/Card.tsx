@@ -3,20 +3,20 @@ import { useRouter } from 'next/router'
 import dynamic from 'next/dynamic'
 import ReactModal from 'react-modal'
 import { ThemeContext } from 'styled-components'
-import { parseCookies } from 'nookies'
 import { Props } from './Modal/types'
 
 import { StackBox, Subtitle } from '../Layout/Base'
 import { ModalButton } from '../Layout/Buttons'
 import { CardComponent, Image } from './styles'
+import { SwitchThemeContext } from '../Contexts/SwitchThemeContext'
 
 const Modal = dynamic(() => import('./Modal'), { ssr: false })
 
-export const Card: React.FC<Props> = ({ ...props }) => {
-  const { theme } = parseCookies()
+export const Card: React.FC<Props> = ({ ...props }) => {  
   ReactModal.setAppElement('#__next')
   const router = useRouter()
   const { colors } = useContext(ThemeContext)
+  const {theme} = useContext(SwitchThemeContext)
   const [modalIsOpen, setModalIsOpen] = useState(false)
   const [isTouchDevice, setIsTouchDevice] = useState(false)
 
@@ -41,11 +41,11 @@ export const Card: React.FC<Props> = ({ ...props }) => {
               width={300}
               height={350}
               alt={props.alt}
-              src={theme === 'light' ? props.coverAltLight : props.coverAltDark}
+              src={theme.title === 'light' ? props.coverAltLight : props.coverAltDark}
             />
             <source
               srcSet={
-                theme === 'light'
+                theme.title === 'light'
                   ? props.coverDefaultLight
                   : props.coverDefaultDark
               }

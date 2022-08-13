@@ -1,5 +1,15 @@
-import styled from 'styled-components'
+import styled, {css, keyframes} from 'styled-components'
 
+const animate = keyframes`
+0% 
+   {
+      transform: rotate(0deg);
+   }
+   100%
+   {
+      transform: rotate(360deg);
+   }
+`
 const PortfolioSection = styled.section`
   margin: 5rem auto;
 `
@@ -10,31 +20,40 @@ const Grid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
   margin: auto;
   justify-content: center;
-  grid-gap: 5rem;
-  padding: 1.6rem;
+    grid-gap: 5rem;
+    padding: 1.6rem;
 `
 
 const CardComponent = styled.div`
-  background: ${({ theme }) => theme.colors.bg_card};
+  ${({theme}) => css`
+  background: ${theme.colors.bg_card};
+  max-width: 19rem;
   width: 100%;
   padding: 1rem 1rem 2rem 1rem;
   margin: 0 auto;
   display: flex;
+  border: 2px solid ${theme.colors.highlight};
   flex-direction: column;
+
+ border-radius: ${theme.radius.small};
+  transition: ${theme.transition};
+  position:relative;
+  overflow:hidden;
+
  border-radius: ${({ theme }) => theme.radius.small};
   transition: ${({ theme }) => theme.transition};
 
-  box-shadow: -2px -3px 20px ${({ theme }) => theme.colors.highlight};
-  -webkit-box-shadow: -2px -3px 20px ${({ theme }) => theme.colors.highlight};
 
-  &:hover {
-    transition: ${({ theme }) => theme.transition};
-    box-shadow: 4px 10px 10px ${({ theme }) => theme.colors.highlight};
-    -webkit-box-shadow: 4px 10px 10px ${({ theme }) => theme.colors.highlight};
+
+  &:hover{
+    box-shadow: -1px 1px 5px 1px ${theme.colors.highlight};
   }
+
   h3:first-letter {
     text-transform: capitalize;
+    -webkit-text-shadow: -2px 2px 2px ${theme.colors.white};
   }
+  `}
 `
 
 const Description = styled.p`
@@ -42,7 +61,7 @@ const Description = styled.p`
   font-weight: ${({ theme }) => theme.fontWeight.light};
   color: ${({ theme }) => theme.colors.info};
   line-height: 1.35rem;
-  break-word: break-word;
+  //break-word: break-word;
   user-select: none;
 `
 const BoxButtons = styled.div`
