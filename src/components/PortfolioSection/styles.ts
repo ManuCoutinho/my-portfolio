@@ -34,10 +34,16 @@ const CardComponent = styled.div`
   display: flex;
   border: 2px solid ${theme.colors.highlight};
   flex-direction: column;
+
  border-radius: ${theme.radius.small};
   transition: ${theme.transition};
   position:relative;
   overflow:hidden;
+
+ border-radius: ${({ theme }) => theme.radius.small};
+  transition: ${({ theme }) => theme.transition};
+
+
 
   &:hover{
     box-shadow: -1px 1px 5px 1px ${theme.colors.highlight};
@@ -55,7 +61,7 @@ const Description = styled.p`
   font-weight: ${({ theme }) => theme.fontWeight.light};
   color: ${({ theme }) => theme.colors.info};
   line-height: 1.35rem;
-  break-word: break-word;
+  //break-word: break-word;
   user-select: none;
 `
 const BoxButtons = styled.div`

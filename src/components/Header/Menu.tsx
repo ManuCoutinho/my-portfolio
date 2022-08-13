@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { MouseEvent, useContext, useState } from 'react'
 import { ToggleTheme } from './ToggleTheme'
-import { ThemeContext } from 'styled-components'
+import { useTheme } from 'styled-components'
 
 import {
   MenuList,
@@ -16,8 +16,9 @@ import { SwitchThemeContext } from '../Contexts/SwitchThemeContext'
 
 export const Menu: React.FC = () => {
   const { asPath } = useRouter()
-  //const { colors } = useContext(ThemeContext)
-  const {toggleTheme, theme} = useContext(SwitchThemeContext)
+  const theme = useTheme()
+  const {toggleTheme} = useContext(SwitchThemeContext)
+
   const [color, setColor] = useState('')
   const [isOpen, setIsOpen] = useState(false)
   let expanded = false

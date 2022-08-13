@@ -1,10 +1,9 @@
-import { createContext, useState, ReactNode, useEffect} from "react"
+import { createContext, useState, ReactNode} from "react"
 import { DefaultTheme, ThemeProvider } from 'styled-components'
 import { parseCookies, setCookie } from 'nookies'
 import { combineTheme, light, dark } from '../../../styles/theme'
 import { SwitchThemeType } from "./types"
 import GlobalStyle from '../../../styles/global'
-
 
 export const SwitchThemeContext = createContext<SwitchThemeType>({} as SwitchThemeType)
 
@@ -14,9 +13,7 @@ export function  SwitchThemeContextProvider({children}: {children:ReactNode}) {
   const userTheme = cookies.theme === 'dark' ? dark : light
 
   const [theme, setTheme] = useState<DefaultTheme>(combineTheme(userTheme))
-  useEffect(()=>{
-    
-  },[])
+
 
   function toggleTheme() {
     if (theme.title === 'dark') {
@@ -25,7 +22,7 @@ export function  SwitchThemeContextProvider({children}: {children:ReactNode}) {
         maxAge: 30 * 24 * 60 * 60, //30days
         sameSite: true
       })
-      
+
       return setTheme(combineTheme(light))
     }
     if (theme.title === 'light') {
@@ -34,7 +31,7 @@ export function  SwitchThemeContextProvider({children}: {children:ReactNode}) {
         maxAge: 30 * 24 * 60 * 60, //30days
         sameSite: true
       })
-   
+
       return setTheme(combineTheme(dark))
     }
   }
