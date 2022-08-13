@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { MouseEvent, useContext, useState } from 'react'
 import { ToggleTheme } from './ToggleTheme'
-import { ToggleProps } from './types'
 import { ThemeContext } from 'styled-components'
 
 import {
@@ -17,8 +16,8 @@ import { SwitchThemeContext } from '../Contexts/SwitchThemeContext'
 
 export const Menu: React.FC = () => {
   const { asPath } = useRouter()
-  const { colors } = useContext(ThemeContext)
-  const {toggleTheme} = useContext(SwitchThemeContext)
+  //const { colors } = useContext(ThemeContext)
+  const {toggleTheme, theme} = useContext(SwitchThemeContext)
   const [color, setColor] = useState('')
   const [isOpen, setIsOpen] = useState(false)
   let expanded = false
@@ -28,6 +27,9 @@ export const Menu: React.FC = () => {
   const toggleMenu = (event: MouseEvent) => {
     if (event.type === 'touchstart') {
       event.preventDefault()
+    }
+     if (event.type === 'clickaway') {
+      setIsOpen(!isOpen)
     }
     setIsOpen(!isOpen)
     expanded = true
@@ -62,8 +64,8 @@ export const Menu: React.FC = () => {
             role='none'
             onClick={() => {
               asPath === item.url
-                ? setColor(colors.highlight)
-                : setColor(colors.info)
+                ? setColor(theme.colors.highlight)
+                : setColor(theme.colors.info)
             }}
           >
             <Link passHref href={item.url}>

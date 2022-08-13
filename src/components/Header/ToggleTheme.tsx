@@ -4,18 +4,19 @@ import { ThemeContext } from 'styled-components'
 import { ToggleProps } from './types'
 
 import { BsSunFill, BsMoonStars } from 'react-icons/bs'
+import { SwitchThemeContext } from '../Contexts/SwitchThemeContext'
 
 export const ToggleTheme: React.FC<ToggleProps> = ({ toggleTheme }) => {
-  const { colors, title } = useContext(ThemeContext)
+  const { theme} = useContext(SwitchThemeContext)
 
   return (
     <Switch
       onChange={toggleTheme}
-      checked={title === 'light'}
-      onColor={colors.secondary}
-      offColor={colors.carousel_1}
-      offHandleColor={colors.info}
-      onHandleColor={colors.white}
+      checked={theme.title === 'light'}
+      onColor={theme.colors.secondary}
+      offColor={theme.colors.carousel_1}
+      offHandleColor={theme.colors.info}
+      onHandleColor={theme.colors.white}
       draggable
       aria-checked
       aria-label='Toggle theme'
@@ -32,7 +33,7 @@ export const ToggleTheme: React.FC<ToggleProps> = ({ toggleTheme }) => {
             height: '100%',
             fontSize: 15,
             paddingRight: 2,
-            color: `${colors.white}`
+            color: `${theme.colors.white}`
           }}
         >
           <BsSunFill />
@@ -48,7 +49,7 @@ export const ToggleTheme: React.FC<ToggleProps> = ({ toggleTheme }) => {
             fontSize: 15,
             paddingRight: 2,
             paddingBottom: 2,
-            color: `${colors.white}`
+            color: `${theme.colors.white}`
           }}
         >
           <BsMoonStars />

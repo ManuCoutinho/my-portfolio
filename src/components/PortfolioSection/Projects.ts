@@ -404,7 +404,7 @@ const PROJECTS = [
     repo: 'https://github.com/ManuCoutinho/image-bank/blob/master/package.json',
     api: 'ImgBB',
     description:
-      'Está aplicação, na qual o usuário pode fazer upload de imagens, funcionando como um banco de imagens e visualizador dos arquivos upados. Faz uso do banco de dados não relacional Faunadb.',
+      'Aplicação onde o usuário pode fazer upload de imagens, funcionando como um banco de imagens e visualizador dos arquivos upados. Faz uso do banco de dados não relacional Faunadb.',
     img: [
       {
         imgPng: '/assets/carousel/imgbank-home.png',
