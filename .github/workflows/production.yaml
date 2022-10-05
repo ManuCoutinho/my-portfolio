@@ -10,9 +10,13 @@ jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Install Vercel CLI
-        run: npm install --global vercel@latest
+      - uses: actions/checkout@v23
+      - uses: actions/setup-node@3
+        with:
+          node-version: 16
+          cache: npm
+      - name: Install
+        run: npm install --legacy-peer-deps
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
       - name: Build Project Artifacts
