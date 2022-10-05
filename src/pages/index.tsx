@@ -5,21 +5,19 @@ import { Container } from '../components/Layout/Base'
 import { GetServerSideProps } from 'next'
 import nookies from 'nookies'
 
-
 const About = dynamic(() => import('../components/AboutSection'))
 const Portfolio = dynamic(() => import('../components/PortfolioSection'))
 const Contact = dynamic(() => import('../components/ContactSection'))
 const Footer = dynamic(() => import('../components/Footer'))
 const Header = dynamic(() => import('../components/Header'))
 
-
 export default function Home() {
   return (
     <>
-      <Head>        
+      <Head>
         <title>Manu Coutinho | Home</title>
       </Head>
-      <Header/>
+      <Header />
       <Banner />
       <Container>
         <About />
@@ -30,12 +28,11 @@ export default function Home() {
     </>
   )
 }
-export const getServerSideProps:GetServerSideProps = async (ctx) =>{
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const cookies = nookies.get(ctx)
-return {
-  props:{
-    theme: cookies.theme
+  return {
+    props: {
+      theme: cookies.theme
+    }
   }
 }
-}
-
