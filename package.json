@@ -28,7 +28,8 @@
     "react-typed": "^1.2.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5",
-    "uuidv4": "^6.2.13"
+    "uuidv4": "^6.2.13",
+    "vercel": "^28.4.6"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
