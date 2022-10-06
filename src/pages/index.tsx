@@ -1,28 +1,28 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-import { Banner } from '../components/HomeSection'
+import { HomeSection } from 'features/HomeSection'
 import { Container } from '../components/Layout/Base'
 
-const About = dynamic(() => import('../components/AboutSection'))
-const Portfolio = dynamic(() => import('../components/PortfolioSection'))
-const Contact = dynamic(() => import('../components/ContactSection'))
+const About = dynamic(() => import('features/AboutSection'))
+const Portfolio = dynamic(() => import('features/PortfolioSection'))
+const Contact = dynamic(() => import('features/ContactSection'))
 const Footer = dynamic(() => import('../components/Footer'))
-const Header = dynamic(() => import('../components/Header'))
+const Header = dynamic(() => import('features/Header'))
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Head>
-        <title>Manu Coutinho | Home</title>
+        <title>Manu Coutinho | Portfólio</title>
       </Head>
       <Header />
-      <Banner />
+      <HomeSection />
       <Container>
         <About />
         <Portfolio />
         <Contact />
         <Footer />
       </Container>
-    </>
+    </main>
   )
 }

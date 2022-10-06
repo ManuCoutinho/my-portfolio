@@ -8,9 +8,6 @@ export function LottieAnimation({ data }: AnimationProps) {
     loop: true,
     autoplay: true,
     animationData: data
-    // rendererSettings: {
-    //   preserveAspectRatio: 'xMidYMid slice'
-    // }
   }
 
   return <Lottie {...defaultOptions} />

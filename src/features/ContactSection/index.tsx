@@ -1,0 +1,35 @@
+import { LottieAnimation } from 'components/Animation'
+import * as animationData from './animation.json'
+import { SocialContacts } from 'features/SocialContacts'
+
+import { StackBoxCenter, Subtitle, Title, Text } from 'components/Layout/Base'
+import { BoxAnimation, Container, ContactSection, Email } from './styles'
+
+const Contact: React.FC = () => {
+  return (
+    <ContactSection id='contact'>
+      <Title>Contato</Title>
+      <Container>
+        <BoxAnimation>
+          <LottieAnimation data={animationData} />
+        </BoxAnimation>
+        <StackBoxCenter>
+          <Subtitle>Fale Comigo!</Subtitle>
+          <Text align='center'>
+            Caso tenha ficado alguma dúvida ou, se quiser saber mais sobre o meu
+            trabalho, fique à vontade para entrar em contato. #openToWork
+          </Text>
+          <Email
+            rel='noreferrer'
+            href='mailto:devmanucoutinho@gmail.com'
+            target='_blank'
+          >
+            devmanucoutinho@gmail.com
+          </Email>
+          <SocialContacts direction='row' />
+        </StackBoxCenter>
+      </Container>
+    </ContactSection>
+  )
+}
+export default Contact

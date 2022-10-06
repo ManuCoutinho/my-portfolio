@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from 'react'
 import { IDataContext } from './types'
-import PROJECTS from '../../components/PortfolioSection/Projects'
+import PROJECTS from 'data/Projects'
 
 const DEFAULT_CONTEXT: IDataContext = {
   data: [
