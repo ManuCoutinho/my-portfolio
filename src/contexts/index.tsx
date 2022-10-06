@@ -1,10 +1,10 @@
-import { ModalContextProvider } from './ModalContext/DataContext'
+import { DataContextProvider } from './DataContext/DataContext'
 import { ThemeContextProvider } from './ThemeContext'
 
 const GlobalContext: React.FC = ({ children }) => {
   return (
     <ThemeContextProvider>
-      <ModalContextProvider>{children}</ModalContextProvider>
+      <DataContextProvider>{children}</DataContextProvider>
     </ThemeContextProvider>
   )
 }

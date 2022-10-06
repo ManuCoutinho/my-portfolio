@@ -1,5 +1,6 @@
-import { useContext, useState } from 'react'
-import { ModalContext } from '../../contexts/ModalContext/DataContext'
+import { useData } from 'hooks/useData'
+import { useState } from 'react'
+
 import { LoadButton } from '../Layout/Buttons'
 
 import { Card } from './Card'
@@ -9,7 +10,7 @@ const LIMIT = 6
 const TOTAL = 13
 
 export const GridPortfolio: React.FC = () => {
-  const { data: info } = useContext(ModalContext)
+  const { data: info } = useData()
   const [limit, setLimit] = useState(LIMIT)
 
   function handleLimit() {

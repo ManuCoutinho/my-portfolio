@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from 'react'
 import { IDataContext } from './types'
 import PROJECTS from '../../components/PortfolioSection/Projects'
 
-const DEFAULT_CONTEXT = {
+const DEFAULT_CONTEXT: IDataContext = {
   data: [
     {
       name: '',
@@ -31,9 +31,9 @@ const DEFAULT_CONTEXT = {
   ]
 }
 
-export const ModalContext = createContext<IDataContext>(DEFAULT_CONTEXT)
+export const DataContext = createContext<IDataContext>(DEFAULT_CONTEXT)
 
-export const ModalContextProvider: React.FC = ({ children }) => {
+export const DataContextProvider: React.FC = ({ children }) => {
   const [data, setData] = useState(DEFAULT_CONTEXT.data)
 
   useEffect(() => {
@@ -62,6 +62,6 @@ export const ModalContextProvider: React.FC = ({ children }) => {
   }, [])
 
   return (
-    <ModalContext.Provider value={{ data }}>{children}</ModalContext.Provider>
+    <DataContext.Provider value={{ data }}>{children}</DataContext.Provider>
   )
 }

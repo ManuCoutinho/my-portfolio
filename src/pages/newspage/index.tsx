@@ -2,12 +2,10 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
-import { useContext } from 'react'
-import { ModalContext } from '../../contexts/ModalContext/DataContext'
-
 import { Container, Title } from '../../components/Layout/Base'
 import { ModalButton as Button } from '../../components/Layout/Buttons'
 import { ContainerRouter } from '../../styles/routeStyles'
+import { useData } from 'hooks/useData'
 
 const Footer = dynamic(() => import('../../components/Footer'))
 
@@ -17,7 +15,7 @@ const Body = dynamic(
 
 const NesPage: NextPage = () => {
   const router = useRouter()
-  const { data } = useContext(ModalContext)
+  const { data } = useData()
 
   return (
     <>
