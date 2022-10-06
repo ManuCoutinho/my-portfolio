@@ -1,22 +1,21 @@
-import { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import dynamic from 'next/dynamic'
 import ReactModal from 'react-modal'
-import { ThemeContext } from 'styled-components'
-import { Props } from './Modal/types'
+import { useTheme } from 'styled-components'
 
 import { StackBox, Subtitle } from '../Layout/Base'
 import { ModalButton } from '../Layout/Buttons'
 import { CardComponent, Image } from './styles'
-import { SwitchThemeContext } from '../Contexts/SwitchThemeContext'
+import { Props } from './Modal/types'
 
 const Modal = dynamic(() => import('./Modal'), { ssr: false })
 
-export const Card: React.FC<Props> = ({ ...props }) => {  
+export const Card: React.FC<Props> = ({ ...props }) => {
   ReactModal.setAppElement('#__next')
   const router = useRouter()
-  const { colors } = useContext(ThemeContext)
-  const {theme} = useContext(SwitchThemeContext)
+  const { colors, title } = useTheme()
+
   const [modalIsOpen, setModalIsOpen] = useState(false)
   const [isTouchDevice, setIsTouchDevice] = useState(false)
 
@@ -41,11 +40,11 @@ export const Card: React.FC<Props> = ({ ...props }) => {
               width={300}
               height={350}
               alt={props.alt}
-              src={theme.title === 'light' ? props.coverAltLight : props.coverAltDark}
+              src={title === 'light' ? props.coverAltLight : props.coverAltDark}
             />
             <source
               srcSet={
-                theme.title === 'light'
+                title === 'light'
                   ? props.coverDefaultLight
                   : props.coverDefaultDark
               }

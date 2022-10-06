@@ -12,12 +12,12 @@ import {
   NavLink,
   Close
 } from './styles'
-import { SwitchThemeContext } from '../Contexts/SwitchThemeContext'
+import { ThemeContext } from '../../contexts/ThemeContext'
 
 export const Menu: React.FC = () => {
   const { asPath } = useRouter()
   const theme = useTheme()
-  const {toggleTheme} = useContext(SwitchThemeContext)
+  const { toggleTheme } = useContext(ThemeContext)
 
   const [color, setColor] = useState('')
   const [isOpen, setIsOpen] = useState(false)
@@ -29,7 +29,7 @@ export const Menu: React.FC = () => {
     if (event.type === 'touchstart') {
       event.preventDefault()
     }
-     if (event.type === 'clickaway') {
+    if (event.type === 'clickaway') {
       setIsOpen(!isOpen)
     }
     setIsOpen(!isOpen)

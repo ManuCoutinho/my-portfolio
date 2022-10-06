@@ -1,7 +1,6 @@
 import { useContext, useState } from 'react'
-import { ModalContext } from '../Contexts/ModalContext/DataContext'
+import { ModalContext } from '../../contexts/ModalContext/DataContext'
 import { LoadButton } from '../Layout/Buttons'
-
 
 import { Card } from './Card'
 import { BoxButtons, Grid } from './styles'
@@ -13,15 +12,14 @@ export const GridPortfolio: React.FC = () => {
   const { data: info } = useContext(ModalContext)
   const [limit, setLimit] = useState(LIMIT)
 
-
   function handleLimit() {
     limit <= TOTAL && setLimit(limit + 3)
   }
 
-  let data = info.slice(0, limit)
+  const data = info.slice(0, limit)
   return (
-    <>    
-       <Grid  >
+    <>
+      <Grid>
         {data.map((project) => (
           <Card
             key={project.id}
@@ -43,7 +41,7 @@ export const GridPortfolio: React.FC = () => {
           />
         ))}
       </Grid>
-     
+
       <BoxButtons>
         {data.length === LIMIT ? null : (
           <LoadButton onClick={() => setLimit(limit - 3)}>

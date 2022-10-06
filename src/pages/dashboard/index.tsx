@@ -8,7 +8,7 @@ import { Container, Title } from '../../components/Layout/Base'
 import { ModalButton as Button } from '../../components/Layout/Buttons'
 import { ContainerRouter } from '../../styles/routeStyles'
 
-import { ModalContext } from '../../components/Contexts/ModalContext/DataContext'
+import { ModalContext } from '../../contexts/ModalContext/DataContext'
 
 const Footer = dynamic(() => import('../../components/Footer'))
 

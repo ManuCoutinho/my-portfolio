@@ -1,17 +1,18 @@
-import { useContext } from 'react'
+import { useContext, FC } from 'react'
 import Switch from 'react-switch'
-import { ThemeContext } from 'styled-components'
-import { ToggleProps } from './types'
-
+import { useTheme } from 'styled-components'
 import { BsSunFill, BsMoonStars } from 'react-icons/bs'
-import { SwitchThemeContext } from '../Contexts/SwitchThemeContext'
+import { ThemeContext } from '../../contexts/ThemeContext'
 
-export const ToggleTheme: React.FC<ToggleProps> = ({ toggleTheme }) => {
-  const { theme} = useContext(SwitchThemeContext)
-
+export const ToggleTheme: FC = () => {
+  const { toggleTheme } = useContext(ThemeContext)
+  const theme = useTheme()
+  const handleChangeTheme = () => {
+    toggleTheme({ type: theme.title === 'light' ? 'dark' : 'light' })
+  }
   return (
     <Switch
-      onChange={toggleTheme}
+      onChange={handleChangeTheme}
       checked={theme.title === 'light'}
       onColor={theme.colors.secondary}
       offColor={theme.colors.carousel_1}
