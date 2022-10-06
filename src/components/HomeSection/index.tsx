@@ -11,7 +11,6 @@ import {
   BoxLottie
 } from './styles'
 import { TextAnimated } from './TextAnimated'
-import { parseCookies } from 'nookies'
 
 export function Banner(): JSX.Element {
   return (

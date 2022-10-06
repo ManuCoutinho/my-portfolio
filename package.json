@@ -14,21 +14,21 @@
     "test": "jest"
   },
   "dependencies": {
+    "lottie-react": "^2.3.1",
     "next": "12.2.4",
     "nookies": "^2.5.2",
     "polished": "^4.2.2",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-icons": "^4.3.1",
-    "react-lottie": "^1.2.3",
     "react-modal": "^3.14.4",
     "react-slick": "^0.29.0",
     "react-switch": "^6.0.0",
-    "react-typed": "^1.2.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5",
+    "typed.js": "^2.0.12",
     "uuidv4": "^6.2.13",
-    "vercel": "^28.4.6"
+    "vercel": "^19.1.2"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.3.1",
