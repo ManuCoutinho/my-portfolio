@@ -1,20 +1,25 @@
 import { LottieAnimation } from 'components/Animation'
 import * as animationData from './animation.json'
 import { SocialContacts } from 'features/SocialContacts'
-
-import { StackBoxCenter, Subtitle, Title, Text } from 'components/Layout/Base'
+import { Heading } from 'components/Heading'
+import { StackBox } from 'components/StackBox'
+import { Text } from 'components/Text'
 import { BoxAnimation, Container, ContactSection, Email } from './styles'
 
 const Contact: React.FC = () => {
   return (
     <ContactSection id='contact'>
-      <Title>Contato</Title>
+      <Heading as='h2' size='big'>
+        Contato
+      </Heading>
       <Container>
         <BoxAnimation>
           <LottieAnimation data={animationData} />
         </BoxAnimation>
-        <StackBoxCenter>
-          <Subtitle>Fale Comigo!</Subtitle>
+        <StackBox direction='column' align='center' gap={1.5}>
+          <Heading as='h3' size='small'>
+            Fale Comigo!
+          </Heading>
           <Text align='center'>
             Caso tenha ficado alguma dúvida ou, se quiser saber mais sobre o meu
             trabalho, fique à vontade para entrar em contato. #openToWork
@@ -27,7 +32,7 @@ const Contact: React.FC = () => {
             devmanucoutinho@gmail.com
           </Email>
           <SocialContacts direction='row' />
-        </StackBoxCenter>
+        </StackBox>
       </Container>
     </ContactSection>
   )

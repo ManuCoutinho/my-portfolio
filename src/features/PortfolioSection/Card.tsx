@@ -3,11 +3,11 @@ import { useRouter } from 'next/router'
 import dynamic from 'next/dynamic'
 import ReactModal from 'react-modal'
 import { useTheme } from 'styled-components'
-
-import { StackBox, Subtitle } from 'components/Layout/Base'
 import { ModalButton } from 'components/Layout/Buttons'
 import { CardComponent, Image } from './styles'
 import { Props } from './Modal/types'
+import { StackBox } from 'components/StackBox'
+import { Heading } from 'components/Heading'
 
 const Modal = dynamic(() => import('./Modal'), { ssr: false })
 
@@ -53,7 +53,9 @@ export const Card: React.FC<Props> = ({ ...props }) => {
           </picture>
         </Image>
 
-        <Subtitle>{props.title}</Subtitle>
+        <Heading size='small' as='h3'>
+          {props.title}
+        </Heading>
         {!isTouchDevice ? (
           <ModalButton type='button' onClick={() => setModalIsOpen(true)}>
             Detalhes

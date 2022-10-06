@@ -1,5 +1,4 @@
 import { v4 as uuid } from 'uuid'
-import { LinkInternal as NavLink } from 'components/Layout/Base'
 import { CarouselProps } from '../types'
 import { Item, Items, ItemWrapper, CarouselNav } from './styles'
 
@@ -29,7 +28,7 @@ const CarouselModal: React.FC<CarouselProps> = ({ img }) => {
       </ItemWrapper>
       <CarouselNav>
         {img?.map((img) => (
-          <NavLink href={`#${img.id}`} />
+          <a href={`#${img.id}`} key={uuid()} />
         ))}
       </CarouselNav>
     </>

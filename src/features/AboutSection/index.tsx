@@ -1,21 +1,24 @@
 import Image from 'next/image'
-import { Description } from './Description'
-import { Carousel } from './CarouselAbout'
-import { StackBoxCenter, Title } from 'components/Layout/Base'
+import { Description } from '../Description'
+import { Carousel } from '../../components/CarouselAbout'
 import { AboutSection, ContainerAbout } from './styles'
 import { useTheme } from 'styled-components'
 
 import lightImg from '../../../public/assets/perfil.webp'
 import darkImg from '../../../public/assets/perfil-green.webp'
+import { StackBox } from 'components/StackBox'
+import { Heading } from 'components/Heading'
 
 const About: React.FC = () => {
   const theme = useTheme()
 
   return (
     <AboutSection id='about'>
-      <Title>Sobre</Title>
+      <Heading size='big' as='h2'>
+        Sobre
+      </Heading>
       <ContainerAbout>
-        <StackBoxCenter>
+        <StackBox>
           <Image
             width='300'
             height='300'
@@ -23,7 +26,7 @@ const About: React.FC = () => {
             loading='lazy'
             alt='girl coding with cup of coffee'
           />
-        </StackBoxCenter>
+        </StackBox>
         <Description />
       </ContainerAbout>
       <Carousel />

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { Box, Container as ContainerBase } from '../../components/Layout/Base'
+import { Container as ContainerBase } from 'components/Layout/Base'
 
 export const Container = styled.section`
   ${({ theme }) => css`
@@ -36,7 +36,7 @@ export const Wrapper = styled(ContainerBase)`
     }
   `}
 `
-export const BoxCenter = styled(Box)`
+export const BoxCenter = styled.div`
   ${({ theme }) => css`
     @media only screen and (min-width: 80em) {
       padding: 2rem 3rem;

@@ -1,7 +1,6 @@
-import { LinkInternal } from 'components/Layout/Base'
 import styled, { css } from 'styled-components'
 
-export const Item = styled(LinkInternal)`
+export const Item = styled.a`
   ${({ theme }) => css`
   
   &:hover {

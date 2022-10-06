@@ -1,5 +1,4 @@
-import { StackBoxCenter } from 'components/Layout/Base'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 type MenuLinkProps = {
   color1: string
@@ -40,7 +39,7 @@ const ModalHeader = styled.header<MenuLinkProps>`
     color: ${({ theme }) => theme.colors.highlight};
   }
 `
-const ContainerHeader = styled(StackBoxCenter)`
+const ContainerHeader = styled.div`
   gap: 0;
 `
 
@@ -83,11 +82,13 @@ const BoxInfos = styled(Content)`
   padding: 0;
 `
 
-const Topic = styled.span`  
-  font-weight: ${({ theme }) => theme.fontWeight.semibold});
-  font-family: ${({ theme }) => theme.font.title};
-  color: ${({ theme }) => theme.colors.info};
-  font-size: ${({ theme }) => theme.fontSize.lg};  
+const Topic = styled.span`
+  ${({ theme }) => css`
+    font-weight: ${theme.fontWeight.semibold};
+    font-family: ${theme.font.title};
+    color: ${theme.colors.info};
+    font-size: ${theme.fontSize.lg};
+  `}
 `
 
 const BoxDetails = styled.div`

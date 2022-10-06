@@ -1,4 +1,4 @@
-import { Title } from 'components/Layout/Base'
+import { Heading } from 'components/Heading'
 import { GridPortfolio } from './GridPortfolio'
 
 import { PortfolioSection } from './styles'
@@ -6,7 +6,9 @@ import { PortfolioSection } from './styles'
 const Portfolio: React.FC = () => {
   return (
     <PortfolioSection id='portfolio'>
-      <Title>Portfólio</Title>
+      <Heading as='h2' size='big'>
+        Portfólio
+      </Heading>
       <GridPortfolio />
     </PortfolioSection>
   )

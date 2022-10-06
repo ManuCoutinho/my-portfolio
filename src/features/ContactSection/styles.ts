@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { LinkInternal } from 'components/Layout/Base'
 
 const ContactSection = styled.section``
 
@@ -19,7 +18,7 @@ const BoxAnimation = styled.div`
   max-width: 350px;
 `
 
-const Email = styled(LinkInternal)`
+const Email = styled.a`
   font-weight: ${({ theme }) => theme.fontWeight.semibold};
   transition: ${({ theme }) => theme.transition};
 

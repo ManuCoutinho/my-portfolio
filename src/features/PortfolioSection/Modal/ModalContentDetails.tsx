@@ -2,9 +2,9 @@ import Link from 'next/link'
 import { FiGithub } from 'react-icons/fi'
 import { MdOpenInNew } from 'react-icons/md'
 import { Props } from './types'
-
-import { StackBox, Text } from 'components/Layout/Base'
 import { BoxDetails, ModalBody, Topic } from './styles'
+import { StackBox } from 'components/StackBox'
+import { Text } from 'components/Text'
 
 const ModalContentDetails: React.FC<Props> = ({ ...props }) => {
   return (

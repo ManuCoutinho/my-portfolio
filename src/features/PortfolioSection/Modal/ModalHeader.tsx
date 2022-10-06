@@ -1,8 +1,8 @@
+import { Heading } from 'components/Heading'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
-import { LinkInternal, Subtitle } from 'components/Layout/Base'
 import { BoxInfos, ModalHeader as Header, ContainerHeader } from './styles'
 
 interface PropsHeader {
@@ -25,13 +25,15 @@ const ModalHeader: React.FC<PropsHeader> = ({ name }) => {
       color2={isDetails ? `${colors.primary}` : `${colors.text}`}
     >
       <ContainerHeader>
-        <Subtitle>{name}</Subtitle>
+        <Heading as='h4' size='small'>
+          {name}
+        </Heading>
         <BoxInfos>
           <Link href='#overview' passHref>
-            <LinkInternal>Visão geral</LinkInternal>
+            <a>Visão geral</a>
           </Link>
           <Link href='#details' passHref>
-            <LinkInternal>Detalhes</LinkInternal>
+            <a>Detalhes</a>
           </Link>
         </BoxInfos>
       </ContainerHeader>

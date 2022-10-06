@@ -1,4 +1,3 @@
-import { LinkInternal } from 'components/Layout/Base'
 import styled, { css } from 'styled-components'
 import { MenuStyleProps } from './types'
 
@@ -25,7 +24,7 @@ export const MenuList = styled.ul<MenuStyleProps>`
 `
 export const MenuItem = styled.li``
 
-export const NavLink = styled(LinkInternal)<{ color?: string }>`
+export const NavLink = styled.a<{ color?: string }>`
   ${({ theme, color }) => css`
     padding: 2rem;
     transition: color ease-in-out 0.25s;

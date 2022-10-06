@@ -1,12 +1,13 @@
-import { StackBox, Subtitle } from 'components/Layout/Base'
-import { Text } from 'components/Layout/Base'
+import { Heading } from 'components/Heading'
+import { StackBox } from 'components/StackBox'
+import { Text } from 'components/Text'
 
 export const Description = () => {
   return (
-    <StackBox>
-      <Subtitle>
+    <StackBox direction='column'>
+      <Heading as='h3' size='small'>
         <span>Olá, sou</span> Manu Coutinho!
-      </Subtitle>
+      </Heading>
       <Text>
         Eu sou uma desenvolvedora front-end, movida por uma paixão em construir
         coisas capazes de integrar diversos universos por meio da tecnologia.

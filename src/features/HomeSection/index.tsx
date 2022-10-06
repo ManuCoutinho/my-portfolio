@@ -1,4 +1,3 @@
-import { Box, LinkInternal } from '../../components/Layout/Base'
 import { MyWorks } from '../../components/Layout/Buttons'
 import { SocialContacts } from 'features/SocialContacts'
 import { LottieAnimation } from '../../components/Animation'
@@ -6,6 +5,7 @@ import * as animationData from 'data/animation.json'
 
 import * as Styled from './styles'
 import { AnimatedText } from 'components/AnimatedText'
+import { StackBox } from 'components/StackBox'
 
 export const HomeSection: React.FC = () => {
   return (
@@ -13,16 +13,16 @@ export const HomeSection: React.FC = () => {
       <Styled.Wrapper>
         <Styled.BoxCenter>
           <AnimatedText />
-          <Box>
-            <LinkInternal
+          <StackBox>
+            <a
               href='#portfolio'
               role='navigation'
               rel='nofollow'
               aria-label='Ir para portfólio'
             >
               <MyWorks type='button'>Conheça meus projetos!</MyWorks>
-            </LinkInternal>
-          </Box>
+            </a>
+          </StackBox>
         </Styled.BoxCenter>
         <Styled.BoxLottie>
           <LottieAnimation data={animationData} />

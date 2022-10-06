@@ -3,15 +3,16 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
 
-import { Container, Title } from '../../components/Layout/Base'
+import { Container } from 'components/Layout/Base'
 import { ModalButton as Button } from '../../components/Layout/Buttons'
 import { ContainerRouter } from '../../styles/routeStyles'
 import { useData } from 'hooks/useData'
+import { Heading } from 'components/Heading'
 
 const Footer = dynamic(() => import('../../components/Footer'))
 
 const Body = dynamic(
-  () => import('../../components/PortfolioSection/Modal/ModalContentDetails')
+  () => import('features/PortfolioSection/Modal/ModalContentDetails')
 )
 
 const DevTracker: NextPage = () => {
@@ -26,7 +27,9 @@ const DevTracker: NextPage = () => {
             <title>`Manu Coutinho | ${data[2].name}`</title>
           </Head>
           <ContainerRouter>
-            <Title>{data[2].name}</Title>
+            <Heading as='h2' size='big'>
+              {data[2].name}
+            </Heading>
             <Body
               title={''}
               description={data[2].description}

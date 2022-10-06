@@ -1,13 +1,13 @@
-import { StackBoxCenter } from '../Layout/Base'
 import { SocialLinkProps } from './types'
 import * as Styled from './styles'
+import { StackBox } from 'components/StackBox'
 
 export const SocialLink: React.FC<SocialLinkProps> = ({ children, url }) => {
   return (
-    <StackBoxCenter>
+    <StackBox>
       <Styled.Item href={url} rel='noopener noreferrer' target='_blank'>
         {children}
       </Styled.Item>
-    </StackBoxCenter>
+    </StackBox>
   )
 }

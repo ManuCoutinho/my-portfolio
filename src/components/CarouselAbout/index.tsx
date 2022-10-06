@@ -24,7 +24,7 @@ import {
 import { CarouselItem } from './CarouselItem'
 
 import { ContainerCarousel } from './styles'
-import { Subtitle } from 'components/Layout/Base'
+import { Heading } from 'components/Heading'
 
 export const Carousel: React.FC = () => {
   const settings = {
@@ -65,7 +65,9 @@ export const Carousel: React.FC = () => {
   }
   return (
     <ContainerCarousel>
-      <Subtitle>Minhas Skills:</Subtitle>
+      <Heading as='h4' size='small'>
+        Minhas Skills:
+      </Heading>
       <Slider {...settings}>
         <CarouselItem>
           <DiCss3 />

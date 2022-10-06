@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { HomeSection } from 'features/HomeSection'
-import { Container } from '../components/Layout/Base'
+import { Container } from 'components/Layout/Base'
 
 const About = dynamic(() => import('features/AboutSection'))
 const Portfolio = dynamic(() => import('features/PortfolioSection'))
 const Contact = dynamic(() => import('features/ContactSection'))
-const Footer = dynamic(() => import('../components/Footer'))
+const Footer = dynamic(() => import('components/Footer'))
 const Header = dynamic(() => import('features/Header'))
 
 export default function Home() {
