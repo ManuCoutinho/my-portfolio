@@ -1,21 +1,22 @@
 import { LottieAnimation } from 'components/Animation'
-import * as animationData from './animation.json'
 import { SocialContacts } from 'features/SocialContacts'
 import { Heading } from 'components/Heading'
 import { StackBox } from 'components/StackBox'
 import { Text } from 'components/Text'
-import { BoxAnimation, Container, ContactSection, Email } from './styles'
+import links from 'constants/links'
+import animationData from 'data/footer.json'
+import * as Styled from './styles'
 
 const Contact: React.FC = () => {
   return (
-    <ContactSection id='contact'>
+    <Styled.ContactSection id='contact'>
       <Heading as='h2' size='big'>
         Contato
       </Heading>
-      <Container>
-        <BoxAnimation>
+      <Styled.Container>
+        <Styled.BoxAnimation>
           <LottieAnimation data={animationData} />
-        </BoxAnimation>
+        </Styled.BoxAnimation>
         <StackBox direction='column' align='center' gap={1.5}>
           <Heading as='h3' size='small'>
             Fale Comigo!
@@ -24,17 +25,13 @@ const Contact: React.FC = () => {
             Caso tenha ficado alguma dúvida ou, se quiser saber mais sobre o meu
             trabalho, fique à vontade para entrar em contato. #openToWork
           </Text>
-          <Email
-            rel='noreferrer'
-            href='mailto:devmanucoutinho@gmail.com'
-            target='_blank'
-          >
+          <Styled.Email rel='noreferrer' href={links.email} target='_blank'>
             devmanucoutinho@gmail.com
-          </Email>
+          </Styled.Email>
           <SocialContacts direction='row' />
         </StackBox>
-      </Container>
-    </ContactSection>
+      </Styled.Container>
+    </Styled.ContactSection>
   )
 }
 export default Contact

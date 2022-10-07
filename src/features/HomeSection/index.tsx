@@ -1,11 +1,10 @@
-import { MyWorks } from '../../components/Layout/Buttons'
 import { SocialContacts } from 'features/SocialContacts'
-import { LottieAnimation } from '../../components/Animation'
-import * as animationData from 'data/animation.json'
-
-import * as Styled from './styles'
+import { LottieAnimation } from 'components/Animation'
 import { AnimatedText } from 'components/AnimatedText'
 import { StackBox } from 'components/StackBox'
+import animationData from 'data/home.json'
+
+import * as Styled from './styles'
 
 export const HomeSection: React.FC = () => {
   return (
@@ -13,14 +12,16 @@ export const HomeSection: React.FC = () => {
       <Styled.Wrapper>
         <Styled.BoxCenter>
           <AnimatedText />
-          <StackBox>
+          <StackBox justify='center'>
             <a
               href='#portfolio'
               role='navigation'
               rel='nofollow'
               aria-label='Ir para portfólio'
             >
-              <MyWorks type='button'>Conheça meus projetos!</MyWorks>
+              <Styled.Button type='button'>
+                Conheça meus projetos!
+              </Styled.Button>
             </a>
           </StackBox>
         </Styled.BoxCenter>
@@ -28,7 +29,7 @@ export const HomeSection: React.FC = () => {
           <LottieAnimation data={animationData} />
         </Styled.BoxLottie>
       </Styled.Wrapper>
-      <SocialContacts showToggle />
+      <SocialContacts showToggle direction='column' />
     </Styled.Container>
   )
 }

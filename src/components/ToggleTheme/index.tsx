@@ -13,9 +13,9 @@ export const ToggleTheme: FC = () => {
   return (
     <Styled.Switch type='button' onClick={handleChangeTheme} role='switch'>
       {title === 'light' ? (
-        <SunDim size={32} weight='light' />
+        <SunDim size={30} weight='light' />
       ) : (
-        <MoonStars size={32} weight='light' />
+        <MoonStars size={30} weight='light' />
       )}
     </Styled.Switch>
   )

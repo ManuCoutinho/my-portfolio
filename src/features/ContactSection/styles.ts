@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-const ContactSection = styled.section``
+export const ContactSection = styled.section``
 
-const Container = styled.div`
+export const Container = styled.div`
   width: 100%;
   display: flex;
   gap: 2rem;
@@ -14,19 +14,19 @@ const Container = styled.div`
   }
 `
 
-const BoxAnimation = styled.div`
+export const BoxAnimation = styled.div`
   max-width: 350px;
 `
 
-const Email = styled.a`
-  font-weight: ${({ theme }) => theme.fontWeight.semibold};
-  transition: ${({ theme }) => theme.transition};
+export const Email = styled.a`
+  ${({ theme }) => css`
+    font-weight: ${theme.fontWeight.semibold};
+    transition: ${theme.transition};
 
-  &:hover {
-    transition: ${({ theme }) => theme.transition};
-    color: ${({ theme }) => theme.colors.primary};
-    text-decoration: underline;
-  }
+    &:hover {
+      transition: ${theme.transition};
+      color: ${theme.colors.primary};
+      text-decoration: underline;
+    }
+  `}
 `
-
-export { ContactSection, Email, Container, BoxAnimation }

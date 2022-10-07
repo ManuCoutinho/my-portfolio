@@ -10,11 +10,11 @@ const animate = keyframes`
       transform: rotate(360deg);
    }
 `
-const PortfolioSection = styled.section`
+export const PortfolioSection = styled.section`
   margin: 5rem auto;
 `
 
-const Grid = styled.div`
+export const Grid = styled.div`
   max-width: clamp(80vw 1180px 100%);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
@@ -24,37 +24,7 @@ const Grid = styled.div`
   padding: 1.6rem;
 `
 
-const CardComponent = styled.div`
-  ${({ theme }) => css`
-    background: ${theme.colors.bg_card};
-    max-width: 19rem;
-    width: 100%;
-    padding: 1rem 1rem 2rem 1rem;
-    margin: 0 auto;
-    display: flex;
-    border: 2px solid ${theme.colors.highlight};
-    flex-direction: column;
-
-    border-radius: ${theme.radius.small};
-    transition: ${theme.transition};
-    position: relative;
-    overflow: hidden;
-
-    border-radius: ${({ theme }) => theme.radius.small};
-    transition: ${({ theme }) => theme.transition};
-
-    &:hover {
-      box-shadow: -1px 1px 5px 1px ${theme.colors.highlight};
-    }
-
-    h3:first-letter {
-      text-transform: capitalize;
-      -webkit-text-shadow: -2px 2px 2px ${theme.colors.white};
-    }
-  `}
-`
-
-const Description = styled.p`
+export const Description = styled.p`
   font-size: ${({ theme }) => theme.fontSize.md};
   font-weight: ${({ theme }) => theme.fontWeight.light};
   color: ${({ theme }) => theme.colors.info};
@@ -62,22 +32,31 @@ const Description = styled.p`
   //break-word: break-word;
   user-select: none;
 `
-const BoxButtons = styled.div`
+export const BoxButtons = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 2rem;
 `
 
-const Image = styled.div`
-  height: 17.5rem;
+export const LoadButton = styled.button`
+  ${({ theme }) => css`
+    width: 10rem;
+    background: ${theme.colors.bg_modal};
+    border: 1px solid ${theme.colors.glass};
+    border-radius: ${theme.radius.small};
+    color: ${theme.colors.text};
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    outline: 0;
+    transition: ${theme.transition};
 
-  picture,
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      background: ${theme.colors.glass};
+      transition: ${theme.transition};
+    }
+  `}
 `
-
-export { BoxButtons, CardComponent, Description, Grid, PortfolioSection, Image }

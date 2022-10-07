@@ -53,8 +53,10 @@ export const BoxCenter = styled.div`
     }
 
     @media only screen and (max-width: 27em) {
-      gap: 0;
+      gap: 0.5rem;
       padding: 0;
+      margin-bottom: 1rem;
+      align-items: center;
     }
 
     font-family: ${theme.font.title};
@@ -62,6 +64,9 @@ export const BoxCenter = styled.div`
     font-size: ${theme.fontSize.xlg};
     line-height: 2.5rem;
     width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
   `}
 `
 
@@ -78,6 +83,33 @@ export const BoxLottie = styled.div`
       width: 20rem;
       display: grid;
       place-content: center;
+    }
+  `}
+`
+export const Button = styled.button`
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+    border-radius: ${theme.radius.default};
+    background-color: ${theme.colors.info};
+    border: 0;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.25);
+    font-weight: ${theme.fontWeight.semibold};
+    font-size: 1.3rem;
+    padding: 1rem;
+    outline: 0;
+    transition: ${theme.transition};
+    width: 24rem;
+
+    &:hover {
+      filter: brightness(0.8);
+      transition: ${theme.transition};
+    }
+
+    @media only screen and (max-width: 25em) {
+      width: 100%;
+      padding: 0.5rem 1.3rem;
+      font-size: 1rem;
     }
   `}
 `

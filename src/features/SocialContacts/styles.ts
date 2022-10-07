@@ -1,19 +1,29 @@
 import styled, { css } from 'styled-components'
+import { StyleProps } from './types'
 
-export const Container = styled.nav<{ direction?: string }>`
+const display = {
+  column: () => css`
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  `,
+  row: () => css`
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  `
+}
+export const Container = styled.nav<StyleProps>`
   ${({ theme, direction }) => css`
-    vertical-align: middle;
     color: ${theme.colors.secondary};
-    font-size: 2rem;
     transition: ${theme.transition};
     display: flex;
-    flex-direction: ${direction ? direction : 'column'};
-    gap: 0.5rem;
+    ${display[direction]};
+    gap: 0.75rem;
+    align-items: center;
     @media (max-width: 27em) {
       display: flex;
       flex-flow: row nowrap;
-      font-size: 1.8rem;
-      gap: 0.25rem;
     }
   `}
 `

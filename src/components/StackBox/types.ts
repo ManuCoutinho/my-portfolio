@@ -5,6 +5,7 @@ export interface StackBoxProps extends StackBoxStyleProps {
   onChange?: () => void
   onBlur?: () => void
   onSubmit?: () => void
+  id?: string
 }
 
 export interface StackBoxStyleProps {
