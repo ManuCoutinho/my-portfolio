@@ -10,9 +10,7 @@ export const Container = styled.div`
   margin: 1.5rem auto;
 `
 
-export const Wrapper = styled.div`
-  ${({ theme }) => css``}
-`
+export const Wrapper = styled.div``
 
 export const Content = styled(Icon)`
   ${({ theme }) => css`

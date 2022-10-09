@@ -3,7 +3,6 @@ import { SocialContacts } from 'features/SocialContacts'
 import { Heading } from 'components/Heading'
 import { StackBox } from 'components/StackBox'
 import { Text } from 'components/Text'
-import links from 'constants/links'
 import animationData from 'data/footer.json'
 import * as Styled from './styles'
 
