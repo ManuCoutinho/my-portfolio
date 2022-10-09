@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
-const AboutSection = styled.section`
+export const Section = styled.section`
   width: 100%;
   padding: 1.5rem 0.5rem;
   margin: 0 auto;
 `
-const ContainerAbout = styled.div`
+export const Container = styled.div`
   @media only screen and (max-width: 48em) {
     flex-direction: column;
     gap: 2rem;
@@ -37,5 +37,3 @@ const ContainerAbout = styled.div`
     }
   }
 `
-
-export { AboutSection, ContainerAbout }

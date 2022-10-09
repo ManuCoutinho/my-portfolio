@@ -8,7 +8,8 @@ import icons from 'constants/icons'
 
 export const SocialContacts: React.FC<SocialContactProps> = ({
   direction,
-  showToggle = false
+  showToggle = false,
+  showEmail = false
 }) => {
   return (
     <Container
@@ -25,6 +26,11 @@ export const SocialContacts: React.FC<SocialContactProps> = ({
       <SocialLink url={links.twitter}>
         <Icon icon={icons.twitter} title='Acessar Twitter' />
       </SocialLink>
+      {showEmail && (
+        <SocialLink url={links.email}>
+          <Icon icon={icons.email} title='Email' />
+        </SocialLink>
+      )}
       {showToggle && <ToggleTheme />}
     </Container>
   )

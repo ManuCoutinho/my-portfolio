@@ -8,7 +8,7 @@ const variant = {
     font-size: ${theme.fontSize.lg};
     font-weight: ${theme.fontWeight.semibold};
     letter-spacing: -1px;
-    line-height: 1.5rem;
+    line-height: 2rem;
 
     margin: 1rem 0;
 
@@ -20,7 +20,7 @@ const variant = {
     color: ${theme.colors.title};
     font-size: ${theme.fontSize.xl};
     font-weight: ${theme.fontWeight.bold};
-    line-height: 1.5rem;
+    line-height: 3rem;
     margin: 1.5rem 0;
 
     text-align: center;

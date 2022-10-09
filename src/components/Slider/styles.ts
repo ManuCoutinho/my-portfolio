@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { Icon } from '@iconify-icon/react'
 
 export const ItemWrapper = styled.div`
   width: 100%;
@@ -8,12 +9,12 @@ export const ItemWrapper = styled.div`
 export const Items = styled.div`
   display: flex;
   overflow: hidden;
-  max-height: 35rem;
+  max-height: 45rem;
   cursor: grabbing;
 `
 export const Item = styled.div`
   width: 100%;
-  height: 30rem;
+  max-height: 40rem;
   overflow: hidden;
 
   picture,
@@ -27,28 +28,35 @@ export const Item = styled.div`
     height: 60vh;
   }
 `
-export const CarouselNav = styled.nav`
-  ${() => css`
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    margin-top: 1rem;
-    overflow: hidden;
-    padding-bottom: 0.5rem;
-
-    cursor: pointer;
-  `}
-`
-export const NavItem = styled.span`
+export const ArrowLeft = styled(Icon)`
   ${({ theme }) => css`
-    padding: 0.5rem;
+    padding: 1rem;
     color: ${theme.colors.primary};
     transition: color 0.25s ease-in-out;
-    font-size: 1.75rem;
+    font-size: 4rem;
     outline: 1;
     outline: transparent;
+    position: absolute;
+    bottom: 50%;
+    cursor: pointer;
+    &:hover {
+      color: ${theme.colors.active};
+      transition: color 0.25s ease-in-out;
+    }
+  `}
+`
+export const ArrowRight = styled(Icon)`
+  ${({ theme }) => css`
+    padding: 1rem;
+    color: ${theme.colors.primary};
+    transition: color 0.25s ease-in-out;
+    font-size: 4rem;
+    outline: 1;
+    outline: transparent;
+    position: absolute;
+    bottom: 50%;
+    cursor: pointer;
+    right: 0;
     &:hover {
       color: ${theme.colors.active};
       transition: color 0.25s ease-in-out;

@@ -20,7 +20,7 @@ export const Description = () => {
         Minha abordagem para a resolução de problemas é altamente inclusiva,
         colaborativa e centrada no ser humano.
       </Text>
-      <Text>Nesta página, irei compartilhar alguns dos meus projetos!</Text>
+      <Text>Aqui, compartillho alguns dos meus projetos!</Text>
     </StackBox>
   )
 }

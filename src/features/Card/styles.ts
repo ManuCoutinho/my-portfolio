@@ -19,6 +19,7 @@ export const CardComponent = styled.button`
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    border: 0;
     transition: ${theme.transition};
     position: relative;
     overflow: hidden;
@@ -27,13 +28,6 @@ export const CardComponent = styled.button`
     z-index: 5;
     &:hover {
       padding: 0 0 2rem 0;
-    }
-    & h3 {
-      z-index: 20;
-      &:first-letter {
-        text-transform: capitalize;
-        -webkit-text-shadow: -2px 2px 2px ${theme.colors.white};
-      }
     }
 
     &::before {
@@ -49,7 +43,7 @@ export const CardComponent = styled.button`
     &::after {
       content: ' ';
       position: absolute;
-      inset: 3px;
+      inset: 2px;
       background-color: ${theme.colors.bg_card};
       background-image: linear-gradient(
         to left,
@@ -78,4 +72,16 @@ export const Image = styled.div`
       transition: transform 0.2s ease-in-out;
     }
   }
+`
+export const Div = styled.div`
+  ${({ theme }) => css`
+    margin: 0 auto;
+    z-index: 20;
+    & h3 {
+      &:first-letter {
+        text-transform: capitalize;
+        -webkit-text-shadow: -2px 2px 2px ${theme.colors.white};
+      }
+    }
+  `}
 `

@@ -4,7 +4,7 @@ import { TextStyleProps } from './types'
 export const Text = styled.p<TextStyleProps>`
   ${({ theme, align }) => css`
     user-select: none;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
     font-size: 1.25rem;
     font-weight: ${theme.fontWeight.normal};
     color: ${theme.colors.text};

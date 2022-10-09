@@ -59,9 +59,11 @@ export const Card: FC<DataProps> = ({ ...props }) => {
               />
             </picture>
           </Styled.Image>
-          <Heading size='small' as='h3'>
-            {props.name}
-          </Heading>
+          <Styled.Div>
+            <Heading size='small' as='h3'>
+              {props.name}
+            </Heading>
+          </Styled.Div>
           <Dialog.Trigger style={{ border: 0 }}>
             <Modal onClose={handleCloseModal}>
               <CardContent {...props} />

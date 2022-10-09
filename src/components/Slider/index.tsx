@@ -1,5 +1,5 @@
 import { useKeenSlider } from 'keen-slider/react'
-import { Icon } from '@iconify-icon/react'
+
 import { v4 as uuidv4 } from 'uuid'
 import icons from 'constants/icons'
 import { SliderProps } from './types'
@@ -34,20 +34,14 @@ const Slider: React.FC<SliderProps> = ({ img }) => {
           </Styled.Item>
         ))}
       </Styled.Items>
-      <Styled.CarouselNav aria-controls='navigation'>
-        <Styled.NavItem tabIndex={1} role='navigation'>
-          <Icon
-            icon={icons.chevron_left}
-            onClick={() => instanceRef.current?.prev()}
-          />
-        </Styled.NavItem>
-        <Styled.NavItem tabIndex={1} role='navigation'>
-          <Icon
-            icon={icons.chevron_right}
-            onClick={() => instanceRef.current?.next()}
-          />
-        </Styled.NavItem>
-      </Styled.CarouselNav>
+      <Styled.ArrowLeft
+        icon={icons.chevron_left}
+        onClick={() => instanceRef.current?.prev()}
+      />
+      <Styled.ArrowRight
+        icon={icons.chevron_right}
+        onClick={() => instanceRef.current?.next()}
+      />
     </Styled.ItemWrapper>
   )
 }

@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import { Description } from '../Description'
-import { Carousel } from '../../components/CarouselAbout'
-import { AboutSection, ContainerAbout } from './styles'
+import { Carousel } from 'components/Carousel'
 import { useTheme } from 'styled-components'
 import { StackBox } from 'components/StackBox'
 import { Heading } from 'components/Heading'
+import * as Styled from './styles'
 import lightImg from '/public/assets/perfil.webp'
 import darkImg from '/public/assets/perfil-green.webp'
 
@@ -12,11 +12,11 @@ const About: React.FC = () => {
   const theme = useTheme()
   const sourceImg = theme.title === 'light' ? lightImg : darkImg
   return (
-    <AboutSection id='about'>
+    <Styled.Section id='about'>
       <Heading size='big' as='h2'>
         Sobre
       </Heading>
-      <ContainerAbout>
+      <Styled.Container>
         <StackBox>
           <Image
             width='300'
@@ -27,9 +27,9 @@ const About: React.FC = () => {
           />
         </StackBox>
         <Description />
-      </ContainerAbout>
+      </Styled.Container>
       <Carousel />
-    </AboutSection>
+    </Styled.Section>
   )
 }
 

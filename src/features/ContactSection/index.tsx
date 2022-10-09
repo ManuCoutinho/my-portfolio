@@ -21,14 +21,12 @@ const Contact: React.FC = () => {
           <Heading as='h3' size='small'>
             Fale Comigo!
           </Heading>
-          <Text align='center'>
-            Caso tenha ficado alguma dúvida ou, se quiser saber mais sobre o meu
-            trabalho, fique à vontade para entrar em contato. #openToWork
+          <Text align='left'>
+            Caso queira saber mais sobre o meu trabalho, e/ou solicitar um
+            orçamento, fique à vontade para entrar em contato pelos canais
+            abaixo.
           </Text>
-          <Styled.Email rel='noreferrer' href={links.email} target='_blank'>
-            devmanucoutinho@gmail.com
-          </Styled.Email>
-          <SocialContacts direction='row' />
+          <SocialContacts direction='row' showEmail />
         </StackBox>
       </Styled.Container>
     </Styled.ContactSection>
