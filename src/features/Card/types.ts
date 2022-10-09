@@ -1,10 +1,10 @@
-import { ModalCoverProps } from 'features/ModalCover/types'
+import { CardContentCoverProps } from 'features/CardContentCover/types'
 
-export interface DataProps extends ModalCoverProps {
-  description: string
+export interface DataProps extends CardContentCoverProps {
+  description?: string
   site: string
   repo: string
-  styles: string
+  styles?: string
   api?: string
   framework?: string
   name: string

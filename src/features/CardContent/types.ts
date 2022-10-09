@@ -5,4 +5,4 @@ export type MenuLinkProps = {
   color2: string
 }
 
-export type CarDetailsProps = DataProps
+export type CardContentProps = DataProps

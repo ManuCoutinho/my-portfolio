@@ -7,7 +7,7 @@ import { StackBox } from 'components/StackBox'
 import { Heading } from 'components/Heading'
 import { DataProps } from './types'
 import * as Styled from './styles'
-import { CardDetails } from 'features/CardDetails'
+import { CardContent } from 'features/CardContent'
 
 const Modal = dynamic(() => import('components/Dialog'), { ssr: false })
 
@@ -62,9 +62,9 @@ export const Card: FC<DataProps> = ({ ...props }) => {
           <Heading size='small' as='h3'>
             {props.name}
           </Heading>
-          <Dialog.Trigger>
+          <Dialog.Trigger style={{ border: 0 }}>
             <Modal onClose={handleCloseModal}>
-              <CardDetails {...props} />
+              <CardContent {...props} />
             </Modal>
           </Dialog.Trigger>
         </Styled.CardComponent>

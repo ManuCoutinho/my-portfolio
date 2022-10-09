@@ -1,67 +1,58 @@
 import Link from 'next/link'
+import { Icon } from '@iconify-icon/react'
 import { StackBox } from 'components/StackBox'
 import { Text } from 'components/Text'
 import { DataProps } from 'features/Card/types'
 import * as Styled from './styles'
-import { ArrowSquareOut, GithubLogo } from 'phosphor-react'
+import icons from 'constants/icons'
 
-const ModalDetails: React.FC<DataProps> = ({ ...props }) => {
+const CardContentDetails: React.FC<DataProps> = ({ ...props }) => {
   return (
-    <StackBox id='details' direction='column' px='2rem'>
+    <StackBox id='details' direction='column' gap={1} px='1.5rem' as='dl'>
       <Styled.BoxDetails>
-        <Text>
-          <Styled.Topic>Descrição: </Styled.Topic>
-          {props.description}
-        </Text>
+        <Styled.Topic>Descrição: </Styled.Topic>
+        <Text as='dd'>{props.description}</Text>
       </Styled.BoxDetails>
       {!!props.framework && (
         <Styled.BoxDetails>
-          <Text>
-            <Styled.Topic>Framework: </Styled.Topic>
-            {props.framework}
-          </Text>
+          <Styled.Topic>Framework: </Styled.Topic>
+          <Text as='dd'>{props.framework}</Text>
         </Styled.BoxDetails>
       )}
       <Styled.BoxDetails>
-        <Text>
-          <Styled.Topic>Linguagens e Ferramentas: </Styled.Topic>
-          {props.tools}
-        </Text>
+        <Styled.Topic>Linguagens e Ferramentas: </Styled.Topic>
+        <Text as='dd'>{props.tools}</Text>
       </Styled.BoxDetails>
       <Styled.BoxDetails>
-        <Text>
-          <Styled.Topic>Estilização: </Styled.Topic>
-          {props.styles}
-        </Text>
+        <Styled.Topic>Estilização: </Styled.Topic>
+        <Text as='dd'>{props.styles}</Text>
       </Styled.BoxDetails>
       {props.api !== '' && (
         <Styled.BoxDetails>
-          <Text>
-            <Styled.Topic>API: </Styled.Topic>
-            {props.api}
-          </Text>
+          <Styled.Topic>API: </Styled.Topic>
+          <Text as='dd'>{props.api}</Text>
         </Styled.BoxDetails>
       )}
-      <Styled.BoxDetails>
+      <Styled.BoxDetails as='dd'>
         <Styled.Topic>Disponível em: </Styled.Topic>
         <Link href={props.repo} passHref>
-          <a
+          <Styled.IconLink
             target='_blank'
             rel='noopener noreferrer'
             role='repositorio no github'
           >
-            <GithubLogo />
-          </a>
+            <Icon icon={icons.github} style={{ fontSize: '2.3rem' }} />
+          </Styled.IconLink>
         </Link>
         {props.site != 'Em breve' && (
           <Link href={props.site} passHref>
-            <a
+            <Styled.IconLink
               target='_blank'
               rel='noopener noreferrer'
               role={`acessar o ${props.name}`}
             >
-              <ArrowSquareOut />
-            </a>
+              <Icon icon={icons.link_external} />
+            </Styled.IconLink>
           </Link>
         )}
       </Styled.BoxDetails>
@@ -69,4 +60,4 @@ const ModalDetails: React.FC<DataProps> = ({ ...props }) => {
   )
 }
 
-export default ModalDetails
+export default CardContentDetails

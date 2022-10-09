@@ -40,10 +40,10 @@ export function ThemeContextProvider({ children }: { children: ReactNode }) {
         ? 'light'
         : 'dark'
 
-    cookies['_u_ui'] === undefined
+    cookies['ui_prefers'] === undefined
       ? toggleTheme({ type: osTheme })
-      : toggleTheme({ type: cookies['_u_ui'] })
-  }, [])
+      : toggleTheme({ type: cookies['ui_prefers'] })
+  }, [toggleTheme])
   return (
     <ThemeContext.Provider value={{ toggleTheme }}>
       <ThemeProvider theme={theme}>

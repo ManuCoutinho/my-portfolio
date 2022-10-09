@@ -35,17 +35,15 @@ export const Content = styled(Dialog.Content)`
   ${({ theme }) => css`
     background: ${theme.colors.bg_modal};
     border-radius: ${theme.radius.medium};
-
     box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
       hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
     position: fixed;
-    top: 56.5%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90vw;
-    max-width: 1240px;
-    /* max-height: 500px; */
-    height: 85vh;
+    width: clamp(800px, 80%, 90vw);
+    height: clamp(600px, 85vh, 90%);
+    z-index: 1000;
     @media (prefers-reduced-motion: no-preference) {
       animation: ${showContent} 150ms cubic-bezier(0.16, 1, 0.3, 1);
     }

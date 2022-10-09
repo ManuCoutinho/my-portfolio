@@ -18,5 +18,6 @@ export const Container = styled.div<StackBoxStyleProps>`
     padding-bottom: ${props.pb};
     padding: ${props.py} ${props.px};
     transition: ${props.theme.transition};
+    background: ${props.bg};
   `}
 `

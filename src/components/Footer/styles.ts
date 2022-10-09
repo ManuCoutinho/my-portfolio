@@ -24,6 +24,7 @@ export const FooterContainer = styled.footer`
       flex-direction: column;
       font-size: ${theme.fontSize.sm};
       gap: 0.5rem;
+      background: ${theme.colors.background};
     }
   `}
 `

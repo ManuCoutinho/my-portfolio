@@ -3,12 +3,12 @@ import * as Tabs from '@radix-ui/react-tabs'
 import { Heading } from 'components/Heading'
 import { StackBox } from 'components/StackBox'
 import * as Styled from './styles'
-import { CarDetailsProps } from './types'
+import { CardContentProps } from './types'
 
-const Overview = dynamic(() => import('features/ModalCover'))
-const Details = dynamic(() => import('features/ModalDetails'))
+const Overview = dynamic(() => import('features/CardContentCover'))
+const Details = dynamic(() => import('features/CardContentDetails'))
 
-export const CardDetails: React.FC<CarDetailsProps> = ({ ...props }) => {
+export const CardContent: React.FC<CardContentProps> = ({ ...props }) => {
   return (
     <Tabs.Root defaultValue='overview'>
       <Styled.Header>
@@ -22,12 +22,12 @@ export const CardDetails: React.FC<CarDetailsProps> = ({ ...props }) => {
           </StackBox>
         </Tabs.List>
       </Styled.Header>
-      <Tabs.Content value='overview'>
+      <Styled.Content value='overview'>
         <Overview img={props.img} />
-      </Tabs.Content>
-      <Tabs.Content value='details'>
+      </Styled.Content>
+      <Styled.Content value='details'>
         <Details {...props} />
-      </Tabs.Content>
+      </Styled.Content>
     </Tabs.Root>
   )
 }

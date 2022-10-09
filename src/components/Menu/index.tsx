@@ -1,7 +1,8 @@
 import { MouseEvent, useState, FC, Fragment } from 'react'
 import Link from 'next/link'
-import { List, X } from 'phosphor-react'
+import { Icon } from '@iconify-icon/react'
 import { navItems } from 'constants/navigation'
+import icons from 'constants/icons'
 import * as Styled from './styles'
 
 export const Menu: FC = () => {
@@ -30,7 +31,7 @@ export const Menu: FC = () => {
         aria-labelledby='menu button'
         onClick={toggleMenu}
       >
-        {!isOpen ? <List size={32} /> : <X size={32} />}
+        {!isOpen ? <Icon icon={icons.hamburger} /> : <Icon icon={icons.x} />}
       </Styled.MenuIcon>
       <Styled.MenuList
         role='menu'

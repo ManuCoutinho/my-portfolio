@@ -1,7 +1,8 @@
 import { useContext, FC } from 'react'
-import { MoonStars, SunDim } from 'phosphor-react'
+import { Icon } from '@iconify-icon/react'
 import { useTheme } from 'styled-components'
 import { ThemeContext } from '../../contexts/ThemeContext'
+import icons from 'constants/icons'
 import * as Styled from './styles'
 
 export const ToggleTheme: FC = () => {
@@ -13,9 +14,9 @@ export const ToggleTheme: FC = () => {
   return (
     <Styled.Switch type='button' onClick={handleChangeTheme} role='switch'>
       {title === 'light' ? (
-        <SunDim size={30} weight='light' />
+        <Icon icon={icons.sun} />
       ) : (
-        <MoonStars size={30} weight='light' />
+        <Icon icon={icons.moon} />
       )}
     </Styled.Switch>
   )

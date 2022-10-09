@@ -1,6 +1,7 @@
+import { Icon } from '@iconify-icon/react'
 import { DialogProps } from './types'
 import * as Styled from './styles'
-import { XCircle } from 'phosphor-react'
+import icons from 'constants/icons'
 
 const Dialog: React.FC<DialogProps> = ({ children, onClose }) => {
   return (
@@ -8,8 +9,14 @@ const Dialog: React.FC<DialogProps> = ({ children, onClose }) => {
       <Styled.Overlay />
       <Styled.Content>
         {children}
-        <Styled.Close asChild onClick={onClose}>
-          <XCircle />
+        <Styled.Close
+          asChild
+          onClick={onClose}
+          role='button'
+          aria-label='close-button'
+          title='fechar'
+        >
+          <Icon icon={icons.close} />
         </Styled.Close>
       </Styled.Content>
     </Styled.Portal>

@@ -10,7 +10,7 @@ export const Container = styled.header`
     right: 0;
     left: 0;
     user-select: none;
-    z-index: 1024;
+    z-index: 999;
 
     background: ${theme.colors.glass};
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);

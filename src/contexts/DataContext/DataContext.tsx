@@ -1,34 +1,10 @@
 import { createContext, useEffect, useState } from 'react'
 import { IDataContext } from './types'
-import PROJECTS from 'data/Projects'
+import PROJECTS from 'data/projects'
+import initialState from 'constants/initialState'
 
 const DEFAULT_CONTEXT: IDataContext = {
-  data: [
-    {
-      name: '',
-      description: '',
-      site: '',
-      repo: '',
-      styles: '',
-      api: '',
-      framework: '',
-      id: '',
-      coverDefaultLight: '',
-      coverDefaultDark: '',
-      coverAltLight: '',
-      coverAltDark: '',
-      alt: '',
-      route: '',
-      img: [
-        {
-          imgPng: '',
-          imgWebp: '',
-          alt: '',
-          id: ''
-        }
-      ]
-    }
-  ]
+  data: [initialState]
 }
 
 export const DataContext = createContext<IDataContext>(DEFAULT_CONTEXT)

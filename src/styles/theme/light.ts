@@ -16,10 +16,13 @@ const light = {
     carousel_2: '#FFFFFF',
     carousel_3: '#CBCAC7',
     carousel_4: '#FFFFFF',
-    bg_card: 'rgba(234,171,153,0.1)',
+    active: ' #ff8c61',
+    bg_card: '#f8e3dd',
     glass: 'rgba(234,171,153, 0.75)',
     bg_modal: '#F5D5CC',
-    disabled: lighten(0.5, '#56667c')
+    disabled: lighten(0.5, '#56667c'),
+    border_1: '#fe4a49',
+    border_2: '#fe4a49'
   }
 } as const
 

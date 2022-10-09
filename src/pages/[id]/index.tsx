@@ -1,46 +1,46 @@
+import { useEffect, useState } from 'react'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
-import { Container } from 'components/Layout/Base'
-import { ContainerRouter } from '../../styles/routeStyles'
+import { useTheme } from 'styled-components'
 import { useData } from 'hooks/useData'
 import { Heading } from 'components/Heading'
-import { ModalButton } from 'features/Card/styles'
-import { useEffect, useState } from 'react'
-import { ContextProps } from 'contexts/DataContext/types'
-const Footer = dynamic(() => import('../../components/Footer'))
+import { StackBox } from 'components/StackBox'
+import { Button } from 'components/Button'
+import { DataProps } from 'features/Card/types'
+import initialState from 'constants/initialState'
 
-const Body = dynamic(() => import('features/ModalDetails'))
+const Footer = dynamic(() => import('components/Footer'))
+const Body = dynamic(() => import('features/CardContentDetails'))
 
 const MobilePage: NextPage = () => {
-  const [object, setObject] = useState<ContextProps>()
+  const [object, setObject] = useState<DataProps>(initialState)
   const router = useRouter()
   const { data } = useData()
   const param = router.query
+  const { colors } = useTheme()
   useEffect(() => {
-    const findData = data.filter((f) => f.id === param.id)
+    const findData = data?.filter((f) => f.id === param.id)
     setObject(findData[0])
   }, [param, data])
-  console.log(object)
+
   return (
     <>
       {typeof window !== 'undefined' && (
-        <Container>
+        <StackBox center gap={2} mt='1.5rem' bg={colors.background}>
           <Head>
-            <title>`Manu Coutinho | ${object?.name}`</title>
+            <title>{`Manu Coutinho | ${object?.name}`}</title>
           </Head>
-          <ContainerRouter>
+          <StackBox direction='column' justify='center' align='center'>
             <Heading as='h2' size='big'>
               {object?.name}
             </Heading>
             <Body {...object} />
-            <ModalButton type='button' onClick={() => router.back()}>
-              Voltar
-            </ModalButton>
-          </ContainerRouter>
+            <Button onClick={() => router.back()}>Voltar</Button>
+          </StackBox>
           <Footer />
-        </Container>
+        </StackBox>
       )}
     </>
   )

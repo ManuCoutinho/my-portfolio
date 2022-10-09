@@ -1,63 +1,81 @@
-import styled, { css } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 
+const borderAnimate = keyframes`
+ 0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+`
 export const CardComponent = styled.button`
   ${({ theme }) => css`
-    background: ${theme.colors.bg_card};
-    max-width: 19rem;
+    max-width: 20rem;
+    max-height: 20rem;
+    height: 100%;
     width: 100%;
     padding: 1rem 1rem 2rem 1rem;
     margin: 0 auto;
     display: flex;
-    border: 2px solid ${theme.colors.highlight};
     flex-direction: column;
-
-    border-radius: ${theme.radius.small};
+    border-radius: 20px;
     transition: ${theme.transition};
     position: relative;
     overflow: hidden;
-
-    border-radius: ${({ theme }) => theme.radius.small};
-    transition: ${({ theme }) => theme.transition};
-
+    transition: ${theme.transition};
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 5;
     &:hover {
-      box-shadow: -1px 1px 5px 1px ${theme.colors.highlight};
+      padding: 0 0 2rem 0;
+    }
+    & h3 {
+      z-index: 20;
+      &:first-letter {
+        text-transform: capitalize;
+        -webkit-text-shadow: -2px 2px 2px ${theme.colors.white};
+      }
     }
 
-    h3:first-letter {
-      text-transform: capitalize;
-      -webkit-text-shadow: -2px 2px 2px ${theme.colors.white};
+    &::before {
+      content: ' ';
+      position: absolute;
+      width: 100px;
+      height: 200%;
+      bottom: -50%;
+      left: 25%;
+      background: ${`linear-gradient(${theme.colors.border_1}, ${theme.colors.border_2})`};
+      animation: ${borderAnimate} 6s linear infinite;
+    }
+    &::after {
+      content: ' ';
+      position: absolute;
+      inset: 3px;
+      background-color: ${theme.colors.bg_card};
+      background-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+      );
+      border-radius: ${theme.radius.default};
     }
   `}
 `
 
 export const Image = styled.div`
-  height: 17.5rem;
-
+  /* max-height: 15rem; */
+  height: 100%;
+  overflow: hidden;
+  z-index: 20;
   picture,
   img {
+    z-index: 20;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
-  }
-`
-
-export const ModalButton = styled.button`
-  ${({ theme }) => css`
-    background: ${theme.colors.bg_card};
-    border: 1px solid ${theme.colors.bg_modal};
-    border-radius: ${theme.radius.small};
-    color: ${theme.colors.text};
-    margin-top: 0.5rem;
-    padding: 0.5rem;
-    outline: 0;
-    transition: ${theme.transition};
-
+    transition: transform 0.2s ease-in-out;
     &:hover {
-      background: ${theme.colors.glass};
-      border: 1px solid ${theme.colors.glass};
-      box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.15);
-      -webkit-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.15);
-      transition: ${theme.transition};
+      transform: scale(1.1);
+      transition: transform 0.2s ease-in-out;
     }
-  `}
+  }
 `

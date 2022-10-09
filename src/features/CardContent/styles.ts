@@ -10,6 +10,8 @@ export const Header = styled.header`
     h4 {
       color: ${theme.colors.text};
       text-transform: uppercase;
+      padding: 1rem;
+      margin-left: 1rem;
     }
   `}
 `
@@ -21,15 +23,16 @@ export const TabTitle = styled(Tabs.Trigger)`
     outline: 0;
     border: 0;
     background: none;
-    font-size: ${theme.fontSize.md};
-
-    &:hover {
-      color: ${theme.colors.secondary};
-      transition: ${theme.transition};
-    }
+    font-size: 1.25rem;
 
     &[data-state='active'] {
-      color: ${theme.colors.highlight};
+      color: ${theme.colors.active};
     }
+  `}
+`
+export const Content = styled(Tabs.Content)`
+  ${() => css`
+    outline: 0;
+    overflow: hidden;
   `}
 `

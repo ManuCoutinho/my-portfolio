@@ -1,18 +1,17 @@
 import { useKeenSlider } from 'keen-slider/react'
+import { Icon } from '@iconify-icon/react'
 import { v4 as uuidv4 } from 'uuid'
-import { ModalCoverProps } from 'features/ModalCover/types'
-
+import icons from 'constants/icons'
+import { SliderProps } from './types'
 import * as Styled from './styles'
-import { CaretLeft, CaretRight } from 'phosphor-react'
-import Image from 'next/image'
 
-const Slider: React.FC<ModalCoverProps> = ({ img }) => {
+const Slider: React.FC<SliderProps> = ({ img }) => {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
     drag: true,
     mode: 'free-snap'
   })
-  console.log()
+
   return (
     <Styled.ItemWrapper>
       <Styled.Items ref={sliderRef} className='keen-slider'>
@@ -35,9 +34,19 @@ const Slider: React.FC<ModalCoverProps> = ({ img }) => {
           </Styled.Item>
         ))}
       </Styled.Items>
-      <Styled.CarouselNav>
-        <CaretLeft size={32} onClick={() => instanceRef.current?.prev()} />
-        <CaretRight size={32} onClick={() => instanceRef.current?.next()} />
+      <Styled.CarouselNav aria-controls='navigation'>
+        <Styled.NavItem tabIndex={1} role='navigation'>
+          <Icon
+            icon={icons.chevron_left}
+            onClick={() => instanceRef.current?.prev()}
+          />
+        </Styled.NavItem>
+        <Styled.NavItem tabIndex={1} role='navigation'>
+          <Icon
+            icon={icons.chevron_right}
+            onClick={() => instanceRef.current?.next()}
+          />
+        </Styled.NavItem>
       </Styled.CarouselNav>
     </Styled.ItemWrapper>
   )

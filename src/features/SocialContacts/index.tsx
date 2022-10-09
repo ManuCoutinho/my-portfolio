@@ -1,9 +1,10 @@
+import { Icon } from '@iconify-icon/react'
 import { SocialLink } from 'components/SocialLink'
 import { ToggleTheme } from 'components/ToggleTheme'
-import { GithubLogo, LinkedinLogo, TwitterLogo } from 'phosphor-react'
 import links from 'constants/links'
 import { SocialContactProps } from './types'
 import { Container } from './styles'
+import icons from 'constants/icons'
 
 export const SocialContacts: React.FC<SocialContactProps> = ({
   direction,
@@ -16,13 +17,13 @@ export const SocialContacts: React.FC<SocialContactProps> = ({
       aria-label='social links'
     >
       <SocialLink url={links.linkedin}>
-        <LinkedinLogo size={32} weight='light' aria-label='Acessar Linkedin' />
+        <Icon icon={icons.linkedin} title='Acessar Linkedin' />
       </SocialLink>
       <SocialLink url={links.git}>
-        <GithubLogo size={32} weight='light' aria-label='Acessar GitHub' />
+        <Icon icon={icons.github} title='Acessar GitHub' />
       </SocialLink>
       <SocialLink url={links.twitter}>
-        <TwitterLogo size={32} weight='light' aria-label='Acessar Twitter' />
+        <Icon icon={icons.twitter} title='Acessar Twitter' />
       </SocialLink>
       {showToggle && <ToggleTheme />}
     </Container>

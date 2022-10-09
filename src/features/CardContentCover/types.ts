@@ -1,5 +1,5 @@
 import { ImgProps } from 'contexts/DataContext/types'
 
-export interface ModalCoverProps {
+export interface CardContentCoverProps {
   img?: ImgProps[]
 }

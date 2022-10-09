@@ -7,10 +7,13 @@ export const ItemWrapper = styled.div`
 `
 export const Items = styled.div`
   display: flex;
+  overflow: hidden;
+  max-height: 35rem;
+  cursor: grabbing;
 `
 export const Item = styled.div`
   width: 100%;
-  height: 80%;
+  height: 30rem;
   overflow: hidden;
 
   picture,
@@ -25,15 +28,30 @@ export const Item = styled.div`
   }
 `
 export const CarouselNav = styled.nav`
-  ${({ theme }) => css`
+  ${() => css`
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
     gap: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    padding-bottom: 0.5rem;
 
     cursor: pointer;
+  `}
+`
+export const NavItem = styled.span`
+  ${({ theme }) => css`
+    padding: 0.5rem;
+    color: ${theme.colors.primary};
+    transition: color 0.25s ease-in-out;
+    font-size: 1.75rem;
+    outline: 1;
+    outline: transparent;
     &:hover {
-      color: ${theme.colors.highlight};
+      color: ${theme.colors.active};
+      transition: color 0.25s ease-in-out;
     }
   `}
 `

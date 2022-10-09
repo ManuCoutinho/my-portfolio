@@ -5,7 +5,7 @@ export const Text = styled.p<TextStyleProps>`
   ${({ theme, align }) => css`
     user-select: none;
     line-height: 1.5rem;
-    font-size: ${theme.fontSize.md};
+    font-size: 1.25rem;
     font-weight: ${theme.fontWeight.normal};
     color: ${theme.colors.text};
     word-wrap: break-word;

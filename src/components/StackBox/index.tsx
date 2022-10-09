@@ -25,6 +25,7 @@ export const StackBox: FC<StackBoxProps> = ({ ...props }) => {
       pb={props.pb}
       py={props.py}
       id={props.id}
+      bg={props.bg}
     >
       {props.children}
     </Styled.Container>

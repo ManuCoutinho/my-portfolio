@@ -3,26 +3,7 @@ import 'styled-components'
 declare module 'styled-components' {
   export interface DefaultTheme extends CustomTheme {
     title: string
-    colors: {
-      black: string
-      white: string
-      background: string
-      body: string
-      primary: string
-      secondary: string
-      text: string
-      title: string
-      info: string
-      highlight: string
-      carousel_1: string
-      carousel_2: string
-      carousel_3: string
-      carousel_4: string
-      bg_card: string
-      glass: string
-      bg_modal: string
-      disabled: string
-    }
+
     font: {
       text: string
       title: string
@@ -71,6 +52,9 @@ declare module 'styled-components' {
       glass: string
       bg_modal: string
       disabled: string
+      active: string
+      border_1: string
+      border_2: string
     }
   }
 }

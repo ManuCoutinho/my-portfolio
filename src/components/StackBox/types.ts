@@ -1,6 +1,16 @@
 export interface StackBoxProps extends StackBoxStyleProps {
   children?: React.ReactNode
-  as?: 'main' | 'section' | 'form' | 'header' | 'footer' | 'nav' | 'ul' | 'span'
+  as?:
+    | 'main'
+    | 'section'
+    | 'form'
+    | 'header'
+    | 'footer'
+    | 'nav'
+    | 'ul'
+    | 'span'
+    | 'dl'
+    | 'form'
   onClick?: () => void
   onChange?: () => void
   onBlur?: () => void
@@ -23,4 +33,5 @@ export interface StackBoxStyleProps {
   pb?: string
   px?: string
   py?: string
+  bg?: string
 }

@@ -1,11 +1,11 @@
 import { StackBox } from 'components/StackBox'
 import dynamic from 'next/dynamic'
 
-import { ModalCoverProps } from './types'
+import { CardContentCoverProps } from './types'
 
 const Slider = dynamic(() => import('components/Slider'))
 
-const ModalCover: React.FC<ModalCoverProps> = ({ img }) => {
+const CardContentCover: React.FC<CardContentCoverProps> = ({ img }) => {
   return (
     <StackBox id='overview' direction='column'>
       <Slider img={img} />
@@ -13,4 +13,4 @@ const ModalCover: React.FC<ModalCoverProps> = ({ img }) => {
   )
 }
 
-export default ModalCover
+export default CardContentCover
