@@ -11,7 +11,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.0",
@@ -34,10 +36,12 @@
     "vercel": "^19.1.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.3",
     "@iconify-icon/react": "^1.0.1",
     "@next/eslint-plugin-next": "^12.3.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.1.1",
     "@types/node": "^17.0.14",
     "@types/react": "^17.0.38",
@@ -48,6 +52,8 @@
     "@types/styled-components": "^5.1.24",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.18.0",
+    "babel-jest": "^29.1.2",
+    "babel-loader": "^8.2.5",
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-friendly-formatter": "^4.0.1",
@@ -59,6 +65,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husk": "^0.5.3",
     "jest": "^29.1.2",
+    "jest-environment-jsdom": "^29.1.2",
     "prettier": "^2.6.2",
     "semantic-release": "^19.0.5",
     "ts-jest": "^29.0.3",
