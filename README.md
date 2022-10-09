@@ -61,8 +61,6 @@ The following tools were used in this project:
 - [Nookies](https://www.npmjs.com/package/nookies)
 - [Styled Components](https://www.styled-components.com/)
 - [Polished](https://www.polished.js.org/)
-- [React Icons](https://www.react-icons.github.io/react-icons/)
-- [React Slick](http://react-slick.neostack.com/)
 - [React Switch](https://www.npmjs.com/package/react-switch)
 - [React Typed](https://www.npmjs.com/package/react-typed)
 - [React Lottie](https://www.npmjs.com/package/react-lottie)

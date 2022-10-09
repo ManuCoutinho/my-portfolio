@@ -28,8 +28,6 @@ body, html {
   -webkit-scroll-behavior: smooth;
   -moz-scroll-behavior: smooth;
   -o-scroll-behavior: smooth;
-  -ms-behavior: smooth;
-  -webkit-font: antialiased;  
 }
 
 body {

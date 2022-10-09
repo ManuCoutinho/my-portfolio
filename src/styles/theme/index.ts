@@ -10,10 +10,10 @@ const defaultTheme = {
     title: "'Josefin Sans', sans-serif"
   },
   fontSize: {
-    xsm: '0.75em',
-    sm: '0.875em',
-    md: '1em',
-    lg: '1.5em',
+    xsm: '0.75rem',
+    sm: '0.875rem',
+    md: '1rem',
+    lg: '1.5rem',
     xl: '2rem',
     xlg: '3rem'
   },

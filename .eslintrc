@@ -1,38 +1,37 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "prettier/react"
-  ],
   "env": {
     "browser": true,
-    "es2020": true
+    "es2020": true,
+    "jest": true,
+    "node": true
   },
-  "parser": "@typescript-eslint/parser/babel-eslint",
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@next/next/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    " ecmaFeatures": {
+    "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": "latest",
+    "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint"],
   "rules": {
-    "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
-    "space-before-function-paren": "off",
-    "react/jsx-filename-extension": [
-      "warn",
-      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
-    ],
-    "import/prefer-default-export": "off",
-    "jsx-quotes": ["errors", "prefer-single"],
-    "indent": ["error", "tab"],
-    "linebreak-style": ["error", "windows"],
-    "quotes": ["error", "double"],
-    " semi": ["error", "never"]
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
   }
 }

@@ -1,12 +1,10 @@
 import { AppProps } from 'next/app'
-import GlobalContext from '../components/Contexts'
+import GlobalContext from '../contexts'
 
-
-const MyApp: React.FC<AppProps> = ({ pageProps, Component}) => {
-
+const MyApp: React.FC<AppProps> = ({ pageProps, Component }) => {
   return (
-    <GlobalContext>       
-      <Component {...pageProps} />    
+    <GlobalContext>
+      <Component {...pageProps} />
     </GlobalContext>
   )
 }

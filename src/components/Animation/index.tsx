@@ -1,28 +1,14 @@
-import { useState } from 'react'
-import Lottie from 'react-lottie'
+import Lottie from 'lottie-react'
 
 type AnimationProps = {
   data: unknown
 }
 export function LottieAnimation({ data }: AnimationProps) {
-  const [animationState, setAnimationState] = useState({
-    isStopped: false,
-    isPaused: false
-  })
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: data,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
+    animationData: data
   }
 
-  return (
-    <Lottie
-      options={defaultOptions}
-      isStopped={animationState.isStopped}
-      isPaused={animationState.isPaused}
-    />
-  )
+  return <Lottie {...defaultOptions} />
 }
