@@ -23,7 +23,7 @@ const dark = {
     bg_modal: '#292929',
     disabled: lighten(0.5, '#1c1c1c'),
     border_1: 'rgba(15, 255, 103, 1)',
-    border_2: '#37d27f'
+    border_2: '#c8e9a0'
   }
 } as const
 

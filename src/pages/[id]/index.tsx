@@ -28,7 +28,7 @@ const MobilePage: NextPage = () => {
   return (
     <>
       {typeof window !== 'undefined' && (
-        <StackBox center gap={2} mt='1.5rem' bg={colors.background}>
+        <StackBox center gap={2} pt='1.5rem' bg={colors.background}>
           <Head>
             <title>{`Manu Coutinho | ${object?.name}`}</title>
           </Head>

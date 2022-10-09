@@ -21,8 +21,8 @@ const light = {
     glass: 'rgba(234,171,153, 0.75)',
     bg_modal: '#F5D5CC',
     disabled: lighten(0.5, '#56667c'),
-    border_1: '#fe4a49',
-    border_2: '#fe4a49'
+    border_1: '#ffaa99',
+    border_2: '#ffac99'
   }
 } as const
 

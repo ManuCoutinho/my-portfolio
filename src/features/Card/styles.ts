@@ -23,7 +23,7 @@ export const CardComponent = styled.button`
     position: relative;
     overflow: hidden;
     transition: ${theme.transition};
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.05);
     z-index: 5;
     &:hover {
       padding: 0 0 2rem 0;

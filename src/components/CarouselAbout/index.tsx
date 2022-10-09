@@ -28,15 +28,16 @@ import { Heading } from 'components/Heading'
 
 export const Carousel: React.FC = () => {
   const settings = {
-    dots: true,
+    dots: false,
     centerMode: true,
     adaptiveHeight: true,
-    rows: 2,
+    rows: 1,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 1000,
+
     autoplaySpeed: 2000,
     cssEase: 'linear',
     pauseOnHover: true,
@@ -64,78 +65,83 @@ export const Carousel: React.FC = () => {
     ]
   }
   return (
-    <ContainerCarousel>
-      <Heading as='h4' size='small'>
-        Minhas Skills:
-      </Heading>
-      <Slider {...settings}>
-        <CarouselItem>
-          <DiCss3 />
-        </CarouselItem>
+    <>
+      <ContainerCarousel>
+        <Heading as='h4' size='small'>
+          Minhas Skills:
+        </Heading>
+        <Slider {...settings}>
+          <CarouselItem>
+            <DiCss3 />
+          </CarouselItem>
 
-        <CarouselItem>
-          <DiBootstrap />
-        </CarouselItem>
+          <CarouselItem>
+            <DiBootstrap />
+          </CarouselItem>
 
-        <CarouselItem>
-          <DiGit />
-        </CarouselItem>
+          <CarouselItem>
+            <DiGit />
+          </CarouselItem>
 
-        <CarouselItem>
-          <DiHtml5 />
-        </CarouselItem>
+          <CarouselItem>
+            <DiHtml5 />
+          </CarouselItem>
 
-        <CarouselItem>
-          <DiJsBadge />
-        </CarouselItem>
+          <CarouselItem>
+            <DiJsBadge />
+          </CarouselItem>
 
-        <CarouselItem>
-          <DiGithubBadge />
-        </CarouselItem>
+          <CarouselItem>
+            <DiGithubBadge />
+          </CarouselItem>
 
-        <CarouselItem>
-          <DiJqueryLogo />
-        </CarouselItem>
+          <CarouselItem>
+            <DiJqueryLogo />
+          </CarouselItem>
 
-        <CarouselItem>
-          <DiReact />
-        </CarouselItem>
+          <CarouselItem>
+            <DiReact />
+          </CarouselItem>
 
-        <CarouselItem>
-          <DiSass />
-        </CarouselItem>
+          <CarouselItem>
+            <DiSass />
+          </CarouselItem>
+        </Slider>
+      </ContainerCarousel>
+      <ContainerCarousel>
+        <Slider {...settings} rtl={true}>
+          <CarouselItem>
+            <SiTypescript />
+          </CarouselItem>
 
-        <CarouselItem>
-          <SiTypescript />
-        </CarouselItem>
+          <CarouselItem>
+            <SiNextdotjs />
+          </CarouselItem>
 
-        <CarouselItem>
-          <SiNextdotjs />
-        </CarouselItem>
+          <CarouselItem>
+            <SiTailwindcss />
+          </CarouselItem>
 
-        <CarouselItem>
-          <SiTailwindcss />
-        </CarouselItem>
-
-        <CarouselItem>
-          <SiMaterialui />
-        </CarouselItem>
-        <CarouselItem>
-          <SiChakraui />
-        </CarouselItem>
-        <CarouselItem>
-          <SiJamstack />
-        </CarouselItem>
-        <CarouselItem>
-          <SiVite />
-        </CarouselItem>
-        <CarouselItem>
-          <SiStyledcomponents />
-        </CarouselItem>
-        <CarouselItem>
-          <SiJest />
-        </CarouselItem>
-      </Slider>
-    </ContainerCarousel>
+          <CarouselItem>
+            <SiMaterialui />
+          </CarouselItem>
+          <CarouselItem>
+            <SiChakraui />
+          </CarouselItem>
+          <CarouselItem>
+            <SiJamstack />
+          </CarouselItem>
+          <CarouselItem>
+            <SiVite />
+          </CarouselItem>
+          <CarouselItem>
+            <SiStyledcomponents />
+          </CarouselItem>
+          <CarouselItem>
+            <SiJest />
+          </CarouselItem>
+        </Slider>
+      </ContainerCarousel>
+    </>
   )
 }
