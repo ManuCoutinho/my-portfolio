@@ -1,6 +1,7 @@
-import { ReactElement, ReactNode, FC } from 'react'
-import { render, RenderOptions } from '@testing-library/react'
+import { render } from '@testing-library/react'
+import { RenderOptions } from '@testing-library/react/types'
 import { ThemeContextProvider } from 'contexts/ThemeContext'
+import { ReactElement, FC, ReactNode } from 'react'
 
 const MockProviders: FC<{ children: ReactNode }> = ({ children }) => {
   return <ThemeContextProvider>{children}</ThemeContextProvider>

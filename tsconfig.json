@@ -31,7 +31,7 @@
     "**/*.tsx",
     "**/*.spec.tsx",
     "./src/styles/theme/renderTheme.ts",
-    "src/.jest/jest.setup.ts",
+    "jest.setup.ts",
     "env-config.js",
     "styled.d.ts"
   ],
