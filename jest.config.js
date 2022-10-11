@@ -13,6 +13,7 @@ const customJestConfig = {
     '!<rootDir>/**/stories.{js,jsx,ts,tsx}',
     '!<rootDir>/node_modules/',
     '!**/*.d.ts',
+    '!**/types.ts',
     '!<rootDir>/out/**',
     '!<rootDir>/.next/**',
     '!<rootDir>/*.config.js',
@@ -26,7 +27,7 @@ const customJestConfig = {
   //   '\\.(css|less|scss|sass)$': 'identity-obj-proxy'
   // },
   testMatch: [
-    '**/__tests__/**/*.[jt]s?(x)',
+    '**/__tests__/**/*.[t]s?(x)',
     '**/?(*.)+(spec|test|tests).[tj]s?(x)'
   ],
   testPathIgnorePatterns: [
