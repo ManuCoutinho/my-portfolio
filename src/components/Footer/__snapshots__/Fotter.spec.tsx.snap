@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer/> should render a footer component correctly 1`] = `
+<div>
+  <footer
+    class="sc-52afaaa1-0 fmKLgy"
+  >
+    <p>
+      Copyright © 2022 Todos os direitos reservados. 
+    </p>
+    <p>
+      Designed by 
+      <span>
+        Manu Coutinho.
+      </span>
+    </p>
+  </footer>
+</div>
+`;

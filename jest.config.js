@@ -37,7 +37,7 @@ const customJestConfig = {
     '/public/'
   ],
   setupFilesAfterEnv: ['<rootDir>/src/.jest/jest.setup.js'],
-  transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$']
+  transformIgnorePatterns: ['/node_modules/']
 }
 const createJestConfig = nextJest({
   dir: './'
