@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { HomeSection } from 'features/HomeSection'
-import { Container } from 'components/Layout/Base'
+import { Container } from 'components/Container/styles'
 
 const About = dynamic(() => import('features/AboutSection'))
 const Portfolio = dynamic(() => import('features/PortfolioSection'))

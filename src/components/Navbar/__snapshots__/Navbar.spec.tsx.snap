@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
+<div>
+  <nav
+    aria-label="Menu"
+    class="sc-c389056e-0 ezVmoK"
+    role="navigation"
+  >
+    <h1
+      class="sc-7938b0ce-0 kcneYO"
+    >
+      <a
+        href="#home"
+        role="link"
+      >
+        Manu
+        <span>
+          Coutinho
+        </span>
+      </a>
+    </h1>
+    <button
+      aria-controls="menu"
+      aria-expanded="false"
+      aria-haspopup="true"
+      aria-label="Abrir Menu"
+      aria-labelledby="menu button"
+      class="sc-8d98a060-0 eJwnvk"
+    >
+      <iconify-icon
+        icon="ph:list-bold"
+      />
+    </button>
+    <ul
+      aria-label="options"
+      class="sc-8eac1a3a-0 cyFmRv"
+      id="menu"
+      role="menu"
+    >
+      <li
+        class="sc-8eac1a3a-1"
+        role="listitem"
+      >
+        <a
+          class="sc-8eac1a3a-2 hwfQKb"
+          href="/#home"
+          role="menuitem"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        class="sc-8eac1a3a-1"
+        role="listitem"
+      >
+        <a
+          class="sc-8eac1a3a-2 hwfQKb"
+          href="/#about"
+          role="menuitem"
+        >
+          Sobre
+        </a>
+      </li>
+      <li
+        class="sc-8eac1a3a-1"
+        role="listitem"
+      >
+        <a
+          class="sc-8eac1a3a-2 hwfQKb"
+          href="/#portfolio"
+          role="menuitem"
+        >
+          Portfólio
+        </a>
+      </li>
+      <li
+        class="sc-8eac1a3a-1"
+        role="listitem"
+      >
+        <a
+          class="sc-8eac1a3a-2 hwfQKb"
+          href="/#contact"
+          role="menuitem"
+        >
+          Contato
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

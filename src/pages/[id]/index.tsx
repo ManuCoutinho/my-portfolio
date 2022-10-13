@@ -28,7 +28,7 @@ const MobilePage: NextPage = () => {
   return (
     <>
       {typeof window !== 'undefined' && (
-        <StackBox center gap={2} pt='1.5rem' bg={colors.background}>
+        <StackBox center gap={2} pt='1.5rem' bg={colors.bg_modal}>
           <Head>
             <title>{`Manu Coutinho | ${object?.name}`}</title>
           </Head>
@@ -39,7 +39,7 @@ const MobilePage: NextPage = () => {
             <Body {...object} />
             <Button onClick={() => router.back()}>Voltar</Button>
           </StackBox>
-          <Footer />
+          <Footer bgPage />
         </StackBox>
       )}
     </>

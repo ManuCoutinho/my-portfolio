@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Logo/> should the Logo component match to snapshot 1`] = `
+<div>
+  <h1
+    class="sc-7938b0ce-0 kcneYO"
+  >
+    <a
+      href="#home"
+      role="link"
+    >
+      Manu
+      <span>
+        Coutinho
+      </span>
+    </a>
+  </h1>
+</div>
+`;

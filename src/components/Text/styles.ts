@@ -15,7 +15,7 @@ export const Text = styled.p<TextStyleProps>`
 
     @media only screen and (max-width: 27em) {
       line-height: 1.85rem;
-      font-size: ${theme.fontSize.sm};
+      font-size: ${theme.fontSize.md};
     }
   `}
 `

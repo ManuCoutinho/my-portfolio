@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text/> should render with text align prop 1`] = `
+<div>
+  <p
+    class="sc-4ff3e971-0 fBDtCd"
+  >
+    Text
+  </p>
+</div>
+`;
