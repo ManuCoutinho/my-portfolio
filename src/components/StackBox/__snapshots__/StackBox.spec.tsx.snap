@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StackBox/> should render a StackBox component correctly 1`] = `
+<div
+  class="sc-9a5cd56e-0 jKQSiK"
+  data-testid="stackbox"
+>
+  Text
+</div>
+`;

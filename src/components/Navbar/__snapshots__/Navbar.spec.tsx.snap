@@ -26,7 +26,7 @@ exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
       aria-haspopup="true"
       aria-label="Abrir Menu"
       aria-labelledby="menu button"
-      class="sc-35c880c2-3 hxCdBN"
+      class="sc-8d98a060-0 eJwnvk"
     >
       <iconify-icon
         icon="ph:list-bold"
@@ -34,16 +34,16 @@ exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
     </button>
     <ul
       aria-label="options"
-      class="sc-35c880c2-0 cfRMve"
+      class="sc-8eac1a3a-0 cyFmRv"
       id="menu"
       role="menu"
     >
       <li
-        class="sc-35c880c2-1"
+        class="sc-8eac1a3a-1"
         role="listitem"
       >
         <a
-          class="sc-35c880c2-2 DRWyi"
+          class="sc-8eac1a3a-2 hwfQKb"
           href="/#home"
           role="menuitem"
         >
@@ -51,11 +51,11 @@ exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
         </a>
       </li>
       <li
-        class="sc-35c880c2-1"
+        class="sc-8eac1a3a-1"
         role="listitem"
       >
         <a
-          class="sc-35c880c2-2 DRWyi"
+          class="sc-8eac1a3a-2 hwfQKb"
           href="/#about"
           role="menuitem"
         >
@@ -63,11 +63,11 @@ exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
         </a>
       </li>
       <li
-        class="sc-35c880c2-1"
+        class="sc-8eac1a3a-1"
         role="listitem"
       >
         <a
-          class="sc-35c880c2-2 DRWyi"
+          class="sc-8eac1a3a-2 hwfQKb"
           href="/#portfolio"
           role="menuitem"
         >
@@ -75,11 +75,11 @@ exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
         </a>
       </li>
       <li
-        class="sc-35c880c2-1"
+        class="sc-8eac1a3a-1"
         role="listitem"
       >
         <a
-          class="sc-35c880c2-2 DRWyi"
+          class="sc-8eac1a3a-2 hwfQKb"
           href="/#contact"
           role="menuitem"
         >

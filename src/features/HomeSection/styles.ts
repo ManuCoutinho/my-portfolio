@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { Container as ContainerBase } from 'components/Layout/Base'
+import { Container as ContainerBase } from 'components/Container/styles'
 
 export const Container = styled.section`
   ${({ theme }) => css`
