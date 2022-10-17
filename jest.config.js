@@ -21,7 +21,7 @@ module.exports = {
     '**/?(*.)+(spec|test|tests).[tj]s?(x)'
   ],
   testPathIgnorePatterns: ['/node_modules/', '/.next/', '/.out/', '/public/'],
-  setupFilesAfterEnv: ['<rootDir>/src/.jest/setupTests.ts'],
+  setupFilesAfterEnv: ['<rootDir>/.jest/jest.setup.ts'],
   transform: {
     '\\.tsx?$': 'ts-jest',
     '\\.jsx?$': 'babel-jest'
