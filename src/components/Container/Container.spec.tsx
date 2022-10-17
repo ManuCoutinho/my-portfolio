@@ -8,7 +8,7 @@ describe('<Container/>', () => {
     expect(screen.getByTestId('container')).toBeInTheDocument()
     expect(container.firstChild).toMatchInlineSnapshot(`
       <section
-        class="sc-6ea3e470-0 gQMznu"
+        class="sc-5bc047d-0 dHhhfO"
         data-testid="container"
       >
         Text
