@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToggleTheme/> should the Toggle Theme match to snapshot 1`] = `
+<button
+  class="sc-67728be7-0 jeOfcL"
+  role="switch"
+  type="button"
+>
+  <iconify-icon
+    icon="ph:sun-dim"
+  />
+</button>
+`;

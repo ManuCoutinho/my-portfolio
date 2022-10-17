@@ -6,6 +6,7 @@ export const StackBox: FC<StackBoxProps> = ({ ...props }) => {
   const att = props.as ? props.as : 'div'
   return (
     <Styled.Container
+      data-testid='stackbox'
       as={att}
       center={props.center}
       direction={props.direction}

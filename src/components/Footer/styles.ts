@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
-export const FooterContainer = styled.footer`
-  ${({ theme }) => css`
+export const FooterContainer = styled.footer<{ bgPage?: boolean }>`
+  ${({ theme, bgPage }) => css`
     background: ${theme.colors.body};
     color: ${theme.colors.text};
     font-size: ${theme.fontSize.md};
@@ -24,7 +24,7 @@ export const FooterContainer = styled.footer`
       flex-direction: column;
       font-size: ${theme.fontSize.sm};
       gap: 0.5rem;
-      background: ${theme.colors.background};
+      background: ${bgPage && theme.colors.bg_modal};
     }
   `}
 `

@@ -36,7 +36,7 @@ export function ThemeContextProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const cookies = parseCookies()
     const osTheme =
-      window.matchMedia('(prefers-color-scheme:light)').matches === true
+      window?.matchMedia('(prefers-color-scheme:light)').matches === true
         ? 'light'
         : 'dark'
 

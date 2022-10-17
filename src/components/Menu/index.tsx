@@ -1,38 +1,15 @@
-import { MouseEvent, useState, FC, Fragment } from 'react'
+import { useState, FC, Fragment } from 'react'
 import Link from 'next/link'
-import { Icon } from '@iconify-icon/react'
+import { MenuButton } from 'components/MenuButton'
 import { navItems } from 'constants/navigation'
-import icons from 'constants/icons'
 import * as Styled from './styles'
 
 export const Menu: FC = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  let expanded = false
-  const activeAria = isOpen ? 'Fechar Menu' : 'Abrir Menu'
-  const toggleMenu = (event: MouseEvent) => {
-    if (event.type === 'touchstart') {
-      event.preventDefault()
-    }
-    if (event.type === 'clickaway') {
-      setIsOpen(!isOpen)
-    }
-    setIsOpen(!isOpen)
-    expanded = true
-  }
-
   return (
     <Fragment>
-      <Styled.MenuIcon
-        aria-expanded={expanded}
-        aria-controls='menu'
-        aria-haspopup
-        aria-label={activeAria}
-        aria-labelledby='menu button'
-        onClick={toggleMenu}
-      >
-        {!isOpen ? <Icon icon={icons.hamburger} /> : <Icon icon={icons.x} />}
-      </Styled.MenuIcon>
+      <MenuButton open={isOpen} handleOpen={setIsOpen} />
       <Styled.MenuList
         role='menu'
         aria-label='options'
