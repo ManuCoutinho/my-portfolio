@@ -1,25 +1,11 @@
-<!-- <div align="center" id="top">
-  <img src="./.github/my-portfolio.gif" alt="Portfolio" />-->
-
-&#xa0;
-
-  <!-- <a href="https://portfolio.netlify.app">Demo</a> -->
-</div>
-
 <h1 align="center">My Portfolio</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/manucoutinho/my-portfolio?color=56BEB8">  
   <img alt="License" src="https://img.shields.io/github/license/manucoutinho/my-portfolio?color=56BEB8">  
   <img alt="Github stars" src="https://img.shields.io/github/stars/manucoutinho/my-portfolio?color=56BEB8" />
+  <img alt="Github stars" src="https://github.com/ManuCoutinho/my-portfolio/actions/workflows/release.yaml/badge.svg?branch=main" />
 </p>
-
-<h4 align="center"> 
-Status: 
-	🚧  Portfolio 🚀 Under construction...  🚧
-</h4>
-
-<hr>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -61,10 +47,8 @@ The following tools were used in this project:
 - [Nookies](https://www.npmjs.com/package/nookies)
 - [Styled Components](https://www.styled-components.com/)
 - [Polished](https://www.polished.js.org/)
-- [React Switch](https://www.npmjs.com/package/react-switch)
-- [React Typed](https://www.npmjs.com/package/react-typed)
 - [React Lottie](https://www.npmjs.com/package/react-lottie)
-- [React Modal](https://reactcommunity.org/react-modal/)
+
 
 ## :white_check_mark: Requirements
 
@@ -80,12 +64,12 @@ $ git clone https://github.com/manucoutinho/my-portfolio
 $ cd portfolio
 
 # Install dependencies
-$ yarn
+$ npm install
 
 # Run the project
-$ yarn start
+$ npm run dev
 
-# The server will initialize in the <http://localhost:3000>
+# The dev server will initialize in the <http://localhost:3000>
 ```
 
 ## :memo: License
