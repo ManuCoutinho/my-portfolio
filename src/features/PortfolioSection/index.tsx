@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, FC } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { useData } from 'hooks/useData'
 import { Card } from '../Card'
@@ -8,7 +8,7 @@ import * as Styled from './styles'
 const LIMIT = 6
 const TOTAL = 13
 
-const Portfolio: React.FC = () => {
+const Portfolio: FC = () => {
   const { data: info } = useData()
   const [limit, setLimit] = useState(LIMIT)
 
@@ -17,7 +17,6 @@ const Portfolio: React.FC = () => {
   }
 
   const data = info.slice(0, limit)
-
   return (
     <Styled.PortfolioSection id='portfolio'>
       <Heading as='h2' size='big'>
