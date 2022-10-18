@@ -15,8 +15,9 @@ export const HomeSection: React.FC = () => {
           <StackBox justify='center'>
             <a
               href='#portfolio'
-              role='navigation'
+              role='link'
               rel='nofollow'
+              aria-hidden={true}
               aria-label='Ir para portfólio'
             >
               <Styled.Button type='button'>

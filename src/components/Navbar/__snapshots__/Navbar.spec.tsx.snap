@@ -24,9 +24,11 @@ exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
       aria-controls="menu"
       aria-expanded="false"
       aria-haspopup="true"
+      aria-hidden="true"
       aria-label="Abrir Menu"
       aria-labelledby="menu button"
       class="sc-d2fd35-0 bfFNCg"
+      data-testid="button"
     >
       <iconify-icon
         icon="ph:list-bold"

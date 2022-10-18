@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Description/> should match to snapshot 1`] = `
+<div
+  class="sc-9a5cd56e-0 gjXRAA"
+  data-testid="stackbox"
+  direction="column"
+>
+  <h3
+    class="sc-776a3b16-0 flLuIJ"
+  >
+    <span>
+      Olá, sou
+    </span>
+     Manu Coutinho!
+  </h3>
+  <p
+    class="sc-d31e21d8-0 hDNmiN"
+  >
+    Eu sou uma desenvolvedora front-end, movida por uma paixão em construir coisas capazes de integrar diversos universos por meio da tecnologia.
+  </p>
+  <p
+    class="sc-d31e21d8-0 hDNmiN"
+  >
+    Gosto de desenvolver interfaces dinâmicas, de alta fidelidade e com designs pensados para transferir a melhor experiência ao usuário final.
+  </p>
+  <p
+    class="sc-d31e21d8-0 hDNmiN"
+  >
+    Minha abordagem para a resolução de problemas é altamente inclusiva, colaborativa e centrada no ser humano.
+  </p>
+  <p
+    class="sc-d31e21d8-0 hDNmiN"
+  >
+    Aqui, compartillho alguns dos meus projetos!
+  </p>
+</div>
+`;

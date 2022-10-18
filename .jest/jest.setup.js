@@ -1,17 +1,5 @@
 import '@testing-library/jest-dom/extend-expect'
-
-beforeAll(() => {
-  Object.defineProperty(window, 'matchMedia', {
-    writable: true,
-    value: jest.fn().mockImplementation((query) => ({
-      matches: false,
-      media: query,
-      onchange: null,
-      addListener: jest.fn(),
-      removeListener: jest.fn(),
-      addEventListener: jest.fn(),
-      removeEventListener: jest.fn(),
-      dispatchEvent: jest.fn()
-    }))
-  })
-})
+import '../src/__mocks__/matchMedia'
+import '../src/__mocks__/canvas'
+import '../src/__mocks__/typed.js'
+import 'jest-canvas-mock'

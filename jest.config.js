@@ -10,6 +10,8 @@ const customJestConfig = {
     '!<rootDir>/src/*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/**/*mock*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/styles/*.{js,jsx,ts,tsx}',
+    '!<rootDir>/src/constants/*.{ts,tsx}',
+    '!<rootDir>/src/data/*.{ts,tsx}',
     '!<rootDir>/**/stories.{js,jsx,ts,tsx}',
     '!<rootDir>/node_modules/',
     '!**/*.d.ts',
@@ -21,11 +23,12 @@ const customJestConfig = {
   ],
   testEnvironment: 'jest-environment-jsdom',
   moduleDirectories: ['node_modules', 'src/'],
-  // moduleNameMapper: {
-  //   '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-  //     '<rootDir>/__mocks__/fileMock.js',
-  //   '\\.(css|less|scss|sass)$': 'identity-obj-proxy'
-  // },
+  moduleNameMapper: {
+    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+      '<rootDir>/__mocks__/fileMock.js',
+    '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
+    '^uuid$': 'uuid'
+  },
   testMatch: [
     '**/__tests__/**/*.[t]s?(x)',
     '**/?(*.)+(spec|test|tests).[tj]s?(x)'
@@ -36,6 +39,10 @@ const customJestConfig = {
     '<rootDir>/.out/',
     '/public/'
   ],
+  transform: {
+    '^.+\\.(ts|tsx)$': 'ts-jest',
+    '^.+\\.(js|jsx)$': 'babel-jest'
+  },
   setupFilesAfterEnv: ['<rootDir>/.jest/jest.setup.js'],
   transformIgnorePatterns: ['/node_modules/']
 }
