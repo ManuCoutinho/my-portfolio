@@ -4,8 +4,19 @@ import * as Styled from './styles'
 import { MenuButtonProps } from './types'
 
 export const MenuButton: React.FC<MenuButtonProps> = ({ open, handleOpen }) => {
-  const expanded = !open ? false : true
+  let expanded = false
   const activeAria = open ? 'Fechar Menu' : 'Abrir Menu'
+
+  const toggleMenu = (event: MouseEvent) => {
+    if (event.type === 'touchstart') {
+      event.preventDefault()
+    }
+    if (event.type === 'clickaway') {
+      handleOpen(!open)
+    }
+    handleOpen(!open)
+    expanded = true
+  }
 
   return (
     <Styled.MenuIcon
@@ -14,9 +25,7 @@ export const MenuButton: React.FC<MenuButtonProps> = ({ open, handleOpen }) => {
       aria-haspopup
       aria-label={activeAria}
       aria-labelledby='menu button'
-      data-testid='button'
-      aria-hidden={true}
-      onClick={() => handleOpen(!open)}
+      onClick={() => toggleMenu}
     >
       {!open ? <Icon icon={icons.hamburger} /> : <Icon icon={icons.x} />}
     </Styled.MenuIcon>
