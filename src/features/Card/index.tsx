@@ -64,7 +64,7 @@ export const Card: FC<DataProps> = ({ ...props }) => {
               {props.name}
             </Heading>
           </Styled.Div>
-          <Dialog.Trigger style={{ border: 0 }}>
+          <Dialog.Trigger style={{ border: 0 }} asChild>
             <Modal onClose={handleCloseModal}>
               <CardContent {...props} />
             </Modal>

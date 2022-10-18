@@ -17,6 +17,7 @@ export const HomeSection: React.FC = () => {
               href='#portfolio'
               role='link'
               rel='nofollow'
+              aria-hidden={true}
               aria-label='Ir para portfólio'
             >
               <Styled.Button type='button'>

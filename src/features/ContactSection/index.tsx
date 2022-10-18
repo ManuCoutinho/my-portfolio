@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
         Contato
       </Heading>
       <Styled.Container>
-        <Styled.BoxAnimation>
+        <Styled.BoxAnimation data-testid='box-animation'>
           <LottieAnimation data={animationData} />
         </Styled.BoxAnimation>
         <StackBox direction='column' align='center' gap={1.5}>
