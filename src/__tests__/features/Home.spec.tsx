@@ -11,7 +11,7 @@ describe('<HomeSection/>', () => {
   it('should render a link to portfolio section', () => {
     render(<HomeSection />)
     expect(
-      screen.getByRole('link', { name: /ir para portfólio/i })
+      screen.getByRole('link', { hidden: true, name: '' })
     ).toBeInTheDocument()
   })
   it('should render social contacts component', () => {
