@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react'
-import { render } from '../../styles/theme/renderTheme'
-import CardContentDetails from '../../features/CardContentDetails'
-import * as data from '../../__mocks__/data'
+import { render } from '../../src/styles/theme/renderTheme'
+import CardContentDetails from '../../src/features/CardContentDetails'
+import * as data from '../../src/__mocks__/data'
 
 const mockData = data.default
 describe('<CardContent/>', () => {

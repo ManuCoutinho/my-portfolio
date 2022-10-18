@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
-import { render } from '../../styles/theme/renderTheme'
-import Portfolio from '../../features/PortfolioSection'
+import { render } from '../../src/styles/theme/renderTheme'
+import Portfolio from '../../src/features/PortfolioSection'
 
 describe('<Portfolio/>', () => {
   it('should render a title section', () => {

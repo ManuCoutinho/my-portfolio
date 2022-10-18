@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
-import { render } from '../../styles/theme/renderTheme'
-import Header from '../../features/Header'
+import { render } from '../../src/styles/theme/renderTheme'
+import Header from '../../src/features/Header'
 
 describe('<Header/>', () => {
   it('should render a Header correctly', () => {
