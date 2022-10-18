@@ -1,17 +1,14 @@
-import { useLottie } from 'lottie-react'
+import Lottie from 'lottie-react'
 
 type AnimationProps = {
-  data: React.ReactNode
+  data: unknown
 }
-export const LottieAnimation: React.FC<AnimationProps> = ({ data }) => {
+export function LottieAnimation({ data }: AnimationProps) {
   const defaultOptions = {
     loop: true,
     autoplay: true,
     animationData: data
   }
-  const { View } = useLottie(defaultOptions)
 
-  return View
+  return <Lottie {...defaultOptions} />
 }
-
-LottieAnimation.displayName = 'Animation'

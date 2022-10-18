@@ -39,7 +39,7 @@ const CardContentDetails: React.FC<DataProps> = ({ ...props }) => {
           <Styled.IconLink
             target='_blank'
             rel='noopener noreferrer'
-            title='repositorio no github'
+            role='repositorio no github'
           >
             <Icon icon={icons.github} style={{ fontSize: '2.3rem' }} />
           </Styled.IconLink>
@@ -49,7 +49,7 @@ const CardContentDetails: React.FC<DataProps> = ({ ...props }) => {
             <Styled.IconLink
               target='_blank'
               rel='noopener noreferrer'
-              title={`acessar o ${props.name}`}
+              role={`acessar o ${props.name}`}
             >
               <Icon icon={icons.link_external} />
             </Styled.IconLink>
