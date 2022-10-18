@@ -10,6 +10,8 @@ const customJestConfig = {
     '!<rootDir>/src/*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/**/*mock*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/styles/*.{js,jsx,ts,tsx}',
+    '!<rootDir>/src/constants/*.{ts,tsx}',
+    '!<rootDir>/src/data/*.{ts,tsx}',
     '!<rootDir>/**/stories.{js,jsx,ts,tsx}',
     '!<rootDir>/node_modules/',
     '!**/*.d.ts',
