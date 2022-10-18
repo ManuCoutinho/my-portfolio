@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardContent/> should render a Card Details correctly 1`] = `
+<dl
+  class="sc-9a5cd56e-0 dyiFSj"
+  data-testid="stackbox"
+  direction="column"
+  id="details"
+>
+  <div
+    class="sc-f3ed948-0 bmIejD"
+  >
+    <dt
+      class="sc-f3ed948-1 kqSxdj"
+    >
+      Descrição: 
+    </dt>
+    <dd
+      class="sc-d31e21d8-0 hDNmiN"
+    >
+      a beautiful test
+    </dd>
+  </div>
+  <div
+    class="sc-f3ed948-0 bmIejD"
+  >
+    <dt
+      class="sc-f3ed948-1 kqSxdj"
+    >
+      Framework: 
+    </dt>
+    <dd
+      class="sc-d31e21d8-0 hDNmiN"
+    >
+      next
+    </dd>
+  </div>
+  <div
+    class="sc-f3ed948-0 bmIejD"
+  >
+    <dt
+      class="sc-f3ed948-1 kqSxdj"
+    >
+      Linguagens e Ferramentas: 
+    </dt>
+    <dd
+      class="sc-d31e21d8-0 hDNmiN"
+    >
+      tools
+    </dd>
+  </div>
+  <div
+    class="sc-f3ed948-0 bmIejD"
+  >
+    <dt
+      class="sc-f3ed948-1 kqSxdj"
+    >
+      Estilização: 
+    </dt>
+    <dd
+      class="sc-d31e21d8-0 hDNmiN"
+    >
+      styles
+    </dd>
+  </div>
+  <div
+    class="sc-f3ed948-0 bmIejD"
+  >
+    <dt
+      class="sc-f3ed948-1 kqSxdj"
+    >
+      API: 
+    </dt>
+    <dd
+      class="sc-d31e21d8-0 hDNmiN"
+    >
+      mock
+    </dd>
+  </div>
+  <dd
+    class="sc-f3ed948-0 bmIejD"
+  >
+    <dt
+      class="sc-f3ed948-1 kqSxdj"
+    >
+      Disponível em: 
+    </dt>
+    <a
+      class="sc-f3ed948-2 mxBON"
+      href="http://www.somerepo.com"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="repositorio no github"
+    >
+      <iconify-icon
+        icon="iconoir:github-outline"
+        style="font-size: 2.3rem;"
+      />
+    </a>
+    <a
+      class="sc-f3ed948-2 mxBON"
+      href="http://www.somesit.com"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="acessar o project"
+    >
+      <iconify-icon
+        icon="codicon:link-external"
+      />
+    </a>
+  </dd>
+</dl>
+`;
