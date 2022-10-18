@@ -3,7 +3,7 @@
 exports[`<Button/> should button component match to snapshot 1`] = `
 <div>
   <button
-    class="sc-91d04da0-0 sQOqy"
+    class="sc-c7760b23-0 gpvRvk"
   >
     Text
   </button>
