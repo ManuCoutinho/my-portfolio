@@ -1,2 +1,5 @@
 import '@testing-library/jest-dom/extend-expect'
 import '../src/__mocks__/matchMedia'
+import '../src/__mocks__/canvas'
+import '../src/__mocks__/typed.js'
+import 'jest-canvas-mock'

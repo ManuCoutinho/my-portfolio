@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { render } from '../../styles/theme/renderTheme'
-import { SocialContacts } from '.'
+import { SocialContacts } from '../../features/SocialContacts'
 
 describe('<SocialContacts/>', () => {
   it('should render Social Contacts with display column', () => {

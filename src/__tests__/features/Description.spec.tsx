@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { render } from '../../styles/theme/renderTheme'
-import { Description } from '.'
+import { Description } from '../../features/Description'
 
 describe('<Description/>', () => {
   it('should render correctly', () => {
