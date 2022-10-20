@@ -28,9 +28,9 @@ Hi! Welcome to my portfolio 👋🏽.
 
 This project compiles some of my skills and shows my projects developed in the last few months.
 
-With a awesome and clean design made by me, I present the 'portfolio' section with cards in the 'polaroid photos' style. The modals of this section contain a gallery of images of the projects, made purely in CSS.
+With a awesome and clean design made by me, I present the 'portfolio' section with cards in the 'polaroid photos' style.
 
-The presentation of the layout on mobile devices is due to new routes.
+The layout presentation on mobile devices is completely dynamic and user-friendly.
 
 💃🏽 Coming son news!
 
@@ -66,21 +66,12 @@ $ git clone https://github.com/manucoutinho/my-portfolio
 $ cd portfolio
 
 # Install dependencies
-<<<<<<< HEAD
 $ npm install
 
 # Run the project
 $ npm run dev
 
 # The dev server will initialize in the <http://localhost:3000>
-=======
-$ yarn
-
-# Run the project
-$ yarn start
-
-# The server will initialize in the <http://localhost:3000>
->>>>>>> d65e95d236fa4488ad9ecdb2538d2445f454c2a5
 ```
 
 ## :memo: License
