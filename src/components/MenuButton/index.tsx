@@ -7,7 +7,7 @@ export const MenuButton: React.FC<MenuButtonProps> = ({ open, handleOpen }) => {
   let expanded = false
   const activeAria = open ? 'Fechar Menu' : 'Abrir Menu'
 
-  const toggleMenu = (event: MouseEvent) => {
+  const toggleMenu = (event: React.SyntheticEvent) => {
     if (event.type === 'touchstart') {
       event.preventDefault()
     }
@@ -25,7 +25,7 @@ export const MenuButton: React.FC<MenuButtonProps> = ({ open, handleOpen }) => {
       aria-haspopup
       aria-label={activeAria}
       aria-labelledby='menu button'
-      onClick={() => toggleMenu}
+      onClick={toggleMenu}
     >
       {!open ? <Icon icon={icons.hamburger} /> : <Icon icon={icons.x} />}
     </Styled.MenuIcon>
