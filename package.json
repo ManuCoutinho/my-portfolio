@@ -10,7 +10,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --warnings=0",
+    "lint": "next lint",
     "lint:css": "stylelint --fix './src/**/*.ts'",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -19,14 +19,14 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "npm run lint --fix",
-      "npm run test --findRelatedTests --bail"
+      "eslint src --fix",
+      "jest --findRelatedTests --bail"
     ],
     "*.{json,md}": [
       "prettier --write"
     ],
     "*.ts": [
-      "npm run lint:css --fix"
+      "stylelint --fix './src/**/*.ts'"
     ]
   },
   "dependencies": {
