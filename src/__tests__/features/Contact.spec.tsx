@@ -37,7 +37,7 @@ describe('<Contact/>', () => {
   it('should render a animation component', () => {
     render(<Contact />)
     const div = screen.getByTestId('box-animation')
-    expect(div.firstElementChild?.firstChild).toHaveAttribute(
+    expect(div.firstChild).toHaveAttribute(
       'preserveAspectRatio',
       'xMidYMid meet'
     )

@@ -10,5 +10,5 @@ export function LottieAnimation({ data }: AnimationProps) {
     animationData: data
   }
 
-  return <Lottie {...defaultOptions} />
+  return <Lottie {...defaultOptions} data-testid='box-animation' />
 }

@@ -1,5 +1,5 @@
-/** @type {import('jest').Config} */
-const nextJest = require('next/jest')
+import nextJest from 'next/jest'
+
 const customJestConfig = {
   preset: 'ts-jest',
   coverageDirectory: 'coverage',
@@ -36,7 +36,7 @@ const customJestConfig = {
     '<rootDir>/.out/',
     '/public/'
   ],
-  setupFilesAfterEnv: ['<rootDir>/.jest/jest.setup.js'],
+  setupFilesAfterEnv: ['<rootDir>/.jest/jest.setup.ts', 'jest-canvas-mock'],
   transformIgnorePatterns: ['/node_modules/']
 }
 const createJestConfig = nextJest({
