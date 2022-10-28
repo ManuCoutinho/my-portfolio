@@ -14,7 +14,7 @@ const About: React.FC = () => {
   const sourceImg = theme.title === 'light' ? lightImg : darkImg
 
   function listenScrollToImg() {
-    const imgOffsetWidth = 429
+    const imgOffsetWidth = 400
     const winScroll =
       document.documentElement.scrollTop || document.body.scrollTop
     if (winScroll > imgOffsetWidth) {

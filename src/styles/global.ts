@@ -26,9 +26,6 @@ html {
 
 body, html {
   scroll-behavior: smooth; 
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -o-scroll-behavior: smooth;
 }
 
 body {
