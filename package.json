@@ -10,7 +10,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint --warnings=0",
     "lint:css": "stylelint --fix './src/**/*.ts'",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -25,7 +25,7 @@
     "*.{json,md}": [
       "prettier --write"
     ],
-    "*.{ts}": [
+    "*.ts": [
       "npm run lint:css --fix"
     ]
   },
