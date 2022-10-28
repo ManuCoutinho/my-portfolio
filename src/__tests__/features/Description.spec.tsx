@@ -4,14 +4,14 @@ import { Description } from '../../features/Description'
 
 describe('<Description/>', () => {
   it('should render correctly', () => {
-    render(<Description />)
-    const content = screen.getByTestId('stackbox')
+    render(<Description animate={true} />)
+    const content = screen.getByRole('definition')
     const heading = screen.getByRole('heading')
     expect(content).toBeInTheDocument()
     expect(content).toContainElement(heading)
   })
   it('should match to snapshot', () => {
-    const { container } = render(<Description />)
+    const { container } = render(<Description animate={true} />)
     expect(container.firstChild).toMatchSnapshot()
   })
 })

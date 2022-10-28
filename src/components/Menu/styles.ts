@@ -22,14 +22,19 @@ export const MenuList = styled.ul<MenuStyleProps>`
     }
   `}
 `
-export const MenuItem = styled.li``
+export const MenuItem = styled.li<{ active?: boolean }>`
+  ${({ active, theme }) => css`
+    color: ${theme.colors.info};
+    text-shadow: ${active && ` 0 2px 3px ${theme.colors.highlight}`};
+  `}
+`
 
-export const NavLink = styled.a<{ color?: string }>`
-  ${({ theme, color }) => css`
+export const NavLink = styled.a`
+  ${({ theme }) => css`
     padding: 2rem;
     transition: color ease-in-out 0.25s;
     font-size: 1.15rem;
-    color: ${color || ''};
+
     &:hover {
       color: ${theme.colors.text};
       text-shadow: 0 2px 3px ${theme.colors.highlight};

@@ -1,49 +1,70 @@
-import Slider from 'react-slick'
+import { useEffect } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { Heading } from 'components/Heading'
 import icons from 'constants/icons'
 import * as Styled from './styles'
+import { useKeenSlider } from 'keen-slider/react'
+import { KeenSliderInstance, KeenSliderOptions } from 'keen-slider'
 
 export const Carousel: React.FC = () => {
-  const settings = {
-    dots: false,
-    centerMode: true,
-    adaptiveHeight: true,
-    rows: 1,
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 1000,
-
-    autoplaySpeed: 2000,
-    cssEase: 'linear',
-    pauseOnHover: true,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 880,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false
-        }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const keenOptions: KeenSliderOptions = {
+    loop: true,
+    drag: true,
+    mode: 'free-snap',
+    slides: {
+      perView: 2,
+      spacing: 8
+    },
+    breakpoints: {
+      '(min-width: 480px)': {
+        slides: { perView: 3, spacing: 20 }
       },
-      {
-        breakpoint: 550,
-        settings: {
-          slidesToShow: 2,
-          row: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false
-        }
+      '(min-width:768px)': {
+        slides: { perView: 4, spacing: 20 }
       }
-    ]
+    }
   }
+  const sliderAction = [
+    (slider: KeenSliderInstance) => {
+      let timeout: ReturnType<typeof setTimeout>
+      let mouseOver = false
+      function clearNextTimeout() {
+        clearTimeout(timeout)
+      }
+      function nextTimeout() {
+        clearTimeout(timeout)
+        if (mouseOver) return
+        timeout = setTimeout(() => {
+          slider.next()
+        }, 2000)
+      }
+      slider.on('created', () => {
+        slider.container.addEventListener('mouseover', () => {
+          mouseOver = true
+          clearNextTimeout()
+        })
+        slider.container.addEventListener('mouseout', () => {
+          mouseOver = false
+          nextTimeout()
+        })
+        nextTimeout()
+      })
+      slider.on('dragStarted', clearNextTimeout)
+      slider.on('animationEnded', nextTimeout)
+      slider.on('updated', nextTimeout)
+    }
+  ]
+  const [carousel1Ref, instance1Ref] = useKeenSlider<HTMLDivElement>(
+    keenOptions,
+    sliderAction
+  )
+  const [carousel2Ref, instance2Ref] = useKeenSlider<HTMLDivElement>(
+    { ...keenOptions, rtl: true },
+    sliderAction
+  )
 
-  const set1 = [
+  const SET1 = [
     { icon: icons.html },
     { icon: icons.jquery },
     { icon: icons.react },
@@ -58,7 +79,7 @@ export const Carousel: React.FC = () => {
     { icon: icons.gh }
   ]
 
-  const set2 = [
+  const SET2 = [
     { icon: icons.ts },
     { icon: icons.styled },
     { icon: icons.next },
@@ -72,28 +93,31 @@ export const Carousel: React.FC = () => {
     { icon: icons.css },
     { icon: icons.git }
   ]
-  return (
-    <>
-      <Styled.Container>
-        <Heading as='h4' size='small'>
-          Minhas Skills:
-        </Heading>
-        <Slider {...settings}>
-          {set1.map((item) => (
-            <Styled.Wrapper key={uuidv4()}>
-              <Styled.Content icon={item.icon} />
-            </Styled.Wrapper>
-          ))}
-        </Slider>
 
-        <Slider {...settings} rtl={true}>
-          {set2.map((item) => (
-            <Styled.Wrapper key={uuidv4()}>
-              <Styled.Content icon={item.icon} />
-            </Styled.Wrapper>
-          ))}
-        </Slider>
-      </Styled.Container>
-    </>
+  useEffect(() => {
+    instance1Ref.current?.update(keenOptions)
+    instance2Ref.current?.update({ ...keenOptions, rtl: true })
+  }, [instance1Ref, instance2Ref, keenOptions])
+  return (
+    <Styled.Container>
+      <Heading as='h4' size='small'>
+        Minhas Skills:
+      </Heading>
+      <Styled.Slider className='keen-slider' ref={carousel1Ref}>
+        {SET1.map((item) => (
+          <Styled.Wrapper key={uuidv4()} className='keen-slider__slide'>
+            <Styled.Content icon={item.icon} />
+          </Styled.Wrapper>
+        ))}
+      </Styled.Slider>
+
+      <Styled.Slider className='keen-slider' ref={carousel2Ref}>
+        {SET2.map((item) => (
+          <Styled.Wrapper key={uuidv4()} className='keen-slider__slide'>
+            <Styled.Content icon={item.icon} />
+          </Styled.Wrapper>
+        ))}
+      </Styled.Slider>
+    </Styled.Container>
   )
 }

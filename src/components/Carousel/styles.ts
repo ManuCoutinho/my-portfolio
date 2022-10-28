@@ -1,7 +1,5 @@
 import styled, { css } from 'styled-components'
 import { Icon } from '@iconify-icon/react'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
 
 export const Container = styled.div`
   width: 100%;
@@ -10,7 +8,13 @@ export const Container = styled.div`
   margin: 1.5rem auto;
 `
 
-export const Wrapper = styled.div``
+export const Slider = styled.div`
+  display: flex;
+  width: 100%;
+`
+export const Wrapper = styled.div`
+  cursor: grabbing;
+`
 
 export const Content = styled(Icon)`
   ${({ theme }) => css`
@@ -20,12 +24,19 @@ export const Content = styled(Icon)`
       ${theme.colors.carousel_1},
       ${theme.colors.carousel_2}
     );
-    box-shadow: 13px 13px 22px ${theme.colors.carousel_3},
-      -13px -13px 22px ${theme.colors.carousel_4};
+    box-shadow: 13px 13px 20px ${theme.colors.carousel_3},
+      -13px -13px 20px ${theme.colors.carousel_4};
     color: ${theme.colors.secondary};
-    padding: 2rem 3rem;
-    margin: 1.5rem;
-    text-align: center;
+    padding: 2rem 0;
+    display: grid;
+    place-content: center;
+    margin: 2rem;
+    min-width: 5rem;
     font-size: ${theme.fontSize.xlg};
+    transition: ${theme.transition};
+    &:hover {
+      transition: ${theme.transition};
+      color: ${theme.colors.active};
+    }
   `}
 `

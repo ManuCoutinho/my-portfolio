@@ -1,5 +1,4 @@
 import { useKeenSlider } from 'keen-slider/react'
-
 import { v4 as uuidv4 } from 'uuid'
 import icons from 'constants/icons'
 import { SliderProps } from './types'

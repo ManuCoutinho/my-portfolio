@@ -1,10 +1,11 @@
 import { Heading } from 'components/Heading'
-import { StackBox } from 'components/StackBox'
 import { Text } from 'components/Text'
+import { DescriptionProps } from './types'
+import * as Styled from './styles'
 
-export const Description = () => {
+export const Description: React.FC<DescriptionProps> = ({ animate }) => {
   return (
-    <StackBox direction='column'>
+    <Styled.Wrapper direction='column' animate={animate} role='definition'>
       <Heading as='h3' size='small'>
         <span>Olá, sou</span> Manu Coutinho!
       </Heading>
@@ -21,6 +22,6 @@ export const Description = () => {
         colaborativa e centrada no ser humano.
       </Text>
       <Text>Aqui, compartillho alguns dos meus projetos!</Text>
-    </StackBox>
+    </Styled.Wrapper>
   )
 }

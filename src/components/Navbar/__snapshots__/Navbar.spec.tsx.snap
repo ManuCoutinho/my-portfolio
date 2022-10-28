@@ -34,54 +34,50 @@ exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
     </button>
     <ul
       aria-label="options"
-      class="sc-8eac1a3a-0 cyFmRv"
+      class="sc-8ba4dba4-0 iMFQAO"
       id="menu"
       role="menu"
     >
       <li
-        class="sc-8eac1a3a-1"
+        class="sc-8ba4dba4-1 fhWtp"
         role="listitem"
       >
         <a
-          class="sc-8eac1a3a-2 hwfQKb"
+          class="sc-8ba4dba4-2 lmkKxa"
           href="/#home"
-          role="menuitem"
         >
           Home
         </a>
       </li>
       <li
-        class="sc-8eac1a3a-1"
+        class="sc-8ba4dba4-1 fhWtp"
         role="listitem"
       >
         <a
-          class="sc-8eac1a3a-2 hwfQKb"
+          class="sc-8ba4dba4-2 lmkKxa"
           href="/#about"
-          role="menuitem"
         >
           Sobre
         </a>
       </li>
       <li
-        class="sc-8eac1a3a-1"
+        class="sc-8ba4dba4-1 fhWtp"
         role="listitem"
       >
         <a
-          class="sc-8eac1a3a-2 hwfQKb"
+          class="sc-8ba4dba4-2 lmkKxa"
           href="/#portfolio"
-          role="menuitem"
         >
           Portfólio
         </a>
       </li>
       <li
-        class="sc-8eac1a3a-1"
+        class="sc-8ba4dba4-1 fhWtp"
         role="listitem"
       >
         <a
-          class="sc-8eac1a3a-2 hwfQKb"
+          class="sc-8ba4dba4-2 lmkKxa"
           href="/#contact"
-          role="menuitem"
         >
           Contato
         </a>

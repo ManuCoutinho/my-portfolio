@@ -2,9 +2,9 @@
 
 exports[`<Description/> should match to snapshot 1`] = `
 <div
-  class="sc-9a5cd56e-0 gjXRAA"
-  data-testid="stackbox"
+  class="sc-9a5cd56e-0 sc-f32d69d5-0 gjXRAA hvqGxX"
   direction="column"
+  role="definition"
 >
   <h3
     class="sc-776a3b16-0 flLuIJ"

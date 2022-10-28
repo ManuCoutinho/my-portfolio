@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { Description } from '../Description'
 import { Carousel } from 'components/Carousel'
@@ -9,14 +10,32 @@ import darkImg from '/public/assets/perfil-green.webp'
 
 const About: React.FC = () => {
   const theme = useTheme()
+  const [animate, setAnimate] = useState(false)
   const sourceImg = theme.title === 'light' ? lightImg : darkImg
+
+  function listenScrollToImg() {
+    const imgOffsetWidth = 429
+    const winScroll =
+      document.documentElement.scrollTop || document.body.scrollTop
+    if (winScroll > imgOffsetWidth) {
+      setAnimate(true)
+    }
+    if (winScroll < imgOffsetWidth) {
+      setAnimate(false)
+    }
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', () => listenScrollToImg())
+    return window.removeEventListener('scroll', () => listenScrollToImg())
+  }, [])
+
   return (
     <Styled.Section id='about'>
       <Heading size='big' as='h2'>
         Sobre
       </Heading>
       <Styled.Container>
-        <Styled.WrapperImg>
+        <Styled.WrapperImg animate={animate}>
           <Image
             width='300'
             height='300'
@@ -25,7 +44,7 @@ const About: React.FC = () => {
             alt='girl coding with cup of coffee'
           />
         </Styled.WrapperImg>
-        <Description />
+        <Description animate={animate} />
       </Styled.Container>
       <Carousel />
     </Styled.Section>
