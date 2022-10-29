@@ -1,10 +1,11 @@
 import { useEffect } from 'react'
-import { v4 as uuidv4 } from 'uuid'
-import { Heading } from 'components/Heading'
-import icons from 'constants/icons'
-import * as Styled from './styles'
 import { useKeenSlider } from 'keen-slider/react'
 import { KeenSliderInstance, KeenSliderOptions } from 'keen-slider'
+import { v4 as uuidv4 } from 'uuid'
+import { Heading } from 'components/Heading'
+import SET1 from 'constants/iconSet1'
+import SET2 from 'constants/iconSet2'
+import * as Styled from './styles'
 
 export const Carousel: React.FC = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -64,40 +65,11 @@ export const Carousel: React.FC = () => {
     sliderAction
   )
 
-  const SET1 = [
-    { icon: icons.html },
-    { icon: icons.jquery },
-    { icon: icons.react },
-    { icon: icons.sass },
-    { icon: icons.js },
-    { icon: icons.node },
-    { icon: icons.sb },
-    { icon: icons.sentry },
-    { icon: icons.graphql },
-    { icon: icons.figma },
-    { icon: icons.testing },
-    { icon: icons.gh }
-  ]
-
-  const SET2 = [
-    { icon: icons.ts },
-    { icon: icons.styled },
-    { icon: icons.next },
-    { icon: icons.vite },
-    { icon: icons.jamstack },
-    { icon: icons.tailwind },
-    { icon: icons.mui },
-    { icon: icons.chakra },
-    { icon: icons.jest },
-    { icon: icons.bs },
-    { icon: icons.css },
-    { icon: icons.git }
-  ]
-
   useEffect(() => {
     instance1Ref.current?.update(keenOptions)
     instance2Ref.current?.update({ ...keenOptions, rtl: true })
   }, [instance1Ref, instance2Ref, keenOptions])
+
   return (
     <Styled.Container>
       <Heading as='h4' size='small'>

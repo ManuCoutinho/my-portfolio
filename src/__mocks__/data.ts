@@ -5,7 +5,15 @@ export default {
   styles: 'styles',
   api: 'mock',
   framework: 'next',
-  name: 'acessar o project',
-  tools: 'tools',
-  id: 'id'
-} as const
+  name: 'project',
+  tools: ['tools'],
+  id: 'id',
+  doc: 'http://www.storybook.com',
+  coverDefaultLight: 'img.png',
+  coverDefaultDark: '',
+  coverAltLight: '',
+  coverAltDark: '',
+  alt: '',
+  img: [],
+  route: '/test'
+}

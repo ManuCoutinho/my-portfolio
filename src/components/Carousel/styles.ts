@@ -31,7 +31,7 @@ export const Content = styled(Icon)`
     display: grid;
     place-content: center;
     margin: 2rem;
-    min-width: 5rem;
+
     font-size: ${theme.fontSize.xlg};
     transition: ${theme.transition};
     &:hover {

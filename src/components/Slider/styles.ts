@@ -16,13 +16,14 @@ export const Item = styled.div`
   ${() => css`
     width: 100%;
     max-height: 40rem;
-    overflow: hidden;
 
     picture,
     img {
+      overflow: hidden;
       width: 100%;
       object-fit: contain;
       height: 100%;
+      margin: 0 auto;
     }
 
     @media only screen and (min-width: 90.625em) {

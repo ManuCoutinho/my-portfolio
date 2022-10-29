@@ -1,12 +1,13 @@
 import { useState, FC } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { useData } from 'hooks/useData'
-import { Card } from '../Card'
 import { Heading } from 'components/Heading'
+import { Card } from '../Card'
+import projects from 'data/projects'
 import * as Styled from './styles'
 
 const LIMIT = 6
-const TOTAL = 13
+const TOTAL = projects.length
 
 const Portfolio: FC = () => {
   const { data: info } = useData()

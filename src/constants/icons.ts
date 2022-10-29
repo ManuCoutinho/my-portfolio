@@ -34,5 +34,6 @@ export default {
   sentry: 'file-icons:sentry',
   graphql: 'mdi:graphql',
   figma: 'ph:figma-logo',
-  testing: 'simple-icons:testinglibrary'
+  testing: 'simple-icons:testinglibrary',
+  docs: 'tabler:brand-storybook'
 }

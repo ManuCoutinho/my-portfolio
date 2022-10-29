@@ -8,12 +8,12 @@ import icons from 'constants/icons'
 
 const CardContentDetails: React.FC<DataProps> = ({ ...props }) => {
   return (
-    <StackBox id='details' direction='column' gap={1} px='1.5rem' as='dl'>
+    <StackBox id='details' direction='column' gap={1} px='1.5rem'>
       <Styled.BoxDetails>
         <Styled.Topic>Descrição: </Styled.Topic>
         <Text as='dd'>{props.description}</Text>
       </Styled.BoxDetails>
-      {!!props.framework && (
+      {props.framework && (
         <Styled.BoxDetails>
           <Styled.Topic>Framework: </Styled.Topic>
           <Text as='dd'>{props.framework}</Text>
@@ -21,13 +21,13 @@ const CardContentDetails: React.FC<DataProps> = ({ ...props }) => {
       )}
       <Styled.BoxDetails>
         <Styled.Topic>Linguagens e Ferramentas: </Styled.Topic>
-        <Text as='dd'>{props.tools}</Text>
+        <Text as='dd'>{props.tools?.join(' / ')}</Text>
       </Styled.BoxDetails>
       <Styled.BoxDetails>
         <Styled.Topic>Estilização: </Styled.Topic>
         <Text as='dd'>{props.styles}</Text>
       </Styled.BoxDetails>
-      {props.api !== '' && (
+      {props.api && (
         <Styled.BoxDetails>
           <Styled.Topic>API: </Styled.Topic>
           <Text as='dd'>{props.api}</Text>
@@ -41,7 +41,7 @@ const CardContentDetails: React.FC<DataProps> = ({ ...props }) => {
             rel='noopener noreferrer'
             title='repositorio no github'
           >
-            <Icon icon={icons.github} style={{ fontSize: '2.3rem' }} />
+            <Icon icon={icons.github} style={{ fontSize: '1.8rem' }} />
           </Styled.IconLink>
         </Link>
         {props.site != 'Em breve' && (
@@ -52,6 +52,17 @@ const CardContentDetails: React.FC<DataProps> = ({ ...props }) => {
               title={`acessar o ${props.name}`}
             >
               <Icon icon={icons.link_external} />
+            </Styled.IconLink>
+          </Link>
+        )}
+        {props.doc && (
+          <Link href={props.doc} passHref>
+            <Styled.IconLink
+              target='_blank'
+              rel='noopener noreferrer'
+              title={`documentation for ${props.name}`}
+            >
+              <Icon icon={icons.docs} />
             </Styled.IconLink>
           </Link>
         )}

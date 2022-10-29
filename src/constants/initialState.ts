@@ -1,3 +1,5 @@
+import { ContextProps } from 'contexts/DataContext/types'
+
 export default {
   name: '',
   description: '',
@@ -7,6 +9,8 @@ export default {
   api: '',
   framework: '',
   id: '',
+  doc: '',
+  tools: [''],
   coverDefaultLight: '',
   coverDefaultDark: '',
   coverAltLight: '',
@@ -21,4 +25,4 @@ export default {
       id: ''
     }
   ]
-}
+} as ContextProps

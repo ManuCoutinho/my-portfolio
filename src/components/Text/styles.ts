@@ -5,11 +5,12 @@ export const Text = styled.p<TextStyleProps>`
   ${({ theme, align }) => css`
     user-select: none;
     line-height: 1.75rem;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: ${theme.fontWeight.normal};
     color: ${theme.colors.text};
     word-wrap: break-word;
     white-space: pre-line;
+    word-break: keep-all;
     padding: 0.5rem;
     text-align: ${align || 'left'};
 

@@ -25,7 +25,7 @@ describe('<Menu/>', () => {
     render(<Menu />)
     expect(screen.getByRole('menu').firstChild).toHaveAttribute(
       'role',
-      'listitem'
+      'menuitem'
     )
   })
   it('should render a menu link correctly', () => {

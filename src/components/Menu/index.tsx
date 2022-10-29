@@ -17,12 +17,14 @@ export const Menu: FC = () => {
         aria-label='options'
         active={isOpen}
         id='menu'
+        aria-controls=''
       >
         {navItems.map(({ url, section }) => (
           <Styled.MenuItem
             active={router.asPath === url ? true : false}
             key={url}
-            role='listitem'
+            role='menuitem'
+            aria-owns='menu'
             onClick={() => setIsOpen(false)}
           >
             <Link passHref href={url}>

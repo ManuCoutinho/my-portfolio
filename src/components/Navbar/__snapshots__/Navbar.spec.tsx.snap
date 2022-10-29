@@ -33,14 +33,16 @@ exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
       />
     </button>
     <ul
+      aria-controls=""
       aria-label="options"
       class="sc-8ba4dba4-0 iMFQAO"
       id="menu"
       role="menu"
     >
       <li
+        aria-owns="menu"
         class="sc-8ba4dba4-1 fhWtp"
-        role="listitem"
+        role="menuitem"
       >
         <a
           class="sc-8ba4dba4-2 kAgogx"
@@ -50,8 +52,9 @@ exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
         </a>
       </li>
       <li
+        aria-owns="menu"
         class="sc-8ba4dba4-1 fhWtp"
-        role="listitem"
+        role="menuitem"
       >
         <a
           class="sc-8ba4dba4-2 kAgogx"
@@ -61,8 +64,9 @@ exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
         </a>
       </li>
       <li
+        aria-owns="menu"
         class="sc-8ba4dba4-1 fhWtp"
-        role="listitem"
+        role="menuitem"
       >
         <a
           class="sc-8ba4dba4-2 kAgogx"
@@ -72,8 +76,9 @@ exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
         </a>
       </li>
       <li
+        aria-owns="menu"
         class="sc-8ba4dba4-1 fhWtp"
-        role="listitem"
+        role="menuitem"
       >
         <a
           class="sc-8ba4dba4-2 kAgogx"
