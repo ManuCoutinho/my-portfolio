@@ -75,7 +75,11 @@ export const Carousel: React.FC = () => {
       <Heading as='h4' size='small'>
         Minhas Skills:
       </Heading>
-      <Styled.Slider className='keen-slider' ref={carousel1Ref}>
+      <Styled.Slider
+        data-testid='slider'
+        className='keen-slider'
+        ref={carousel1Ref}
+      >
         {SET1.map((item) => (
           <Styled.Wrapper key={uuidv4()} className='keen-slider__slide'>
             <Styled.Content icon={item.icon} />

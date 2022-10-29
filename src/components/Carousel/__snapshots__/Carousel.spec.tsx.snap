@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Carousel /> should match to snapshot 1`] = `
+<div>
+  <div
+    class="sc-3ba3f456-0 jrhHuJ"
+  >
+    <h4
+      class="sc-776a3b16-0 flLuIJ"
+    >
+      Minhas Skills:
+    </h4>
+    <div
+      class="sc-3ba3f456-1 jFhrOZ keen-slider"
+      data-testid="slider"
+    >
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="akar-icons:html-fill"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="mdi:jquery"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="fa-brands:react"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="fa-brands:sass"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="ion:logo-javascript"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="mdi:nodejs"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="file-icons:storybook"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="file-icons:sentry"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="mdi:graphql"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="ph:figma-logo"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="simple-icons:testinglibrary"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="fa-brands:github"
+        />
+      </div>
+    </div>
+    <div
+      class="sc-3ba3f456-1 jFhrOZ keen-slider"
+    >
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="file-icons:typescript-alt"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="file-icons:styledcomponents"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="file-icons:nextjs"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="file-icons:vite"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="simple-icons:jamstack"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="file-icons:tailwind"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="simple-icons:mui"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="simple-icons:chakraui"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="file-icons:jest"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="fa-brands:bootstrap"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="akar-icons:css-fill"
+        />
+      </div>
+      <div
+        class="sc-3ba3f456-2 kzWrSk keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-3ba3f456-3 fPTSnf"
+          classname="sc-3ba3f456-3 fPTSnf"
+          icon="fa-brands:git-alt"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

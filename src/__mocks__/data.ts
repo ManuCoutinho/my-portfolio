@@ -1,3 +1,4 @@
+import { mockImg } from './images'
 export default {
   description: 'a beutiful test',
   site: 'http://www.somesit.com',
@@ -13,7 +14,7 @@ export default {
   coverDefaultDark: '',
   coverAltLight: '',
   coverAltDark: '',
-  alt: '',
-  img: [],
+  alt: 'mock img',
+  img: mockImg,
   route: '/test'
 }

@@ -13,7 +13,11 @@ const Slider: React.FC<SliderProps> = ({ img }) => {
 
   return (
     <Styled.ItemWrapper>
-      <Styled.Items ref={sliderRef} className='keen-slider'>
+      <Styled.Items
+        ref={sliderRef}
+        className='keen-slider'
+        data-testid='slider-img'
+      >
         {img?.map((data) => (
           <Styled.Item
             id={data.id}
