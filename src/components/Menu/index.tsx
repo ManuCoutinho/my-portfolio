@@ -1,11 +1,13 @@
 import { useState, FC, Fragment } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { MenuButton } from 'components/MenuButton'
 import { navItems } from 'constants/navigation'
 import * as Styled from './styles'
 
 export const Menu: FC = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const router = useRouter()
 
   return (
     <Fragment>
@@ -15,15 +17,18 @@ export const Menu: FC = () => {
         aria-label='options'
         active={isOpen}
         id='menu'
+        aria-controls=''
       >
-        {navItems.map((item) => (
+        {navItems.map(({ url, section }) => (
           <Styled.MenuItem
-            key={item.url}
-            role='listitem'
+            active={router.asPath === url ? true : false}
+            key={url}
+            role='menuitem'
+            aria-owns='menu'
             onClick={() => setIsOpen(false)}
           >
-            <Link passHref href={item.url}>
-              <Styled.NavLink role='menuitem'>{item.section}</Styled.NavLink>
+            <Link passHref href={url}>
+              <Styled.NavLink>{section}</Styled.NavLink>
             </Link>
           </Styled.MenuItem>
         ))}

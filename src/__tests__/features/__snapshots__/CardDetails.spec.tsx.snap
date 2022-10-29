@@ -1,92 +1,92 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CardContent/> should render a Card Details correctly 1`] = `
-<dl
+<div
   class="sc-9a5cd56e-0 dyiFSj"
   data-testid="stackbox"
   direction="column"
   id="details"
 >
-  <div
-    class="sc-f3ed948-0 bmIejD"
+  <dl
+    class="sc-d8bb1df0-0 aiuZt"
   >
     <dt
-      class="sc-f3ed948-1 kqSxdj"
+      class="sc-d8bb1df0-1 gYOona"
     >
       Descrição: 
     </dt>
     <dd
-      class="sc-d31e21d8-0 hDNmiN"
+      class="sc-6c8a52e-0 gpITMB"
     >
-      a beautiful test
+      a beutiful test
     </dd>
-  </div>
-  <div
-    class="sc-f3ed948-0 bmIejD"
+  </dl>
+  <dl
+    class="sc-d8bb1df0-0 aiuZt"
   >
     <dt
-      class="sc-f3ed948-1 kqSxdj"
+      class="sc-d8bb1df0-1 gYOona"
     >
       Framework: 
     </dt>
     <dd
-      class="sc-d31e21d8-0 hDNmiN"
+      class="sc-6c8a52e-0 gpITMB"
     >
       next
     </dd>
-  </div>
-  <div
-    class="sc-f3ed948-0 bmIejD"
+  </dl>
+  <dl
+    class="sc-d8bb1df0-0 aiuZt"
   >
     <dt
-      class="sc-f3ed948-1 kqSxdj"
+      class="sc-d8bb1df0-1 gYOona"
     >
       Linguagens e Ferramentas: 
     </dt>
     <dd
-      class="sc-d31e21d8-0 hDNmiN"
+      class="sc-6c8a52e-0 gpITMB"
     >
       tools
     </dd>
-  </div>
-  <div
-    class="sc-f3ed948-0 bmIejD"
+  </dl>
+  <dl
+    class="sc-d8bb1df0-0 aiuZt"
   >
     <dt
-      class="sc-f3ed948-1 kqSxdj"
+      class="sc-d8bb1df0-1 gYOona"
     >
       Estilização: 
     </dt>
     <dd
-      class="sc-d31e21d8-0 hDNmiN"
+      class="sc-6c8a52e-0 gpITMB"
     >
       styles
     </dd>
-  </div>
-  <div
-    class="sc-f3ed948-0 bmIejD"
+  </dl>
+  <dl
+    class="sc-d8bb1df0-0 aiuZt"
   >
     <dt
-      class="sc-f3ed948-1 kqSxdj"
+      class="sc-d8bb1df0-1 gYOona"
     >
       API: 
     </dt>
     <dd
-      class="sc-d31e21d8-0 hDNmiN"
+      class="sc-6c8a52e-0 gpITMB"
     >
       mock
     </dd>
-  </div>
+  </dl>
   <dd
-    class="sc-f3ed948-0 bmIejD"
+    class="sc-d8bb1df0-0 aiuZt"
   >
     <dt
-      class="sc-f3ed948-1 kqSxdj"
+      class="sc-d8bb1df0-1 gYOona"
     >
       Disponível em: 
     </dt>
     <a
-      class="sc-f3ed948-2 mxBON"
+      class="sc-d8bb1df0-2 dUbnRL"
       href="http://www.somerepo.com"
       rel="noopener noreferrer"
       target="_blank"
@@ -94,11 +94,11 @@ exports[`<CardContent/> should render a Card Details correctly 1`] = `
     >
       <iconify-icon
         icon="iconoir:github-outline"
-        style="font-size: 2.3rem;"
+        style="font-size: 1.8rem;"
       />
     </a>
     <a
-      class="sc-f3ed948-2 mxBON"
+      class="sc-d8bb1df0-2 dUbnRL"
       href="http://www.somesit.com"
       rel="noopener noreferrer"
       target="_blank"
@@ -108,6 +108,17 @@ exports[`<CardContent/> should render a Card Details correctly 1`] = `
         icon="codicon:link-external"
       />
     </a>
+    <a
+      class="sc-d8bb1df0-2 dUbnRL"
+      href="http://www.storybook.com"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="documentation for project"
+    >
+      <iconify-icon
+        icon="tabler:brand-storybook"
+      />
+    </a>
   </dd>
-</dl>
+</div>
 `;

@@ -20,17 +20,18 @@ export const DataContextProvider: React.FC = ({ children }) => {
         site: data.site,
         repo: data.repo,
         styles: data.styles,
-        api: data.api,
-        framework: data.framework,
+        api: data?.api,
+        framework: data?.framework,
         id: data.id,
-        tools: data.tools.join(' / '),
+        tools: data?.tools,
         coverDefaultLight: data.coverDefaultLight,
         coverDefaultDark: data.coverDefaultDark,
         coverAltLight: data.coverAltLight,
         coverAltDark: data.coverAltDark,
         alt: data.alt,
         route: data.route,
-        img: data.img
+        img: data.img,
+        doc: data?.doc
       }
     })
 

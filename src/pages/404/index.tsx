@@ -7,41 +7,33 @@ import { Heading } from 'components/Heading'
 import { Button } from 'components/Button'
 import { Text } from 'components/Text'
 import Image from 'next/image'
-import { useTheme } from 'styled-components'
+
 const notFoundImage = '/assets/404.svg'
-const notFoundDark = '/assets/404-green.svg'
 
 const NotFound: NextPage = () => {
   const router = useRouter()
-  const { title } = useTheme()
-  const bg = title === 'light' ? notFoundImage : notFoundDark
+
   return (
     <Fragment>
       <Head>
         <title>Manu Coutinho | Not found </title>
       </Head>
-      <StackBox center>
+      <StackBox justify='center' align='center' direction='column'>
         <StackBox direction='column' align='center' gap={1}>
-          <StackBox size='30vw'>
+          <StackBox justify='center'>
             <Image
-              width='300px'
-              height='300px'
+              width='800px'
+              height='500px'
               loading='lazy'
-              src={bg}
+              src={notFoundImage}
               alt='error image'
             />
           </StackBox>
-          <StackBox
-            direction='column'
-            justify='center'
-            align='center'
-            gap={2}
-            size='60vw'
-          >
+          <StackBox direction='column' justify='center' align='center' gap={1}>
             <Heading as='h3' size='big'>
               Opss! Como você chegou aqui?
             </Heading>
-            <Text>
+            <Text align='center'>
               Sentimos muito pelo incoveniente, mas parece que você está
               tentando acessar uma página que não existe.
             </Text>

@@ -13,20 +13,23 @@ export const Items = styled.div`
   cursor: grabbing;
 `
 export const Item = styled.div`
-  width: 100%;
-  max-height: 40rem;
-  overflow: hidden;
-
-  picture,
-  img {
+  ${() => css`
     width: 100%;
-    object-fit: fill;
-    height: auto;
-  }
+    max-height: 40rem;
 
-  @media only screen and (min-width: 90.625em) {
-    height: 60vh;
-  }
+    picture,
+    img {
+      overflow: hidden;
+      width: 100%;
+      object-fit: contain;
+      height: 100%;
+      margin: 0 auto;
+    }
+
+    @media only screen and (min-width: 90.625em) {
+      height: 60vh;
+    }
+  `}
 `
 export const ArrowLeft = styled(Icon)`
   ${({ theme }) => css`

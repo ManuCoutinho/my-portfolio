@@ -3,8 +3,9 @@ export type ContextProps = {
   site: string
   repo: string
   styles: string
-  api: string
-  framework: string
+  api: string | null
+  doc: string | null
+  framework: string | null
   name: string
   id: string
   coverDefaultLight: string
@@ -13,7 +14,7 @@ export type ContextProps = {
   coverAltDark: string
   alt: string
   route: string
-  tools?: string
+  tools?: ToolsContextProps
   img: ImgProps[]
 }
 
@@ -21,9 +22,7 @@ export interface IDataContext {
   data: ContextProps[]
 }
 
-export type ToolsContextProps = {
-  tools: Array<string>
-}
+export type ToolsContextProps = Array<string>
 
 export type ImgProps = {
   imgPng: string

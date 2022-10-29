@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const BoxDetails = styled.div`
+export const BoxDetails = styled.dl`
   ${({ theme }) => css`
     width: 100%;
     display: flex;
@@ -29,14 +29,15 @@ export const Topic = styled.dt`
     font-size: ${theme.fontSize.lg};
     white-space: pre;
     @media only screen and (max-width: 80em) {
-      white-space: normal;
+      white-space: pre-wrap;
       font-size: 1.2rem;
+      width: 15ch;
     }
   `}
 `
 export const IconLink = styled.a`
   ${({ theme }) => css`
-    font-size: ${theme.fontSize.xl};
+    font-size: ${theme.fontSize.lg};
     padding: 0.5rem;
     &:hover {
       color: ${theme.colors.active};

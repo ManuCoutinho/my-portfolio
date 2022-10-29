@@ -13,12 +13,7 @@ export const HomeSection: React.FC = () => {
         <Styled.BoxCenter>
           <AnimatedText />
           <StackBox justify='center'>
-            <a
-              href='#portfolio'
-              role='navigation'
-              rel='nofollow'
-              aria-label='Ir para portfólio'
-            >
+            <a href='#portfolio' rel='nofollow' aria-label='Ir para portfólio'>
               <Styled.Button type='button'>
                 Conheça meus projetos!
               </Styled.Button>

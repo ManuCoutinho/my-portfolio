@@ -8,7 +8,7 @@ exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
     role="navigation"
   >
     <h1
-      class="sc-7938b0ce-0 kcneYO"
+      class="sc-7938b0ce-0 gIa-dvC"
     >
       <a
         href="#home"
@@ -24,64 +24,66 @@ exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
       aria-controls="menu"
       aria-expanded="false"
       aria-haspopup="true"
+      aria-hidden="true"
       aria-label="Abrir Menu"
-      aria-labelledby="menu button"
       class="sc-d2fd35-0 bfFNCg"
+      role="button"
     >
       <iconify-icon
         icon="ph:list-bold"
       />
     </button>
     <ul
+      aria-controls=""
       aria-label="options"
-      class="sc-8eac1a3a-0 cyFmRv"
+      class="sc-8ba4dba4-0 iMFQAO"
       id="menu"
       role="menu"
     >
       <li
-        class="sc-8eac1a3a-1"
-        role="listitem"
+        aria-owns="menu"
+        class="sc-8ba4dba4-1 fhWtp"
+        role="menuitem"
       >
         <a
-          class="sc-8eac1a3a-2 hwfQKb"
+          class="sc-8ba4dba4-2 kAgogx"
           href="/#home"
-          role="menuitem"
         >
           Home
         </a>
       </li>
       <li
-        class="sc-8eac1a3a-1"
-        role="listitem"
+        aria-owns="menu"
+        class="sc-8ba4dba4-1 fhWtp"
+        role="menuitem"
       >
         <a
-          class="sc-8eac1a3a-2 hwfQKb"
+          class="sc-8ba4dba4-2 kAgogx"
           href="/#about"
-          role="menuitem"
         >
           Sobre
         </a>
       </li>
       <li
-        class="sc-8eac1a3a-1"
-        role="listitem"
+        aria-owns="menu"
+        class="sc-8ba4dba4-1 fhWtp"
+        role="menuitem"
       >
         <a
-          class="sc-8eac1a3a-2 hwfQKb"
+          class="sc-8ba4dba4-2 kAgogx"
           href="/#portfolio"
-          role="menuitem"
         >
           Portfólio
         </a>
       </li>
       <li
-        class="sc-8eac1a3a-1"
-        role="listitem"
+        aria-owns="menu"
+        class="sc-8ba4dba4-1 fhWtp"
+        role="menuitem"
       >
         <a
-          class="sc-8eac1a3a-2 hwfQKb"
+          class="sc-8ba4dba4-2 kAgogx"
           href="/#contact"
-          role="menuitem"
         >
           Contato
         </a>

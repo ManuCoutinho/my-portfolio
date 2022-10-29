@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardContent /> should match to snapshot 1`] = `
+<div
+  data-orientation="horizontal"
+  dir="ltr"
+>
+  <header
+    class="sc-99a7e3-0 bFNiUf"
+  >
+    <h4
+      class="sc-776a3b16-0 flLuIJ"
+    >
+      project
+    </h4>
+    <div
+      aria-orientation="horizontal"
+      data-orientation="horizontal"
+      role="tablist"
+      style="outline: none;"
+      tabindex="0"
+    >
+      <div
+        class="sc-9a5cd56e-0 laqpwG"
+        data-testid="stackbox"
+      >
+        <button
+          aria-controls="radix-:r6:-content-overview"
+          aria-selected="true"
+          class="sc-99a7e3-1 IFmBT"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="active"
+          id="radix-:r6:-trigger-overview"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          Visão geral
+        </button>
+        <button
+          aria-controls="radix-:r6:-content-details"
+          aria-selected="false"
+          class="sc-99a7e3-1 IFmBT"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="inactive"
+          id="radix-:r6:-trigger-details"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          Detalhes
+        </button>
+      </div>
+    </div>
+  </header>
+  <div
+    aria-labelledby="radix-:r6:-trigger-overview"
+    class="sc-99a7e3-2 lxsYa"
+    data-orientation="horizontal"
+    data-state="active"
+    id="radix-:r6:-content-overview"
+    role="tabpanel"
+    style="animation-duration: 0s;"
+    tabindex="0"
+  >
+    <div
+      class="sc-9a5cd56e-0 gjXRAA"
+      data-testid="stackbox"
+      direction="column"
+      id="overview"
+    >
+      <div
+        class="sc-e8aeb7f3-0 dbSSCK"
+      >
+        <div
+          class="sc-e8aeb7f3-1 dseQSF keen-slider"
+          data-testid="slider-img"
+        >
+          <div
+            class="sc-e8aeb7f3-2 XKspr keen-slider__slide"
+            id="img1"
+          >
+            <picture>
+              <img
+                alt="img1"
+                height="200"
+                loading="lazy"
+                src="img1.png"
+                width="500"
+              />
+              <source
+                srcset="img1.webp"
+                type="image/webp"
+              />
+            </picture>
+          </div>
+          <div
+            class="sc-e8aeb7f3-2 XKspr keen-slider__slide"
+            id="img2"
+          >
+            <picture>
+              <img
+                alt="img2"
+                height="200"
+                loading="lazy"
+                src="img2.png"
+                width="500"
+              />
+              <source
+                srcset="img2.webp"
+                type="image/webp"
+              />
+            </picture>
+          </div>
+        </div>
+        <iconify-icon
+          class="sc-e8aeb7f3-3 eolPGP"
+          classname="sc-e8aeb7f3-3 eolPGP"
+          icon="ph:caret-left"
+        />
+        <iconify-icon
+          class="sc-e8aeb7f3-4 ffYkJP"
+          classname="sc-e8aeb7f3-4 ffYkJP"
+          icon="ph:caret-right"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    aria-labelledby="radix-:r6:-trigger-details"
+    class="sc-99a7e3-2 lxsYa"
+    data-orientation="horizontal"
+    data-state="inactive"
+    hidden=""
+    id="radix-:r6:-content-details"
+    role="tabpanel"
+    tabindex="0"
+  />
+</div>
+`;

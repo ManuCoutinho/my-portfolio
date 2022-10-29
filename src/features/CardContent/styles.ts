@@ -24,9 +24,13 @@ export const TabTitle = styled(Tabs.Trigger)`
     border: 0;
     background: none;
     font-size: 1.25rem;
-
+    transition: ${theme.transition};
     &[data-state='active'] {
       color: ${theme.colors.active};
+    }
+    &:hover {
+      transform: scale(1.03);
+      transition: ${theme.transition};
     }
   `}
 `

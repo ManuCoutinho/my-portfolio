@@ -1,5 +1,4 @@
 import { useKeenSlider } from 'keen-slider/react'
-
 import { v4 as uuidv4 } from 'uuid'
 import icons from 'constants/icons'
 import { SliderProps } from './types'
@@ -14,7 +13,11 @@ const Slider: React.FC<SliderProps> = ({ img }) => {
 
   return (
     <Styled.ItemWrapper>
-      <Styled.Items ref={sliderRef} className='keen-slider'>
+      <Styled.Items
+        ref={sliderRef}
+        className='keen-slider'
+        data-testid='slider-img'
+      >
         {img?.map((data) => (
           <Styled.Item
             id={data.id}

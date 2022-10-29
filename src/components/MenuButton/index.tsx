@@ -24,7 +24,8 @@ export const MenuButton: React.FC<MenuButtonProps> = ({ open, handleOpen }) => {
       aria-controls='menu'
       aria-haspopup
       aria-label={activeAria}
-      aria-labelledby='menu button'
+      role='button'
+      aria-hidden='true'
       onClick={toggleMenu}
     >
       {!open ? <Icon icon={icons.hamburger} /> : <Icon icon={icons.x} />}
