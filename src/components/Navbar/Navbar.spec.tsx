@@ -25,8 +25,4 @@ describe('<Navbar/>', () => {
     render(<Navbar>Text</Navbar>)
     expect(screen.getByRole('navigation')).toHaveAttribute('aria-label', 'Menu')
   })
-  it('should the Navbar component match to snapshot', () => {
-    const { container } = render(<Navbar>Text</Navbar>)
-    expect(container).toMatchSnapshot()
-  })
 })
