@@ -19,9 +19,10 @@ jobs:
       - name: Jest Coverage Comment
         uses: MishaKav/jest-coverage-comment@main
         with:
-          coverage-summary-path: ./coverage/coverage-final.json
+          coverage-summary-path: ./coverage/coverage-summary.json
           title: Jest Coverage report
           badge-title: Coverage
           hide-comment: false
           create-new-comment: true
           hide-summary: false
+          coverage-path: ./coverage.txt
