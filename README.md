@@ -1,4 +1,3 @@
-
 <h1 align="center">My Portfolio</h1>
 
 <p align="center">
@@ -6,9 +5,10 @@
   <img alt="License" src="https://img.shields.io/github/license/manucoutinho/my-portfolio?color=56BEB8&style=for-the-badge">  
   <img alt="Github stars" src="https://img.shields.io/github/stars/manucoutinho/my-portfolio?color=56BEB8&style=for-the-badge" />
   <img src='https://img.shields.io/github/workflow/status/ManuCoutinho/my-portfolio/GitHub%20Actions%20Vercel%20Production%20Deployment?logo=Vercel&style=for-the-badge' alt='vercel'/>
+  <!-- Jest Coverage Comment:Begin -->
+  <!-- Jest Coverage Comment:End -->
   <img alt="Github stars" src="https://github.com/ManuCoutinho/my-portfolio/actions/workflows/release.yaml/badge.svg?branch=main" 
 </p>
-
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 

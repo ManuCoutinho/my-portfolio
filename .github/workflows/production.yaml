@@ -15,8 +15,10 @@ jobs:
         with:
           node-version: '16.x'
           cache: npm
-      - name: Install
+      - name: Install dependencies
         run: npm install
+      - name: Run tests
+        run: npm run test
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
       - name: Build Project Artifacts

@@ -1,6 +1,6 @@
 name: Update Coverage in README
 on:
-  pull_request:
+  push:
 
 jobs:
   update-coverage-in-readme:
