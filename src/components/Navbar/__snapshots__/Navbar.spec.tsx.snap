@@ -26,7 +26,7 @@ exports[`<Navbar/> should the Navbar component match to snapshot 1`] = `
       aria-haspopup="true"
       aria-hidden="true"
       aria-label="Abrir Menu"
-      class="sc-d2fd35-0 bfFNCg"
+      class="sc-8d98a060-0 eJwnvk"
       role="button"
     >
       <iconify-icon
