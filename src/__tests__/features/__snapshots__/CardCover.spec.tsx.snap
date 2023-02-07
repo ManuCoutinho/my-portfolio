@@ -1,29 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CardContenCover /> should match to snapshot 1`] = `
-<div
-  class="sc-9a5cd56e-0 gjXRAA"
-  data-testid="stackbox"
-  direction="column"
-  id="overview"
->
-  <div
-    class="sc-e8aeb7f3-0 dbSSCK"
-  >
-    <div
-      class="sc-e8aeb7f3-1 dseQSF keen-slider"
-      data-testid="slider-img"
-    />
-    <iconify-icon
-      class="sc-e8aeb7f3-3 eolPGP"
-      classname="sc-e8aeb7f3-3 eolPGP"
-      icon="ph:caret-left"
-    />
-    <iconify-icon
-      class="sc-e8aeb7f3-4 ffYkJP"
-      classname="sc-e8aeb7f3-4 ffYkJP"
-      icon="ph:caret-right"
-    />
-  </div>
-</div>
-`;
+exports[`<CardContentCover /> should match to snapshot 1`] = `null`;

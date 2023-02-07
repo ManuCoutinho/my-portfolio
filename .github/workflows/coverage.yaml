@@ -1,0 +1,18 @@
+# This workflow will install dependencies, create coverage tests and run Jest Coverage Comment
+
+name: Jest Coverage Report
+on:
+  [pull_request, push]
+  
+jobs:
+    coverage:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: ArtiomTr/jest-coverage-report-action@v2
+              id: coverage
+              with:
+                  output: report-markdown
+            - uses: marocchino/sticky-pull-request-comment@v2
+              with:
+                  message: ${{ steps.coverage.outputs.report }}

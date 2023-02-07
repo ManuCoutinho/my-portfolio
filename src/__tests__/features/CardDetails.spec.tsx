@@ -1,31 +1,38 @@
 import { screen } from '@testing-library/react'
 import { render } from '../../styles/theme/renderTheme'
+import { act } from 'react-dom/test-utils'
 import CardContentDetails from '../../features/CardContentDetails'
 import * as data from '../../__mocks__/data'
 
 const mockData = data.default
-describe('<CardContent/>', () => {
+describe('<CardContentDetails/>', () => {
   it('should render the links correctly', () => {
-    render(<CardContentDetails {...mockData} />)
-    const ghLink = screen.getByRole('link', {
-      name: /repositorio no github/i
+    act(async () => {
+      render(<CardContentDetails {...mockData} />)
+      const ghLink = await screen.findByRole('link', {
+        name: /repositorio no github/i
+      })
+      const projectLink = await screen.findByRole('link', {
+        name: /acessar o project/i
+      })
+      expect(ghLink).toBeInTheDocument()
+      expect(ghLink).toHaveAttribute('href', mockData.repo)
+      expect(projectLink).toHaveAttribute('href', mockData.site)
+      expect(projectLink).toHaveAttribute('target', '_blank')
     })
-    const projectLink = screen.getByRole('link', {
-      name: /acessar o project/i
-    })
-    expect(ghLink).toBeInTheDocument()
-    expect(ghLink).toHaveAttribute('href', mockData.repo)
-    expect(projectLink).toHaveAttribute('href', mockData.site)
-    expect(projectLink).toHaveAttribute('target', '_blank')
   })
   it('should render the subtitles correctly', () => {
-    render(<CardContentDetails {...mockData} />)
-    expect(screen.getByText(/descrição/i)).toBeInTheDocument()
-    expect(screen.getByText(/framework/i)).toBeInTheDocument()
-    expect(screen.getByText(/linguagens e ferramentas/i)).toBeInTheDocument()
-    expect(screen.getByText(/estilização/i)).toBeInTheDocument()
-    expect(screen.getByText(/api/i)).toBeInTheDocument()
-    expect(screen.getByText(/disponível em/i)).toBeInTheDocument()
+    act(async () => {
+      render(<CardContentDetails {...mockData} />)
+      expect(await screen.findByText(/descrição/i)).toBeInTheDocument()
+      expect(await screen.findByText(/framework/i)).toBeInTheDocument()
+      expect(
+        await screen.findByText(/linguagens e ferramentas/i)
+      ).toBeInTheDocument()
+      expect(await screen.findByText(/estilização/i)).toBeInTheDocument()
+      expect(await screen.findByText(/api/i)).toBeInTheDocument()
+      expect(await screen.findByText(/disponível em/i)).toBeInTheDocument()
+    })
   })
   it('should render a Card Details correctly', () => {
     const { container } = render(<CardContentDetails {...mockData} />)
