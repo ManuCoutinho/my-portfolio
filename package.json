@@ -48,7 +48,7 @@
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@iconify-icon/react": "^1.0.1",
-    "@next/eslint-plugin-next": "^12.3.1",
+    "@next/eslint-plugin-next": "^13.4.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
