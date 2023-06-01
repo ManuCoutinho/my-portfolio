@@ -46,7 +46,7 @@
     "vercel": "^19.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.3",
+    "@babel/core": "^7.22.1",
     "@iconify-icon/react": "^1.0.1",
     "@next/eslint-plugin-next": "^13.4.4",
     "@testing-library/jest-dom": "^5.16.5",
