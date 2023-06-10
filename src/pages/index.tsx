@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { HomeSection } from 'features/HomeSection'
@@ -23,6 +24,12 @@ export default function Home() {
         <Contact />
         <Footer />
       </Container>
+      <Script id='google-tag' strategy='lazyOnload'>
+        {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JCR3E3MV6M');`}
+      </Script>
     </main>
   )
 }
