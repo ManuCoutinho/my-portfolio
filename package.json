@@ -3,8 +3,8 @@
   "private": true,
   "version": "1.2.1",
   " engines": {
-    "node": "16.15.1",
-    "npm": "8.11"
+    "node": ">=18",
+    "npm": "8.19.3"
   },
   "scripts": {
     "dev": "next dev",
@@ -42,8 +42,7 @@
     "sharp": "^0.31.1",
     "styled-components": "^5.3.5",
     "typed.js": "^2.0.12",
-    "uuidv4": "^6.2.13",
-    "vercel": "^19.1.2"
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
@@ -88,6 +87,7 @@
     "stylelint-processor-styled-components": "^1.10.0",
     "ts-jest": "^29.0.3",
     "typescript": "^4.5.5",
-    "typescript-plugin-styled-components": "^2.0.0"
+    "typescript-plugin-styled-components": "^2.0.0",
+    "vercel": "^30.2.1"
   }
 }
