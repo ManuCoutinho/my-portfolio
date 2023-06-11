@@ -11,7 +11,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:css": "stylelint --fix './src/**/*.ts'",
     "test": "jest --ci --forceExit --detectOpenHandles --silent",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
@@ -24,21 +23,21 @@
     ],
     "*.{json,md}": [
       "prettier --write"
-    ],
-    "*.ts": [
-      "stylelint --fix './src/**/*.ts'"
     ]
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.0",
     "@radix-ui/react-tabs": "^1.0.0",
+    "@rollbar/react": "^0.11.1",
     "keen-slider": "^6.8.2",
     "lottie-react": "^2.3.1",
     "next": "12.2.4",
+    "next-seo": "^6.0.0",
     "nookies": "^2.5.2",
     "polished": "^4.2.2",
     "react": "18.0.0",
     "react-dom": "18.0.0",
+    "rollbar": "^2.26.1",
     "sharp": "^0.31.1",
     "styled-components": "^5.3.5",
     "typed.js": "^2.0.12",
@@ -81,10 +80,6 @@
     "next-router-mock": "^0.7.4",
     "prettier": "^2.6.2",
     "semantic-release": "^21.0.1",
-    "stylelint": "^15.6.0",
-    "stylelint-config-recommended": "^12.0.0",
-    "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.10.0",
     "ts-jest": "^29.0.3",
     "typescript": "^4.5.5",
     "typescript-plugin-styled-components": "^2.0.0",
