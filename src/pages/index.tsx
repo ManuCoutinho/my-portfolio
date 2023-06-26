@@ -38,6 +38,11 @@ export default function Home() {
         <Contact />
         <Footer />
       </Container>
+      <Script
+        strategy='lazyOnload'
+        async
+        src='https://www.googletagmanager.com/gtag/js?id=G-JCR3E3MV6M'
+      />
       <Script id='google-tag' strategy='lazyOnload'>
         {`window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

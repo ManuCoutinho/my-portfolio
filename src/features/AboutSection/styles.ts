@@ -1,21 +1,11 @@
 import styled, { keyframes, css } from 'styled-components'
 
-const rotateImg = keyframes`
+const fadeIn = keyframes`
 0%{
-    transform: rotateY(0deg);
-  }
-  25%{
-    transform: rotateY(60deg);
-  }
-  50%{
-    transform: rotateY(180deg);
-  }
-  75%{
-    transform: rotateY(240deg);
-
+    opacity: 0;
   }
   100%{
-    transform: rotateY(360deg);
+    opacity: 1;
   }
 `
 
@@ -41,7 +31,7 @@ export const Container = styled.div`
   `}
 `
 const imgAnimation = css`
-  animation: ${rotateImg} 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s 2 both;
+  animation: ${fadeIn} 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both;
 `
 
 export const WrapperImg = styled.div<{ animate: boolean }>`

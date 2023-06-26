@@ -9,7 +9,9 @@ const DEFAULT_CONTEXT: IDataContext = {
 
 export const DataContext = createContext<IDataContext>(DEFAULT_CONTEXT)
 
-export const DataContextProvider: React.FC = ({ children }) => {
+export const DataContextProvider: React.FC<{
+  children: React.ReactNode
+}> = ({ children }) => {
   const [data, setData] = useState(DEFAULT_CONTEXT.data)
 
   useEffect(() => {
