@@ -39,7 +39,7 @@ export const Card: FC<DataProps> = ({ ...props }) => {
       <Dialog.Root open={modalIsOpen} onOpenChange={setModalIsOpen}>
         <Styled.CardComponent type='button' onClick={handleOpenDetails}>
           <Styled.Image>
-            <picture>
+            {/* <picture>
               <img
                 loading='lazy'
                 width={300}
@@ -57,7 +57,7 @@ export const Card: FC<DataProps> = ({ ...props }) => {
                 }
                 type='image/webp'
               />
-            </picture>
+            </picture> */}
           </Styled.Image>
           <Styled.Div>
             <Heading size='small' as='h3'>

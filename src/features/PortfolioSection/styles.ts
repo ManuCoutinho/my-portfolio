@@ -7,10 +7,11 @@ export const PortfolioSection = styled.section`
 export const Grid = styled.div`
   max-width: clamp(80vw 1180px 100%);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: auto;
   justify-content: center;
   grid-gap: 5rem;
+  column-gap: 3rem;
   padding: 1.6rem;
 `
 

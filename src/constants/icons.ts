@@ -35,5 +35,8 @@ export default {
   graphql: 'mdi:graphql',
   figma: 'ph:figma-logo',
   testing: 'simple-icons:testinglibrary',
-  docs: 'tabler:brand-storybook'
+  docs: 'tabler:brand-storybook',
+  docker: 'devicon-plain:docker-wordmark',
+  devto: 'ph:dev-to-logo',
+  actions: 'devicon-plain:githubactions'
 }

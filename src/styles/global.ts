@@ -26,7 +26,8 @@ html {
 }
 
 body, html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
+  
 }
 
 body {
@@ -37,6 +38,7 @@ body {
    &::-webkit-scrollbar {
      width: 0.7rem;
    }
+
    /* Track */
    &::-webkit-scrollbar-track {
      background: ${theme.colors.background};

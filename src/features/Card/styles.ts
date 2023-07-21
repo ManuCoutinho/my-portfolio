@@ -10,27 +10,28 @@ const borderAnimate = keyframes`
 `
 export const CardComponent = styled.button`
   ${({ theme }) => css`
-    max-width: 20rem;
-    max-height: 20rem;
+    min-width: 300px;
+    min-height: 333px;
     height: 100%;
     width: 100%;
     padding: 1rem 1rem 2rem 1rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     border: 0;
     transition: ${theme.transition};
     position: relative;
     overflow: hidden;
     transition: ${theme.transition};
-    background: rgba(0, 0, 0, 0.05);
+    background: #fffaeb;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     z-index: 5;
     &:hover {
       padding: 0 0 2rem 0;
     }
 
-    &::before {
+    /* &::before {
       content: ' ';
       position: absolute;
       width: 100px;
@@ -39,24 +40,31 @@ export const CardComponent = styled.button`
       left: 25%;
       background: ${`linear-gradient(${theme.colors.border_1}, ${theme.colors.border_2})`};
       animation: ${borderAnimate} 6s linear infinite;
-    }
+    } */
     &::after {
       content: ' ';
       position: absolute;
-      inset: 2px;
-      background-color: ${theme.colors.bg_card};
+      /* inset: 0; */
+      width: 86%;
+      height: 80%;
+      left: 22px;
+      /* right: 10px; */
+      top: 20px;
+      background-color: #fffefa;
       background-image: linear-gradient(
         to left,
         rgba(255, 255, 255, 0.05),
         rgba(255, 255, 255, 0.05)
       );
-      border-radius: ${theme.radius.default};
+      filter: sepia(0.2);
+
+      /* border-radius: ${theme.radius.default}; */
     }
   `}
 `
 
 export const Image = styled.div`
-  /* max-height: 15rem; */
+  min-height: 15rem;
   height: 100%;
   overflow: hidden;
   z-index: 20;
@@ -64,6 +72,7 @@ export const Image = styled.div`
   img {
     z-index: 20;
     width: 100%;
+    max-height: 15rem;
     height: auto;
     object-fit: contain;
     transition: transform 0.2s ease-in-out;

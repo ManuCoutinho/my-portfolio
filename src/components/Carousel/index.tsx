@@ -82,7 +82,7 @@ export const Carousel: React.FC = () => {
       >
         {SET1.map((item) => (
           <Styled.Wrapper key={uuidv4()} className='keen-slider__slide'>
-            <Styled.Content icon={item.icon} />
+            <Styled.Content icon={item} />
           </Styled.Wrapper>
         ))}
       </Styled.Slider>
@@ -90,7 +90,7 @@ export const Carousel: React.FC = () => {
       <Styled.Slider className='keen-slider' ref={carousel2Ref}>
         {SET2.map((item) => (
           <Styled.Wrapper key={uuidv4()} className='keen-slider__slide'>
-            <Styled.Content icon={item.icon} />
+            <Styled.Content icon={item} />
           </Styled.Wrapper>
         ))}
       </Styled.Slider>
