@@ -27,11 +27,11 @@
     ]
   },
   "dependencies": {
-    "@radix-ui/react-dialog": "^1.0.0",
-    "@radix-ui/react-tabs": "^1.0.0",
+    "@radix-ui/react-dialog": "^1.0.4",
+    "@radix-ui/react-tabs": "^1.0.4",
     "@rollbar/react": "^0.11.1",
     "keen-slider": "^6.8.2",
-    "lottie-react": "^2.3.1",
+    "lottie-react": "^2.4.0",
     "next": "12.2.4",
     "next-seo": "^6.0.0",
     "nookies": "^2.5.2",
@@ -39,12 +39,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollbar": "^2.26.1",
-    "styled-components": "^5.3.5",
-    "typed.js": "^2.0.12",
+    "styled-components": "^6.0.4",
+    "stylis": "^4.3.0",
+    "typed.js": "^2.0.16",
     "uuidv4": "^6.2.13"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.3",
+    "@babel/core": "^7.22.9",
     "@iconify-icon/react": "^1.0.1",
     "@next/eslint-plugin-next": "^13.4.4",
     "@testing-library/jest-dom": "^5.16.5",
@@ -56,18 +57,15 @@
     "@types/react-dom": "^18.2.6",
     "@types/react-lottie": "^1.2.6",
     "@types/react-modal": "^3.13.1",
-    "@types/react-slick": "^0.23.8",
-    "@types/styled-components": "^5.1.24",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.18.0",
-    "babel-jest": "^29.1.2",
-    "babel-loader": "^8.2.5",
+    "babel-jest": "^29.6.1",
+    "babel-loader": "^9.1.3",
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-import-resolver-typescript": "^3.2.7",
     "eslint-plugin-jest": "^26.6.0",
-    "eslint-plugin-jsx-a11y": "^6.6.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -82,7 +80,6 @@
     "semantic-release": "^21.0.1",
     "ts-jest": "^29.0.3",
     "typescript": "^4.5.5",
-    "typescript-plugin-styled-components": "^2.0.0",
-    "vercel": "^30.2.1"
+    "vercel": "^24.2.4"
   }
 }
