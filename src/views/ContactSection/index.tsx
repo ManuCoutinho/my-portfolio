@@ -1,4 +1,4 @@
-import { LottieAnimation } from 'components/Animation'
+import FooterAnimation from 'components/Animation'
 import { SocialContacts } from 'features/SocialContacts'
 import { Heading } from 'components/Heading'
 import { StackBox } from 'components/StackBox'
@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
       </Heading>
       <Styled.Container>
         <Styled.BoxAnimation>
-          <LottieAnimation data={animationData} />
+          <FooterAnimation data={animationData} />
         </Styled.BoxAnimation>
         <StackBox direction='column' align='center' gap={1.5}>
           <Heading as='h3' size='small'>

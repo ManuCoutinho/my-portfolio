@@ -1,12 +1,12 @@
 import { SocialContacts } from 'features/SocialContacts'
-import { LottieAnimation } from 'components/Animation'
+import HomeAnimation from 'components/Animation'
 import { AnimatedText } from 'components/AnimatedText'
 import { StackBox } from 'components/StackBox'
 import animationData from 'data/home.json'
 
 import * as Styled from './styles'
 
-export const HomeSection: React.FC = () => {
+const HomeSection: React.FC = () => {
   return (
     <Styled.Container id='home'>
       <Styled.Wrapper>
@@ -21,10 +21,12 @@ export const HomeSection: React.FC = () => {
           </StackBox>
         </Styled.BoxCenter>
         <Styled.BoxLottie>
-          <LottieAnimation data={animationData} />
+          <HomeAnimation data={animationData} />
         </Styled.BoxLottie>
       </Styled.Wrapper>
       <SocialContacts showToggle direction='column' />
     </Styled.Container>
   )
 }
+
+export default HomeSection

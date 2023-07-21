@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { render } from '../../styles/theme/renderTheme'
-import Contact from '../../features/ContactSection'
+import Contact from '../../views/ContactSection'
 
 describe('<Contact/>', () => {
   it('should render title section ', () => {

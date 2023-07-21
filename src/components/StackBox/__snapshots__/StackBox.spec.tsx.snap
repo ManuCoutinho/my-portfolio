@@ -2,7 +2,7 @@
 
 exports[`<StackBox/> should render a StackBox component correctly 1`] = `
 <div
-  class="sc-9a5cd56e-0 jKQSiK"
+  class="sc-9a5cd56e-0 loufTH"
   data-testid="stackbox"
 >
   Text

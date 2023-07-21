@@ -1,19 +1,36 @@
 import Script from 'next/script'
 import dynamic from 'next/dynamic'
-import { CorporateContactJsonLd, SocialProfileJsonLd } from 'next-seo'
-import { HomeSection } from 'features/HomeSection'
+import {
+  CorporateContactJsonLd,
+  NextSeo,
+  SocialProfileJsonLd,
+  WebPageJsonLd
+} from 'next-seo'
 import { Container } from 'components/Container/styles'
 import links from 'constants/links'
+import SEO from 'constants/seo'
 
-const About = dynamic(() => import('features/AboutSection'))
-const Portfolio = dynamic(() => import('features/PortfolioSection'))
-const Contact = dynamic(() => import('features/ContactSection'))
-const Footer = dynamic(() => import('components/Footer'))
-const Header = dynamic(() => import('features/Header'))
+const About = dynamic(() => import('views/AboutSection'))
+const Portfolio = dynamic(() => import('views/PortfolioSection'))
+const Contact = dynamic(() => import('views/ContactSection'))
+const HomeSection = dynamic(() => import('views/HomeSection'))
+const Layout = dynamic(() => import('features/Layout'))
 
 export default function Home() {
   return (
-    <main>
+    <Layout>
+      <NextSeo
+        title={`${SEO.title} | Home`}
+        description={SEO.description}
+        canonical={SEO.canonical}
+        themeColor={SEO.color}
+        additionalMetaTags={[
+          {
+            property: 'keywords',
+            content: `${SEO.keywords}`
+          }
+        ]}
+      />
       <SocialProfileJsonLd
         type='Person'
         name='Emanuela Coutinho'
@@ -30,13 +47,20 @@ export default function Home() {
           }
         ]}
       />
-      <Header />
+      <WebPageJsonLd
+        id='https://www.manucoutinho.com'
+        description='Como criar um website?'
+        lastReviewed='2023-05-20T17:30:43.016Z'
+        reviewedBy={{
+          type: 'Person',
+          name: 'Emanuela Coutinho'
+        }}
+      />
       <HomeSection />
       <Container>
         <About />
         <Portfolio />
         <Contact />
-        <Footer />
       </Container>
       <Script
         strategy='lazyOnload'
@@ -49,6 +73,6 @@ export default function Home() {
             gtag('js', new Date());
             gtag('config', 'G-JCR3E3MV6M');`}
       </Script>
-    </main>
+    </Layout>
   )
 }

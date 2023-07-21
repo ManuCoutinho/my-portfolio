@@ -2,7 +2,7 @@
 
 exports[`<Footer/> should render a footer component correctly 1`] = `
 <footer
-  class="sc-929c9e9f-0 hlzEqq"
+  class="sc-929c9e9f-0 OaKkv"
   data-testid="footer"
 >
   <p>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { Description } from '../Description'
+import { Description } from 'features/Description'
 import { Carousel } from 'components/Carousel'
 import { useTheme } from 'styled-components'
 import { Heading } from 'components/Heading'

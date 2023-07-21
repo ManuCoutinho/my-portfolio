@@ -15,15 +15,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": "src",
-    "plugins": [
-      {
-        "transform": "typescript-plugin-styled-components",
-        "type": "config",
-        "ssr": true,
-        "minify": true
-      }
-    ]
+    "baseUrl": "src"
   },
   "include": [
     "next-env.d.ts",

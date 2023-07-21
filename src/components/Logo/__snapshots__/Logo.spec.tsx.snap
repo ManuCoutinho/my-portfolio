@@ -3,7 +3,7 @@
 exports[`<Logo/> should the Logo component match to snapshot 1`] = `
 <div>
   <h1
-    class="sc-7938b0ce-0 gIa-dvC"
+    class="sc-29be8c55-0 eZRCbZ"
   >
     <a
       href="#home"
@@ -11,7 +11,7 @@ exports[`<Logo/> should the Logo component match to snapshot 1`] = `
     >
       Manu
       <span>
-        Coutinho
+        Coutinho_
       </span>
     </a>
   </h1>

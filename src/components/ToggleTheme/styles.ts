@@ -4,7 +4,7 @@ export const Switch = styled.button`
   ${({ theme }) => css`
     border: 0;
     outline: 0;
-    color: ${theme.colors.secondary};
+    color: ${theme.colors.primary};
     font-size: ${theme.fontSize.xl};
 
     background: transparent;

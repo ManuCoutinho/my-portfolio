@@ -2,7 +2,7 @@ import { useState, FC } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { useData } from 'hooks/useData'
 import { Heading } from 'components/Heading'
-import { Card } from '../Card'
+import { Card } from 'features/Card'
 import projects from 'data/projects'
 import * as Styled from './styles'
 

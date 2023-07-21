@@ -37,7 +37,7 @@ const customJestConfig = {
     '<rootDir>/.out/',
     '/public/'
   ],
-  setupFilesAfterEnv: ['<rootDir>/.jest/jest.setup.ts', 'jest-canvas-mock'],
+  setupFilesAfterEnv: ['<rootDir>/config/jest.setup.ts', 'jest-canvas-mock'],
   transformIgnorePatterns: ['/node_modules/']
 }
 const createJestConfig = nextJest({

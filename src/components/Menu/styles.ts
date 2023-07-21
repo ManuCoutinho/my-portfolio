@@ -24,7 +24,7 @@ export const MenuList = styled.ul<MenuStyleProps>`
 `
 export const MenuItem = styled.li<{ active?: boolean }>`
   ${({ active, theme }) => css`
-    color: ${theme.colors.info};
+    color: ${theme.colors.primary};
     text-shadow: ${active && ` 0 2px 3px ${theme.colors.highlight}`};
   `}
 `
@@ -36,7 +36,7 @@ export const NavLink = styled.a`
     font-size: 1.15rem;
 
     &:hover {
-      color: ${theme.colors.text};
+      color: ${theme.colors.primary};
       text-shadow: 0 2px 3px ${theme.colors.highlight};
       transition: color ease-in-out 0.25s;
     }

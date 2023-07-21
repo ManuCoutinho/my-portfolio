@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { render } from '../../styles/theme/renderTheme'
-import About from '../../features/AboutSection'
+import About from '../../views/AboutSection'
 
 describe('<About />', () => {
   it('should render About section components correctly', () => {

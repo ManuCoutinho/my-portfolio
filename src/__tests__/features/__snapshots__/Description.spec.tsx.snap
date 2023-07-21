@@ -2,12 +2,12 @@
 
 exports[`<Description/> should match to snapshot 1`] = `
 <div
-  class="sc-9a5cd56e-0 sc-f32d69d5-0 gjXRAA hvqGxX"
+  class="sc-9a5cd56e-0 sc-12a7bdd2-0 ckLZLp iuSUVw"
   direction="column"
   role="definition"
 >
   <h3
-    class="sc-776a3b16-0 flLuIJ"
+    class="sc-395b592-0 dENwrR"
   >
     <span>
       Olá, sou
@@ -15,22 +15,22 @@ exports[`<Description/> should match to snapshot 1`] = `
      Manu Coutinho!
   </h3>
   <p
-    class="sc-6c8a52e-0 gpITMB"
+    class="sc-6c8a52e-0 ffGzdG"
   >
     Eu sou uma desenvolvedora front-end, movida por uma paixão em construir coisas capazes de integrar diversos universos por meio da tecnologia.
   </p>
   <p
-    class="sc-6c8a52e-0 gpITMB"
+    class="sc-6c8a52e-0 ffGzdG"
   >
     Gosto de desenvolver interfaces dinâmicas, de alta fidelidade e com designs pensados para transferir a melhor experiência ao usuário final.
   </p>
   <p
-    class="sc-6c8a52e-0 gpITMB"
+    class="sc-6c8a52e-0 ffGzdG"
   >
     Minha abordagem para a resolução de problemas é altamente inclusiva, colaborativa e centrada no ser humano.
   </p>
   <p
-    class="sc-6c8a52e-0 gpITMB"
+    class="sc-6c8a52e-0 ffGzdG"
   >
     Aqui, compartillho alguns dos meus projetos!
   </p>

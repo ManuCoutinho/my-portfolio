@@ -53,8 +53,6 @@ declare module 'styled-components' {
       bg_modal: string
       disabled: string
       active: string
-      border_1: string
-      border_2: string
     }
   }
 }

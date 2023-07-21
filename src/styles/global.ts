@@ -27,6 +27,7 @@ html {
 
 body, html {
   scroll-behavior: smooth;
+  font-smooth: antialiased;
   
 }
 

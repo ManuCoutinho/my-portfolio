@@ -4,7 +4,7 @@ exports[`<ToggleTheme/> should the Toggle Theme match to snapshot 1`] = `
 <button
   aria-checked="false"
   aria-label="switch theme"
-  class="sc-67728be7-0 jeOfcL"
+  class="sc-357439c3-0 geazMZ"
   role="switch"
   type="button"
 >

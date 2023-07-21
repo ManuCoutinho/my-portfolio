@@ -3,7 +3,7 @@
 exports[`<SocialLink/> should the Social Link component match to snapshot 1`] = `
 <div>
   <a
-    class="sc-75150875-0 kcnxVz"
+    class="sc-75150875-0 hNFWqP"
     href="#"
     rel="noopener noreferrer"
     target="_blank"

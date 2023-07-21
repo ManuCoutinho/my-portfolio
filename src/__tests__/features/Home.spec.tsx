@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { render } from '../../styles/theme/renderTheme'
-import { HomeSection } from '../../features/HomeSection'
+import HomeSection from '../../views/HomeSection'
 
 describe('<HomeSection/>', () => {
   it('should render a animated text', () => {

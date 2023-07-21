@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 export const Logo = styled.h1`
   ${({ theme }) => css`
     font-size: ${theme.fontSize.xlg};
+    color: ${theme.colors.primary};
     font-weight: ${theme.fontWeight.bold};
     letter-spacing: -3px;
     text-shadow: -2px -1px 3px ${theme.colors.highlight};

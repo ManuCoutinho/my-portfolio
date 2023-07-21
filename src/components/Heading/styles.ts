@@ -3,7 +3,7 @@ import { HeadingStyleProps } from './types'
 
 const variant = {
   small: (theme: DefaultTheme) => css`
-    color: ${theme.colors.info};
+    color: ${theme.colors.primary};
     font-family: ${theme.font.text};
     font-size: ${theme.fontSize.lg};
     font-weight: ${theme.fontWeight.semibold};

@@ -15,7 +15,7 @@ const display = {
 }
 export const Container = styled.nav<StyleProps>`
   ${({ theme, direction }) => css`
-    color: ${theme.colors.secondary};
+    color: ${theme.colors.primary};
     transition: ${theme.transition};
     display: flex;
     ${display[direction]};
