@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "1.2.1",
+  "version": "2.0.0",
   " engines": {
     "node": ">=18.16",
     "npm": "9.5.1"
@@ -12,14 +12,14 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --ci --forceExit --detectOpenHandles --silent",
-    "test:watch": "jest --watchAll",
-    "test:coverage": "jest --coverage",
-    "prepare": "husky install",
-    "slicemachine": "start-slicemachine"
+    "test:watch": "jest --watch --logHeapUsage",
+    "coverage": "jest --coverage",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "eslint src --fix"
+      "eslint src --fix",
+      "jest --passWithNoTests --bail"
     ],
     "*.{json,md}": [
       "prettier --write"

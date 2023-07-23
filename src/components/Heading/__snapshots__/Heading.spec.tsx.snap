@@ -3,7 +3,7 @@
 exports[`<Heading/> should render a Heading component correctly  1`] = `
 <div>
   <h2
-    class="sc-395b592-0 hOIktf"
+    class="sc-94e9b77b-0 dbunNU"
   >
     Text
   </h2>

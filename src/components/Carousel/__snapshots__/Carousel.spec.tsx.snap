@@ -3,252 +3,252 @@
 exports[`<Carousel /> should match to snapshot 1`] = `
 <div>
   <div
-    class="sc-3ba3f456-0 hQVxqH"
+    class="sc-4f100a55-0 cSZsNv"
   >
     <h4
-      class="sc-395b592-0 dENwrR"
+      class="sc-94e9b77b-0 qYMbF"
     >
       Minhas Skills:
     </h4>
     <div
-      class="sc-3ba3f456-1 fStlzn keen-slider"
+      class="sc-4f100a55-1 jHNCwP keen-slider"
       data-testid="slider"
     >
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="akar-icons:html-fill"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="mdi:jquery"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="fa-brands:react"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="fa-brands:sass"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="ion:logo-javascript"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="mdi:nodejs"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="file-icons:storybook"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="file-icons:sentry"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="mdi:graphql"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="ph:figma-logo"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="simple-icons:testinglibrary"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="fa-brands:github"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="devicon-plain:docker-wordmark"
         />
       </div>
     </div>
     <div
-      class="sc-3ba3f456-1 fStlzn keen-slider"
+      class="sc-4f100a55-1 jHNCwP keen-slider"
     >
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="file-icons:typescript-alt"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="file-icons:styledcomponents"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="file-icons:nextjs"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="file-icons:vite"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="simple-icons:jamstack"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="file-icons:tailwind"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="simple-icons:mui"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="simple-icons:chakraui"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="file-icons:jest"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="devicon-plain:githubactions"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="fa-brands:bootstrap"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="akar-icons:css-fill"
         />
       </div>
       <div
-        class="sc-3ba3f456-2 jFQUeO keen-slider__slide"
+        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
       >
         <iconify-icon
-          class="sc-3ba3f456-3 fAyqru"
-          classname="sc-3ba3f456-3 fAyqru"
+          class="sc-4f100a55-3 upgPG"
+          classname="sc-4f100a55-3 upgPG"
           icon="fa-brands:git-alt"
         />
       </div>

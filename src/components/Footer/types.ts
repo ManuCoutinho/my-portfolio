@@ -1,3 +1,3 @@
 export interface FooterProps {
-  bgPage?: boolean
+	bgPage?: boolean
 }

@@ -1,32 +1,30 @@
-import { SocialContacts } from 'features/SocialContacts'
+import { useRouter } from 'next/router'
 import HomeAnimation from 'components/Animation'
 import { AnimatedText } from 'components/AnimatedText'
-import { StackBox } from 'components/StackBox'
-import animationData from 'data/home.json'
+import { Button } from 'components/Button'
+import { SocialLinks } from 'features/SocialLinks'
 
+import animationData from 'data/home.json'
 import * as Styled from './styles'
 
 const HomeSection: React.FC = () => {
-  return (
-    <Styled.Container id='home'>
-      <Styled.Wrapper>
-        <Styled.BoxCenter>
-          <AnimatedText />
-          <StackBox justify='center'>
-            <a href='#portfolio' rel='nofollow' aria-label='Ir para portfólio'>
-              <Styled.Button type='button'>
-                Conheça meus projetos!
-              </Styled.Button>
-            </a>
-          </StackBox>
-        </Styled.BoxCenter>
-        <Styled.BoxLottie>
-          <HomeAnimation data={animationData} />
-        </Styled.BoxLottie>
-      </Styled.Wrapper>
-      <SocialContacts showToggle direction='column' />
-    </Styled.Container>
-  )
+	const { push } = useRouter()
+	return (
+		<Styled.Container id='home'>
+			<Styled.Wrapper>
+				<Styled.BoxCenter>
+					<AnimatedText />
+					<Button onClick={() => push('/#portfolio')} size='full'>
+						Conheça meus projetos!
+					</Button>
+				</Styled.BoxCenter>
+				<Styled.BoxLottie>
+					<HomeAnimation data={animationData} />
+				</Styled.BoxLottie>
+			</Styled.Wrapper>
+			<SocialLinks showToggle direction='column' hideIcon={['email']} />
+		</Styled.Container>
+	)
 }
 
 export default HomeSection

@@ -1,2 +1,5 @@
-import { CardContentCoverProps } from 'features/CardContentCover/types'
-export type SliderProps = CardContentCoverProps
+import { ImgType } from '@models/data'
+
+export type SliderProps = {
+	img: ImgType[]
+}
