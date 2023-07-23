@@ -4,31 +4,31 @@ import * as Styled from './styles'
 import { MenuButtonProps } from './types'
 
 export const MenuButton: React.FC<MenuButtonProps> = ({ open, handleOpen }) => {
-  let expanded = false
-  const activeAria = open ? 'Fechar Menu' : 'Abrir Menu'
+	let expanded = false
+	const activeAria = open ? 'Fechar Menu' : 'Abrir Menu'
 
-  const toggleMenu = (event: React.SyntheticEvent) => {
-    if (event.type === 'touchstart') {
-      event.preventDefault()
-    }
-    if (event.type === 'clickaway') {
-      handleOpen(!open)
-    }
-    handleOpen(!open)
-    expanded = true
-  }
+	const toggleMenu = (event: React.SyntheticEvent) => {
+		if (event.type === 'touchstart') {
+			event.preventDefault()
+		}
+		if (event.type === 'clickaway') {
+			handleOpen(!open)
+		}
+		handleOpen(!open)
+		expanded = true
+	}
 
-  return (
-    <Styled.MenuIcon
-      aria-expanded={expanded}
-      aria-controls='menu'
-      aria-haspopup
-      aria-label={activeAria}
-      role='button'
-      aria-hidden='true'
-      onClick={toggleMenu}
-    >
-      {!open ? <Icon icon={icons.hamburger} /> : <Icon icon={icons.x} />}
-    </Styled.MenuIcon>
-  )
+	return (
+		<Styled.MenuIcon
+			aria-expanded={expanded}
+			aria-controls='menu'
+			aria-haspopup
+			aria-label={activeAria}
+			role='button'
+			aria-hidden='true'
+			onClick={toggleMenu}
+		>
+			{!open ? <Icon icon={icons.hamburger} /> : <Icon icon={icons.x} />}
+		</Styled.MenuIcon>
+	)
 }
