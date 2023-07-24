@@ -1,4 +1,4 @@
-import { DataContextProvider } from './DataContext/DataContext'
+import { DataContextProvider } from './DataContext'
 import { ThemeContextProvider } from './ThemeContext'
 
 const GlobalContext: React.FC<{

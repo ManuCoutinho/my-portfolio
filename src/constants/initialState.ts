@@ -1,4 +1,4 @@
-import { ContextProps } from 'contexts/DataContext/types'
+import { DataType } from '@models/data'
 
 export default {
 	name: '',
@@ -11,10 +11,8 @@ export default {
 	id: '',
 	doc: '',
 	tools: [''],
-	coverDefaultLight: '',
-	coverDefaultDark: '',
-	coverAltLight: '',
-	coverAltDark: '',
+	coverDefault: '',
+	coverAlt: '',
 	alt: '',
 	route: '',
 	img: [
@@ -25,4 +23,4 @@ export default {
 			id: ''
 		}
 	]
-} as ContextProps
+} as DataType

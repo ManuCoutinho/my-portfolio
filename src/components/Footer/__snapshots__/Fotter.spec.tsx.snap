@@ -1,18 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Footer/> should render a footer component correctly 1`] = `
-<footer
-  class="sc-929c9e9f-0 OaKkv"
-  data-testid="footer"
->
-  <p>
-    Copyright © 2022 Todos os direitos reservados. 
-  </p>
-  <p>
-    Designed by 
-    <span>
-      Manu Coutinho.
-    </span>
-  </p>
-</footer>
+exports[`<Footer/> should match to snapshot 1`] = `
+<div>
+  <footer
+    class="sc-96ea4fb1-0 eRTjlb"
+    data-testid="footer"
+  >
+    <p>
+      Copyright © 2023 Todos os direitos reservados. 
+    </p>
+    <p>
+      Designed by 
+      <span>
+        Manu Coutinho.
+      </span>
+    </p>
+  </footer>
+</div>
 `;

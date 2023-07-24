@@ -32,7 +32,6 @@ describe('<Navbar/>', () => {
 			value: 500
 		})
 		render(<Navbar />)
-		screen.debug()
 		const menu = screen.getByRole('menu')
 		const about = screen.getByRole('menuitem', { name: /sobre/i })
 		expect(menu).toHaveAttribute('data-state', 'close')

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const BoxDetails = styled.dl`
+export const BoxDetails = styled.div`
 	${({ theme }) => css`
 		width: 100%;
 		display: flex;

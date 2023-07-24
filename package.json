@@ -18,7 +18,8 @@
 	},
 	"lint-staged": {
 		"*.{ts,tsx}": [
-			"eslint src --fix"
+			"eslint src --fix --max-warnings=0",
+			"jest --findRelatedTests --bail"
 		],
 		"*.{json,md}": [
 			"prettier --write"

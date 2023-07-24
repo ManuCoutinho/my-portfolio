@@ -10,33 +10,45 @@ import * as Styled from './styles'
 
 const CardContentDetails: React.FC<DataType> = ({ ...props }) => {
 	return (
-		<StackBox id='details' direction='column' gap={1} px='1.5rem'>
+		<StackBox id='details' direction='column' gap={1} px='1.5rem' as='dl'>
 			<Styled.BoxDetails>
-				<Styled.Topic>Descrição: </Styled.Topic>
-				<Text as='dd'>{props.description}</Text>
+				<Styled.Topic aria-label='description'>Descrição: </Styled.Topic>
+				<Text as='dd' aria-label={props.description}>
+					{props.description}
+				</Text>
 			</Styled.BoxDetails>
 			{props.framework && (
 				<Styled.BoxDetails>
-					<Styled.Topic>Framework: </Styled.Topic>
-					<Text as='dd'>{props.framework}</Text>
+					<Styled.Topic aria-label={'Framework'}>Framework: </Styled.Topic>
+					<Text as='dd' aria-label={props.framework}>
+						{props.framework}
+					</Text>
 				</Styled.BoxDetails>
 			)}
 			<Styled.BoxDetails>
-				<Styled.Topic>Linguagens e Ferramentas: </Styled.Topic>
-				<Text as='dd'>{props.tools?.join(' / ')}</Text>
+				<Styled.Topic aria-label={'tools'}>
+					Linguagens e Ferramentas:{' '}
+				</Styled.Topic>
+				<Text as='dd' aria-label={props.tools}>
+					{props.tools?.join(' / ')}
+				</Text>
 			</Styled.BoxDetails>
 			<Styled.BoxDetails>
-				<Styled.Topic>Estilização: </Styled.Topic>
-				<Text as='dd'>{props.styles}</Text>
+				<Styled.Topic aria-label={'style'}>Estilização: </Styled.Topic>
+				<Text as='dd' aria-label={props.styles}>
+					{props.styles}
+				</Text>
 			</Styled.BoxDetails>
 			{props.api && (
 				<Styled.BoxDetails>
-					<Styled.Topic>API: </Styled.Topic>
-					<Text as='dd'>{props.api}</Text>
+					<Styled.Topic aria-label={'api'}>API: </Styled.Topic>
+					<Text as='dd' aria-label={props.api}>
+						{props.api}
+					</Text>
 				</Styled.BoxDetails>
 			)}
-			<Styled.BoxDetails as='dd'>
-				<Styled.Topic>Disponível em: </Styled.Topic>
+			<Styled.BoxDetails>
+				<Styled.Topic aria-label={'available'}>Disponível em: </Styled.Topic>
 				<Link href={props.repo} passHref>
 					<Styled.IconLink
 						target='_blank'

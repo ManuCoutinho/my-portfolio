@@ -1,29 +1,31 @@
 import { screen } from '@testing-library/react'
-import { render } from '../../__mocks__/customRender'
+import { render } from '__mocks__/customRender'
+import mockRouter from 'next-router-mock'
 import HomeSection from '.'
 
+jest.mock('next/router', () => require('next-router-mock'))
+
 describe('<HomeSection/>', () => {
-	it('should render a animated text', () => {
+	beforeEach(() => {
+		mockRouter.setCurrentUrl('/')
+		mockRouter.asPath
+	})
+	it('should render the section correctly', () => {
 		const { container } = render(<HomeSection />)
 		const animatedText = screen.getByTestId('animated-text')
 		expect(container.firstChild).toContainElement(animatedText)
-	})
-	it('should render a link to portfolio section', () => {
-		render(<HomeSection />)
 		expect(
-			screen.getByRole('link', {
-				hidden: true,
-				name: /ir para portfólio/i
+			screen.getByRole('button', {
+				name: /conheça meus projetos/i
 			})
 		).toBeInTheDocument()
-	})
-	it('should render social contacts component', () => {
-		const { container } = render(<HomeSection />)
 		const socialContacts = screen.getByRole('navigation')
 		expect(container).toContainElement(socialContacts)
-	})
-	it('should render social contacts component with showToggle prop', () => {
-		render(<HomeSection />)
 		expect(screen.getByRole('switch')).toBeInTheDocument()
+	})
+
+	it('should match to snapshot', () => {
+		const { container } = render(<HomeSection />)
+		expect(container).toMatchSnapshot()
 	})
 })

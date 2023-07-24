@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardContentDetails /> should match to snapshot 1`] = `
+<div>
+  <dl
+    class="sc-ce9dac95-0 bkDPty"
+    data-testid="stackbox"
+    direction="column"
+    gap="1"
+    id="details"
+    px="1.5rem"
+  >
+    <div
+      class="sc-bc329a75-0 gbjSaM"
+    >
+      <dt
+        aria-label="description"
+        class="sc-bc329a75-1 ifNFYe"
+      >
+        Descrição: 
+      </dt>
+      <dd
+        class="sc-f89260d2-0 eyKYlB"
+      >
+        a belezura de test
+      </dd>
+    </div>
+    <div
+      class="sc-bc329a75-0 gbjSaM"
+    >
+      <dt
+        aria-label="Framework"
+        class="sc-bc329a75-1 ifNFYe"
+      >
+        Framework: 
+      </dt>
+      <dd
+        class="sc-f89260d2-0 eyKYlB"
+      >
+        next
+      </dd>
+    </div>
+    <div
+      class="sc-bc329a75-0 gbjSaM"
+    >
+      <dt
+        aria-label="tools"
+        class="sc-bc329a75-1 ifNFYe"
+      >
+        Linguagens e Ferramentas:
+         
+      </dt>
+      <dd
+        class="sc-f89260d2-0 eyKYlB"
+      >
+        tools
+      </dd>
+    </div>
+    <div
+      class="sc-bc329a75-0 gbjSaM"
+    >
+      <dt
+        aria-label="style"
+        class="sc-bc329a75-1 ifNFYe"
+      >
+        Estilização: 
+      </dt>
+      <dd
+        class="sc-f89260d2-0 eyKYlB"
+      >
+        styles
+      </dd>
+    </div>
+    <div
+      class="sc-bc329a75-0 gbjSaM"
+    >
+      <dt
+        aria-label="api"
+        class="sc-bc329a75-1 ifNFYe"
+      >
+        API: 
+      </dt>
+      <dd
+        class="sc-f89260d2-0 eyKYlB"
+      >
+        mock
+      </dd>
+    </div>
+    <div
+      class="sc-bc329a75-0 gbjSaM"
+    >
+      <dt
+        aria-label="available"
+        class="sc-bc329a75-1 ifNFYe"
+      >
+        Disponível em: 
+      </dt>
+      <a
+        class="sc-bc329a75-2 eFEWPK"
+        href="http://www.somerepo.com"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="repositorio no github"
+      >
+        <iconify-icon
+          icon="iconoir:github-outline"
+          style="font-size: 1.8rem;"
+        />
+      </a>
+      <a
+        class="sc-bc329a75-2 eFEWPK"
+        href="http://www.somesite.com"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="acessar o project"
+      >
+        <iconify-icon
+          icon="codicon:link-external"
+        />
+      </a>
+      <a
+        class="sc-bc329a75-2 eFEWPK"
+        href="http://www.storybook.com"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="documentation for project"
+      >
+        <iconify-icon
+          icon="tabler:brand-storybook"
+        />
+      </a>
+    </div>
+  </dl>
+</div>
+`;

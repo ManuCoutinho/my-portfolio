@@ -21,7 +21,6 @@ describe('<Carousel />', () => {
 		expect(slider).toBeInTheDocument()
 		expect(slider).toHaveClass('keen-slider')
 		expect(slider.firstChild).toHaveClass('keen-slider__slide')
-		screen.debug()
 	})
 	it('should match to snapshot', () => {
 		const { container } = render(<Carousel />)

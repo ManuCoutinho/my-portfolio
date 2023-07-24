@@ -7,7 +7,7 @@ const mockFn = jest.fn()
 const state = false
 jest.spyOn(React, 'useState')
 describe('<MenuButton/>', () => {
-	it('should render a closed Menu button', async () => {
+	it('should render a closed Menu button', () => {
 		render(<MenuButton open={state} handleOpen={() => mockFn(!state)} />)
 		const menuButton = screen.getByRole('button', {
 			hidden: true,
@@ -17,7 +17,7 @@ describe('<MenuButton/>', () => {
 		expect(menuButton?.firstChild).toHaveProperty('icon', icons.hamburger)
 	})
 	it('should render a opened Menu button', () => {
-		render(<MenuButton open={true} handleOpen={() => mockFn(false)} />)
+		render(<MenuButton open={!state} handleOpen={() => mockFn(!state)} />)
 		const menuButton = screen.getByRole('button', {
 			hidden: true,
 			expanded: false

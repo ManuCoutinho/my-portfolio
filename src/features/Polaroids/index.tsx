@@ -39,19 +39,21 @@ export const Polaroids: FC<PolaroidsProps> = ({ animate, data }) => {
 				data-state={animate ? 'active' : 'inactive'}
 			>
 				<Styled.Polaroid onClick={handleOpenDetails}>
-					<Styled.Picture>
-						<picture>
-							<Image
-								loading='lazy'
-								width={300}
-								height={350}
-								alt={data.alt}
-								quality={80}
-								src={data.coverAlt}
-							/>
-							<source srcSet={data.coverDefault} type='image/webp' />
-						</picture>
-					</Styled.Picture>
+					{data.coverDefault && (
+						<Styled.Picture>
+							<picture>
+								<Image
+									loading='lazy'
+									width={300}
+									height={350}
+									alt={data.alt}
+									quality={80}
+									src={data.coverAlt}
+								/>
+								<source srcSet={data.coverDefault} type='image/webp' />
+							</picture>
+						</Styled.Picture>
+					)}
 				</Styled.Polaroid>
 				<Styled.Label>
 					<Heading size='small' as='h3'>

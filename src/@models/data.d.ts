@@ -1,4 +1,4 @@
-export type DataType = {
+export interface DataType {
 	description: string
 	site: string
 	repo: string

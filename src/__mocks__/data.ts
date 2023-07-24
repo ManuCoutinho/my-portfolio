@@ -10,8 +10,8 @@ export default {
 	tools: ['tools'],
 	id: '81j37ldd-3k344',
 	doc: 'http://www.storybook.com',
-	coverDefault: 'img.png',
-	coverAlt: 'image.webp',
+	coverDefault: '/assets/preview.png',
+	coverAlt: '/public/assets/preview.png',
 	alt: 'mock img',
 	img: mockImg,
 	route: '/test'

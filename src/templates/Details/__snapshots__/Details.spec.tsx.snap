@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DetailsTemplate /> should render the Details template correctly 1`] = `
+<div>
+  <main
+    class="sc-aadb450-1 bkpEWR"
+  >
+    <div
+      align="center"
+      class="sc-ce9dac95-0 ipIuUD"
+      data-testid="stackbox"
+      direction="column"
+      justify="center"
+    >
+      <h2
+        class="sc-94e9b77b-0 dbunNU"
+      >
+        project
+      </h2>
+      <dl
+        class="sc-ce9dac95-0 bkDPty"
+        data-testid="stackbox"
+        direction="column"
+        gap="1"
+        id="details"
+        px="1.5rem"
+      >
+        <div
+          class="sc-bc329a75-0 gbjSaM"
+        >
+          <dt
+            aria-label="description"
+            class="sc-bc329a75-1 ifNFYe"
+          >
+            Descrição: 
+          </dt>
+          <dd
+            class="sc-f89260d2-0 eyKYlB"
+          >
+            a belezura de test
+          </dd>
+        </div>
+        <div
+          class="sc-bc329a75-0 gbjSaM"
+        >
+          <dt
+            aria-label="Framework"
+            class="sc-bc329a75-1 ifNFYe"
+          >
+            Framework: 
+          </dt>
+          <dd
+            class="sc-f89260d2-0 eyKYlB"
+          >
+            next
+          </dd>
+        </div>
+        <div
+          class="sc-bc329a75-0 gbjSaM"
+        >
+          <dt
+            aria-label="tools"
+            class="sc-bc329a75-1 ifNFYe"
+          >
+            Linguagens e Ferramentas:
+             
+          </dt>
+          <dd
+            class="sc-f89260d2-0 eyKYlB"
+          >
+            tools
+          </dd>
+        </div>
+        <div
+          class="sc-bc329a75-0 gbjSaM"
+        >
+          <dt
+            aria-label="style"
+            class="sc-bc329a75-1 ifNFYe"
+          >
+            Estilização: 
+          </dt>
+          <dd
+            class="sc-f89260d2-0 eyKYlB"
+          >
+            styles
+          </dd>
+        </div>
+        <div
+          class="sc-bc329a75-0 gbjSaM"
+        >
+          <dt
+            aria-label="api"
+            class="sc-bc329a75-1 ifNFYe"
+          >
+            API: 
+          </dt>
+          <dd
+            class="sc-f89260d2-0 eyKYlB"
+          >
+            mock
+          </dd>
+        </div>
+        <div
+          class="sc-bc329a75-0 gbjSaM"
+        >
+          <dt
+            aria-label="available"
+            class="sc-bc329a75-1 ifNFYe"
+          >
+            Disponível em: 
+          </dt>
+          <a
+            class="sc-bc329a75-2 eFEWPK"
+            href="http://www.somerepo.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="repositorio no github"
+          >
+            <iconify-icon
+              icon="iconoir:github-outline"
+              style="font-size: 1.8rem;"
+            />
+          </a>
+          <a
+            class="sc-bc329a75-2 eFEWPK"
+            href="http://www.somesite.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="acessar o project"
+          >
+            <iconify-icon
+              icon="codicon:link-external"
+            />
+          </a>
+          <a
+            class="sc-bc329a75-2 eFEWPK"
+            href="http://www.storybook.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="documentation for project"
+          >
+            <iconify-icon
+              icon="tabler:brand-storybook"
+            />
+          </a>
+        </div>
+      </dl>
+      <button
+        class="sc-6f4a4d4b-0 kuwVUN"
+        type="button"
+      >
+        Voltar
+      </button>
+    </div>
+    <footer
+      class="sc-96ea4fb1-0 khWurU"
+      data-testid="footer"
+    >
+      <p>
+        Copyright © 2023 Todos os direitos reservados. 
+      </p>
+      <p>
+        Designed by 
+        <span>
+          Manu Coutinho.
+        </span>
+      </p>
+    </footer>
+  </main>
+</div>
+`;

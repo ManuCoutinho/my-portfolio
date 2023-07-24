@@ -5,7 +5,7 @@ export function useAnimate(ref: React.RefObject<HTMLDivElement>) {
 
 	React.useEffect(() => {
 		function listenScrollToImg() {
-			const imgOffsetWidth = ref.current && ref.current.offsetTop - 100
+			const imgOffsetWidth = ref.current && ref.current.offsetTop - 600
 
 			const winScroll = document.documentElement.scrollTop
 

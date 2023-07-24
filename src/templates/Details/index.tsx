@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
-import { useTheme } from 'styled-components'
 import { NextSeo } from 'next-seo'
 
 import { useData } from 'hooks/useData'
@@ -22,8 +21,6 @@ const Body = dynamic(
 
 function DetailsTemplate(): JSX.Element {
 	const [object, setObject] = useState<DataType>(initialState)
-
-	const { colors } = useTheme()
 	const router = useRouter()
 	const { data } = useData()
 	const param = router.query
@@ -37,7 +34,7 @@ function DetailsTemplate(): JSX.Element {
 		<MobileContainer>
 			<NextSeo
 				title={`${SEO.title} | ${object?.name}`}
-				description={object.description}
+				description={object?.description}
 				canonical={SEO.canonical}
 				themeColor={SEO.color}
 				additionalMetaTags={[
