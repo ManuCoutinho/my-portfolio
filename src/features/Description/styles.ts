@@ -26,7 +26,9 @@ export const Wrapper = styled(Container)`
 			}
 
 			@media only screen and (max-width: 67.5em) {
-				${slideInBottomAnimation};
+				p {
+					${slideInBottomAnimation};
+				}
 			}
 		}
 	`}
