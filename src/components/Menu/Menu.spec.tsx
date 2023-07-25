@@ -9,15 +9,15 @@ jest.mock('next/router', () => require('next-router-mock'))
 jest.spyOn(React, 'useState')
 describe('<Menu/>', () => {
 	beforeEach(() => {
-		mockRouter.setCurrentUrl('/#home')
+		mockRouter.setCurrentUrl('/home#home')
 		mockRouter.asPath
 	})
 	it('should render the mock route', () => {
 		const { result } = renderHook(() => {
 			return useRouter()
 		})
-		expect(result.current).toMatchObject({ pathname: '/' })
-		expect(result.current).toMatchObject({ asPath: '/#home' })
+		expect(result.current).toMatchObject({ pathname: '/home' })
+		expect(result.current).toMatchObject({ asPath: '/home#home' })
 	})
 	it('should render a Menu correctly', () => {
 		render(<Menu />)

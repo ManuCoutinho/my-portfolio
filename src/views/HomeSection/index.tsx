@@ -14,7 +14,7 @@ const HomeSection: React.FC = () => {
 			<Styled.Wrapper>
 				<Styled.BoxCenter>
 					<AnimatedText />
-					<Button onClick={() => push('/#portfolio')} size='full'>
+					<Button onClick={() => push('/home/#portfolio')} size='full'>
 						Conheça meus projetos!
 					</Button>
 				</Styled.BoxCenter>

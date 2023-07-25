@@ -20,7 +20,7 @@ export const Polaroids: FC<PolaroidsProps> = ({ animate, data }) => {
 	const { isTouchDevice } = useMediaMobile()
 
 	const handleCloseModal = () => {
-		router.push('/#portfolio')
+		router.push('/home/#portfolio')
 	}
 
 	function handleOpenDetails() {

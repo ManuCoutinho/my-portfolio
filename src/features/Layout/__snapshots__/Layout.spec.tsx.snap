@@ -53,7 +53,7 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
           >
             <a
               class="sc-a165f114-2 knHxGt"
-              href="/#home"
+              href="/home#home"
             >
               Home
             </a>
@@ -66,7 +66,7 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
           >
             <a
               class="sc-a165f114-2 knHxGt"
-              href="/#about"
+              href="/home#about"
             >
               Sobre
             </a>
@@ -79,7 +79,7 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
           >
             <a
               class="sc-a165f114-2 knHxGt"
-              href="/#portfolio"
+              href="/home#portfolio"
             >
               Portfólio
             </a>
@@ -92,7 +92,7 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
           >
             <a
               class="sc-a165f114-2 knHxGt"
-              href="/#contact"
+              href="/home#contact"
             >
               Contato
             </a>

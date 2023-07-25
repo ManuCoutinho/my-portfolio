@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import * as Styled from './styles'
 import { useRouter } from 'next/router'
 
-const intro = '/assets/intro.mov'
+const intro = '/assets/intro.webm'
 
 const Intro: React.FC = () => {
 	const { replace } = useRouter()

@@ -4,14 +4,14 @@ exports[`<SocialLinks/> should match to snapshot 1`] = `
 <div>
   <nav
     aria-label="social links"
-    class="sc-3638c0c7-0 zEqDV"
+    class="sc-1c5e54af-0 cYkTeE"
     data-state="secondary"
     direction="row"
     role="navigation"
   >
     <a
       aria-label="Acessar linkedin"
-      class="sc-3638c0c7-1 fteKrd"
+      class="sc-1c5e54af-1 gRsJxE"
       href="https://linkedin.com/in/emanuela-coutinho"
       rel="noopener noreferrer"
       target="_blank"
@@ -23,7 +23,7 @@ exports[`<SocialLinks/> should match to snapshot 1`] = `
     </a>
     <a
       aria-label="Acessar github"
-      class="sc-3638c0c7-1 fteKrd"
+      class="sc-1c5e54af-1 gRsJxE"
       href="https://github.com/manucoutinho"
       rel="noopener noreferrer"
       target="_blank"
@@ -35,7 +35,7 @@ exports[`<SocialLinks/> should match to snapshot 1`] = `
     </a>
     <a
       aria-label="Acessar twitter"
-      class="sc-3638c0c7-1 fteKrd"
+      class="sc-1c5e54af-1 gRsJxE"
       href="https://twitter.com/manucout"
       rel="noopener noreferrer"
       target="_blank"
@@ -47,7 +47,7 @@ exports[`<SocialLinks/> should match to snapshot 1`] = `
     </a>
     <a
       aria-label="Acessar email"
-      class="sc-3638c0c7-1 fteKrd"
+      class="sc-1c5e54af-1 gRsJxE"
       href="mailto:devmanucoutinho@gmail.com"
       rel="noopener noreferrer"
       target="_blank"
@@ -59,7 +59,7 @@ exports[`<SocialLinks/> should match to snapshot 1`] = `
     </a>
     <a
       aria-label="Acessar dev.to"
-      class="sc-3638c0c7-1 fteKrd"
+      class="sc-1c5e54af-1 gRsJxE"
       href="https://dev.to/manucoutinho"
       rel="noopener noreferrer"
       target="_blank"
