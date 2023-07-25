@@ -1,7 +1,29 @@
-export default {
-  linkedin: 'https://linkedin.com/in/emanuela-coutinho',
-  git: 'https://github.com/manucoutinho',
-  twitter: 'https://twitter.com/manucout',
-  email: 'mailto:devmanucoutinho@gmail.com',
-  devto: 'https://dev.to/manucoutinho'
-} as const
+import ICONS from './icons'
+
+export default [
+	{
+		name: 'linkedin',
+		url: 'https://linkedin.com/in/emanuela-coutinho',
+		icon: ICONS.linkedin
+	},
+	{
+		name: 'github',
+		url: 'https://github.com/manucoutinho',
+		icon: ICONS.github
+	},
+	{
+		name: 'twitter',
+		url: 'https://twitter.com/manucout',
+		icon: ICONS.twitter
+	},
+	{
+		name: 'email',
+		url: 'mailto:devmanucoutinho@gmail.com',
+		icon: ICONS.email
+	},
+	{
+		name: 'dev.to',
+		url: 'https://dev.to/manucoutinho',
+		icon: ICONS.devto
+	}
+]

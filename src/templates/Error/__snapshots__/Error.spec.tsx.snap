@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Error /> should render the Erro template correctly 1`] = `
+<div>
+  <div
+    align="center"
+    class="sc-ce9dac95-0 ipIuUD"
+    data-testid="stackbox"
+    direction="column"
+    justify="center"
+  >
+    <div
+      align="center"
+      class="sc-ce9dac95-0 khteWf"
+      data-testid="stackbox"
+      direction="column"
+      gap="1"
+    >
+      <div
+        class="sc-ce9dac95-0 dEZKmI"
+        data-testid="stackbox"
+        justify="center"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27800%27%20height=%27500%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt="error image"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div
+        align="center"
+        class="sc-ce9dac95-0 jrMRLA"
+        data-testid="stackbox"
+        direction="column"
+        gap="1"
+        justify="center"
+      >
+        <h3
+          class="sc-94e9b77b-0 dbunNU"
+        >
+          Opss! Como você chegou aqui?
+        </h3>
+        <p
+          align="center"
+          class="sc-f89260d2-0 cKMxeN"
+        >
+          Parece que você chegou o limite deste universo.
+        </p>
+        <button
+          class="sc-6f4a4d4b-0 dRURCn"
+          type="button"
+          variant="ghost"
+        >
+          Voltar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,3 +1,3 @@
 export type DescriptionProps = {
-  animate: boolean
+	animate: boolean
 }

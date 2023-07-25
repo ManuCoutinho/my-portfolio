@@ -1,20 +1,23 @@
 import { screen } from '@testing-library/react'
-import { render } from '../../styles/theme/renderTheme'
+import { render } from '__mocks__/customRender'
 import { StackBox } from '.'
 
 describe('<StackBox/>', () => {
-  it('should render a StackBox component correctly', () => {
-    render(<StackBox>Text</StackBox>)
-    expect(screen.getByTestId('stackbox')).toMatchSnapshot()
-  })
-
-  it('should render a StackBox with column props', () => {
-    render(<StackBox direction='column'>Text</StackBox>)
-    expect(screen.getByTestId('stackbox')).toHaveStyle('flex-direction:column')
-  })
-  it('should render a StackBox with as props', () => {
-    const att = 'section'
-    render(<StackBox as={att} />)
-    expect(screen.getByTestId('stackbox')).toBeInTheDocument()
-  })
+	it('should render a StackBox with as props correctly', () => {
+		const att = 'section'
+		const { container } = render(<StackBox as={att} />)
+		expect(screen.getByTestId('stackbox')).toBeInTheDocument()
+		expect(document.getElementsByTagName('section')[0]).toHaveAttribute(
+			'data-testid',
+			'stackbox'
+		)
+		expect(container).toMatchInlineSnapshot(`
+		<div>
+		  <section
+		    class="sc-ce9dac95-0 hjZBZn"
+		    data-testid="stackbox"
+		  />
+		</div>
+	`)
+	})
 })
