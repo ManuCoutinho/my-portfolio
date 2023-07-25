@@ -3,14 +3,14 @@
 exports[`<HomeSection/> should match to snapshot 1`] = `
 <div>
   <div
-    class="sc-9bc6c822-0 gOynNa"
+    class="sc-760da25-0 fbVpAI"
     id="home"
   >
     <section
-      class="sc-aadb450-0 sc-9bc6c822-1 dIZkPn jLMEsN"
+      class="sc-aadb450-0 sc-760da25-1 dIZkPn fjVcwL"
     >
       <div
-        class="sc-9bc6c822-2 dMnwhH"
+        class="sc-760da25-2 izqwzx"
       >
         <div
           class="sc-82b1b2c6-0 saaRb"
@@ -30,14 +30,14 @@ exports[`<HomeSection/> should match to snapshot 1`] = `
           </span>
         </div>
         <button
-          class="sc-6f4a4d4b-0 lpbnMc"
+          class="sc-7f192ef0-0 kgpZEj"
           type="button"
         >
           Conheça meus projetos!
         </button>
       </div>
       <div
-        class="sc-9bc6c822-3 eUvvWV"
+        class="sc-760da25-3 hzrPPv"
       >
         <div
           data-testid="box-animation"
@@ -685,13 +685,14 @@ exports[`<HomeSection/> should match to snapshot 1`] = `
     </section>
     <nav
       aria-label="social links"
-      class="sc-933cdbe7-0 puCfE"
+      class="sc-1c5e54af-0 leLYjw"
+      data-state="primary"
       direction="column"
       role="navigation"
     >
       <a
         aria-label="Acessar linkedin"
-        class="sc-933cdbe7-1 eZgqTS"
+        class="sc-1c5e54af-1 gRsJxE"
         href="https://linkedin.com/in/emanuela-coutinho"
         rel="noopener noreferrer"
         target="_blank"
@@ -703,7 +704,7 @@ exports[`<HomeSection/> should match to snapshot 1`] = `
       </a>
       <a
         aria-label="Acessar github"
-        class="sc-933cdbe7-1 eZgqTS"
+        class="sc-1c5e54af-1 gRsJxE"
         href="https://github.com/manucoutinho"
         rel="noopener noreferrer"
         target="_blank"
@@ -715,7 +716,7 @@ exports[`<HomeSection/> should match to snapshot 1`] = `
       </a>
       <a
         aria-label="Acessar twitter"
-        class="sc-933cdbe7-1 eZgqTS"
+        class="sc-1c5e54af-1 gRsJxE"
         href="https://twitter.com/manucout"
         rel="noopener noreferrer"
         target="_blank"
@@ -726,8 +727,20 @@ exports[`<HomeSection/> should match to snapshot 1`] = `
         />
       </a>
       <a
+        aria-label="Acessar email"
+        class="sc-1c5e54af-1 gRsJxE"
+        href="mailto:devmanucoutinho@gmail.com"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="email"
+      >
+        <iconify-icon
+          icon="ep:message"
+        />
+      </a>
+      <a
         aria-label="Acessar dev.to"
-        class="sc-933cdbe7-1 eZgqTS"
+        class="sc-1c5e54af-1 gRsJxE"
         href="https://dev.to/manucoutinho"
         rel="noopener noreferrer"
         target="_blank"
@@ -738,7 +751,6 @@ exports[`<HomeSection/> should match to snapshot 1`] = `
         />
       </a>
       <button
-        aria-checked="false"
         aria-label="switch theme"
         class="sc-ba81a6c3-0 lovMpa"
         role="switch"

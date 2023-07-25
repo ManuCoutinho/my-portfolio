@@ -64,7 +64,7 @@ exports[`<Error /> should render the Erro template correctly 1`] = `
           Parece que você chegou o limite deste universo.
         </p>
         <button
-          class="sc-6f4a4d4b-0 dRURCn"
+          class="sc-7f192ef0-0 frTpoo"
           type="button"
           variant="ghost"
         >

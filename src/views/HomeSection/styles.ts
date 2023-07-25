@@ -34,7 +34,8 @@ export const Wrapper = styled(Section)`
 			display: flex;
 			margin-top: 0;
 			flex-direction: column-reverse;
-			gap: 0;
+			min-height: fit-content;
+			margin-bottom: 1rem;
 		}
 	`}
 `

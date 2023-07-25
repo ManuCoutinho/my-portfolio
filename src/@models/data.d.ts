@@ -23,7 +23,6 @@ export type ContextType = {
 export type ToolsType = string[]
 
 export type ImgType = {
-	imgPng: string
 	imgWebp: string
 	alt: string
 	id: string

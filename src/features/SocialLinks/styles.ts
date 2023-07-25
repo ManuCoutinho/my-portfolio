@@ -18,12 +18,17 @@ export const Container = styled.nav<StyleProps>`
 		color: ${theme.colors.primary};
 		transition: ${theme.transition};
 		display: flex;
-		${display[direction]};
+		${display[direction ?? 'column']};
 		gap: 0.75rem;
 		align-items: center;
-		@media (max-width: 27em) {
-			display: flex;
-			flex-flow: row nowrap;
+		&[data-state='primary'] {
+			position: fixed;
+			right: 3%;
+			@media (max-width: 27em) {
+				position: relative;
+				display: flex;
+				flex-flow: row nowrap;
+			}
 		}
 	`}
 `

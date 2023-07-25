@@ -30,7 +30,11 @@ export const Error: React.FC = () => {
 					<Text align='center'>
 						Parece que você chegou o limite deste universo.
 					</Text>
-					<Button onClick={() => router.push('/')} size='md' variant='ghost'>
+					<Button
+						onClick={() => router.replace('/home')}
+						size='md'
+						variant='ghost'
+					>
 						Voltar
 					</Button>
 				</StackBox>
