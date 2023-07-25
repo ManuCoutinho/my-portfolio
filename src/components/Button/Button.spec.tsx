@@ -1,15 +1,15 @@
 import { screen } from '@testing-library/react'
-import { render } from '../../styles/theme/renderTheme'
-
+import { render } from '__mocks__/customRender'
 import { Button } from '.'
 
 describe('<Button/>', () => {
-  it('should render a button correctly', () => {
-    render(<Button>Text</Button>)
-    expect(screen.getByRole('button')).toHaveTextContent(/Text/i)
-  })
-  it('should button component match to snapshot', () => {
-    const { container } = render(<Button>Text</Button>)
-    expect(container).toMatchSnapshot()
-  })
+	it('should render a standard button correctly', () => {
+		render(<Button>Text</Button>)
+		const button = screen.getByRole('button')
+		expect(button).toHaveTextContent(/Text/i)
+	})
+	it('should button component match to snapshot', () => {
+		const { container } = render(<Button>Text</Button>)
+		expect(container).toMatchSnapshot()
+	})
 })

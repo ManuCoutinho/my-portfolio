@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Text/> should render with text align prop 1`] = `
+exports[`<Text/> should render the component correctly 1`] = `
 <div>
   <p
-    class="sc-6c8a52e-0 joPIFh"
+    align="center"
+    class="sc-f89260d2-0 cKMxeN"
   >
     Text
   </p>

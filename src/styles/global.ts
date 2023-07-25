@@ -26,46 +26,49 @@ html {
 }
 
 body, html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
+  font-smooth: antialiased;
+  
 }
 
 body {
  ${({ theme }) => css`
-   background: ${theme.colors.body};
-   color: ${theme.colors.text};
-   transition: ${theme.transition};
-   &::-webkit-scrollbar {
-     width: 0.7rem;
-   }
-   /* Track */
-   &::-webkit-scrollbar-track {
-     background: ${theme.colors.background};
-     border-radius: 3px;
-   }
-   /* Handle */
-   &::-webkit-scrollbar-thumb {
-     background: ${lighten(0.05, theme.colors.background)};
-     border-radius: 3px;
-   }
-   /* Handle on hover */
-   &::-webkit-scrollbar-thumb:hover {
-     background: ${lighten(0.1, theme.colors.background)};
-   }
+		background: ${theme.colors.body};
+		color: ${theme.colors.text};
+		transition: ${theme.transition};
+		&::-webkit-scrollbar {
+			width: 0.7rem;
+		}
+
+		/* Track */
+		&::-webkit-scrollbar-track {
+			background: ${theme.colors.background};
+			border-radius: 3px;
+		}
+		/* Handle */
+		&::-webkit-scrollbar-thumb {
+			background: ${lighten(0.05, theme.colors.background)};
+			border-radius: 3px;
+		}
+		/* Handle on hover */
+		&::-webkit-scrollbar-thumb:hover {
+			background: ${lighten(0.1, theme.colors.background)};
+		}
  `}
 }
 
 body, input, textarea, button {
  ${({ theme }) => css`
-   font-family: ${theme.font.text};
-   font-weight: ${theme.fontWeight.normal};
-   font-size: 16px;
+		font-family: ${theme.font.cursive};
+		font-weight: ${theme.fontWeight.regular};
+		font-size: 16px;
  `}
 }
 
 h1, h2, h3, h4, h5, h6, strong {
  ${({ theme }) => css`
-   font-weight: ${theme.fontWeight.bold};
-   font-family: ${theme.font.title};
+		font-weight: ${theme.fontWeight.bold};
+		font-family: ${theme.font.regular};
  `}
 }
 

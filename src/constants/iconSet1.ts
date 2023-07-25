@@ -1,17 +1,17 @@
 import icons from './icons'
 
-const iconSet1 = [
-  { icon: icons.html },
-  { icon: icons.jquery },
-  { icon: icons.react },
-  { icon: icons.sass },
-  { icon: icons.js },
-  { icon: icons.node },
-  { icon: icons.sb },
-  { icon: icons.sentry },
-  { icon: icons.graphql },
-  { icon: icons.figma },
-  { icon: icons.testing },
-  { icon: icons.gh }
+export default [
+	icons.html,
+	icons.jquery,
+	icons.react,
+	icons.sass,
+	icons.js,
+	icons.node,
+	icons.sb,
+	icons.sentry,
+	icons.graphql,
+	icons.figma,
+	icons.testing,
+	icons.gh,
+	icons.docker
 ]
-export default iconSet1

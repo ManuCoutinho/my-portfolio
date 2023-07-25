@@ -1,22 +1,24 @@
-import styled, { css, keyframes } from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Container } from 'components/StackBox/styles'
+import {
+	slideInAnimation,
+	slideInBottomAnimation
+} from 'styles/mixins/animations'
 
-const fadeInFwd = keyframes`
- 0% {
-      transform: translateX(180px);
-      opacity: 0;
-    }
-      100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-`
-const fadeAnimation = css`
-  animation: ${fadeInFwd} 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-`
+export const Wrapper = styled(Container)`
+	${() => css`
+		opacity: 1;
+		transition: opacity 0.2s linear;
 
-export const Wrapper = styled(Container)<{ animate: boolean }>`
-  ${({ animate }) => css`
-    ${animate && fadeAnimation};
-  `}
+		&[data-state='inactive'] {
+			opacity: 0;
+			transition: opacity 0.2s linear;
+		}
+		&[data-state='active'] {
+			${slideInAnimation};
+			@media only screen and (max-width: 67.5em) {
+				${slideInBottomAnimation}
+			}
+		}
+	`}
 `

@@ -1,7 +1,7 @@
 export type Action = {
-  type: string
+	type: string
 }
 
 export interface ThemeContextType {
-  toggleTheme: React.Dispatch<Action>
+	toggleTheme: React.Dispatch<Action>
 }
