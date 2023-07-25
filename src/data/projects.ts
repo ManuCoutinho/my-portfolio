@@ -84,6 +84,11 @@ const PROJECTS: DataType[] = [
 				imgWebp: '/assets/carousel/video-1.webp',
 				alt: 'imagem do protótipo do site Video Play',
 				id: 'pic-2'
+			},
+			{
+				imgWebp: '/assets/carousel/video-3.webp',
+				alt: 'imagem do protótipo do site Video Play',
+				id: 'pic-3'
 			}
 		],
 		id: 'c5d3bb79-164f-4738-3333-0f8eew5cd574d',
