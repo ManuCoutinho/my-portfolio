@@ -22,7 +22,7 @@ const HomeSection: React.FC = () => {
 					<HomeAnimation data={animationData} />
 				</Styled.BoxLottie>
 			</Styled.Wrapper>
-			<SocialLinks showToggle direction='column' hideIcon={['email']} />
+			<SocialLinks showToggle />
 		</Styled.Container>
 	)
 }

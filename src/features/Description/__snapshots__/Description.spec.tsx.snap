@@ -2,7 +2,7 @@
 
 exports[`<Description/> should match to snapshot 1`] = `
 <div
-  class="sc-ce9dac95-0 sc-b1766405-0 gbxaXB emMcRA"
+  class="sc-ce9dac95-0 sc-d5a08f7e-0 gbxaXB hSiYRH"
   data-state="active"
   data-testid="definition"
   direction="column"

@@ -58,7 +58,7 @@ const buttonSize = {
 
 		@media only screen and (max-width: 25em) {
 			padding: 0.5rem 1.3rem;
-			font-size: 1rem;
+			font-size: ${theme.fontSize.md};
 		}
 	`
 }

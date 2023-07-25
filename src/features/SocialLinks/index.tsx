@@ -7,7 +7,7 @@ import { SocialLinksProps } from './types'
 import { Container, SocialLink } from './styles'
 
 export const SocialLinks: React.FC<SocialLinksProps> = ({
-	direction,
+	direction = 'column',
 	showToggle = false,
 	hideIcon
 }) => {
@@ -18,6 +18,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({
 			direction={direction}
 			role='navigation'
 			aria-label='social links'
+			data-state={showToggle ? 'primary' : 'secondary'}
 		>
 			{links?.map(({ url, name, icon }) => (
 				<Link href={url} key={uuidv4()} passHref>

@@ -3,9 +3,9 @@ import { GetServerSideProps, NextPage } from 'next'
 import nookies from 'nookies'
 import { ThemeContext } from 'contexts/ThemeContext'
 
-import HomeTemplate from 'templates/Home'
+import IntroTemplate from 'templates/Intro'
 
-const Home: NextPage<{ theme: string }> = ({ theme }) => {
+const Intro: NextPage<{ theme: string }> = ({ theme }) => {
 	const { toggleTheme } = useContext(ThemeContext)
 
 	useEffect(() => {
@@ -17,7 +17,7 @@ const Home: NextPage<{ theme: string }> = ({ theme }) => {
 			: toggleTheme({ type: theme })
 	}, [theme, toggleTheme])
 
-	return <HomeTemplate />
+	return <IntroTemplate />
 }
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
@@ -28,4 +28,4 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 		}
 	}
 }
-export default Home
+export default Intro

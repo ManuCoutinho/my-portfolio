@@ -56,37 +56,6 @@ const PROJECTS: DataType[] = [
 		alt: 'ilustração de uma mulher marcando destinos no globo',
 		route: '/excursionista'
 	},
-	{
-		name: 'Meu Freela',
-		site: 'https://meufreela.netlify.app/',
-		framework: 'Vite.js',
-		doc: null,
-		styles: 'Sass',
-		tools: ['React', 'React Toastfy'],
-		repo: 'https://github.com/ManuCoutinho/meuFreela',
-		api: '',
-		description:
-			'Meu Freela é uma landing page demo para captação de clientes.',
-		img: [
-			{
-				imgPng: '/assets/carousel/meufreela-2.png',
-				imgWebp: '/assets/carousel/meufreela-2.webp',
-				alt: 'imagem do site Meu Freela',
-				id: 'pic-1'
-			},
-			{
-				imgPng: '/assets/carousel/meufreela-3.png',
-				imgWebp: '/assets/carousel/meufreela-3.webp',
-				alt: 'imagem do site Meu Freela',
-				id: 'pic-2'
-			}
-		],
-		id: '871b7e32-6948-418e-9e25-750a1f3df677',
-		coverDefault: '/assets/polaroids/freela.jpg',
-		coverAlt: '/assets/polaroids/freela.webp',
-		alt: 'ilustração de um rapaz escolhendo qual caminho seguir',
-		route: '/meu-freela'
-	},
 
 	{
 		name: 'Tecnocrias',
@@ -191,85 +160,6 @@ const PROJECTS: DataType[] = [
 		route: '/bdimage'
 	},
 	{
-		name: 'Digipix',
-		site: 'https://phottos.netlify.app/',
-		framework: 'Vite.js',
-		doc: null,
-		styles: 'Sass',
-		tools: ['Bootstrap', 'Glidejs', 'Javascript'],
-		repo: 'https://github.com/ManuCoutinho/Digipix_landing_page',
-		api: null,
-		description:
-			'Está é uma landing page promocional da gráfica Digipix, construída em vanilla Js.',
-		img: [
-			{
-				imgPng: '/assets/carousel/digipix1.png',
-				imgWebp: '/assets/carousel/digipix1.webp',
-				alt: 'imagem da landing page Digipix',
-				id: 'pic-1'
-			},
-			{
-				imgPng: '/assets/carousel/digipix2.png',
-				imgWebp: '/assets/carousel/digipix2.webp',
-				alt: 'imagem da landing page Digipix',
-				id: 'pic-2'
-			},
-			{
-				imgPng: '/assets/carousel/digipix-mobile.png',
-				imgWebp: '/assets/carousel/digipix-mobile.webp',
-				alt: 'imagem da landing page Digipix',
-				id: 'pic-3'
-			}
-		],
-		id: 'e6b7e3f6-6f3a-4c02-9f7f-514191aa4173',
-		coverDefault: '/assets/polaroids/digipix.jpg',
-		coverAlt: '/assets/polaroids/digipix.webp',
-		alt: 'ilustração de uma mulher enconstada num celular',
-		route: '/digipix'
-	},
-
-	{
-		name: ' Feedback Widget',
-		site: 'https://sentfeedback.vercel.app/',
-		framework: 'Vite.js',
-		doc: 'https://sentfeedback.surge.sh',
-		styles: 'Tailwind CSS',
-		tools: [
-			'React',
-			'TypeScript',
-			'Headless UI',
-			'Phosphor',
-			'Prisma ORM',
-			'PostgreSQL',
-			'MailChimp',
-			'Storybook'
-		],
-		repo: 'https://github.com/ManuCoutinho/app-widget',
-		api: 'Express.js',
-		description: `App Widget é uma aplicação fullstack para coleta e envio de feedbacks. 
-    Com o app o usuário, pode facilmente, enviar um feedback ao administrador do sistema, juntamente com uma print da tela.
-    Doccumentação completa com Stgorybook e integração com API própria para envio dos feedback via e-mail `,
-		img: [
-			{
-				imgPng: '/assets/carousel/widget.png',
-				imgWebp: '/assets/carousel/widget.webp',
-				alt: 'imagem do app widget',
-				id: 'pic-1'
-			},
-			{
-				imgPng: '/assets/carousel/widget2.png',
-				imgWebp: '/assets/carousel/widget2.webp',
-				alt: 'imagem do app widget',
-				id: 'pic-2'
-			}
-		],
-		id: '74d6c398-eda9-4e91-b24c-fcc410d45cb3',
-		coverDefault: '/assets/polaroids/widget.jpg',
-		coverAlt: '/assets/polaroids/widget.webp',
-		alt: 'ilustraçãao de um app',
-		route: '/feedback'
-	},
-	{
 		name: 'Find Duo',
 		site: 'https://find-duo.netlify.app',
 		framework: 'Vite.js',
@@ -321,6 +211,115 @@ const PROJECTS: DataType[] = [
 		coverAlt: '/assets/polaroids/duo.webp',
 		alt: 'ilustraçãao de um app',
 		route: '/duo'
+	},
+	{
+		name: ' Feedback Widget',
+		site: 'https://sentfeedback.vercel.app/',
+		framework: 'Vite.js',
+		doc: 'https://sentfeedback.surge.sh',
+		styles: 'Tailwind CSS',
+		tools: [
+			'React',
+			'TypeScript',
+			'Headless UI',
+			'Phosphor',
+			'Prisma ORM',
+			'PostgreSQL',
+			'MailChimp',
+			'Storybook'
+		],
+		repo: 'https://github.com/ManuCoutinho/app-widget',
+		api: 'Express.js',
+		description: `App Widget é uma aplicação fullstack para coleta e envio de feedbacks. 
+    Com o app o usuário, pode facilmente, enviar um feedback ao administrador do sistema, juntamente com uma print da tela.
+    Doccumentação completa com Stgorybook e integração com API própria para envio dos feedback via e-mail `,
+		img: [
+			{
+				imgPng: '/assets/carousel/widget.png',
+				imgWebp: '/assets/carousel/widget.webp',
+				alt: 'imagem do app widget',
+				id: 'pic-1'
+			},
+			{
+				imgPng: '/assets/carousel/widget2.png',
+				imgWebp: '/assets/carousel/widget2.webp',
+				alt: 'imagem do app widget',
+				id: 'pic-2'
+			}
+		],
+		id: '74d6c398-eda9-4e91-b24c-fcc410d45cb3',
+		coverDefault: '/assets/polaroids/widget.jpg',
+		coverAlt: '/assets/polaroids/widget.webp',
+		alt: 'ilustraçãao de um app',
+		route: '/feedback'
+	},
+	{
+		name: 'Meu Freela',
+		site: 'https://meufreela.netlify.app/',
+		framework: 'Vite.js',
+		doc: null,
+		styles: 'Sass',
+		tools: ['React', 'React Toastfy'],
+		repo: 'https://github.com/ManuCoutinho/meuFreela',
+		api: '',
+		description:
+			'Meu Freela é uma landing page demo para captação de clientes.',
+		img: [
+			{
+				imgPng: '/assets/carousel/meufreela-2.png',
+				imgWebp: '/assets/carousel/meufreela-2.webp',
+				alt: 'imagem do site Meu Freela',
+				id: 'pic-1'
+			},
+			{
+				imgPng: '/assets/carousel/meufreela-3.png',
+				imgWebp: '/assets/carousel/meufreela-3.webp',
+				alt: 'imagem do site Meu Freela',
+				id: 'pic-2'
+			}
+		],
+		id: '871b7e32-6948-418e-9e25-750a1f3df677',
+		coverDefault: '/assets/polaroids/freela.jpg',
+		coverAlt: '/assets/polaroids/freela.webp',
+		alt: 'ilustração de um rapaz escolhendo qual caminho seguir',
+		route: '/meu-freela'
+	},
+	{
+		name: 'Digipix',
+		site: 'https://phottos.netlify.app/',
+		framework: 'Vite.js',
+		doc: null,
+		styles: 'Sass',
+		tools: ['Bootstrap', 'Glidejs', 'Javascript'],
+		repo: 'https://github.com/ManuCoutinho/Digipix_landing_page',
+		api: null,
+		description:
+			'Está é uma landing page promocional da gráfica Digipix, construída em vanilla Js.',
+		img: [
+			{
+				imgPng: '/assets/carousel/digipix1.png',
+				imgWebp: '/assets/carousel/digipix1.webp',
+				alt: 'imagem da landing page Digipix',
+				id: 'pic-1'
+			},
+			{
+				imgPng: '/assets/carousel/digipix2.png',
+				imgWebp: '/assets/carousel/digipix2.webp',
+				alt: 'imagem da landing page Digipix',
+				id: 'pic-2'
+			},
+			{
+				imgPng: '/assets/carousel/digipix-mobile.png',
+				imgWebp: '/assets/carousel/digipix-mobile.webp',
+				alt: 'imagem da landing page Digipix',
+				id: 'pic-3'
+			}
+		],
+		id: 'e6b7e3f6-6f3a-4c02-9f7f-514191aa4173',
+		coverDefault: '/assets/polaroids/digipix.jpg',
+		coverAlt: '/assets/polaroids/digipix.webp',
+		alt: 'ilustração de uma mulher enconstada num celular',
+		route: '/digipix'
 	},
 	{
 		name: 'Dev Tracker',

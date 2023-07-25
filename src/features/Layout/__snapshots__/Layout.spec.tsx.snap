@@ -2,17 +2,19 @@
 
 exports[`<Layout /> should render the Layout component correctly and match to snapshot 1`] = `
 <div>
-  <main>
+  <main
+    class="sc-dde9e527-0 qAIZd"
+  >
     <header
       class="sc-93b809d4-0 fKRbdb"
     >
       <nav
         aria-label="Menu"
-        class="sc-6bf470e4-0 HiBJk"
+        class="sc-65ec4590-0 MXEJp"
         role="navigation"
       >
         <h1
-          class="sc-6bf470e4-1 jKKXeU"
+          class="sc-65ec4590-1 jsQlmt"
         >
           <p
             aria-label="logo Manu Coutinho"

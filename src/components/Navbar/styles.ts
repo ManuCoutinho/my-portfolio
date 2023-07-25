@@ -32,5 +32,13 @@ export const Logo = styled.h1`
 			font-family: ${theme.font.cursive};
 			font-weight: ${theme.fontWeight.regular};
 		}
+
+		@media only screen and (max-width: 25em) {
+			font-size: 2.5rem;
+			padding: 1rem 0;
+			span {
+				font-size: ${theme.fontSize.xl};
+			}
+		}
 	`}
 `
