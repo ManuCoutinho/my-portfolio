@@ -11,7 +11,6 @@ describe('<Contact/>', () => {
 		expect(
 			screen.getByRole('heading', { name: /fale comigo!/i })
 		).toBeInTheDocument()
-		expect(screen.getByRole('navigation')).toBeInTheDocument()
 		expect(
 			screen.getByText(/Caso queira saber mais sobre o meu trabalho/i)
 		).toBeInTheDocument()

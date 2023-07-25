@@ -20,18 +20,15 @@ const Slider: React.FC<SliderProps> = ({ img }) => {
 				className='keen-slider'
 				data-testid='slider-img'
 			>
-				{img?.map(({ id, imgPng, imgWebp, alt }) => (
+				{img?.map(({ id, imgWebp, alt }) => (
 					<Styled.Item id={id} key={uuidv4()} className='keen-slider__slide'>
-						<picture>
-							<Image
-								src={imgWebp}
-								priority
-								alt={alt}
-								layout='fill'
-								quality={80}
-							/>
-							<source srcSet={imgPng} type='image/png' />
-						</picture>
+						<Image
+							src={imgWebp}
+							priority
+							alt={alt}
+							layout='fill'
+							quality={80}
+						/>
 					</Styled.Item>
 				))}
 			</Styled.Items>

@@ -17,7 +17,6 @@ export default {
 	route: '',
 	img: [
 		{
-			imgPng: '',
 			imgWebp: '',
 			alt: '',
 			id: ''

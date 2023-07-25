@@ -14,7 +14,7 @@ const HomeSection: React.FC = () => {
 			<Styled.Wrapper>
 				<Styled.BoxCenter>
 					<AnimatedText />
-					<Button onClick={() => push('/#portfolio')} size='full'>
+					<Button onClick={() => push('/home/#portfolio')} size='full'>
 						Conheça meus projetos!
 					</Button>
 				</Styled.BoxCenter>
@@ -22,7 +22,7 @@ const HomeSection: React.FC = () => {
 					<HomeAnimation data={animationData} />
 				</Styled.BoxLottie>
 			</Styled.Wrapper>
-			<SocialLinks showToggle direction='column' hideIcon={['email']} />
+			<SocialLinks showToggle />
 		</Styled.Container>
 	)
 }

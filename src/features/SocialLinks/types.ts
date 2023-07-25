@@ -5,5 +5,5 @@ export interface SocialLinksProps extends StyleProps {
 	hideIcon?: IconName[]
 }
 export type StyleProps = {
-	direction: 'column' | 'row'
+	direction?: 'column' | 'row'
 }

@@ -18,7 +18,6 @@ export const Item = styled.div`
 		max-height: 40rem;
 		height: 60dvh;
 
-		picture,
 		img {
 			overflow: hidden;
 			width: 100%;

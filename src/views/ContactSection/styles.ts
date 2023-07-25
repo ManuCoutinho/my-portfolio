@@ -13,8 +13,13 @@ export const Container = styled.div`
 	justify-content: center;
 	margin-top: 5rem;
 
-	@media only screen and (max-width: 45em) {
+	@media only screen and (max-width: 70em) {
 		flex-direction: column-reverse;
+		padding: 0 2rem;
+		p {
+			text-align: center;
+			padding: 0 2.5rem;
+		}
 	}
 `
 

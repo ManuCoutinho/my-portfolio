@@ -2,7 +2,8 @@ import styled, { css } from 'styled-components'
 import { Container } from 'components/StackBox/styles'
 import {
 	slideInAnimation,
-	slideInBottomAnimation
+	slideInBottomAnimation,
+	trackingOutText
 } from 'styles/mixins/animations'
 
 export const Wrapper = styled(Container)`
@@ -11,13 +12,23 @@ export const Wrapper = styled(Container)`
 		transition: opacity 0.2s linear;
 
 		&[data-state='inactive'] {
-			opacity: 0;
-			transition: opacity 0.2s linear;
+			p {
+				opacity: 0;
+				transition: opacity 0.2s linear;
+			}
+			h3 {
+				${trackingOutText};
+			}
 		}
 		&[data-state='active'] {
-			${slideInAnimation};
+			p {
+				${slideInAnimation};
+			}
+
 			@media only screen and (max-width: 67.5em) {
-				${slideInBottomAnimation}
+				p {
+					${slideInBottomAnimation};
+				}
 			}
 		}
 	`}

@@ -3,7 +3,7 @@
 exports[`<Contact/> should match to snapshot 1`] = `
 <div>
   <section
-    class="sc-aadb450-0 sc-a7f36d87-0 dIZkPn imksqR"
+    class="sc-aadb450-0 sc-f8ca12a7-0 dIZkPn kAkuoK"
     id="contact"
   >
     <h2
@@ -12,10 +12,10 @@ exports[`<Contact/> should match to snapshot 1`] = `
       Contato
     </h2>
     <div
-      class="sc-a7f36d87-1 Bqtrx"
+      class="sc-f8ca12a7-1 GoEpU"
     >
       <div
-        class="sc-a7f36d87-2 cMTuEO"
+        class="sc-f8ca12a7-2 kHICKh"
       >
         <div
           data-testid="box-animation"
@@ -755,51 +755,8 @@ exports[`<Contact/> should match to snapshot 1`] = `
           align="left"
           class="sc-f89260d2-0 eyKYlB"
         >
-          Caso queira saber mais sobre o meu trabalho, e/ou solicitar um orçamento, fique à vontade para entrar em contato pelos canais abaixo.
+          Caso queira saber mais sobre o meu trabalho, e/ou solicitar um orçamento, fique à vontade para entrar em contato pelos canais listados.
         </p>
-        <nav
-          aria-label="social links"
-          class="sc-933cdbe7-0 ctsLyM"
-          direction="row"
-          role="navigation"
-        >
-          <a
-            aria-label="Acessar linkedin"
-            class="sc-933cdbe7-1 eZgqTS"
-            href="https://linkedin.com/in/emanuela-coutinho"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="linkedin"
-          >
-            <iconify-icon
-              icon="ph:linkedin-logo"
-            />
-          </a>
-          <a
-            aria-label="Acessar twitter"
-            class="sc-933cdbe7-1 eZgqTS"
-            href="https://twitter.com/manucout"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="twitter"
-          >
-            <iconify-icon
-              icon="radix-icons:twitter-logo"
-            />
-          </a>
-          <a
-            aria-label="Acessar email"
-            class="sc-933cdbe7-1 eZgqTS"
-            href="mailto:devmanucoutinho@gmail.com"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="email"
-          >
-            <iconify-icon
-              icon="ep:message"
-            />
-          </a>
-        </nav>
       </div>
     </div>
   </section>
