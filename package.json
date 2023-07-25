@@ -31,7 +31,7 @@
 		"@rollbar/react": "^0.11.1",
 		"keen-slider": "^6.8.2",
 		"lottie-react": "^2.4.0",
-		"next": "12.2.4",
+		"next": "13.4.12",
 		"next-seo": "^6.0.0",
 		"nookies": "^2.5.2",
 		"polished": "^4.2.2",
