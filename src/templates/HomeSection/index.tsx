@@ -1,14 +1,20 @@
 import { useRouter } from 'next/router'
+import { useTheme } from 'styled-components'
 import HomeAnimation from 'components/Animation'
 import { AnimatedText } from 'components/AnimatedText'
 import { Button } from 'components/Button'
 import { SocialLinks } from 'modules/SocialLinks'
 
-import animationData from 'data/home.json'
+import animationDark from 'data/home-dark.json'
+import animationLight from 'data/home.json'
+
 import * as Styled from './styles'
 
 const HomeSection: React.FC = () => {
 	const { push } = useRouter()
+	const { title } = useTheme()
+	const animation = title === 'dark' ? animationDark : animationLight
+
 	return (
 		<Styled.Container id='home'>
 			<Styled.Wrapper>
@@ -23,7 +29,7 @@ const HomeSection: React.FC = () => {
 					</Button>
 				</Styled.BoxCenter>
 				<Styled.BoxLottie>
-					<HomeAnimation data={animationData} />
+					<HomeAnimation data={animation} />
 				</Styled.BoxLottie>
 			</Styled.Wrapper>
 			<SocialLinks showToggle />

@@ -6,6 +6,7 @@ export const MenuList = styled.ul`
 		flex-direction: column;
 		gap: 2.5rem;
 		align-items: flex-start;
+		margin-left: 3.5rem;
 
 		font-size: ${theme.fontSize.md};
 		font-weight: ${theme.fontWeight.semibold};

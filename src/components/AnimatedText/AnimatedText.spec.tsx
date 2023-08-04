@@ -9,7 +9,7 @@ jest.useFakeTimers()
 describe('<AnimatedText />', () => {
 	it('should render the animated text component correctly', async () => {
 		render(<AnimatedText />)
-		expect(screen.getByText(/hi, i am/i)).toBeInTheDocument()
+		expect(screen.getByText(/Olá! Eu sou/i)).toBeInTheDocument()
 		expect(screen.getByTestId('animated-text')).toBeInTheDocument()
 		expect(await screen.findByText(/fron/i)).toBeInTheDocument()
 	})

@@ -66,7 +66,7 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
               aria-haspopup="true"
               aria-hidden="true"
               aria-label="Abrir Menu"
-              class="sc-ccc625a9-1 iuEbwT"
+              class="sc-72623f9b-1 hmKOkO"
               role="button"
             >
               <iconify-icon
@@ -76,23 +76,23 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
           </li>
         </ul>
         <aside
-          class="sc-ccc625a9-0 ieaSVJ"
+          class="sc-72623f9b-0 lkwMCQ"
           data-state="close"
         >
           <ul
             aria-label="options"
-            class="sc-20fbbe2-0 iphUGQ"
+            class="sc-3bcf75e5-0 llAXfA"
             id="menu"
             role="menu"
           >
             <li
               aria-owns="menu"
-              class="sc-20fbbe2-1 hAxooq"
+              class="sc-3bcf75e5-1 bWMXSD"
               data-state="off"
               role="menuitem"
             >
               <a
-                class="sc-20fbbe2-2 iaecyX"
+                class="sc-3bcf75e5-2 jcQJNi"
                 href="/home#home"
               >
                 Home
@@ -100,12 +100,12 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
             </li>
             <li
               aria-owns="menu"
-              class="sc-20fbbe2-1 hAxooq"
+              class="sc-3bcf75e5-1 bWMXSD"
               data-state="off"
               role="menuitem"
             >
               <a
-                class="sc-20fbbe2-2 iaecyX"
+                class="sc-3bcf75e5-2 jcQJNi"
                 href="/home#about"
               >
                 Sobre
@@ -113,12 +113,12 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
             </li>
             <li
               aria-owns="menu"
-              class="sc-20fbbe2-1 hAxooq"
+              class="sc-3bcf75e5-1 bWMXSD"
               data-state="off"
               role="menuitem"
             >
               <a
-                class="sc-20fbbe2-2 iaecyX"
+                class="sc-3bcf75e5-2 jcQJNi"
                 href="/home#portfolio"
               >
                 Projetos
@@ -126,12 +126,12 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
             </li>
             <li
               aria-owns="menu"
-              class="sc-20fbbe2-1 hAxooq"
+              class="sc-3bcf75e5-1 bWMXSD"
               data-state="off"
               role="menuitem"
             >
               <a
-                class="sc-20fbbe2-2 iaecyX"
+                class="sc-3bcf75e5-2 jcQJNi"
                 href="/home#articles"
               >
                 Artigos
@@ -139,12 +139,12 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
             </li>
             <li
               aria-owns="menu"
-              class="sc-20fbbe2-1 hAxooq"
+              class="sc-3bcf75e5-1 bWMXSD"
               data-state="off"
               role="menuitem"
             >
               <a
-                class="sc-20fbbe2-2 iaecyX"
+                class="sc-3bcf75e5-2 jcQJNi"
                 href="/home#contact"
               >
                 Contato

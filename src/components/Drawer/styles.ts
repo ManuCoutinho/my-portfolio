@@ -12,11 +12,12 @@ export const Wrapper = styled.aside`
 		height: 0;
 		padding: 0;
 		width: 0;
-		transition: width 200ms linear;
+		transition: width 200ms ease-out;
 		z-index: 1002;
 		border-left: 1px solid ${theme.colors.accent};
 
-		background: ${theme.colors.body};
+		background: ${theme.colors.body} url('/assets/bullet-pattern.png') no-repeat
+			left;
 		box-shadow: hsl(206 22% 7% / 35%) 0px 10px 45px -10px,
 			hsl(206 22% 7% / 20%) 0px 10px 30px -15px;
 
@@ -29,6 +30,7 @@ export const Wrapper = styled.aside`
 		@media (max-width: 52em) {
 			&[data-state='opened'] {
 				width: 100dvw;
+				background: ${theme.colors.body};
 			}
 		}
 	`}

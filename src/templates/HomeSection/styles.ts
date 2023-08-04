@@ -14,7 +14,7 @@ export const Container = styled.div`
 	}
 
 	@media only screen and (max-width: 27em) {
-		height: calc(100vh + 5rem);
+		height: calc(100vh + 6rem);
 		flex-direction: column;
 		gap: 0.5rem;
 	}
@@ -23,7 +23,7 @@ export const Wrapper = styled(Section)`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 2rem;
+	gap: 0.5rem;
 	padding-top: 0;
 
 	@media only screen and (max-width: 50em) {
@@ -31,13 +31,12 @@ export const Wrapper = styled(Section)`
 		margin-top: 0;
 		flex-direction: column-reverse;
 		min-height: fit-content;
-		margin-bottom: 1rem;
 	}
 `
 export const BoxCenter = styled.div`
 	${({ theme }) => css`
 		@media only screen and (min-width: 80em) {
-			padding: 2rem 3rem;
+			padding: 2rem 1rem;
 		}
 
 		@media only screen and (max-width: 50em) {
@@ -70,9 +69,10 @@ export const BoxCenter = styled.div`
 
 export const BoxLottie = styled.div`
 	${() => css`
-		width: 100%;
+		min-width: 700px;
 
 		@media only screen and (max-width: 50em) {
+			min-width: 100px;
 			width: 27rem;
 			display: grid;
 			place-content: center;

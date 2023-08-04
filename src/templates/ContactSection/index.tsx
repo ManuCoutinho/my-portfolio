@@ -1,16 +1,23 @@
+import { useTheme } from 'styled-components'
+
+import { useMediaMobile } from 'hooks/useMediaMobile'
+
 import FooterAnimation from 'components/Animation'
+import { StackBox } from 'components/StackBox'
 import { SocialLinks } from 'modules/SocialLinks'
 import { Heading } from 'components/Heading'
 import { Text } from 'components/Text'
 
-import animationData from 'data/footer.json'
+import animationLight from 'data/footer.json'
+import animationDark from 'data/footer-dark.json'
 
 import * as Styled from './styles'
-import { StackBox } from 'components/StackBox'
-import { useMediaMobile } from 'hooks/useMediaMobile'
 
 const Contact: React.FC = () => {
 	const { isTouchDevice } = useMediaMobile()
+	const { title } = useTheme()
+	const animation = title === 'light' ? animationLight : animationDark
+
 	return (
 		<Styled.ContactSection id='contact'>
 			<Heading as='h2' size='big'>
@@ -18,7 +25,7 @@ const Contact: React.FC = () => {
 			</Heading>
 			<Styled.Container>
 				<Styled.BoxAnimation>
-					<FooterAnimation data={animationData} />
+					<FooterAnimation data={animation} />
 				</Styled.BoxAnimation>
 				<StackBox direction='column' align='center' gap={1.5}>
 					<Heading as='h3' size='small'>
