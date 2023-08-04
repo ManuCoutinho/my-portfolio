@@ -9,4 +9,4 @@ export type ButtonStyleProps = {
 }
 
 export type ButtonSize = 'sm' | 'md' | 'full'
-export type ButtonVariant = 'outline' | 'filled' | 'ghost'
+export type ButtonVariant = 'outline' | 'filled' | 'ghost' | 'link'

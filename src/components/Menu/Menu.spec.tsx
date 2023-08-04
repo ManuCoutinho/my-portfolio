@@ -7,6 +7,9 @@ import { Menu } from '.'
 
 jest.mock('next/router', () => require('next-router-mock'))
 jest.spyOn(React, 'useState')
+
+const handleStateMock = jest.fn()
+const renderElement = () => render(<Menu handleState={handleStateMock} />)
 describe('<Menu/>', () => {
 	beforeEach(() => {
 		mockRouter.setCurrentUrl('/home#home')
@@ -20,19 +23,18 @@ describe('<Menu/>', () => {
 		expect(result.current).toMatchObject({ asPath: '/home#home' })
 	})
 	it('should render a Menu correctly', () => {
-		render(<Menu />)
+		renderElement()
 		expect(screen.getByRole('menu')).toBeInTheDocument()
 	})
 	it('should render list item correctly', () => {
-		render(<Menu />)
+		renderElement()
 		const menu = screen.getByRole('menu')
 		expect(menu.firstChild).toHaveAttribute('role', 'menuitem')
-		expect(menu).toHaveAttribute('data-state', 'close')
 	})
 	it('should render a menu item correctly', () => {
 		const { result } = renderHook(() => useRouter())
 
-		render(<Menu />)
+		renderElement()
 		const item = screen.getByRole('menuitem', { name: /home/i })
 		const menuLink = screen.getByRole('link', { name: /home/i })
 		expect(item).toBeInTheDocument()

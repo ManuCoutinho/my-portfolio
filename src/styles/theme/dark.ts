@@ -5,7 +5,7 @@ const dark = {
 	colors: {
 		black: '#181919',
 		white: '#FFFCF2',
-		background: '#181919',
+		accent: '#e48c59',
 		body: '#181919',
 		primary: '#d5aa73',
 		secondary: '#7c6f5f',

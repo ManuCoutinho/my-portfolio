@@ -3,25 +3,17 @@ import styled, { css } from 'styled-components'
 export const MenuList = styled.ul`
 	${({ theme }) => css`
 		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+		align-items: flex-start;
+
 		font-size: ${theme.fontSize.md};
 		font-weight: ${theme.fontWeight.semibold};
 		list-style: none;
-		align-items: center;
-		transition: ${theme.transition};
+		margin-top: 7rem;
 
 		@media (max-width: 52em) {
-			flex-direction: column;
 			align-items: center;
-			gap: 2rem;
-			overflow: hidden;
-			transition: ${theme.transition};
-			width: 100%;
-			margin-top: 0;
-			height: 0;
-			&[data-state='opened'] {
-				margin-top: 5rem;
-				height: 100dvh;
-			}
 		}
 	`}
 `
@@ -30,11 +22,9 @@ export const MenuItem = styled.li`
 		color: ${theme.colors.primary};
 		&[data-state='selected'] {
 			text-shadow: ${` 0 2px 3px ${theme.colors.primary}`};
-			text-decoration: underline;
-			text-decoration-style: dashed;
-			text-decoration-thickness: 3px;
-			text-underline-offset: 5px;
-			padding-inline-start: 2px;
+		}
+		&:first-of-type {
+			padding-top: 2rem;
 		}
 	`}
 `

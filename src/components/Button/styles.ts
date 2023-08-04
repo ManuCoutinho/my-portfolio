@@ -4,14 +4,14 @@ import { ButtonStyleProps } from './types'
 
 const variants = {
 	filled: (theme: DefaultTheme) => css`
-		background: ${theme.colors.info};
+		background: ${theme.colors.primary};
 		color: ${theme.colors.white};
-		border: 1px solid ${theme.colors.info};
+		border: 1px solid ${theme.colors.secondary};
 		box-shadow: hsl(206 22% 7% / 35%) 0px 10px 15px -10px,
 			hsl(206 22% 7% / 20%) 0px 10px 10px -15px;
 
 		&:hover {
-			background-color: ${theme.colors.secondary};
+			background-color: ${theme.colors.accent};
 			transition: background 0.3ms ease-in-out;
 		}
 	`,
@@ -33,6 +33,20 @@ const variants = {
 			color: ${theme.colors.white};
 			transition: background 300ms ease-in-out;
 			font-weight: ${theme.fontWeight.semibold};
+		}
+	`,
+	link: (theme: DefaultTheme) => css`
+		border: 0;
+		background: inherit;
+		font-weight: ${theme.fontWeight.semibold};
+		color: ${theme.colors.text};
+		&:is(:focus, :active, :focus-within, :hover) {
+			transition: text-decoration ease-in-out;
+			text-decoration: underline ${theme.colors.active} 3px;
+			text-underline-offset: 4px;
+		}
+		&:is(:focus, :active, :focus-within) {
+			outline-color: transparent;
 		}
 	`
 }
@@ -63,6 +77,16 @@ const buttonSize = {
 	`
 }
 
+const ringEffect = (theme: DefaultTheme) => css`
+	&:is(:focus, :active, :focus-within) {
+		outline-offset: 1px;
+		outline: 1px solid ${theme.colors.primary};
+		border: 1px solid inherit;
+		box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+			hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+	}
+`
+
 export const Button = styled.button<ButtonStyleProps>`
 	${({ theme, variant, size }) => css`
 		outline: 0;
@@ -71,14 +95,8 @@ export const Button = styled.button<ButtonStyleProps>`
 		border-radius: ${theme.radius.sm};
 		${variant ? variants[variant](theme) : variants['filled'](theme)};
 		${size ? buttonSize[size](theme) : buttonSize['md'](theme)};
-		transition: color, background 300ms ease-in-out;
+		transition: color, background, text-decoration 300ms ease-in-out;
 
-		&:is(:focus, :active, :focus-within) {
-			outline-offset: 1px;
-			outline: 1px solid ${theme.colors.primary};
-			border: 1px solid inherit;
-			box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
-				hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
-		}
+		${variant !== 'link' && ringEffect(theme)};
 	`}
 `
