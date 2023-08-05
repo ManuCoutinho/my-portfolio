@@ -66,7 +66,7 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
               aria-haspopup="true"
               aria-hidden="true"
               aria-label="Abrir Menu"
-              class="sc-72623f9b-1 hmKOkO"
+              class="sc-5d5a21b4-1 icpDgh"
               role="button"
             >
               <iconify-icon
@@ -76,7 +76,7 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
           </li>
         </ul>
         <aside
-          class="sc-72623f9b-0 lkwMCQ"
+          class="sc-5d5a21b4-0 dEFDtA"
           data-state="close"
         >
           <ul

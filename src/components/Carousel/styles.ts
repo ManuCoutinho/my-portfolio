@@ -3,9 +3,13 @@ import { Icon } from '@iconify-icon/react'
 
 export const Container = styled.div`
 	width: 100%;
-	height: 50vh;
-	padding: 1.5rem 2rem;
-	margin: 1.5rem auto;
+	height: 80vh;
+	padding: 1rem;
+	margin-top: 1.5rem;
+
+	& h4 {
+		margin-left: 3rem;
+	}
 `
 
 export const Slider = styled.div`
@@ -30,7 +34,10 @@ export const Content = styled(Icon)`
 		padding: 2rem 0;
 		display: grid;
 		place-content: center;
-		margin: 2rem;
+		margin: 4rem 2rem;
+		max-width: 240px;
+		height: 140px;
+		width: 100%;
 
 		font-size: ${theme.fontSize.xlg};
 		transition: ${theme.transition};

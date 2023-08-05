@@ -27,7 +27,7 @@ const Portfolio: FC = () => {
 	return (
 		<Styled.PortfolioSection id='portfolio' ref={portfolioRef}>
 			<Heading as='h2' size='big'>
-				Portfólio
+				Projetos
 			</Heading>
 			<Styled.Grid>
 				{data.map((project) => (

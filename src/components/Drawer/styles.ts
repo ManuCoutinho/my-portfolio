@@ -16,8 +16,10 @@ export const Wrapper = styled.aside`
 		z-index: 1002;
 		border-left: 1px solid ${theme.colors.accent};
 
-		background: ${theme.colors.body} url('/assets/bullet-pattern.png') no-repeat
-			left;
+		background-color: ${theme.colors.body};
+		background-image: url('/assets/bullet-pattern.png');
+		background-position-x: -3.5rem;
+		background-repeat: no-repeat;
 		box-shadow: hsl(206 22% 7% / 35%) 0px 10px 45px -10px,
 			hsl(206 22% 7% / 20%) 0px 10px 30px -15px;
 

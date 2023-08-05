@@ -15,25 +15,27 @@ const About: FC = () => {
 	const { onAnimate } = useAnimate(aboutRef)
 
 	return (
-		<Styled.Section id='about' ref={aboutRef}>
-			<Heading size='big' as='h2'>
-				Sobre
-			</Heading>
-			<Styled.Container>
-				<Styled.WrapperImg data-state={onAnimate ? 'active' : 'inactive'}>
-					<Image
-						width='400'
-						height='400'
-						src={girlImg}
-						loading='lazy'
-						quality={80}
-						alt='girl coding with cup in the left hand'
-					/>
-				</Styled.WrapperImg>
-				<Description animate={onAnimate} />
-			</Styled.Container>
+		<>
+			<Styled.Section id='about' ref={aboutRef}>
+				<Heading size='big' as='h2'>
+					Sobre
+				</Heading>
+				<Styled.Container>
+					<Styled.WrapperImg data-state={onAnimate ? 'active' : 'inactive'}>
+						<Image
+							width='400'
+							height='400'
+							src={girlImg}
+							loading='lazy'
+							quality={80}
+							alt='girl coding with cup in the left hand'
+						/>
+					</Styled.WrapperImg>
+					<Description animate={onAnimate} />
+				</Styled.Container>
+			</Styled.Section>
 			<Carousel />
-		</Styled.Section>
+		</>
 	)
 }
 

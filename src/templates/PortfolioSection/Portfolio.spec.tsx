@@ -18,7 +18,7 @@ describe('<Portfolio/>', () => {
 		})
 
 		expect(
-			await screen.findByRole('heading', { name: /portfólio/i })
+			await screen.findByRole('heading', { name: /projetos/i })
 		).toBeInTheDocument()
 		expect(result.current.data).not.toBeUndefined()
 		const trigger = screen.getAllByRole('button')[0]
