@@ -12,5 +12,6 @@ export default [
 	icons.actions,
 	icons.bs,
 	icons.css,
-	icons.git
+	icons.git,
+	icons.angular
 ]

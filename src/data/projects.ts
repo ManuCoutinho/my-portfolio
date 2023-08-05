@@ -1,4 +1,4 @@
-import { DataType } from '@models/data'
+import { DataType } from 'models/data.model'
 
 const PROJECTS: DataType[] = [
 	{

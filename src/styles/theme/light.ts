@@ -4,7 +4,7 @@ const light = {
 	colors: {
 		black: '#353131',
 		white: '#f3faf0',
-		background: '#e48c59',
+		accent: '#e48c59',
 		body: '#f3faf0',
 		primary: 'rgb(201, 100, 81)',
 		secondary: '#ae6a40',
@@ -18,7 +18,7 @@ const light = {
 		carousel_4: '#f5f5f5',
 		active: '#F05D51',
 		bg_card: '#f8e3dd',
-		glass: 'rgba(243, 250, 240, 0.1)',
+		glass: 'rgba(251, 251, 251, 0.3)',
 		bg_modal: '#e19b76',
 		disabled: lighten(0.5, '#56667c')
 	}

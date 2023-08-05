@@ -10,15 +10,15 @@ const GlobalStyle = createGlobalStyle`
 }
 
 html {
- @media (max-width: 67.5em){
-   font-size: 93.75%;
- }
+	@media (max-width: 67.5em){
+		font-size: 93.75%;
+	}
 
- @media (max-width: 50em){
-   font-size:85%;
- }
+	@media (max-width: 50em){
+		font-size:85%;
+	}
   
- @media (max-width: 27em) {
+	@media (max-width: 27em) {
   html {
     font-size: 80%;
   }
@@ -32,50 +32,49 @@ body, html {
 }
 
 body {
- ${({ theme }) => css`
+	${({ theme }) => css`
 		background: ${theme.colors.body};
 		color: ${theme.colors.text};
 		transition: ${theme.transition};
 		&::-webkit-scrollbar {
-			width: 0.7rem;
+			width: 0.5rem;
 		}
 
-		/* Track */
+		//* Track *//
 		&::-webkit-scrollbar-track {
-			background: ${theme.colors.background};
-			border-radius: 3px;
+			background: ${theme.colors.white};
 		}
-		/* Handle */
+		//*Handle *//
 		&::-webkit-scrollbar-thumb {
-			background: ${lighten(0.05, theme.colors.background)};
-			border-radius: 3px;
+			background: ${lighten(0.05, theme.colors.accent)};
+			border-radius: ${theme.radius.sm};
 		}
-		/* Handle on hover */
+		//*Handle on hover *//
 		&::-webkit-scrollbar-thumb:hover {
-			background: ${lighten(0.1, theme.colors.background)};
+			background: ${lighten(0.1, theme.colors.body)};
 		}
- `}
+	`}
 }
 
 body, input, textarea, button {
- ${({ theme }) => css`
+	${({ theme }) => css`
 		font-family: ${theme.font.cursive};
 		font-weight: ${theme.fontWeight.regular};
 		font-size: 16px;
- `}
+	`}
 }
 
 h1, h2, h3, h4, h5, h6, strong {
- ${({ theme }) => css`
+	${({ theme }) => css`
 		font-weight: ${theme.fontWeight.bold};
 		font-family: ${theme.font.regular};
- `}
+	`}
 }
 
 a {
- text-decoration: none;
- color: inherit;
- cursor: pointer;  
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;  
 }
 
 button,

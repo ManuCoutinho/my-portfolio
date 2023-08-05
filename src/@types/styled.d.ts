@@ -37,7 +37,7 @@ declare module 'styled-components' {
 		colors: {
 			black: string
 			white: string
-			background: string
+			accent: string
 			body: string
 			primary: string
 			secondary: string

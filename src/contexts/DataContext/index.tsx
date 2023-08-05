@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from 'react'
-import { ContextType } from '@models/data'
+import { ContextType } from 'models/data.model'
 import PROJECTS from 'data/projects'
 import initialState from 'constants/initialState'
 

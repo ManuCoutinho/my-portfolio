@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout /> should render the Layout component correctly and match to snapshot 1`] = `
+<div>
+  <main
+    class="sc-dde9e527-0 qAIZd"
+  >
+    <header
+      class="sc-4d9dc00-0 kRTWky"
+    >
+      <nav
+        aria-label="Main Menu"
+        class="sc-4d9dc00-1 bZitzR"
+        role="navigation"
+      >
+        <h1
+          class="sc-4d9dc00-3 cpeVBn"
+        >
+          <a
+            aria-label="logo Manu Coutinho"
+            href="#"
+          >
+            Manu
+            <span>
+              Coutinho_
+            </span>
+          </a>
+        </h1>
+        <ul
+          class="sc-4d9dc00-2 gynxJE"
+        >
+          <li
+            aria-label="toggle theme"
+            role="menuitem"
+          >
+            <button
+              aria-label="switch theme"
+              class="sc-58177537-0 DDfXa"
+              role="switch"
+              type="button"
+            >
+              <iconify-icon
+                icon="ph:sun-dim"
+              />
+            </button>
+          </li>
+          <li
+            aria-label="toggle language"
+            role="menuitem"
+          >
+            <button
+              class="sc-58177537-0 sc-8025e36d-0 DDfXa ivBpje"
+            >
+              <iconify-icon
+                icon="ph:globe-light"
+              />
+            </button>
+          </li>
+          <li
+            aria-label="toggle drawer"
+            role="menuitem"
+          >
+            <button
+              aria-controls="menu"
+              aria-expanded="false"
+              aria-haspopup="true"
+              aria-hidden="true"
+              aria-label="Abrir Menu"
+              class="sc-5d5a21b4-1 icpDgh"
+              role="button"
+            >
+              <iconify-icon
+                icon="ph:list-bold"
+              />
+            </button>
+          </li>
+        </ul>
+        <aside
+          class="sc-5d5a21b4-0 dEFDtA"
+          data-state="close"
+        >
+          <ul
+            aria-label="options"
+            class="sc-3bcf75e5-0 llAXfA"
+            id="menu"
+            role="menu"
+          >
+            <li
+              aria-owns="menu"
+              class="sc-3bcf75e5-1 bWMXSD"
+              data-state="off"
+              role="menuitem"
+            >
+              <a
+                class="sc-3bcf75e5-2 jcQJNi"
+                href="/home#home"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              aria-owns="menu"
+              class="sc-3bcf75e5-1 bWMXSD"
+              data-state="off"
+              role="menuitem"
+            >
+              <a
+                class="sc-3bcf75e5-2 jcQJNi"
+                href="/home#about"
+              >
+                Sobre
+              </a>
+            </li>
+            <li
+              aria-owns="menu"
+              class="sc-3bcf75e5-1 bWMXSD"
+              data-state="off"
+              role="menuitem"
+            >
+              <a
+                class="sc-3bcf75e5-2 jcQJNi"
+                href="/home#portfolio"
+              >
+                Projetos
+              </a>
+            </li>
+            <li
+              aria-owns="menu"
+              class="sc-3bcf75e5-1 bWMXSD"
+              data-state="off"
+              role="menuitem"
+            >
+              <a
+                class="sc-3bcf75e5-2 jcQJNi"
+                href="/home#articles"
+              >
+                Artigos
+              </a>
+            </li>
+            <li
+              aria-owns="menu"
+              class="sc-3bcf75e5-1 bWMXSD"
+              data-state="off"
+              role="menuitem"
+            >
+              <a
+                class="sc-3bcf75e5-2 jcQJNi"
+                href="/home#contact"
+              >
+                Contato
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </nav>
+    </header>
+    <p>
+      children
+    </p>
+    <footer
+      class="sc-31e02b67-0 hUwWXt"
+      data-testid="footer"
+    >
+      <p>
+        Copyright © 2023 Todos os direitos reservados. 
+      </p>
+      <p>
+        Designed by 
+        <span>
+          Manu Coutinho.
+        </span>
+      </p>
+    </footer>
+  </main>
+</div>
+`;

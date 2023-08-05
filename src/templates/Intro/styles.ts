@@ -31,6 +31,10 @@ export const Greetings = styled.div`
 		h1 {
 			color: rgb(201, 100, 81);
 			font-size: 5rem;
+
+			@media only screen and (max-width: 27em) {
+				font-size: 3.5rem;
+			}
 		}
 	`}
 `

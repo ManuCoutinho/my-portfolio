@@ -19,7 +19,7 @@
 	"lint-staged": {
 		"*.{ts,tsx}": [
 			"eslint src --fix --max-warnings=0",
-			"jest --findRelatedTests --bail"
+			"jest --findRelatedTests --bail --passWithNoTests"
 		],
 		"*.{json,md}": [
 			"prettier --write"

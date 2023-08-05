@@ -11,12 +11,12 @@ import { StackBox } from 'components/StackBox'
 
 import initialState from 'constants/initialState'
 import SEO from 'constants/seo'
-import { DataType } from '@models/data'
+import { DataType } from 'models/data.model'
 import { MobileContainer } from 'styles/mixins/layout'
 
 const Footer = dynamic(() => import('components/Footer'))
 const Body = dynamic(
-	() => import('features/Polaroids/ModalContent/CardContentDetails')
+	() => import('modules/Polaroids/ModalContent/CardContentDetails')
 )
 
 function DetailsTemplate(): JSX.Element {
@@ -53,7 +53,7 @@ function DetailsTemplate(): JSX.Element {
 					Voltar
 				</Button>
 			</StackBox>
-			<Footer bgPage />
+			<Footer />
 		</MobileContainer>
 	)
 }

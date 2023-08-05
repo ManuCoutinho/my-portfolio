@@ -3,7 +3,7 @@
 exports[`<Carousel /> should match to snapshot 1`] = `
 <div>
   <div
-    class="sc-4f100a55-0 cSZsNv"
+    class="sc-ffa50a5c-0 kOKmhV"
   >
     <h4
       class="sc-94e9b77b-0 qYMbF"
@@ -11,245 +11,263 @@ exports[`<Carousel /> should match to snapshot 1`] = `
       Minhas Skills:
     </h4>
     <div
-      class="sc-4f100a55-1 jHNCwP keen-slider"
+      class="sc-ffa50a5c-1 dUIvzS keen-slider"
       data-testid="slider"
     >
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="akar-icons:html-fill"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="mdi:jquery"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="fa-brands:react"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="fa-brands:sass"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="ion:logo-javascript"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="mdi:nodejs"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="file-icons:storybook"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="file-icons:sentry"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="mdi:graphql"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="ph:figma-logo"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="simple-icons:testinglibrary"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="fa-brands:github"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="devicon-plain:docker-wordmark"
+        />
+      </div>
+      <div
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
+          icon="devicon-plain:angularmaterial"
         />
       </div>
     </div>
     <div
-      class="sc-4f100a55-1 jHNCwP keen-slider"
+      class="sc-ffa50a5c-1 dUIvzS keen-slider"
     >
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="file-icons:typescript-alt"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="file-icons:styledcomponents"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="file-icons:nextjs"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="file-icons:vite"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="simple-icons:jamstack"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="file-icons:tailwind"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="simple-icons:mui"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="simple-icons:chakraui"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="file-icons:jest"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="devicon-plain:githubactions"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="fa-brands:bootstrap"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="akar-icons:css-fill"
         />
       </div>
       <div
-        class="sc-4f100a55-2 eIcsAz keen-slider__slide"
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
       >
         <iconify-icon
-          class="sc-4f100a55-3 upgPG"
-          classname="sc-4f100a55-3 upgPG"
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
           icon="fa-brands:git-alt"
+        />
+      </div>
+      <div
+        class="sc-ffa50a5c-2 eRgDjS keen-slider__slide"
+      >
+        <iconify-icon
+          class="sc-ffa50a5c-3 hyzGZv"
+          classname="sc-ffa50a5c-3 hyzGZv"
+          icon="mdi:angularjs"
         />
       </div>
     </div>
