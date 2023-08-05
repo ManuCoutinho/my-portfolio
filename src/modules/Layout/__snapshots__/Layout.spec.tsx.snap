@@ -6,15 +6,15 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
     class="sc-dde9e527-0 qAIZd"
   >
     <header
-      class="sc-99be06fa-0 fmSagr"
+      class="sc-4d9dc00-0 kRTWky"
     >
       <nav
         aria-label="Main Menu"
-        class="sc-99be06fa-1 hgrTFR"
+        class="sc-4d9dc00-1 bZitzR"
         role="navigation"
       >
         <h1
-          class="sc-99be06fa-3 dCeKpf"
+          class="sc-4d9dc00-3 cpeVBn"
         >
           <a
             aria-label="logo Manu Coutinho"
@@ -27,7 +27,7 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
           </a>
         </h1>
         <ul
-          class="sc-99be06fa-2 jlAvbE"
+          class="sc-4d9dc00-2 gynxJE"
         >
           <li
             aria-label="toggle theme"
@@ -158,7 +158,7 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
       children
     </p>
     <footer
-      class="sc-96ea4fb1-0 eRTjlb"
+      class="sc-31e02b67-0 hUwWXt"
       data-testid="footer"
     >
       <p>

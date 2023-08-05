@@ -1,14 +1,16 @@
 import styled, { css } from 'styled-components'
 
 export const Header = styled.header`
-	width: 100dvw;
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	user-select: none;
-	z-index: 1001;
-	background-color: transparent;
+	${({ theme }) => css`
+		width: 100dvw;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		user-select: none;
+		z-index: 1001;
+		background-color: ${theme.colors.body};
+	`}
 `
 
 export const Nav = styled.nav`

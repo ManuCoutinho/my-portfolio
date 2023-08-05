@@ -11,8 +11,9 @@ const notFoundImage = '/assets/404.svg'
 
 export const Error: React.FC = () => {
 	const router = useRouter()
+
 	return (
-		<StackBox justify='center' align='center' direction='column'>
+		<StackBox center>
 			<StackBox direction='column' align='center' gap={1}>
 				<StackBox justify='center'>
 					<Image

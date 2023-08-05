@@ -5,7 +5,7 @@ import { Heading } from 'components/Heading'
 import { StackBox } from 'components/StackBox'
 
 import * as Styled from './styles'
-import { DataType } from 'models/data'
+import { DataType } from 'models/data.model'
 
 const Details = dynamic(() => import('./CardContentDetails'))
 const Slider = dynamic(() => import('components/Slider'))

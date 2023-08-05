@@ -3,7 +3,7 @@
 exports[`<DetailsTemplate /> should render the Details template correctly 1`] = `
 <div>
   <main
-    class="sc-aadb450-1 iXLnbQ"
+    class="sc-ec46a235-1 jUdnwh"
   >
     <div
       align="center"
@@ -154,7 +154,7 @@ exports[`<DetailsTemplate /> should render the Details template correctly 1`] = 
       </button>
     </div>
     <footer
-      class="sc-96ea4fb1-0 jCKopB"
+      class="sc-31e02b67-0 hUwWXt"
       data-testid="footer"
     >
       <p>

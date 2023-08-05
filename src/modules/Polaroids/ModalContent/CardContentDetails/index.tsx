@@ -5,7 +5,7 @@ import { StackBox } from 'components/StackBox'
 import { Text } from 'components/Text'
 
 import icons from 'constants/icons'
-import { DataType } from 'models/data'
+import { DataType } from 'models/data.model'
 import * as Styled from './styles'
 
 const CardContentDetails: React.FC<DataType> = ({ ...props }) => {

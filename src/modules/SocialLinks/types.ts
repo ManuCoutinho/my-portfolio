@@ -1,4 +1,4 @@
-import { IconName } from 'models/icons'
+import { IconName } from 'models/icons.model'
 
 export interface SocialLinksProps extends StyleProps {
 	showToggle?: boolean

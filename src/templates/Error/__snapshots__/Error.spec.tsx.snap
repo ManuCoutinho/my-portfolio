@@ -3,11 +3,8 @@
 exports[`<Error /> should render the Erro template correctly 1`] = `
 <div>
   <div
-    align="center"
-    class="sc-ce9dac95-0 ipIuUD"
+    class="sc-ce9dac95-0 QWJlT"
     data-testid="stackbox"
-    direction="column"
-    justify="center"
   >
     <div
       align="center"

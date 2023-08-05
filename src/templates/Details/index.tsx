@@ -53,7 +53,7 @@ function DetailsTemplate(): JSX.Element {
 					Voltar
 				</Button>
 			</StackBox>
-			<Footer bgPage />
+			<Footer />
 		</MobileContainer>
 	)
 }
