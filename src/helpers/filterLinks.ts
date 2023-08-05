@@ -1,4 +1,4 @@
-import { LinkType, IconName } from '@models/icons'
+import { LinkType, IconName } from 'models/icons.model'
 import links from 'constants/links'
 
 export function filterLinks(icon: IconName[] | undefined): LinkType {

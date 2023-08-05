@@ -38,5 +38,7 @@ export default {
 	docs: 'tabler:brand-storybook',
 	docker: 'devicon-plain:docker-wordmark',
 	devto: 'ph:dev-to-logo',
-	actions: 'devicon-plain:githubactions'
+	actions: 'devicon-plain:githubactions',
+	angular: 'mdi:angularjs',
+	material: 'devicon-plain:angularmaterial'
 }

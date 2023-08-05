@@ -20,6 +20,6 @@ export const MobileContainer = styled.main`
 		align-items: center;
 		justify-content: center;
 		padding-top: 1rem;
-		background: ${theme.colors.background};
+		background: ${theme.colors.body};
 	`}
 `

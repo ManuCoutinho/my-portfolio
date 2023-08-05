@@ -14,8 +14,8 @@ export const Carousel: React.FC = () => {
 		drag: true,
 		mode: 'free-snap',
 		slides: {
-			perView: 2,
-			spacing: 8
+			perView: 5,
+			spacing: 12
 		},
 		breakpoints: {
 			'(min-width: 480px)': {

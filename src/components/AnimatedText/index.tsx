@@ -22,7 +22,7 @@ export const AnimatedText: FC = () => {
 	}, [text])
 	return (
 		<Styled.Wrapper data-testid='animated-text'>
-			<p>Hi, I am </p>
+			<p>Olá! Eu sou</p>
 			<span ref={text} id='animated' />
 		</Styled.Wrapper>
 	)

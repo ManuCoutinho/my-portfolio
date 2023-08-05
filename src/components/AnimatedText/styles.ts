@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
 		}
 		span {
 			text-transform: uppercase;
+			color: ${theme.colors.primary};
 		}
 		@media only screen and (max-width: 50em) {
 			margin-bottom: 1rem;

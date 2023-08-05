@@ -13,5 +13,6 @@ export default [
 	icons.figma,
 	icons.testing,
 	icons.gh,
-	icons.docker
+	icons.docker,
+	icons.material
 ]

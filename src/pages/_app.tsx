@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app'
 import { DefaultSeo } from 'next-seo'
-import ErrorBoundary from 'features/ErrorBoundary'
+import ErrorBoundary from 'modules/ErrorBoundary'
 import GlobalContext from '../contexts'
 import SEO from '../../config/next-seo.config'
 
