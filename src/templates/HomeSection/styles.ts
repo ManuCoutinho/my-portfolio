@@ -69,7 +69,7 @@ export const BoxCenter = styled.div`
 
 export const BoxLottie = styled.div`
 	${() => css`
-		min-width: 700px;
+		min-width: 380px;
 
 		@media only screen and (max-width: 50em) {
 			min-width: 100px;
@@ -78,7 +78,7 @@ export const BoxLottie = styled.div`
 			place-content: center;
 		}
 		@media only screen and (max-width: 27em) {
-			width: 20rem;
+			max-width: 16rem;
 			display: grid;
 			place-content: center;
 		}

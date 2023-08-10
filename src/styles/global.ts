@@ -42,7 +42,7 @@ body {
 
 		//* Track *//
 		&::-webkit-scrollbar-track {
-			background: ${theme.colors.white};
+			background: ${theme.colors.body};
 		}
 		//*Handle *//
 		&::-webkit-scrollbar-thumb {
@@ -115,4 +115,5 @@ video[width] {
   outline: 0;
 }
 `
+
 export default GlobalStyle

@@ -19,10 +19,13 @@ export const Carousel: React.FC = () => {
 		},
 		breakpoints: {
 			'(min-width: 480px)': {
-				slides: { perView: 3, spacing: 20 }
+				slides: { perView: 3, spacing: 4 }
 			},
-			'(min-width:768px)': {
-				slides: { perView: 4, spacing: 20 }
+			'(min-width:980px)': {
+				slides: { perView: 3, spacing: 6 }
+			},
+			'(min-width:1240px)': {
+				slides: { perView: 6, spacing: 12 }
 			}
 		}
 	}
