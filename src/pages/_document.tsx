@@ -47,7 +47,6 @@ class MyDocument extends Document {
 						href='https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Montserrat+Alternates:wght@100;200;400&display=swap'
 						rel='stylesheet'
 					/>
-
 					{process.env.NODE_ENV === 'production' ? (
 						<script
 							dangerouslySetInnerHTML={{

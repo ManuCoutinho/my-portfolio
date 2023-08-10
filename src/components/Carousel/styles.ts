@@ -2,10 +2,12 @@ import styled, { css } from 'styled-components'
 import { Icon } from '@iconify-icon/react'
 
 export const Container = styled.div`
-	width: 100%;
+	width: 98dvw;
 	height: 80vh;
-	padding: 1rem;
+	padding: 2rem;
 	margin-top: 1.5rem;
+	margin-left: 1.5rem;
+	overflow: hidden;
 
 	& h4 {
 		margin-left: 3rem;
@@ -34,8 +36,8 @@ export const Content = styled(Icon)`
 		padding: 2rem 0;
 		display: grid;
 		place-content: center;
-		margin: 4rem 2rem;
-		max-width: 240px;
+		margin: 3.5rem 0;
+		max-width: 200px;
 		height: 140px;
 		width: 100%;
 
@@ -44,6 +46,14 @@ export const Content = styled(Icon)`
 		&:hover {
 			transition: ${theme.transition};
 			color: ${theme.colors.active};
+		}
+
+		@media only screen and (max-width: 77.5em) {
+			max-width: 180px;
+		}
+		@media only screen and (max-width: 61.5em) {
+			margin: 2rem 0;
+			max-width: 140px;
 		}
 	`}
 `

@@ -7,7 +7,7 @@ export const Grid = styled.div`
 	max-width: 80dvw;
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, 300px);
 	margin: auto;
 	justify-content: center;
 	grid-gap: 5rem;
