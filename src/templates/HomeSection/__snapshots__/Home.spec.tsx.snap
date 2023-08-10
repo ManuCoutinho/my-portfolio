@@ -3,14 +3,14 @@
 exports[`<HomeSection/> should match to snapshot 1`] = `
 <div>
   <div
-    class="sc-aec9944c-0 bkrzTA"
+    class="sc-c2f23208-0 iVmxLD"
     id="home"
   >
     <section
-      class="sc-ec46a235-0 sc-aec9944c-1 crnVpR aqsJZ"
+      class="sc-ec46a235-0 sc-c2f23208-1 crnVpR brTZgs"
     >
       <div
-        class="sc-aec9944c-2 epXBRZ"
+        class="sc-c2f23208-2 idAMxM"
       >
         <div
           class="sc-bbc3c7b6-0 DtYVN"
@@ -38,7 +38,7 @@ exports[`<HomeSection/> should match to snapshot 1`] = `
         </button>
       </div>
       <div
-        class="sc-aec9944c-3 eJdWne"
+        class="sc-c2f23208-3 fGoHto"
       >
         <div
           data-testid="box-animation"

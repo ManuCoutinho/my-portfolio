@@ -8,11 +8,25 @@ export const Container = styled.div`
 	justify-content: center;
 	align-items: center;
 	padding: 0 1.5rem;
+	width: 100%;
+	height: calc(100vh + 7rem);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1.5rem;
 
 	@media only screen and (max-width: 52em) {
 		height: calc(100vh + 5rem);
 	}
+	@media only screen and (max-width: 52em) {
+		height: calc(100vh + 5rem);
+	}
 
+	@media only screen and (max-width: 27em) {
+		height: calc(100vh + 6rem);
+		flex-direction: column;
+		gap: 0.5rem;
+	}
 	@media only screen and (max-width: 27em) {
 		height: calc(100vh + 6rem);
 		flex-direction: column;
@@ -25,7 +39,18 @@ export const Wrapper = styled(Section)`
 	align-items: center;
 	gap: 0.5rem;
 	padding-top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	padding-top: 0;
 
+	@media only screen and (max-width: 50em) {
+		display: flex;
+		margin-top: 0;
+		flex-direction: column-reverse;
+		min-height: fit-content;
+	}
 	@media only screen and (max-width: 50em) {
 		display: flex;
 		margin-top: 0;
@@ -36,6 +61,7 @@ export const Wrapper = styled(Section)`
 export const BoxCenter = styled.div`
 	${({ theme }) => css`
 		@media only screen and (min-width: 80em) {
+			padding: 2rem 1rem;
 			padding: 2rem 1rem;
 		}
 
@@ -64,6 +90,7 @@ export const BoxCenter = styled.div`
 		display: flex;
 		flex-flow: column wrap;
 		gap: 2rem;
+		gap: 2rem;
 	`}
 `
 
@@ -72,6 +99,7 @@ export const BoxLottie = styled.div`
 		min-width: 380px;
 
 		@media only screen and (max-width: 50em) {
+			min-width: 100px;
 			min-width: 100px;
 			width: 27rem;
 			display: grid;
