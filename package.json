@@ -40,7 +40,7 @@
 		"rollbar": "^2.26.1",
 		"styled-components": "^6.0.4",
 		"stylis": "^4.3.0",
-		"typed.js": "^2.0.16",
+		"typed.js": "^2.1.0",
 		"uuidv4": "^6.2.13"
 	},
 	"devDependencies": {
