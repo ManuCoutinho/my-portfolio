@@ -6,7 +6,7 @@ describe('<Footer/>', () => {
 	it('should render a footer component correctly', () => {
 		render(<Footer />)
 		expect(screen.getByTestId('footer')).toHaveTextContent(
-			/Copyright © 2023 Todos os direitos reservados./i
+			/Copyright ©2024 Todos os direitos reservados./i
 		)
 		expect(screen.getByText(/Manu/i)).toBeInTheDocument()
 	})

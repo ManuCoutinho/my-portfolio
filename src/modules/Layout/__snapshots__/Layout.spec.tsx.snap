@@ -162,7 +162,9 @@ exports[`<Layout /> should render the Layout component correctly and match to sn
       data-testid="footer"
     >
       <p>
-        Copyright © 2023 Todos os direitos reservados. 
+        Copyright ©
+        2024
+         Todos os direitos reservados. 
       </p>
       <p>
         Designed by 
